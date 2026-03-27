@@ -10,7 +10,7 @@ export const hero = {
   eyebrow: "AI-POWERED ACCOUNTABILITY",
   headline: "Your own AI accountability system.\nBuilt by a coach. Running every morning.",
   subtitle:
-    "For business owners who know what to do but can't stay consistent. Custom-configured for your goals, your patterns, and the specific ways you get stuck — not a template, not an app, not someone else's system.",
+    "For business owners who want to perform at their potential but can't close the gap between intention and result. Custom-configured for your goals, your patterns, and the specific ways you get stuck — not a template, not an app, not someone else's system.",
   ctaPrimary: "Find Your Path",
   ctaSecondary: "See How It Works",
   featureStrip: [
@@ -24,8 +24,8 @@ export const hero = {
 export const empathy = {
   headline: "The Cure for Your Chaos.",
   paragraphs: [
-    "Another day ends. You're tired. You worked hard. And you have nothing concrete to show for it. Not because you didn't try — because the system was never designed to help you succeed.",
-    "You've read the books. Downloaded the apps. Tried time-blocking, Pomodoro, GTD — none of it stuck because none of it was built for you.",
+    "Another day ends. You're tired. You worked hard. And you have nothing concrete to show for it. Not because you didn't try — because nothing you've tried was built for how you actually work.",
+    "You've read the books. Downloaded the apps. Tried time-blocking, color-coded calendars, accountability partners — none of it stuck because none of it was built for you.",
     "This isn't a discipline problem. It's a systems problem. And that's a solvable problem.",
   ],
   emphasizedIndex: 2,
