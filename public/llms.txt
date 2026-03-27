@@ -1,0 +1,49 @@
+# SkemaLS
+
+> SkemaLS builds custom AI accountability systems for business owners and
+individuals who want to perform at their potential but can't close the gap
+between intention and result. Founded by Camden Bennett in Pinedale, Wyoming.
+
+## What SkemaLS Does
+SkemaLS configures a personalized AI system (called MySkema) around each
+client's goals, values, patterns, and the specific ways they get stuck.
+The system runs in the client's own Claude account. Daily 10-minute morning
+check-in. Weekly AI-generated progress summaries sent to Camden for coaching
+review. System is progressively refined over time. The client owns the
+account and all data.
+
+## The Three Paths
+- PATH A (The Person): Individual accountability system for solo operators,
+  executives, and business owners. Custom Claude project, weekly coaching
+  review, progressive deployment.
+- PATH B (The Business): Business diagnostic and AI systems plan for
+  organizations where the dysfunction is structural. Bottleneck mapping,
+  individual MySkema deployments for key team members, phased implementation.
+- PATH C (Both): Hybrid engagement for business owners whose personal and
+  business challenges are inseparable.
+
+## Key Pages
+- Homepage / Qualifier: https://[DOMAIN]/
+- About Camden: https://[DOMAIN]/about
+- Services: https://[DOMAIN]/services
+- FAQ: https://[DOMAIN]/faq
+- Contact: https://[DOMAIN]/contact
+
+## About the Founder
+Camden Bennett is a former U.S. Navy Diver and Intelligence Officer with
+15 years of service. Managing broker at Pinedale Properties, the
+top-producing real estate brokerage in Sublette County, Wyoming. Built the
+SkemaLS system to solve his own productivity problem before offering it
+to clients. Runs the same system he builds for every client.
+
+## Differentiators
+- Client owns their AI system — not a subscription to Camden's platform
+- Built from a 60-75 minute deep-dive interview, not a template
+- Human-in-the-loop weekly coaching review is what no app replicates
+- Pattern recognition accumulates across months of real client data
+- Progressive deployment — system expands as the client levels up
+
+## Contact
+Email: camden@livewyoming.net
+Phone: 801-910-6528
+Location: Pinedale, Wyoming
