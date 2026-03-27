@@ -130,7 +130,7 @@ export const features = {
     {
       title: "Capture Everything. Do What Matters.",
       description:
-        "Ideas, tasks, and decisions — captured before they're gone. Then the AI triages by impact using YOUR decision framework. Highest-leverage actions rise. Busy work gets flagged. What to delegate, defer, or delete becomes obvious.",
+        "Ideas, tasks, and decisions — captured before they're gone. Then the AI triages by impact using your decision framework. Highest-leverage actions rise. Busy work gets flagged. What to delegate, defer, or delete becomes obvious.",
     },
     {
       title: "Decide Faster. Decide Better.",
