@@ -141,3 +141,360 @@ Lighthouse 95+. LCP < 2.5s. CLS < 0.1. Max 2 font families, 4 weights total. sec
 - PATH B pricing: "Custom quote per engagement"
 - Angela Douglas testimonial: include but wrap in HTML comment noting permission pending
 - Logo: text mark "SkemaLS" in Space Grotesk bold, primary red
+
+---
+
+# SkemaLS Website — Action List
+**Repo:** Cam-Bennett/skemals-website
+**Audited:** 03/26/2026
+**Instructions:** Work through these one at a time. Confirm completion before moving to next item.
+
+---
+
+## 🔴 CRITICAL
+
+### 1. Build the four 404 nav pages
+All four nav links (About, Services, FAQ, Contact) currently return 404. Build each page or replace with a stub that renders content.
+
+**Files to create:**
+- `app/about/page.tsx`
+- `app/services/page.tsx`
+- `app/faq/page.tsx`
+- `app/contact/page.tsx`
+
+Each page needs at minimum: a heading, 2–3 sentences of placeholder copy, and a CTA linking back to the homepage qualifier (`/#qualifier`). Style to match the existing homepage (same Tailwind classes, same nav/footer components).
+
+---
+
+## 🟠 HIGH
+
+### 2. Add meta description to homepage
+**File:** `app/page.tsx` or `app/layout.tsx`
+Add to the Next.js `metadata` export:
+```ts
+description: "Camden Bennett builds custom AI accountability systems for business owners who can't stay consistent. 10 minutes every morning. Built for you, not a template."
+```
+Keep under 160 characters.
+
+---
+
+### 3. Create robots.txt
+**File:** `public/robots.txt`
+Create with the following content — allow all AI crawlers explicitly:
+```
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://[DOMAIN]/sitemap.xml
+```
+Replace `[DOMAIN]` with the live domain once assigned.
+
+---
+
+### 4. Generate XML sitemap
+Install `next-sitemap` and configure it to auto-generate `/sitemap.xml` on build.
+
+```bash
+npm install next-sitemap
+```
+
+**File to create:** `next-sitemap.config.js` in project root:
+```js
+/** @type {import('next-sitemap').IConfig} */
+module.exports = {
+  siteUrl: process.env.SITE_URL || 'https://[DOMAIN]',
+  generateRobotsTxt: false, // we're managing robots.txt manually
+  outDir: './public',
+}
+```
+
+Add to `package.json` scripts:
+```json
+"postbuild": "next-sitemap"
+```
+
+---
+
+### 5. Create llms.txt
+**File:** `public/llms.txt`
+Create with the following content:
+```
+# SkemaLS
+
+> SkemaLS is a custom AI accountability coaching service for business owners who struggle with consistency. Founded by Camden Bennett in Pinedale, Wyoming.
+
+## What SkemaLS Does
+SkemaLS builds personalized AI accountability systems (called MySkema) configured around each client's goals, values, and patterns. The system runs in the client's own Claude account and includes a daily 10-minute morning check-in, weekly AI-generated progress reports, and ongoing coaching feedback from Camden Bennett.
+
+## Key Pages
+- Homepage / Qualifier: https://[DOMAIN]/
+- About Camden: https://[DOMAIN]/about
+- Services: https://[DOMAIN]/services
+- FAQ: https://[DOMAIN]/faq
+- Contact: https://[DOMAIN]/contact
+
+## About the Founder
+Camden Bennett is a former U.S. Navy Diver and Intelligence Officer, and current real estate broker at Pinedale Properties in Pinedale, Wyoming. He built the SkemaLS system for himself before offering it to clients.
+
+## Service
+Custom-built AI accountability system. Not a template, not a course, not an app. Deployed in the client's own Claude account. Includes intake interview, system configuration, weekly review, and coaching feedback.
+
+## Contact
+Email: camden@[DOMAIN]
+Phone: 801-910-6528
+Location: Pinedale, Wyoming
+```
+Replace `[DOMAIN]` with live domain once assigned.
+
+---
+
+### 6. Add Organization + Person schema (JSON-LD)
+**File:** `app/layout.tsx` or a dedicated `components/Schema.tsx` component
+Add as a `<script type="application/ld+json">` block in the `<head>`:
+
+```json
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://[DOMAIN]/#organization",
+      "name": "SkemaLS",
+      "url": "https://[DOMAIN]",
+      "description": "Custom AI accountability systems for business owners. Built by Camden Bennett.",
+      "founder": {
+        "@id": "https://[DOMAIN]/#person"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pinedale",
+        "addressRegion": "WY",
+        "addressCountry": "US"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "801-910-6528",
+        "contactType": "customer service"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://[DOMAIN]/#person",
+      "name": "Camden Bennett",
+      "jobTitle": "Founder, SkemaLS",
+      "description": "Former U.S. Navy Diver and Intelligence Officer. Real estate broker. Founder of SkemaLS AI accountability coaching.",
+      "url": "https://[DOMAIN]/about",
+      "image": "https://[DOMAIN]/_next/image?url=%2Fimages%2Fcamden-headshot.jpg"
+    }
+  ]
+}
+```
+Replace `[DOMAIN]` throughout.
+
+---
+
+### 7. Add Open Graph + Twitter Card meta tags
+**File:** `app/layout.tsx` — add to the `metadata` export:
+```ts
+openGraph: {
+  title: "SkemaLS — Your Own AI Accountability System",
+  description: "Custom-configured AI accountability for business owners who can't stay consistent. Built by Camden Bennett.",
+  url: "https://[DOMAIN]",
+  siteName: "SkemaLS",
+  images: [
+    {
+      url: "https://[DOMAIN]/images/og-image.jpg",
+      width: 1200,
+      height: 630,
+      alt: "SkemaLS — Your Own AI Accountability System",
+    },
+  ],
+  type: "website",
+},
+twitter: {
+  card: "summary_large_image",
+  title: "SkemaLS — Your Own AI Accountability System",
+  description: "Custom-configured AI accountability for business owners who can't stay consistent.",
+  images: ["https://[DOMAIN]/images/og-image.jpg"],
+},
+```
+**Also create:** `public/images/og-image.jpg` — 1200×630px branded image. Can be a simple text-on-brand-background card with the tagline. Required for link previews on LinkedIn, Slack, iMessage, etc.
+
+---
+
+### 8. Add pricing signal to homepage
+**File:** `app/page.tsx` (or relevant section component in `components/`)
+In the section just above or below the qualifier, add a pricing context line. Suggested placement: below the "What this is not" section or in the CTA section near the bottom.
+
+Suggested copy (Camden to confirm actual number):
+```
+Investment starts at $[X]/month. Includes system build, weekly coaching review, and ongoing refinement.
+```
+Or if variable pricing is preferred:
+```
+Pricing is based on scope. Most clients invest between $[X]–$[X]/month.
+```
+
+---
+
+### 9. Fix footer email address
+**File:** Wherever footer is defined — likely `components/Footer.tsx` or within `app/layout.tsx`
+Replace `camden@livewyoming.net` with a SkemaLS-branded email. Options:
+- `camden@skemals.com` (once domain is live)
+- `camden@[whatever the SkemaLS domain is]`
+
+Until domain is live, acceptable to use a forwarding alias. Do not leave a Pinedale Properties email address on a SkemaLS touchpoint.
+
+---
+
+### 10. Add privacy policy page
+**File:** `app/privacy/page.tsx`
+Create a basic privacy policy page. Use Termly (termly.io) or Iubenda (iubenda.com) to generate the policy text — free tier is sufficient. The page must cover:
+- What data is collected (name, email, phone via qualifier form)
+- How it is used
+- Whether it is shared with third parties
+- Cookie/tracking disclosure if GA4 is installed
+
+Add link to footer: "Privacy Policy" → `/privacy`
+
+---
+
+### 11. Verify GA4 is installed and firing
+Check `app/layout.tsx` (or GTM container if used) for GA4 measurement ID (`G-XXXXXXXXXX`).
+
+If GA4 is not installed:
+- Create GA4 property at analytics.google.com
+- Add measurement ID to layout using Next.js Script component or `@next/third-parties/google`
+
+Confirm a **conversion event** is firing on qualifier form submission. The easiest implementation: redirect to `/thank-you` on form submit, and mark that pageview as a conversion in GA4.
+
+If `/thank-you` page doesn't exist — create `app/thank-you/page.tsx` with a confirmation message and next-steps copy.
+
+---
+
+## 🟡 MEDIUM
+
+### 12. Add specificity to client proof vignettes
+**File:** `app/page.tsx` (or `content/` directory if content is externalized)
+Each of the three client proof vignettes needs a first name and 2-word context. Example format:
+- "Sarah, event coordinator"
+- "Marcus, contractor"
+- "Jill, insurance agent"
+
+Camden to supply real names/initials with permission, or use initials + industry if clients prefer privacy.
+
+---
+
+### 13. Build FAQ page with FAQPage schema
+**File:** `app/faq/page.tsx` (created in item #1 — expand it here)
+The FAQ page should answer the 6–8 questions Camden gets most often in intake. Suggested questions:
+- What is SkemaLS and how is it different from hiring a coach?
+- What is MySkema?
+- Do I need to already use Claude / know how to use AI?
+- How much time does this require daily?
+- What happens in the first week?
+- What does the weekly review look like?
+- Is this a subscription? Can I cancel?
+- What kinds of businesses is this built for?
+
+Add `FAQPage` JSON-LD schema to this page with each Q&A pair. This is one of the highest-impact AEO moves for a coaching service.
+
+---
+
+### 14. Add "What happens after you submit" copy to qualifier section
+**File:** `app/page.tsx` — below the qualifier form
+Add a short expectations block:
+```
+After you submit: Camden reviews your answers and responds within 24 hours to schedule a free 15-minute call. No pitch. No pressure. Just a real conversation about whether this is the right fit.
+```
+
+---
+
+### 15. Add Terms of Service page
+**File:** `app/terms/page.tsx`
+Generate at Termly or Iubenda. Must cover service terms, payment, cancellation policy, and scope of coaching relationship. Add link to footer alongside Privacy Policy.
+
+---
+
+### 16. Add LinkedIn and social links to footer
+**File:** Footer component
+Add icon links for:
+- Camden's LinkedIn profile (personal)
+- SkemaLS LinkedIn company page (create if not yet created)
+- Any other active SkemaLS social presence
+
+---
+
+### 17. Replace "Get Started" nav CTA with "Find Your Path"
+**File:** Nav component (likely `components/Nav.tsx` or `components/Header.tsx`)
+Change button label from "Get Started" to "Find Your Path" — matches primary page CTA language and is more specific to the offer.
+
+---
+
+### 18. Submit to Bing Webmaster Tools
+Manual task — no code change required.
+Go to: https://www.bing.com/webmasters
+Verify site ownership (XML file method or meta tag method).
+Submit sitemap once `/sitemap.xml` is live.
+**Why it matters:** ChatGPT's browsing tool uses Bing's index. Not in Bing = partially invisible to ChatGPT search.
+
+---
+
+### 19. Verify qualifier form submission triggers confirmation
+**File:** Wherever form submit handler lives — likely in a component under `components/`
+Confirm that on successful submission:
+1. User sees a confirmation message OR is redirected to `/thank-you`
+2. If redirected, `/thank-you` page exists (`app/thank-you/page.tsx`)
+3. GA4 conversion event fires on this redirect (mark `/thank-you` pageview as conversion in GA4 dashboard)
+
+---
+
+## 🟢 LOW
+
+### 20. Add favicon
+**File:** `app/favicon.ico` or `public/favicon.ico`
+Confirm a branded favicon exists. If not, generate one from the SkemaLS logo or wordmark at favicon.io. Next.js looks for `app/favicon.ico` by default.
+
+---
+
+### 21. Add cross-link from PinedaleProperties.com to SkemaLS
+Manual task — add to Pinedale Properties website.
+Suggested placement: Camden's bio page or footer. Anchor text: "SkemaLS — AI Coaching" or "Camden's AI Coaching Practice."
+**Why it matters:** Free domain authority transfer from an established domain. Also serves as external corroboration that SkemaLS is a real entity — AI systems check this.
+
+---
+
+### 22. Create Google Business Profile for SkemaLS
+Manual task — no code change required.
+Go to: https://business.google.com
+Create a new profile as a service-area business (no storefront).
+Name: SkemaLS
+Category: Business Coach (primary) / Life Coach (secondary)
+Service area: United States (or specific states if targeting is regional)
+Website: [SkemaLS domain once live]
+**Why it matters:** Establishes SkemaLS as a verifiable entity in Google's knowledge graph. AI systems cross-reference GBP when generating brand descriptions.
+
+---
+
+## 🔧 REQUIRES TOOL ACCESS (Manual — No Code)
+
+- **PageSpeed Insights:** Run https://pagespeed.web.dev on homepage after build. Target LCP < 2.5s, CLS < 0.1. Flag any issues to Camden.
+- **Google Rich Results Test:** Run https://search.google.com/test/rich-results after schema is added. Confirm Organization and Person schema validate without errors.
+- **OG Preview Test:** Run https://www.opengraph.xyz after OG tags are added. Confirm link preview renders correctly with image, title, and description.
+- **Google Search Console:** Set up on custom domain once assigned. Verify site, submit sitemap, confirm indexing.
+- **Mobile usability check:** Load site on actual mobile device. Test qualifier form — confirm keyboard doesn't obscure submit button, all tap targets are usable, Path A/B/C buttons are easily tappable.
