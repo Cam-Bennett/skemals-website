@@ -65,7 +65,7 @@ export default function PathSelector() {
               {path.description}
             </p>
             <a
-              href="#qualifier"
+              href={`/?path=${path.id.toLowerCase()}#qualifier`}
               className="font-body font-semibold text-sm transition-colors duration-150"
               style={{ color: path.color, textDecoration: "none" }}
             >

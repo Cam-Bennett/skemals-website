@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { qualifierForm } from "@/content/siteContent";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 import Btn from "@/components/ui/Btn";
@@ -23,6 +23,13 @@ const initialState: FormState = {
   outcome: "",
   name: "",
   email: "",
+};
+
+// Maps URL ?path= param to Q1 option values
+const PATH_PARAM_MAP: Record<string, string> = {
+  a: "A",
+  b: "B",
+  c: "C",
 };
 
 function isStepComplete(stepIndex: number, state: FormState): boolean {
@@ -60,6 +67,15 @@ export default function QualifierForm() {
   const [state, setState] = useState<FormState>(initialState);
   const [submitted, setSubmitted] = useState(false);
 
+  // On mount: read ?path=a/b/c from URL and pre-select Q1
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const pathParam = params.get("path")?.toLowerCase();
+    if (pathParam && PATH_PARAM_MAP[pathParam]) {
+      setState((prev) => ({ ...prev, path: PATH_PARAM_MAP[pathParam] }));
+    }
+  }, []);
+
   const totalSteps = qualifierForm.steps.length;
   const currentStep = qualifierForm.steps[step];
   const canProceed = isStepComplete(step, state);
@@ -70,6 +86,11 @@ export default function QualifierForm() {
 
   function handleBack() {
     if (step > 0) setStep(step - 1);
+    // If navigating back to step 0, clear the pre-selected path so the
+    // user can make a fresh choice without the URL param locking them in.
+    if (step === 1) {
+      setState((prev) => ({ ...prev, path: "" }));
+    }
   }
 
   function handleSubmit() {
