@@ -396,3 +396,61 @@ export const about = {
     buttonHref: "/#qualifier",
   },
 };
+
+export const faq = {
+  eyebrow: "COMMON QUESTIONS",
+  headline: "Everything you're probably wondering.",
+  items: [
+    {
+      question: "What is SkemaLS?",
+      answer:
+        "SkemaLS builds custom AI accountability systems for business owners and individuals. The system — called MySkema — is configured around your specific goals, patterns, and the ways you consistently get stuck. It runs in your own Claude account every morning. Your coach reviews your progress weekly and adjusts the system over time. It's not an app, not a course, and not a template. Every deployment is built from scratch.",
+    },
+    {
+      question: "How is this different from hiring a coach?",
+      answer:
+        "Traditional coaching produces insights. SkemaLS produces a system that runs whether you remember to engage with it or not. The AI holds the accountability between coaching sessions — that's the gap traditional coaching doesn't close. You get both the system and the coach.",
+    },
+    {
+      question: "What is MySkema?",
+      answer:
+        "MySkema is your personal AI system — a custom Claude project configured around how you actually work. You use it every morning in a 10-minute check-in. It tracks your goals, captures your thinking, surfaces patterns you can't see from inside them, and holds you accountable to what you said you'd do. You own the account. You own the data.",
+    },
+    {
+      question: "Do I need to know how to use AI?",
+      answer:
+        "No. Camden sets it up. You interact with it the same way you'd text someone — through a conversation interface. There's no software to configure, no dashboard to manage, and no technical background required.",
+    },
+    {
+      question: "How much time does this take each day?",
+      answer:
+        "The morning check-in takes 10 minutes. The weekly summary takes about 5 minutes to generate and send. The system does the rest.",
+    },
+    {
+      question: "What happens in the first week?",
+      answer:
+        "You complete an intake form. Camden uses your responses to generate custom interview questions. You spend about an hour together — he asks everything the form surfaced, goes deeper where needed, and records the conversation. Within days you receive your Project Instructions, an Interview Summary with coaching feedback, and a Setup Email. Your system goes live and your first morning check-in begins.",
+    },
+    {
+      question: "What does the weekly review look like?",
+      answer:
+        "Every Friday, your system generates a weekly summary. You send it to Camden by email. He runs it through an analysis engine built from client pattern data and coaching frameworks, and sends back a coaching response: what you're doing well, what the data shows you're avoiding, and — when you're ready — additions to your system that take it to the next level.",
+    },
+    {
+      question: "Is this a subscription? Can I cancel?",
+      answer:
+        "Pricing is monthly. You can cancel at any time. Your Claude account and everything in it belongs to you — no lock-in, no black box. If you cancel, your system stays in your account and continues to work.",
+    },
+    {
+      question: "What kinds of businesses is this built for?",
+      answer:
+        "PATH A serves individuals — solo operators, executives, and business owners who are the bottleneck in their own performance. PATH B serves organizations where the dysfunction is structural. PATH C serves business owners where personal and business challenges are inseparable. If you run something and feel behind your own potential, it's built for you.",
+    },
+  ],
+  cta: {
+    headline: "Still have questions?",
+    body: "Camden reviews every qualifier personally. The fastest way to get answers is to start.",
+    buttonLabel: "Find Your Path",
+    buttonHref: "/#qualifier",
+  },
+};
