@@ -33,7 +33,7 @@ export const empathy = {
 
 export const proofInsight = {
   quote:
-    "Most of my clients come in describing the wrong problem. Design tools, marketing help, dinner rush fixes — none of those are the actual issue. The intake process exists because people describe symptoms, not root causes. Finding the actual problem is the first move.",
+    "Most of my clients come in describing the wrong problem. Design tools, marketing help, bookkeeping fixes — none of those are the actual issue. The intake process exists because people describe symptoms, not root causes. Finding the actual problem is the first move.",
 };
 
 export const schemaDefinition = {
