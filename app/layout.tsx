@@ -24,11 +24,26 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SkemaLS — Your Own AI Accountability System",
     description:
-      "For business owners who know what to do but can't stay consistent. Custom-configured for your goals, your patterns, and the specific ways you get stuck.",
+      "Custom-configured AI accountability for business owners who can't close the gap between intention and result. Built by Camden Bennett.",
     url: "https://skemals.com",
     siteName: "SkemaLS",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "https://skemals.com/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "SkemaLS — Your Own AI Accountability System",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SkemaLS — Your Own AI Accountability System",
+    description:
+      "Custom-configured AI accountability for business owners who can't close the gap between intention and result. Built by Camden Bennett.",
+    images: ["https://skemals.com/images/og-image.jpg"],
   },
 };
 
