@@ -319,3 +319,80 @@ export const footer = {
   links: ["About", "Services", "FAQ", "Contact"],
   location: "Pinedale, Wyoming",
 };
+
+export const about = {
+  meta: {
+    title: "About Camden Bennett — SkemaLS",
+    description:
+      "Camden Bennett built SkemaLS for himself before offering it to clients. 15 years in the Navy. Real estate broker. Founder of a productivity system that runs every morning.",
+  },
+  section1: {
+    eyebrow: "ABOUT CAMDEN",
+    headline: "I didn't figure this out. I built my way out of it.",
+    paragraphs: [
+      "I know what it's like to end a day exhausted with nothing to show for it. Not because I didn't work. I worked constantly. I was available to everyone, responsive to everything, and in control of nothing. My days were shaped by whoever needed something from me next. I had more goals than I'd ever had — and less ability to move them forward than at any point in my career.",
+      "That was the moment I became the broker of Pinedale Properties, the top-producing real estate brokerage in Sublette County, Wyoming. More responsibility. More people depending on me. More things I wanted to build. And a growing gap between how hard I was working and what I was actually producing.",
+      "I didn't have a discipline problem. I had no system at all.",
+    ],
+    imageSrc: "/images/camden-headshot.jpg",
+    imageAlt: "Camden Bennett, founder of SkemaLS",
+  },
+  section2: {
+    eyebrow: "THE SEARCH",
+    headline: "I tried everything. Here's what I mean by that.",
+    paragraphs: [
+      "I put my headphones on and told my co-workers I wasn't available. That lasted about a week before something urgent enough came along to override it.",
+      "I started coming in earlier than everyone else. That bought me thirty minutes, maybe forty-five, before the day took over again.",
+      "I tried notebooks. Notes on my desk. A desk calendar. A digital calendar. Multiple digital calendars at once. I read the books. I used ChatGPT without any structure, which is exactly as useful as it sounds.",
+      "None of it worked. Not because the tools were bad — because none of it was built into a system. A notebook doesn't hold you accountable. A calendar doesn't tell you what to prioritize. An AI without structure just reflects your chaos back at you.",
+      "The breakthrough wasn't a tool. It was understanding that context switching was quietly destroying my productivity in a way I couldn't see from the inside. Every interruption, every reactive response to a message was costing me recovery time I wasn't tracking. My days felt full. My output told a different story.",
+      "A concrete example: for years, my office tried to send one email per month to our client list. Without a system behind it, it was impossible to sustain. Once I systematized it, I went to two emails per week — a comprehensive market update and a weekly blog post. Same person. Completely different output. The only variable was the system.",
+    ],
+  },
+  section3: {
+    eyebrow: "THE BACKGROUND",
+    headline: "What 15 years in the Navy actually taught me.",
+    paragraphs: [
+      "I grew up in Wyoming. Joined the Navy. Spent fifteen years.",
+      "My first job was as a Navy Diver — underwater inspections, hull cleanings, repairs on ships and submarines, work inside ballast tanks, occasional salvage operations. A job that demands focus and precision in conditions that aren't comfortable.",
+      "I earned a dual bachelor's degree in English and Anthropology while serving, which led to a commission as an Intelligence Officer. I deployed on the USS John C. Stennis, CVN-74, on the admiral's staff. My job was to monitor the maritime environment for threats and brief decision-makers accurately enough that they could act with confidence.",
+      "In intelligence work, the goal isn't to gather information — it's to synthesize it into something a decision-maker can use. Bad analysis, delivered with confidence, gets people hurt. Good analysis, clearly communicated, changes outcomes. You learn to distinguish between noise and signal. You learn that the quality of a decision is only as good as the quality of the information feeding it.",
+      "That discipline — looking at a stream of information and identifying what actually matters — is exactly what SkemaLS does for a client's weekly journal data. The mechanism is different. The skill is the same.",
+      "I came back to Wyoming when it was time to leave the Navy and put my family somewhere stable. My connections were here. The real estate opportunity was here. I became a broker, then the managing broker. And that's when the productivity problem I'd been managing finally outran me.",
+    ],
+  },
+  section4: {
+    eyebrow: "HOW I WORK NOW",
+    headline: "What a morning actually looks like.",
+    paragraphs: [
+      "I'm up by six. Three or four days a week I run and do a calisthenics routine. I fast until lunch. Coffee, supplements for cognitive function, electrolytes. I read my Bible.",
+      "Then I open MySkema, type the time and date, and say: Let's run a journal.",
+      "Ten minutes. Designed for focus, not reflection — a way to clear my head and lock in my priorities before the day can take over. The system walks me through it:",
+    ],
+    listItems: [
+      "A gratitude entry. One thing.",
+      "A brain dump of whatever's creating noise — worries, anxieties, unresolved things sitting in the background. Getting them out of my head and into the system clears space for actual work.",
+      "A stream of consciousness: ideas, impressions, observations about ongoing business, things I want to accomplish. Unfiltered. The AI reads all of it.",
+      "A rotating daily theme. Every day of the week has a different focus. One day I identify someone who helped me that week and reach out to thank them. Another day I evaluate what I'm giving time to that doesn't deserve it, and decide what replaces it. These themes keep the system from going stale.",
+      "The journal ends with the things I need to spend uninterrupted time on to actually move the needle. By the time I close the check-in, I know exactly what I'm protecting my morning for.",
+    ],
+    closingParagraph:
+      "Friday, I generate a weekly summary. The patterns that surface across a full week of entries are things I'd never catch day-to-day. That accumulation is where the real coaching value lives.",
+  },
+  section5: {
+    eyebrow: "WHAT I BUILD FOR YOU",
+    headline: "I'm doing what I coach people to do.",
+    paragraphs: [
+      "I've been using this system longer than any of my clients. Every framework I offer has been tested on myself first. Every configuration decision I make for a client is informed by what I've learned from my own system and from patterns observed across dozens of client engagements.",
+      "Here's what I've learned: most people, even those who know they're disorganized, don't realize the extent of it. They don't see how much time they lose to context switching. They don't see how fractured their days actually are until the journal data shows them. They come in thinking they need more discipline. What they need is a system that works with how they actually function — not against it.",
+      "I'm an entrepreneur running two businesses. I understand the pressure of too many priorities and not enough protected time. I've studied productivity more seriously than most people I know — not as an academic exercise, but because I needed it to work.",
+      "My clients tell me I'm easy to talk to. That the coaching goes deep and compounds over time in a way generic coaching never did. The clients who take it seriously and run with it see massive increases in productivity and clarity — not because of motivation, but because the system holds when the motivation doesn't.",
+      "Not theory. Not a course. Not a template.",
+      "A system built from a conversation about how you actually work, run by someone who built it for himself first.",
+    ],
+  },
+  cta: {
+    buttonLabel: "Find Your Path",
+    buttonHref: "/#qualifier",
+  },
+};
