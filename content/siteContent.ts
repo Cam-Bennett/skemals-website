@@ -467,3 +467,16 @@ export const contact = {
     phone: "801-910-6528",
   },
 };
+
+export const services = {
+  eyebrow: "THE DIAGNOSTIC",
+  headline: "Is the problem you, your business, or both?",
+  subheadline:
+    "Your answer shapes everything we build. Three paths. One intake process. No two systems are the same.",
+  cta: {
+    headline: "Not sure which path is yours?",
+    body: "The qualifier takes 90 seconds. Camden reviews every submission personally.",
+    buttonLabel: "Find Your Path",
+    buttonHref: "/#qualifier",
+  },
+};
