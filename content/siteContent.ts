@@ -454,3 +454,16 @@ export const faq = {
     buttonHref: "/#qualifier",
   },
 };
+
+export const contact = {
+  eyebrow: "GET IN TOUCH",
+  headline: "Start with the qualifier.",
+  body: "The fastest path to working together is the 5-question qualifier. It takes 90 seconds, routes you to the right path, and gets your answers directly to Camden. No intake form. No sales call until there's a fit.",
+  buttonLabel: "Find Your Path",
+  buttonHref: "/#qualifier",
+  directContact: {
+    label: "Prefer to reach out directly?",
+    email: "camden@livewyoming.net",
+    phone: "801-910-6528",
+  },
+};
