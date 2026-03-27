@@ -19,7 +19,7 @@ const karla = Karla({
 export const metadata: Metadata = {
   title: "SkemaLS — Your Own AI Accountability System",
   description:
-    "AI-powered accountability coaching for business owners who know what to do but can't stay consistent. Custom-configured for your goals, your patterns, and the specific ways you get stuck.",
+    "Custom AI accountability systems for business owners who can't stay consistent. Built by Camden Bennett. 10 minutes every morning. Configured for you, not a template.",
   metadataBase: new URL("https://skemals.com"),
   openGraph: {
     title: "SkemaLS — Your Own AI Accountability System",
