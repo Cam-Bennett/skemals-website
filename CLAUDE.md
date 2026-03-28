@@ -142,6 +142,15 @@ Lighthouse 95+. LCP < 2.5s. CLS < 0.1. Max 2 font families, 4 weights total. sec
 - Angela Douglas testimonial: include but wrap in HTML comment noting permission pending
 - Logo: text mark "SkemaLS" in Space Grotesk bold, primary red
 
+## PRE-LAUNCH BLOCKERS
+
+### Blog / Content Section
+- DO NOT LAUNCH until three articles from Copywriter project are complete and included
+- Nav link name TBD — options: Field Notes, Signal, Dispatch, The Work, Playbook, Inside the System
+- Will include case studies + other content — not purely a blog, not purely case studies
+- Route will be something like `/field-notes` or `/signal` once name is decided
+- Build: nav link, index page listing articles, individual article template
+
 ---
 
 # SkemaLS Website — Action List
