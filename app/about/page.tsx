@@ -130,10 +130,31 @@ export default function AboutPage() {
         {/* ── SECTION 1 — Two-column hero ─────────────────────────── */}
         <SectionWrapper
           style={{
-            background:
-              "radial-gradient(ellipse at 80% 20%, rgba(220,38,38,0.07) 0%, transparent 55%), #0A0A12",
+            position: "relative",
+            overflow: "hidden",
+            background: "#0A0A12",
           }}
         >
+          {/* Abstract background image */}
+          <Image
+            src="/images/abstract-3.png"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            style={{ objectFit: "cover", opacity: 0.18, zIndex: 0 }}
+          />
+          {/* Dark overlay */}
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              background: "rgba(10,10,18,0.72)",
+              zIndex: 1,
+            }}
+          />
+          {/* Content sits above */}
+          <div style={{ position: "relative", zIndex: 2 }}>
           <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-start">
             {/* Headshot — left on desktop, top on mobile */}
             <div
@@ -183,6 +204,7 @@ export default function AboutPage() {
                 <BodyPara key={i} text={p} delayMs={(i + 1) * 80} />
               ))}
             </div>
+          </div>
           </div>
         </SectionWrapper>
 
