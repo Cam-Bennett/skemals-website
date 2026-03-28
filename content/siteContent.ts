@@ -3,7 +3,7 @@
 export const nav = {
   logo: "SkemaLS",
   links: ["About", "FAQ", "Contact"],
-  cta: "Get Started",
+  cta: "Find Your Path",
 };
 
 export const hero = {

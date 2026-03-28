@@ -38,6 +38,42 @@ export const metadata: Metadata = {
   },
 };
 
+const orgSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://skemals.com/#organization",
+      name: "SkemaLS",
+      url: "https://skemals.com",
+      description:
+        "Custom AI accountability systems for business owners. Built by Camden Bennett.",
+      founder: { "@id": "https://skemals.com/#person" },
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Pinedale",
+        addressRegion: "WY",
+        addressCountry: "US",
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "801-910-6528",
+        contactType: "customer service",
+      },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://skemals.com/#person",
+      name: "Camden Bennett",
+      jobTitle: "Founder, SkemaLS",
+      description:
+        "Former U.S. Navy Diver and Intelligence Officer. Real estate broker. Founder of SkemaLS AI accountability coaching.",
+      url: "https://skemals.com/about",
+      image: "https://skemals.com/_next/image?url=%2Fimages%2Fcamden-headshot.jpg",
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -45,6 +81,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${karla.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+        />
+      </head>
       <body className="antialiased">{children}</body>
     </html>
   );
