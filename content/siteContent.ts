@@ -10,7 +10,7 @@ export const hero = {
   eyebrow: "AI-POWERED ACCOUNTABILITY",
   headline: "Your own AI accountability system.\nBuilt by a coach. Running every morning.",
   subtitle:
-    "For business owners who want to perform at their potential but can't close the gap between intention and result. Custom-configured for your goals, your patterns, and the specific ways you get stuck — not a template, not an app, not someone else's system.",
+    "For business owners who can't close the gap between who they are and who they need to be. Custom-configured for your goals, your patterns, and the specific ways you get stuck — not a template, not an app, not someone else's system.",
   ctaPrimary: "Find Your Path",
   ctaSecondary: "See How It Works",
   featureStrip: [
