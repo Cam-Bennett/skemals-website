@@ -29,12 +29,24 @@ export default function Footer() {
           ))}
         </div>
 
-        <span
-          className="font-body text-muted"
-          style={{ fontSize: "12px", opacity: 0.5 }}
-        >
-          {footer.location}
-        </span>
+        <div className="flex items-center gap-4">
+          {footer.legalLinks.map((link) => (
+            <a
+              key={link}
+              href={`/${link.toLowerCase().replace(/ /g, "-")}`}
+              className="font-body text-muted hover:text-text-soft transition-colors duration-150"
+              style={{ fontSize: "12px", textDecoration: "none", opacity: 0.5 }}
+            >
+              {link}
+            </a>
+          ))}
+          <span
+            className="font-body text-muted"
+            style={{ fontSize: "12px", opacity: 0.5 }}
+          >
+            {footer.location}
+          </span>
+        </div>
       </div>
     </footer>
   );

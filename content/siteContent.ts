@@ -320,6 +320,7 @@ export const cta = {
 export const footer = {
   logo: "SkemaLS",
   links: ["About", "FAQ", "Contact"],
+  legalLinks: ["Privacy Policy"],
   location: "Pinedale, Wyoming",
 };
 
@@ -482,4 +483,106 @@ export const services = {
     buttonLabel: "Find Your Path",
     buttonHref: "/#qualifier",
   },
+};
+
+export const privacyPolicy = {
+  title: "Privacy Policy",
+  effectiveDate: "March 26, 2026",
+  lastUpdated: "March 26, 2026",
+  contact: "camden@skemals.com | 801-910-6528",
+  location: "Pinedale, Wyoming",
+  sections: [
+    {
+      heading: "What This Policy Covers",
+      body: "This Privacy Policy explains what information SkemaLS collects when you visit skemals.com, how that information is used, and what choices you have. SkemaLS is a one-person coaching practice operated by Camden Bennett. Your data is never sold, rented, or traded.",
+    },
+    {
+      heading: "Information We Collect",
+      body: "",
+      subsections: [
+        {
+          label: "Information you provide directly:",
+          text: "When you complete the qualifier form or contact us, we collect the information you submit — typically your name, email address, phone number, and your responses to intake questions. We only collect what you choose to give us.",
+        },
+        {
+          label: "Information collected automatically:",
+          text: "When you visit skemals.com, standard web analytics tools collect basic technical data: pages visited, time spent on the site, device type, browser type, and general geographic location (city/country level). This data is aggregated and anonymous — it is not tied to your name or contact information.",
+        },
+        {
+          label: "Cookies:",
+          text: "This site uses cookies to support analytics and basic site functionality. Analytics cookies help us understand how visitors use the site so we can improve it. You can disable cookies in your browser settings at any time.",
+        },
+      ],
+    },
+    {
+      heading: "How We Use Your Information",
+      body: "Information you submit through the qualifier form or contact form is used exclusively to:",
+      list: [
+        "Respond to your inquiry",
+        "Schedule and conduct an initial consultation",
+        "Build and deliver your MySkema system if you become a client",
+        "Send coaching feedback and session-related communications",
+      ],
+      footer: "We do not use your information for advertising, email marketing lists, or any purpose unrelated to the service you requested.",
+    },
+    {
+      heading: "How We Store and Protect Your Information",
+      body: "Intake responses and client information are stored in tools used to deliver the coaching service (which may include Notion, Google Workspace, and Claude). These platforms maintain their own security and privacy standards. We do not store payment card information — payments are processed by third-party payment processors who are responsible for securing that data.\n\nWe take reasonable precautions to protect your information, but no method of transmission over the internet is completely secure. If you have concerns about a specific piece of sensitive information, contact us before submitting it through a web form.",
+    },
+    {
+      heading: "Information Sharing",
+      body: "We do not sell, rent, or share your personal information with third parties for marketing purposes.\n\nWe may share information only in these limited circumstances:",
+      subsections: [
+        {
+          label: "Service delivery:",
+          text: "Tools necessary to deliver the coaching service (e.g., scheduling software, document storage). These are disclosed to clients directly.",
+        },
+        {
+          label: "Legal compliance:",
+          text: "If required by law, court order, or government authority.",
+        },
+        {
+          label: "Business transfer:",
+          text: "In the unlikely event SkemaLS is sold or merged, client data would transfer as part of the business. You would be notified before that occurs.",
+        },
+      ],
+    },
+    {
+      heading: "Google Analytics",
+      body: "This site uses Google Analytics 4 to understand how visitors use the site. Google Analytics collects anonymized usage data. Google's use of this data is governed by Google's Privacy Policy (policies.google.com/privacy). You can opt out of Google Analytics tracking by installing the Google Analytics Opt-out Browser Add-on (tools.google.com/dlpage/gaoptout).",
+    },
+    {
+      heading: "Your Rights",
+      body: "You have the right to:",
+      subsections: [
+        { label: "Access", text: "the personal information we hold about you" },
+        { label: "Correct", text: "any inaccurate information" },
+        { label: "Request deletion", text: "of your information (subject to any legal obligations we have to retain records)" },
+        { label: "Withdraw consent", text: "for any communication at any time" },
+      ],
+      footer: "To exercise any of these rights, email camden@skemals.com. We will respond within 30 days.",
+    },
+    {
+      heading: "Children's Privacy",
+      body: "SkemaLS is a professional coaching service intended for adults. We do not knowingly collect personal information from anyone under the age of 18. If you believe a minor has submitted information through this site, contact us and we will delete it promptly.",
+    },
+    {
+      heading: "External Links",
+      body: "This site may contain links to external websites. We are not responsible for the privacy practices of those sites. We recommend reviewing the privacy policy of any site you visit.",
+    },
+    {
+      heading: "Changes to This Policy",
+      body: "If we make material changes to this policy, we will update the \"Last Updated\" date at the top and, where appropriate, notify active clients by email. Continued use of the site after changes are posted constitutes acceptance of the updated policy.",
+    },
+    {
+      heading: "Contact",
+      body: "Questions about this policy or your data:",
+      contact: {
+        name: "Camden Bennett",
+        company: "SkemaLS",
+        email: "camden@skemals.com",
+        location: "Pinedale, Wyoming",
+      },
+    },
+  ],
 };
