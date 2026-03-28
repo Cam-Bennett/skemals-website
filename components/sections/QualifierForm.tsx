@@ -66,6 +66,8 @@ export default function QualifierForm() {
   const [step, setStep] = useState(0);
   const [state, setState] = useState<FormState>(initialState);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   // On mount: read ?path=a/b/c from URL and pre-select Q1
   useEffect(() => {
@@ -93,8 +95,30 @@ export default function QualifierForm() {
     }
   }
 
-  function handleSubmit() {
-    setSubmitted(true);
+  async function handleSubmit() {
+    setSubmitting(true);
+    setSubmitError("");
+    try {
+      const res = await fetch("/api/qualify", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(state),
+      });
+      if (!res.ok) throw new Error("Send failed");
+      // Fire GA4 conversion event
+      type GtagFn = (...args: unknown[]) => void;
+      if (typeof window !== "undefined" && typeof (window as Window & { gtag?: GtagFn }).gtag === "function") {
+        (window as Window & { gtag?: GtagFn }).gtag!("event", "qualifier_submit", {
+          event_category: "engagement",
+          event_label: `PATH_${state.path}`,
+        });
+      }
+      setSubmitted(true);
+    } catch {
+      setSubmitError("Something went wrong. Email camden@skemals.com directly.");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   function toggleMulti(value: string) {
@@ -302,16 +326,21 @@ export default function QualifierForm() {
               ) : (
                 <Btn
                   onClick={handleSubmit}
-                  disabled={!canProceed}
+                  disabled={!canProceed || submitting}
                   style={{
-                    opacity: !canProceed ? 0.4 : 1,
-                    cursor: !canProceed ? "not-allowed" : "pointer",
+                    opacity: !canProceed || submitting ? 0.4 : 1,
+                    cursor: !canProceed || submitting ? "not-allowed" : "pointer",
                   }}
                 >
-                  {qualifierForm.submitLabel}
+                  {submitting ? "Sending…" : qualifierForm.submitLabel}
                 </Btn>
               )}
             </div>
+            {submitError && (
+              <p className="font-body text-primary mt-4" style={{ fontSize: "14px" }}>
+                {submitError}
+              </p>
+            )}
           </>
         ) : (
           /* Result screen */
