@@ -2,7 +2,12 @@
 
 export const nav = {
   logo: "SkemaLS",
-  links: ["About", "FAQ", "Contact"],
+  links: [
+    { label: "About", href: "/about" },
+    { label: "The Work", href: "/the-work" },
+    { label: "FAQ", href: "/faq" },
+    { label: "Contact", href: "/contact" },
+  ],
   cta: "Find Your Path",
 };
 

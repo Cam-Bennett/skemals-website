@@ -29,12 +29,12 @@ export default function Nav() {
           <div className="hidden md:flex items-center gap-6">
             {nav.links.map((link) => (
               <a
-                key={link}
-                href={`/${link.toLowerCase()}`}
+                key={link.href}
+                href={link.href}
                 className="text-sm text-muted hover:text-text-soft transition-colors duration-150"
                 style={{ textDecoration: "none" }}
               >
-                {link}
+                {link.label}
               </a>
             ))}
           </div>
