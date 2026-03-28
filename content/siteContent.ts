@@ -313,7 +313,8 @@ export const cta = {
     "15 minutes. Free. We'll talk through what you're dealing with and whether a MySkema system makes sense. No pitch. No pressure.",
   buttonLabel: "Find Your Path",
   trustLine: "You own your account. You own your data. No lock-in. No black box.",
-  contact: "camden@livewyoming.net · 801-910-6528",
+  contact: "camden@skemals.com · 801-910-6528",
+  pricing: "$750/month. Includes system build, weekly coaching review, and ongoing refinement.",
 };
 
 export const footer = {
@@ -465,7 +466,7 @@ export const contact = {
   buttonHref: "/#qualifier",
   directContact: {
     label: "Prefer to reach out directly?",
-    email: "camden@livewyoming.net",
+    email: "camden@skemals.com",
     phone: "801-910-6528",
   },
 };
