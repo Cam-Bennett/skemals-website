@@ -2,7 +2,7 @@
 
 export const nav = {
   logo: "SkemaLS",
-  links: ["About", "Services", "FAQ", "Contact"],
+  links: ["About", "FAQ", "Contact"],
   cta: "Get Started",
 };
 
@@ -316,7 +316,7 @@ export const cta = {
 
 export const footer = {
   logo: "SkemaLS",
-  links: ["About", "Services", "FAQ", "Contact"],
+  links: ["About", "FAQ", "Contact"],
   location: "Pinedale, Wyoming",
 };
 
