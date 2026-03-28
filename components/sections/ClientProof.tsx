@@ -33,9 +33,9 @@ export default function ClientProof() {
           gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
         }}
       >
-        {clientProof.cards.map((card) => (
+        {clientProof.cards.map((card, i) => (
           <div
-            key={card.eyebrow}
+            key={i}
             className="bg-bg-card rounded-xl flex flex-col"
             style={{
               border: "1px solid rgba(255,255,255,0.06)",

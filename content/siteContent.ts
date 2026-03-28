@@ -223,9 +223,27 @@ export const clientProof = {
     },
     {
       eyebrow: "5 DAYS",
-      eyebrowColor: "#2563EB",
+      eyebrowColor: "#7C3AED",
       headline: "Research to Contract",
       body: "Client researched a negotiation tactic on Monday. Applied it to a live counter-offer on Friday. Got the contract. One week from learning to earning.",
+    },
+    {
+      eyebrow: "WEEK 1",
+      eyebrowColor: "#DC2626",
+      headline: "The 2:30am Problem",
+      body: "Financial anxiety was waking her at 2:30am. The first week of journaling named the avoidance loop causing it. She'd been living inside it for months. Naming it was the beginning of breaking it.",
+    },
+    {
+      eyebrow: "WEEK 1",
+      eyebrowColor: "#DC2626",
+      headline: "She Extended It Herself",
+      body: "In her first week, she found a gap in her own system, fixed it without help, then built a new accountability feature no one asked for. She upgraded her account the same week. All unprompted.",
+    },
+    {
+      eyebrow: "WEEK 2",
+      eyebrowColor: "#06B6D4",
+      headline: "$14,000 a Year. Unbudgeted.",
+      body: "Two weeks of journaling revealed she was performing 90 minutes of duties outside her job description every morning before her actual work began. The organization had no idea. Now it's a board conversation.",
     },
     {
       eyebrow: "WEEK 4",
