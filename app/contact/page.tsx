@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
-import SectionWrapper from "@/components/ui/SectionWrapper";
 import Btn from "@/components/ui/Btn";
 import { contact } from "@/content/siteContent";
 
@@ -18,7 +17,7 @@ export default function ContactPage() {
       <Nav />
 
       {/* ── Main section ─────────────────────────────────────────── */}
-      <SectionWrapper
+      <section
         style={{
           position: "relative",
           overflow: "hidden",
@@ -26,8 +25,10 @@ export default function ContactPage() {
           minHeight: "70vh",
           display: "flex",
           alignItems: "center",
+          padding: "96px 24px",
         }}
       >
+        {/* Full-width background image */}
         <Image
           src="/images/abstract-2.png"
           alt=""
@@ -36,6 +37,7 @@ export default function ContactPage() {
           sizes="100vw"
           style={{ objectFit: "cover", opacity: 0.45, zIndex: 0 }}
         />
+        {/* Dark overlay */}
         <div
           style={{
             position: "absolute",
@@ -44,7 +46,12 @@ export default function ContactPage() {
             zIndex: 1,
           }}
         />
-        <div style={{ position: "relative", zIndex: 2, maxWidth: "640px" }}>
+        {/* Content */}
+        <div
+          className="max-w-site mx-auto w-full"
+          style={{ position: "relative", zIndex: 2 }}
+        >
+        <div style={{ maxWidth: "640px" }}>
           {/* Eyebrow */}
           <p
             className="font-body font-semibold text-primary uppercase tracking-widest mb-4"
@@ -118,7 +125,8 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-      </SectionWrapper>
+        </div>
+      </section>
 
       <Footer />
     </main>
