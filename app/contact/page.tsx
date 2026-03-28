@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
 import SectionWrapper from "@/components/ui/SectionWrapper";
@@ -19,14 +20,31 @@ export default function ContactPage() {
       {/* ── Main section ─────────────────────────────────────────── */}
       <SectionWrapper
         style={{
-          background:
-            "radial-gradient(ellipse at 60% 10%, rgba(220,38,38,0.08) 0%, transparent 55%), #0A0A12",
+          position: "relative",
+          overflow: "hidden",
+          background: "#0A0A12",
           minHeight: "70vh",
           display: "flex",
           alignItems: "center",
         }}
       >
-        <div style={{ maxWidth: "640px" }}>
+        <Image
+          src="/images/abstract-2.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          style={{ objectFit: "cover", opacity: 0.18, zIndex: 0 }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background: "rgba(10,10,18,0.72)",
+            zIndex: 1,
+          }}
+        />
+        <div style={{ position: "relative", zIndex: 2, maxWidth: "640px" }}>
           {/* Eyebrow */}
           <p
             className="font-body font-semibold text-primary uppercase tracking-widest mb-4"
