@@ -31,7 +31,7 @@ export const empathy = {
   paragraphs: [
     "Another day ends. You're tired. You worked hard. And you have nothing concrete to show for it. Not because you didn't try — because nothing you've tried was built for how you actually work.",
     "You've read the books. Downloaded the apps. Tried time-blocking, color-coded calendars, accountability partners — none of it stuck because none of it was built for you.",
-    "This isn't a discipline problem. It's a systems problem. And that's a solvable problem.",
+    "This isn't a discipline problem. It's a systems problem. And this is a solvable problem.",
   ],
   emphasizedIndex: 2,
 };
@@ -84,6 +84,8 @@ export const pathSelector = {
       cta: "This sounds like me →",
     },
   ],
+  footnote:
+    "No technical background needed. If Camden decides there's a fit, he handles the entire setup.",
 };
 
 export const howItWorks = {
@@ -94,19 +96,19 @@ export const howItWorks = {
       number: "01",
       title: "Build",
       description:
-        "You complete an intake form. Camden uses your responses to generate custom interview questions. The interview is about an hour. From that recording, he builds your system: Project Instructions, an Interview Summary with coaching feedback, and a Setup Email. The system is yours from day one.",
+        "You complete an intake form. Camden uses your responses to generate custom interview questions. The interview is about an hour via video call, phone or in person. From that recording, he builds your system: Project Instructions, an Interview Summary with coaching feedback, and a Setup Email. The system is yours from day one.",
     },
     {
       number: "02",
       title: "Deploy",
       description:
-        "Your AI system lives in your own Claude account. You own it — it's not a subscription to someone else's platform. The morning check-in takes 10 minutes. The system knows your history. Every conversation builds on the last.",
+        "Your AI system lives in your own Claude account. You own it — it's not a subscription to someone else's platform. The morning check-in takes 10 minutes. The system knows your history. Every conversation builds on the last. If you can type, you can use it. Camden handles the configuration. You handle the conversation.",
     },
     {
       number: "03",
       title: "Refine",
       description:
-        "Every Friday, your system generates a weekly summary. Camden runs it through an analysis engine and sends coaching feedback — what you're doing well, what the data shows you're avoiding, and the next layer of your system. The pattern recognition gets sharper the longer you use it.",
+        "Every Friday, your system generates a weekly summary. Camden runs it through his system and sends coaching feedback — what you're doing well, what the data shows you're avoiding, and the next layer of your system. The pattern recognition gets sharper the longer you use it.",
     },
   ],
 };
@@ -192,7 +194,7 @@ export const practitionerProof = {
   headline: "Tested on the founder first. Then on clients.",
   paragraphs: [
     "I built this system for myself before I offered it to anyone. I was ending many days exhausted with little to show for it — responsive to everyone, in control of nothing. The system was the solution to my own problem.",
-    "I ran it on myself for months. Protected deep work time. Controlled working environment. Weekly review. When I began having consistently directed days instead of reactive ones, I started building it for others.",
+    "I ran it on myself and developed it for months. Protected deep work time. Controlled working environment. Weekly review. When I began having consistently directed days instead of reactive ones, I started building it for others.",
     "That's not a credential. That's a requirement. I won't coach someone through something I haven't lived.",
   ],
 };
@@ -337,11 +339,11 @@ export const about = {
   },
   section1: {
     eyebrow: "ABOUT CAMDEN",
-    headline: "I didn't figure this out. I built my way out of it.",
+    headline: "I didn't figure it out. I built my way out.",
     paragraphs: [
       "I know what it's like to end a day exhausted with nothing to show for it. Not because I didn't work. I worked constantly. I was available to everyone, responsive to everything, and in control of nothing. My days were shaped by whoever needed something from me next. I had more goals than I'd ever had — and less ability to move them forward than at any point in my career.",
-      "That was the moment I became the broker of Pinedale Properties, the top-producing real estate brokerage in Sublette County, Wyoming. More responsibility. More people depending on me. More things I wanted to build. And a growing gap between how hard I was working and what I was actually producing.",
-      "I didn't have a discipline problem. I had no system at all.",
+      "I realized this when I took over as broker of Pinedale Properties, the top-producing real estate brokerage in Sublette County, Wyoming. More responsibility. More people depending on me. More things I wanted to build. And a growing gap between how hard I was working and what I was actually producing.",
+      "I didn't have a discipline problem. I simply had no systems.",
     ],
     imageSrc: "/images/camden-headshot.jpg",
     imageAlt: "Camden Bennett, founder of SkemaLS",
@@ -428,7 +430,7 @@ export const faq = {
     {
       question: "Do I need to know how to use AI?",
       answer:
-        "No. Camden sets it up. You interact with it the same way you'd text someone — through a conversation interface. There's no software to configure, no dashboard to manage, and no technical background required.",
+        "If you can type in a word processing document, you can do this. Camden sets up the entire system. You interact with it the same way you'd send a text — type what's on your mind, read what comes back. There's nothing to install, no interface to learn, no settings to configure.",
     },
     {
       question: "How much time does this take each day?",

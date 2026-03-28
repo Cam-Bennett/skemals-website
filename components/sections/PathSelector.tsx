@@ -74,6 +74,14 @@ export default function PathSelector() {
           </div>
         ))}
       </div>
+
+      {/* Footnote */}
+      <p
+        className="font-body text-muted mt-8"
+        style={{ fontSize: "14px", lineHeight: 1.6 }}
+      >
+        {pathSelector.footnote}
+      </p>
     </SectionWrapper>
   );
 }
