@@ -34,13 +34,13 @@ export default function ContactPage() {
           fill
           priority
           sizes="100vw"
-          style={{ objectFit: "cover", opacity: 0.18, zIndex: 0 }}
+          style={{ objectFit: "cover", opacity: 0.45, zIndex: 0 }}
         />
         <div
           style={{
             position: "absolute",
             inset: 0,
-            background: "rgba(10,10,18,0.72)",
+            background: "rgba(10,10,18,0.48)",
             zIndex: 1,
           }}
         />
