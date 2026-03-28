@@ -303,6 +303,8 @@ export const qualifierForm = {
   backLabel: "Back",
   nextLabel: "Next",
   submitLabel: "See My Path",
+  afterSubmit:
+    "After you submit: Camden reviews your answers and responds within 24 hours to schedule a free 15-minute call. No pitch. No pressure. Just a real conversation about whether this is the right fit.",
 };
 
 export const cta = {

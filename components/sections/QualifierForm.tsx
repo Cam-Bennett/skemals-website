@@ -347,6 +347,14 @@ export default function QualifierForm() {
           </div>
         )}
       </div>
+
+      {/* After-submit expectations */}
+      <p
+        className="font-body text-muted mt-8"
+        style={{ fontSize: "13px", lineHeight: 1.8, maxWidth: "480px" }}
+      >
+        {qualifierForm.afterSubmit}
+      </p>
     </SectionWrapper>
   );
 }
