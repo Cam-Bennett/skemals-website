@@ -151,9 +151,19 @@ export const features = {
     },
   ],
   progressiveDeployment: {
-    boldText: "Progressive deployment.",
-    description:
-      "Week 1 is foundation — the daily log and pattern recognition. Week 2 adds complexity. Week 4 adds strategic modules. Every system you've abandoned failed because it gave you everything at once. This one doesn't.",
+    headline: "The system starts small. That's the point.",
+    body: [
+      "Week 1 is one habit: a 10-minute morning check-in. Nothing else is added until that's established. No new dashboards. No tech stack to configure. If you can type a text message, you can do this.",
+      "Every system you've abandoned failed for the same reason — it gave you everything at once. This one doesn't. Complexity is added as you level up, when the foundation is proven, not before.",
+    ],
+    weeks: [
+      "Week 1: Daily check-in and pattern recognition.",
+      "Week 2: Priority filtering and decision support added.",
+      "Week 4: Strategic modules and deeper pattern analysis.",
+      "Later: Notion connects as a persistent memory layer — tasks, leads, finances, goals, all accessible through conversation. No dashboard to manage. The system surfaces what matters.",
+    ],
+    closing:
+      "The check-in doesn't replace protected time. It produces it. Ten minutes of structured focus that ends with a clear priority for the next two hours. That's the whole mechanism.",
   },
 };
 

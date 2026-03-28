@@ -63,17 +63,50 @@ export default function Features() {
         style={{
           background: "rgba(124,58,237,0.04)",
           border: "1px solid rgba(124,58,237,0.12)",
-          padding: "24px 28px",
+          padding: "40px 40px",
+          maxWidth: "780px",
         }}
       >
+        <h3
+          className="font-heading font-bold text-text-main mb-6"
+          style={{ fontSize: "clamp(1.2rem, 2.5vw, 1.5rem)", lineHeight: 1.2, letterSpacing: "-0.01em" }}
+        >
+          {features.progressiveDeployment.headline}
+        </h3>
+
+        {features.progressiveDeployment.body.map((para, i) => (
+          <p
+            key={i}
+            className="font-body text-text-soft mb-4"
+            style={{ fontSize: "15px", lineHeight: 1.75 }}
+          >
+            {para}
+          </p>
+        ))}
+
+        <ul className="mb-6" style={{ listStyle: "none", padding: 0, margin: "24px 0" }}>
+          {features.progressiveDeployment.weeks.map((item, i) => (
+            <li
+              key={i}
+              className="font-body text-text-soft"
+              style={{
+                fontSize: "15px",
+                lineHeight: 1.75,
+                paddingLeft: "16px",
+                borderLeft: "2px solid rgba(124,58,237,0.4)",
+                marginBottom: "10px",
+              }}
+            >
+              {item}
+            </li>
+          ))}
+        </ul>
+
         <p
           className="font-body text-text-soft"
-          style={{ fontSize: "15px", lineHeight: 1.75 }}
+          style={{ fontSize: "15px", lineHeight: 1.75, fontStyle: "italic" }}
         >
-          <strong className="text-text-main font-semibold">
-            {features.progressiveDeployment.boldText}
-          </strong>{" "}
-          {features.progressiveDeployment.description}
+          {features.progressiveDeployment.closing}
         </p>
       </div>
     </SectionWrapper>
