@@ -134,8 +134,6 @@ export default function AboutPage() {
               "radial-gradient(ellipse at 80% 20%, rgba(220,38,38,0.07) 0%, transparent 55%), #0A0A12",
           }}
         >
-          <Eyebrow text={about.section1.eyebrow} />
-
           <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-start">
             {/* Headshot — left on desktop, top on mobile */}
             <div
@@ -167,6 +165,7 @@ export default function AboutPage() {
 
             {/* Right column — headline + paragraphs */}
             <div className="flex flex-col gap-5" style={{ maxWidth: "600px" }}>
+              <Eyebrow text={about.section1.eyebrow} />
               <h1
                 data-reveal
                 data-reveal-delay="80"
