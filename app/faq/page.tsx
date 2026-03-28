@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
 import SectionWrapper from "@/components/ui/SectionWrapper";
@@ -40,27 +41,46 @@ export default function FAQPage() {
         {/* ── Header section ──────────────────────────────────────── */}
         <SectionWrapper
           style={{
-            background:
-              "radial-gradient(ellipse at 70% 0%, rgba(220,38,38,0.08) 0%, transparent 55%), #0A0A12",
+            position: "relative",
+            overflow: "hidden",
+            background: "#0A0A12",
           }}
         >
-          <p
-            className="font-body font-semibold text-primary uppercase tracking-widest mb-4"
-            style={{ fontSize: "11px", letterSpacing: "0.14em" }}
-          >
-            {faq.eyebrow}
-          </p>
-          <h1
-            className="font-heading font-bold text-text-main"
+          <Image
+            src="/images/abstract-1.png"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            style={{ objectFit: "cover", opacity: 0.18, zIndex: 0 }}
+          />
+          <div
             style={{
-              fontSize: "clamp(2rem, 4.5vw, 3.2rem)",
-              lineHeight: 1.1,
-              letterSpacing: "-0.02em",
-              maxWidth: "720px",
+              position: "absolute",
+              inset: 0,
+              background: "rgba(10,10,18,0.72)",
+              zIndex: 1,
             }}
-          >
-            {faq.headline}
-          </h1>
+          />
+          <div style={{ position: "relative", zIndex: 2 }}>
+            <p
+              className="font-body font-semibold text-primary uppercase tracking-widest mb-4"
+              style={{ fontSize: "11px", letterSpacing: "0.14em" }}
+            >
+              {faq.eyebrow}
+            </p>
+            <h1
+              className="font-heading font-bold text-text-main"
+              style={{
+                fontSize: "clamp(2rem, 4.5vw, 3.2rem)",
+                lineHeight: 1.1,
+                letterSpacing: "-0.02em",
+                maxWidth: "720px",
+              }}
+            >
+              {faq.headline}
+            </h1>
+          </div>
         </SectionWrapper>
 
         {/* ── Accordion section ───────────────────────────────────── */}
