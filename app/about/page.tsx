@@ -155,37 +155,31 @@ export default function AboutPage() {
           />
           {/* Content sits above */}
           <div style={{ position: "relative", zIndex: 2 }}>
-          <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-start">
-            {/* Headshot — left on desktop, top on mobile */}
+            {/* Headshot */}
             <div
-              className="flex-shrink-0 w-full md:w-auto"
+              className="relative rounded-xl overflow-hidden reveal-hidden"
               data-reveal
               data-reveal-delay="0"
+              style={{
+                width: "min(220px, 100%)",
+                aspectRatio: "4 / 5",
+                border: "1px solid rgba(255,255,255,0.06)",
+                marginBottom: "32px",
+              }}
             >
-              <div
-                className="relative rounded-xl overflow-hidden reveal-hidden"
-                data-reveal
-                data-reveal-delay="0"
-                style={{
-                  width: "min(400px, 100%)",
-                  aspectRatio: "4 / 5",
-                  border: "1px solid rgba(255,255,255,0.06)",
-                }}
-              >
-                <Image
-                  src={about.section1.imageSrc}
-                  alt={about.section1.imageAlt}
-                  fill
-                  priority
-                  className="object-cover object-top"
-                  style={{ filter: "brightness(0.95) contrast(1.05)" }}
-                  sizes="(max-width: 768px) 100vw, 400px"
-                />
-              </div>
+              <Image
+                src={about.section1.imageSrc}
+                alt={about.section1.imageAlt}
+                fill
+                priority
+                className="object-cover object-top"
+                style={{ filter: "brightness(0.95) contrast(1.05)" }}
+                sizes="220px"
+              />
             </div>
 
-            {/* Right column — headline + paragraphs */}
-            <div className="flex flex-col gap-5" style={{ maxWidth: "600px" }}>
+            {/* Text — full left-aligned block */}
+            <div className="flex flex-col gap-5" style={{ maxWidth: "680px" }}>
               <Eyebrow text={about.section1.eyebrow} />
               <h1
                 data-reveal
@@ -204,7 +198,6 @@ export default function AboutPage() {
                 <BodyPara key={i} text={p} delayMs={(i + 1) * 80} />
               ))}
             </div>
-          </div>
           </div>
         </SectionWrapper>
 
