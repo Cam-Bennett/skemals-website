@@ -273,9 +273,9 @@ export const qualifierForm = {
       question: "Is the problem primarily…",
       type: "single-select" as const,
       options: [
-        { label: "Personal — habits, focus, consistency", value: "A" },
-        { label: "Business — operations, team, systems", value: "B" },
-        { label: "Both — I am the business", value: "C" },
+        { label: "More personal — habits, focus, consistency", value: "A" },
+        { label: "More business — operations, team, systems", value: "B" },
+        { label: "Both — it's all connected", value: "A" },
       ],
     },
     {
