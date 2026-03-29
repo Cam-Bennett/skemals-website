@@ -73,7 +73,7 @@ export const pathSelector = {
       color: "#2563EB",
       title: "The Business",
       description:
-        "The problem requires building systems for more than one person. Your people are capable — the workflows, communication, and execution layer underneath them isn't. You need a diagnostic and systems your team can actually run.",
+        "For teams of up to three people in the same business. The problem requires building systems for more than one person. Your people are capable — the workflows, communication, and execution layer underneath them isn't. You need a diagnostic and systems your team can actually run.",
       cta: "This sounds like me →",
     },
     {
