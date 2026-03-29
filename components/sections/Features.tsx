@@ -53,6 +53,24 @@ export default function Features() {
             >
               {card.description}
             </p>
+            {card.whichMeans && (
+              <p
+                className="font-body text-muted"
+                style={{
+                  fontSize: "13px",
+                  lineHeight: 1.7,
+                  fontStyle: "italic",
+                  marginTop: "14px",
+                  paddingTop: "14px",
+                  borderTop: "1px solid rgba(255,255,255,0.05)",
+                }}
+              >
+                <span style={{ fontStyle: "normal", fontWeight: 600, color: "#6B7280" }}>
+                  Which means:{" "}
+                </span>
+                {card.whichMeans}
+              </p>
+            )}
           </div>
         ))}
       </div>

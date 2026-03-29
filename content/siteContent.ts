@@ -197,31 +197,43 @@ export const features = {
       title: "Your Morning Log",
       description:
         "Capture your day before it captures you. Brain dump. Open tasks. Unfinished decisions. Ideas that'll disappear if you don't write them down. 10 minutes of structure that clears your head and sets your priority. This isn't journaling — it's a daily operating briefing. And the AI reads every word.",
+      whichMeans:
+        "You stop starting the day in reactive mode. The first 10 minutes produce a clear priority — and that priority protects the next two hours.",
     },
     {
       title: "See What You Can't See",
       description:
         "The AI catches contradictions between what you say you want and what you're actually doing. Avoidance patterns. Momentum trends. Energy cycles. The things you consistently skip, delay, or rationalize away — surfaced automatically.",
+      whichMeans:
+        "The patterns that have been costing you time and output for months get named. You can't fix what you can't see. The system sees it.",
     },
     {
       title: "Execution That Doesn't Flinch",
       description:
         "Missed a commitment? It notices. Avoiding the hard thing? It says so. But it also catches wins you'd overlook, reinforces momentum when you're building it, and reminds you of past efforts paying off right now. Brutal honesty. Genuine encouragement. Both.",
+      whichMeans:
+        "The structure holds even when your motivation doesn't. You get called out by a system you built yourself — which lands differently than being called out by another person.",
     },
     {
       title: "Capture Everything. Do What Matters.",
       description:
         "Ideas, tasks, and decisions — captured before they're gone. Then the AI triages by impact using your decision framework. Highest-leverage actions rise. Busy work gets flagged. What to delegate, defer, or delete becomes obvious.",
+      whichMeans:
+        "Nothing falls through the cracks. The task list stops being a source of anxiety and starts being a ranked action sequence.",
     },
     {
       title: "Decide Faster. Decide Better.",
       description:
         "Describe any opportunity or situation. The AI runs it through your 10-year vision and personal values. Returns a recommendation filtered through what matters to you — not generic advice from someone who doesn't know your business.",
+      whichMeans:
+        "You stop second-guessing decisions that should be clear. The system filters every choice through what you've already decided matters — so the answer isn't generic advice, it's yours.",
     },
     {
       title: "Proof You're Moving",
       description:
         "Weekly AI-generated reports tracking entries, wins completed, patterns identified, and gaps. Hard data on what's actually happening — not how it feels. Your coach reviews these and adjusts the system. You own the data.",
+      whichMeans:
+        "You stop measuring your week by how busy it felt. You measure it by what actually moved. The data shows you where the execution gap is closing — and where it isn't.",
     },
   ],
   progressiveDeployment: {
