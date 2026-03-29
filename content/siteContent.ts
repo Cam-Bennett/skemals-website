@@ -785,7 +785,6 @@ export const pricing = {
   hero: {
     eyebrow: "INVESTMENT",
     headline: "What SkemaLS costs — and what it's worth.",
-    body: "The right question isn't what you pay per month. It's what it costs to stay stuck for another year. Recovered time, clearer decisions, forward momentum on the things that keep getting pushed — that's the return. The investment is what makes the system real.",
   },
   investmentContext: {
     eyebrow: "THE INVESTMENT IN CONTEXT.",
@@ -845,18 +844,20 @@ export const pricing = {
     body: [
       "PATH C triggers when solving the problem requires Camden to produce external deliverables that live outside the client's personal system — a research brief, a strategic document, a legal education resource, a knowledge base built for a specific business situation.",
       "MySkema is still the foundation. The extra work is the overlay.",
-      "Not sure which path applies to you? The intake determines it. Most clients find out during the qualifier conversation.",
+      "Not sure which path applies to you? The intake determines it. Most clients find out during the discovery conversation.",
     ],
     price: "Custom quote based on scope.",
+    scopeParagraph:
+      "PATH C scope is determined during the discovery conversation. Every engagement includes MySkema as the foundation — custom deliverables are scoped and built on top of it.",
     cta: { label: "Apply for a Discovery Call", href: "/#qualifier" },
   },
   riskReversal: {
     eyebrow: "HOW THIS WORKS — BEFORE YOU COMMIT.",
     paragraphs: [
       "SkemaLS doesn't take every client who applies.",
-      "The qualifier conversation is a mutual evaluation. You're assessing whether this is the right fit for your business. Camden is assessing whether he can produce the results you're looking for. If it isn't a fit — for either side — that gets said directly. No pressure close. No follow-up sequences.",
+      "The discovery conversation is a mutual evaluation. You're assessing whether this is the right fit for your business. Camden is assessing whether he can produce the results you're looking for. If it isn't a fit — for either side — that gets said directly. No pressure close. No follow-up sequences.",
       "The intake process exists because the wrong engagement serves no one. A client who isn't ready to show up consistently won't get results. A business Camden can't move forward isn't worth the calendar time. The filter protects both parties.",
-      "If you get through the qualifier and Camden believes he can produce results for your situation, you'll know exactly what the first 90 days look like before you agree to anything.",
+      "If you get through the application process and Camden believes he can produce results for your situation, you'll know exactly what the first 90 days look like before you agree to anything.",
     ],
   },
   faq: {
@@ -866,7 +867,7 @@ export const pricing = {
       {
         question: "Is there a minimum commitment?",
         answer: [
-          "We're establishing a three-month minimum across all engagements. Transformation doesn't happen in thirty days. Three months gives the system enough cycles to produce real pattern data and gives the coaching enough time to produce results you can point to. You'll know by month two whether it's working.",
+          "Three months is the recommended baseline. That's the minimum time for the system to accumulate real pattern data and produce results you can measure. Month-to-month is available but the system won't show what it's capable of in less than 90 days.",
         ],
       },
       {
@@ -876,21 +877,9 @@ export const pricing = {
         ],
       },
       {
-        question: "What's included in the monthly investment?",
-        answer: [
-          "The intake form and deep-dive interview. Custom system build — Project Instructions, Interview Summary, Setup Email. Weekly coaching review of your Friday summary. Progressive system upgrades as you level up. Camden's pattern recognition across your data accumulated over weeks and months — not just a check-in call.",
-        ],
-      },
-      {
         question: "What does it cost to run the system day-to-day?",
         answer: [
           "A Claude account runs approximately $20/month. That's yours — separate from the coaching investment. You own it whether we're working together or not.",
-        ],
-      },
-      {
-        question: "What if I'm not ready for a full engagement?",
-        answer: [
-          "The qualifier takes 90 seconds. If you're not the right fit yet, Camden will tell you directly and you won't be pushed toward a call. No pitch. No pressure.",
         ],
       },
     ],
@@ -898,9 +887,9 @@ export const pricing = {
   footerCta: {
     headline: "The system starts at $1,000/month.",
     subheadline:
-      "That's roughly $33/day for an AI system that runs every morning, catches the patterns you can't see, and gets sharper every week.",
+      "At $1,000 a month for three months, that's around $8 a day for the year — for a system that actively manages your execution every morning, gets sharper every week, and stays with you after the active coaching is complete.",
     cta: { label: "Apply for a Discovery Call", href: "/#qualifier" },
     microCopy:
-      "No commitment until there's a fit. Camden reviews every qualifier personally.",
+      "No commitment until there's a fit. Camden reviews every application personally.",
   },
 };

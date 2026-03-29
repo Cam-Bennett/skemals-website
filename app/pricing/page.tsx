@@ -57,6 +57,7 @@ function PathSection({
   priceNote,
   includes,
   includesNote,
+  scopeParagraph,
   ctaLabel,
   ctaHref,
   alt,
@@ -67,8 +68,9 @@ function PathSection({
   body: string[];
   price: string;
   priceNote?: string;
-  includes: string[];
+  includes?: string[];
   includesNote?: string;
+  scopeParagraph?: string;
   ctaLabel: string;
   ctaHref: string;
   alt?: boolean;
@@ -105,17 +107,21 @@ function PathSection({
 
         <PriceLine price={price} note={priceNote} />
 
-        <p
-          className="font-body font-semibold text-text-main mb-4"
-          style={{ fontSize: "12px", letterSpacing: "0.08em", textTransform: "uppercase" }}
-        >
-          Includes
-        </p>
-        <ul className="flex flex-col gap-2 mb-4" style={{ listStyle: "none", padding: 0 }}>
-          {includes.map((item, i) => (
-            <IncludeItem key={i} text={item} />
-          ))}
-        </ul>
+        {includes && includes.length > 0 && (
+          <>
+            <p
+              className="font-body font-semibold text-text-main mb-4"
+              style={{ fontSize: "12px", letterSpacing: "0.08em", textTransform: "uppercase" }}
+            >
+              Includes
+            </p>
+            <ul className="flex flex-col gap-2 mb-4" style={{ listStyle: "none", padding: 0 }}>
+              {includes.map((item, i) => (
+                <IncludeItem key={i} text={item} />
+              ))}
+            </ul>
+          </>
+        )}
 
         {includesNote && (
           <p
@@ -128,6 +134,15 @@ function PathSection({
             }}
           >
             {includesNote}
+          </p>
+        )}
+
+        {scopeParagraph && (
+          <p
+            className="font-body text-text-soft mb-8"
+            style={{ fontSize: "16px", lineHeight: 1.8 }}
+          >
+            {scopeParagraph}
           </p>
         )}
 
@@ -163,7 +178,7 @@ export default function PricingPage() {
               {pricing.hero.eyebrow}
             </p>
             <h1
-              className="font-heading font-bold text-text-main mb-6"
+              className="font-heading font-bold text-text-main"
               style={{
                 fontSize: "clamp(2rem, 4.5vw, 3.2rem)",
                 lineHeight: 1.1,
@@ -172,12 +187,6 @@ export default function PricingPage() {
             >
               {pricing.hero.headline}
             </h1>
-            <p
-              className="font-body text-text-soft"
-              style={{ fontSize: "18px", lineHeight: 1.8, maxWidth: "620px" }}
-            >
-              {pricing.hero.body}
-            </p>
           </div>
         </div>
       </section>
@@ -239,7 +248,7 @@ export default function PricingPage() {
         headline={pricing.pathC.headline}
         body={pricing.pathC.body}
         price={pricing.pathC.price}
-        includes={[]}
+        scopeParagraph={pricing.pathC.scopeParagraph}
         ctaLabel={pricing.pathC.cta.label}
         ctaHref={pricing.pathC.cta.href}
       />
