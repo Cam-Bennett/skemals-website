@@ -48,12 +48,20 @@ export default function HowItWorks() {
             >
               {step.title}
             </h3>
-            <p
-              className="font-body text-text-soft"
-              style={{ fontSize: "15px", lineHeight: 1.75 }}
-            >
-              {step.description}
-            </p>
+            <div className="flex flex-col gap-3">
+              {(Array.isArray(step.description)
+                ? step.description
+                : [step.description]
+              ).map((para, i) => (
+                <p
+                  key={i}
+                  className="font-body text-text-soft"
+                  style={{ fontSize: "15px", lineHeight: 1.75 }}
+                >
+                  {para}
+                </p>
+              ))}
+            </div>
           </div>
         ))}
       </div>

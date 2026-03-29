@@ -192,8 +192,11 @@ export const howItWorks = {
     {
       number: "02",
       title: "Deploy",
-      description:
-        "Your AI system lives in your own Claude account. You own it — it's not a subscription to someone else's platform. The morning check-in takes 10 minutes. The system knows your history. Every conversation builds on the last. If you can type, you can use it. Camden handles the configuration. You handle the conversation.",
+      description: [
+        "Your AI system lives in your own Claude account. You own it — it's not a subscription to someone else's platform.",
+        "The morning check-in takes 10 minutes. You open the system, type the time and date, and say: Let's run a journal. A gratitude entry. A brain dump of whatever's creating noise. A stream of consciousness that captures what's actually on your mind. A rotating daily theme. The session ends with the specific things you need to protect time for today.",
+        "The system knows your history. Every conversation builds on the last.",
+      ],
     },
     {
       number: "03",
@@ -477,7 +480,7 @@ export const about = {
   },
   section2: {
     eyebrow: "THE BACKGROUND",
-    headline: "Pattern recognition isn't new to me.",
+    headline: "Different domain. Identical mechanism.",
     paragraphs: [
       "I grew up in Wyoming. Joined the Navy at 19 and spent a total of fifteen years there.",
       "My first job was as a Navy Diver — underwater inspections, hull cleanings, repairs on ships and submarines, work inside ballast tanks, occasional light salvage. It's a job that demands precision and focus in unforgiving conditions.",
