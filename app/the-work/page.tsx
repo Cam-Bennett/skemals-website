@@ -3,12 +3,14 @@ import Link from "next/link";
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
 import SectionWrapper from "@/components/ui/SectionWrapper";
+import Btn from "@/components/ui/Btn";
 import { articles } from "@/content/articles";
+import { theWork } from "@/content/siteContent";
 
 export const metadata: Metadata = {
   title: "The Work — SkemaLS",
   description:
-    "Case studies, process writing, and field notes from inside the system. Written by Camden Bennett.",
+    "Case studies, process writing, and field notes from inside the system. Written for business owners who've already tried the standard solutions.",
 };
 
 export default function TheWorkPage() {
@@ -38,7 +40,7 @@ export default function TheWorkPage() {
             maxWidth: "680px",
           }}
         >
-          Case studies, process writing, and field notes from inside the system.
+          {theWork.headline}
         </h1>
       </SectionWrapper>
 
@@ -97,6 +99,27 @@ export default function TheWorkPage() {
               </article>
             </Link>
           ))}
+        </div>
+      </SectionWrapper>
+
+      {/* ── Bottom CTA ─────────────────────────────────────────────── */}
+      <SectionWrapper>
+        <div style={{ maxWidth: "600px" }}>
+          <p
+            className="font-body font-semibold text-primary uppercase tracking-widest mb-6"
+            style={{ fontSize: "11px", letterSpacing: "0.14em" }}
+          >
+            {theWork.cta.eyebrow}
+          </p>
+          <p
+            className="font-body text-text-soft mb-8"
+            style={{ fontSize: "17px", lineHeight: 1.8 }}
+          >
+            {theWork.cta.body}
+          </p>
+          <Btn as="a" href={theWork.cta.buttonHref} size="lg">
+            {theWork.cta.buttonLabel}
+          </Btn>
         </div>
       </SectionWrapper>
 

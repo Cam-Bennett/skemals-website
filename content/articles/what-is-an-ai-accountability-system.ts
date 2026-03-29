@@ -3,11 +3,11 @@ import type { Article } from "./types";
 const article: Article = {
   slug: "what-is-an-ai-accountability-system",
   title:
-    "What Is an AI Accountability System — and How Is It Different From Hiring a Coach?",
+    "What Is an AI Execution System — and How Is It Different From Hiring a Coach?",
   date: "2026-03-28",
   category: "SYSTEMS",
   excerpt:
-    "Most people know they need accountability. The question they can't answer is what form it should actually take.",
+    "Most people know they need a better system. The question they can't answer is what form it should actually take — and why everything they've tried hasn't closed the gap.",
   sections: [
     {
       type: "paragraph",

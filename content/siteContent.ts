@@ -894,3 +894,14 @@ export const pricing = {
       "No commitment until there's a fit. Camden reviews every application personally.",
   },
 };
+
+export const theWork = {
+  headline:
+    "Case studies, process writing, and field notes from inside the system. Written for business owners who've already tried the standard solutions.",
+  cta: {
+    eyebrow: "READY TO START?",
+    body: "The articles describe what SkemaLS does and why it works. The application is where it starts.",
+    buttonLabel: "See If You Qualify",
+    buttonHref: "/#qualifier",
+  },
+};
