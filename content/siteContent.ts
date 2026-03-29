@@ -519,53 +519,130 @@ export const faq = {
   items: [
     {
       question: "What is SkemaLS?",
-      answer:
+      answer: [
         "SkemaLS builds custom AI execution systems for business owners and individuals. The system — called MySkema — is configured around your specific goals, patterns, and the ways you consistently get stuck. It runs in your own Claude account every morning. Your coach reviews your progress weekly and adjusts the system over time. It's not an app, not a course, and not a template. Every deployment is built from scratch.",
-    },
-    {
-      question: "How is this different from hiring a coach?",
-      answer:
-        "Traditional coaching produces insights. SkemaLS produces a system that runs whether you remember to engage with it or not. The AI holds the accountability between coaching sessions — that's the gap traditional coaching doesn't close. You get both the system and the coach.",
+        "The coaching layer is backed by over a dozen research documents built from real client data — weekly MySkema updates analyzed across months of engagements. The pattern recognition isn't guesswork. It's documented.",
+      ],
     },
     {
       question: "What is MySkema?",
-      answer:
-        "MySkema is your personal AI system — a custom Claude project configured around how you actually work. You use it every morning in a 10-minute check-in. It tracks your goals, captures your thinking, surfaces patterns you can't see from inside them, and holds you accountable to what you said you'd do. You own the account. You own the data.",
+      answer: [
+        "MySkema is your personal AI system — a custom Claude project configured around how you specifically work. Your goals, your values, your decision framework, your resistance patterns.",
+        "You use it every morning in a 10-minute check-in. It captures your thinking, tracks your priorities, and catches the contradictions between what you say you want and what you're actually spending your time on. Over weeks and months it accumulates enough data about your patterns to name the loops you're living inside — the ones you can't see from the inside.",
+        "You own the account. You own the data. If you stop working with Camden, the system keeps running.",
+      ],
+    },
+    {
+      question: "How is this different from hiring a coach?",
+      answer: [
+        "Traditional coaching produces insights. Valuable ones. But insights without daily structure fade within days.",
+        "SkemaLS produces a system that operates between sessions — a daily check-in that captures what's actually happening in your work, surfaces the patterns your coach needs to see, and keeps the priorities Camden identified with you in front of you every morning.",
+        "The system requires your engagement. That's not a caveat — it's the mechanism. What's different from a journal or a coaching call is what happens with your engagement: it gets read, analyzed, and responded to every week. The data accumulates. The coaching gets more precise over time because it's built on months of your actual behavioral data, not a 50-minute snapshot.",
+        "The only real point of failure is disengagement. If you show up, the system works. The 10-minute morning check-in may become the easiest part of your day to protect — because it's the part that makes everything else clearer.",
+      ],
+    },
+    {
+      question: "I've tried execution systems before. They didn't stick.",
+      answer: [
+        "They didn't stick because they were designed for a generic person and deployed all at once.",
+        "Generic systems break at the first point they don't match how you actually work — your energy patterns, your interruption reality, your specific failure modes. SkemaLS starts with a 60–75 minute interview specifically to find those points before building anything. The system is configured around what that conversation reveals, not around a template.",
+        "It also starts small. Week 1 is one habit: a 10-minute morning check-in. Nothing else is added until that's established. The system earns its complexity — it doesn't front-load it.",
+        "If you've abandoned every other system you've tried, that's not evidence that you can't do this. It's evidence that none of them were built for you.",
+      ],
+    },
+    {
+      question: "Isn't this just ChatGPT? I could do this myself.",
+      answer: [
+        "You could open ChatGPT and ask it to hold you accountable. It will agree to do that. Next Tuesday it might not remember any of it.",
+        "The difference isn't the AI capability. It's the configuration, the context retention, and the human interpretation layer.",
+        "MySkema is a custom Claude project built from a 60–75 minute interview about how you specifically work. It retains everything across your entire engagement. It knows your goals, your patterns, your avoidance loops, and what you said you'd do last week. A self-configured general-purpose tool doesn't have any of that — because nobody built it around you.",
+        "And then there's Camden. He reads your weekly summary every Friday. He identifies what the AI surfaced, what it missed, and what the system needs to handle better. That human layer is what no self-configured ChatGPT prompt replicates.",
+      ],
     },
     {
       question: "Do I need to know how to use AI?",
-      answer:
-        "If you can type in a word processing document, you can do this. Camden sets up the entire system. You interact with it the same way you'd send a text — type what's on your mind, read what comes back. There's nothing to install, no interface to learn, no settings to configure.",
+      answer: [
+        "No. Camden builds the entire system. You interact with it the same way you'd type a text message or a word processing document — you type what's on your mind, and it responds. There's no software to install, only a very basic interface to learn, and minimal settings to configure. If you can use common software, you can use this.",
+      ],
+    },
+    {
+      question: "What tools do I need?",
+      answer: [
+        "Only one.",
+        "Claude is the AI platform the system runs in. Camden configures it — you just use it. That's all you need to start.",
+        "If you want to add persistent memory for tasks, leads, finances, and goals later, Notion connects as a second layer. You access it through conversation, not a dashboard. Most clients start with Claude only and add Notion as the system grows.",
+      ],
+    },
+    {
+      question: "How long before the system feels natural?",
+      answer: [
+        "The first week starts the habit: a 10-minute morning check-in. Nothing more is added until that's established.",
+        "Most clients feel the difference within the first few days — not because anything dramatic has changed, but because starting the day with a clear priority changes how the rest of it goes. Reactive mode doesn't disappear. It just loses its grip on your entire schedule.",
+        "Week 2 might add a layer. Week 4 might add another. By month two, the configuration reflects weeks of your actual patterns — something a generic template can never do.",
+        "The slow start is the design. It's what helps the system hold where others don't.",
+      ],
     },
     {
       question: "How much time does this take each day?",
-      answer:
-        "The morning check-in takes 10 minutes. The weekly summary takes about 5 minutes to generate and send. The system does the rest.",
+      answer: [
+        "The morning check-in takes 10 minutes. The weekly summary takes about 5 minutes to generate and send. That's it. The system does the rest.",
+      ],
     },
     {
       question: "What happens in the first week?",
-      answer:
-        "You complete an intake form. Camden uses your responses to generate custom interview questions. You spend about an hour together — he asks everything the form surfaced, goes deeper where needed, and records the conversation. Within days you receive your Project Instructions, an Interview Summary with coaching feedback, and a Setup Email. Your system goes live and your first morning check-in begins.",
+      answer: [
+        "Before the interview, you complete an intake form. Camden uses your responses to generate a custom set of interview questions specific to your situation — not a generic questionnaire.",
+        "The interview is about an hour. Camden asks everything the form surfaced, goes deeper where the situation warrants it, and records the whole conversation.",
+        "Within 48–72 hours you receive three things: your Project Instructions — the configuration that makes the system yours — an Interview Summary with direct coaching feedback on what Camden observed, and a Setup Email walking you through getting started. Your system goes live. Your first morning check-in begins.",
+      ],
     },
     {
       question: "What does the weekly review look like?",
-      answer:
-        "Every Friday, your system generates a weekly summary. You send it to Camden by email. He runs it through an analysis engine built from client pattern data and coaching frameworks, and sends back a coaching response: what you're doing well, what the data shows you're avoiding, and — when you're ready — additions to your system that take it to the next level.",
+      answer: [
+        "Every Friday, you direct your system to generate a weekly summary. You send it to Camden by email.",
+        "He reads it against over a dozen research documents and real client data — patterns identified across months of engagements. Then he sends back a direct coaching response: what you're doing well, what the data shows you're consistently avoiding, and — when you're ready — the next addition to your system.",
+        "This happens via email. It's a written analysis of your actual behavioral data, delivered to your inbox. The coaching gets more precise over time because it's built on your history, not a 50-minute coaching call snapshot. The email check-in can be accompanied by a coaching call if desired.",
+      ],
+    },
+    {
+      question: "What if I fall off the system or get busy?",
+      answer: [
+        "That's expected. The system is designed for it.",
+        "Drift is not a failure condition — it's a data point. When your check-in frequency drops, the weekly summary reflects it. When your stated priorities stop matching your actual activity, the pattern surfaces. Camden sees it in the Friday data before you've consciously registered it yourself.",
+        "The only real point of failure is extended disengagement. Missing a few days is normal. Abandoning the check-in entirely for weeks breaks the feedback loop. If that happens, Camden will address it directly — that's what the weekly review is for.",
+        "The system doesn't require perfect consistency to produce value. It requires enough engagement to generate data. That threshold is lower than most people expect.",
+      ],
+    },
+    {
+      question: "$1,000/month is a lot.",
+      answer: [
+        "It depends entirely on what the gap is costing you.",
+        "If your business is producing $300,000 a year and executing at 70% of its potential, the execution gap is $90,000. SkemaLS at $1,000/month for three months costs $3,000. If it closes 20% of that gap, the return is $18,000. If it closes half — the math becomes obvious.",
+        "The question isn't whether $1,000/month is a lot in isolation. It's what it costs to leave the execution gap open for another year.",
+        "Most people who do that math don't need more convincing.",
+      ],
     },
     {
       question: "Is this a subscription? Can I cancel?",
-      answer:
-        "Pricing is monthly. You can cancel at any time. Your Claude account and everything in it belongs to you — no lock-in, no black box. If you cancel, your system stays in your account and continues to work.",
+      answer: [
+        "Pricing is monthly with a recommended three-month baseline — that's the minimum time for the system to accumulate real pattern data and for the coaching to produce results you can measure.",
+        "What you own at the end of that engagement: your Claude account, your Project Instructions, your entire conversation history, and a system that keeps running whether you continue coaching or not. There's no platform to be locked into. The system lives in your account. It's yours.",
+        "You can cancel at any time. If you do, you'll still receive full service for the amount of time you paid for.",
+      ],
     },
     {
       question: "What kinds of businesses is this built for?",
-      answer:
-        "PATH A serves individuals — solo operators, executives, and business owners who are the bottleneck in their own performance. PATH B serves organizations where the dysfunction is structural. PATH C serves business owners where personal and business challenges are inseparable. If you run something and feel behind your own potential, it's built for you.",
+      answer: [
+        "PATH A is for individuals — solo operators, executives, and business owners who are the bottleneck in their own execution. One person, one system.",
+        "PATH B is for teams of up to three people in the same organization where the dysfunction is structural. The people are capable — the systems underneath them aren't.",
+        "PATH C is for situations that don't fit either path — larger organizations, engagements that require custom deliverables, or complexity that needs investigation before anything can be scoped.",
+        "SkemaLS has worked for a real estate broker, serial entrepreneurs, executive directors, property managers, and more. If you run something and feel behind your own potential, it's built for you.",
+      ],
     },
   ],
   cta: {
     headline: "Still have questions?",
-    body: "Camden reviews every qualifier personally. The fastest way to get answers is to start.",
+    body: "The fastest way to get answers is to apply. Camden reviews every application personally.",
     buttonLabel: "See If You Qualify",
     buttonHref: "/#qualifier",
   },
@@ -788,28 +865,33 @@ export const pricing = {
     items: [
       {
         question: "Is there a minimum commitment?",
-        answer:
+        answer: [
           "We're establishing a three-month minimum across all engagements. Transformation doesn't happen in thirty days. Three months gives the system enough cycles to produce real pattern data and gives the coaching enough time to produce results you can point to. You'll know by month two whether it's working.",
+        ],
       },
       {
         question: "Do you offer discounts?",
-        answer:
+        answer: [
           "No. If the scope isn't right, we adjust the scope. Discounting a price that was set correctly doesn't serve either of us.",
+        ],
       },
       {
         question: "What's included in the monthly investment?",
-        answer:
+        answer: [
           "The intake form and deep-dive interview. Custom system build — Project Instructions, Interview Summary, Setup Email. Weekly coaching review of your Friday summary. Progressive system upgrades as you level up. Camden's pattern recognition across your data accumulated over weeks and months — not just a check-in call.",
+        ],
       },
       {
         question: "What does it cost to run the system day-to-day?",
-        answer:
+        answer: [
           "A Claude account runs approximately $20/month. That's yours — separate from the coaching investment. You own it whether we're working together or not.",
+        ],
       },
       {
         question: "What if I'm not ready for a full engagement?",
-        answer:
+        answer: [
           "The qualifier takes 90 seconds. If you're not the right fit yet, Camden will tell you directly and you won't be pushed toward a call. No pitch. No pressure.",
+        ],
       },
     ],
   },

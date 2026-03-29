@@ -22,7 +22,7 @@ const faqSchema = {
     name: item.question,
     acceptedAnswer: {
       "@type": "Answer",
-      text: item.answer,
+      text: item.answer.join("\n\n"),
     },
   })),
 };

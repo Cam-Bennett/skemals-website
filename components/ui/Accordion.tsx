@@ -4,7 +4,7 @@ import { useState } from "react";
 
 interface AccordionItem {
   question: string;
-  answer: string;
+  answer: string[];
 }
 
 interface AccordionProps {
@@ -73,24 +73,27 @@ export default function Accordion({ items }: AccordionProps) {
             {/* Answer panel — CSS max-height transition for smooth expand */}
             <div
               style={{
-                maxHeight: isOpen ? "600px" : "0",
+                maxHeight: isOpen ? "2000px" : "0",
                 overflow: "hidden",
                 transition: isOpen
-                  ? "max-height 0.4s cubic-bezier(0.16,1,0.3,1)"
+                  ? "max-height 0.5s cubic-bezier(0.16,1,0.3,1)"
                   : "max-height 0.25s cubic-bezier(0.4,0,1,1)",
               }}
             >
-              <p
-                className="font-body text-text-soft"
-                style={{
-                  fontSize: "16px",
-                  lineHeight: 1.8,
-                  paddingBottom: "24px",
-                  maxWidth: "680px",
-                }}
+              <div
+                className="flex flex-col"
+                style={{ gap: "16px", paddingBottom: "24px", maxWidth: "680px" }}
               >
-                {item.answer}
-              </p>
+                {item.answer.map((para, j) => (
+                  <p
+                    key={j}
+                    className="font-body text-text-soft"
+                    style={{ fontSize: "16px", lineHeight: 1.8 }}
+                  >
+                    {para}
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
         );
