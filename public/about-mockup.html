@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Page Mockup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Karla:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:     #0A0A12;
+      --bg-alt: #0E0E18;
+      --card:   #111119;
+      --text:   #F1F0EE;
+      --soft:   #C4C3BF;
+      --muted:  #6B7280;
+      --red:    #DC2626;
+      --border: rgba(255,255,255,0.07);
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Karla', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ──────────────────────────────────────────── */
+    nav {
+      height: 64px;
+      background: rgba(10,10,18,0.9);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      padding: 0 48px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(14px);
+    }
+    nav .logo { font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: var(--red); font-size: 18px; margin-right: auto; }
+    nav a { font-family: 'Karla', sans-serif; color: var(--muted); font-size: 14px; text-decoration: none; margin-left: 28px; }
+    nav .cta { background: var(--red); color: #fff; padding: 8px 18px; border-radius: 6px; font-weight: 600; font-size: 13px; margin-left: 28px; }
+
+    /* ── PAGE WRAPPER — provides dark bg below hero ───── */
+    .page-wrapper {
+      background: var(--bg);
+    }
+
+    /* ── HERO — tall, pure image, full width ──────────── */
+    .hero {
+      position: relative;
+      height: 740px;
+      overflow: hidden;
+      background: var(--bg);
+    }
+    .hero-image {
+      position: absolute;
+      inset: 0;
+      background-image: url('/images/abstract-3.png');
+      background-size: cover;
+      background-position: center 20%;
+      opacity: 0.95;
+    }
+    /* Bottom fade — just the last sliver */
+    .hero-fade-bottom {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 160px;
+      background: linear-gradient(to bottom, transparent, #0A0A12);
+    }
+
+    /* ── CONTENT — transparent bg, floats over hero ───── */
+    .content-section {
+      background: transparent;
+      padding: 0 64px 0;
+      margin-top: -460px;
+      position: relative;
+      z-index: 10;
+    }
+
+    /* ── HEADSHOT CARD — sits directly on hero image ──── */
+    .headshot-card {
+      width: 210px;
+      margin-bottom: 24px;
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 14px;
+      padding: 12px;
+      box-shadow:
+        0 32px 80px rgba(0,0,0,0.65),
+        0 4px 20px rgba(0,0,0,0.50);
+    }
+    .headshot-card img {
+      width: 100%;
+      border-radius: 8px;
+      display: block;
+      object-fit: cover;
+      aspect-ratio: 4 / 5;
+      filter: brightness(0.96) contrast(1.04);
+    }
+    .headshot-card .card-label {
+      font-family: 'Karla', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 10px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    /* ── EYEBROW ─────────────────────────────────────── */
+    .eyebrow {
+      font-family: 'Karla', sans-serif;
+      font-weight: 600;
+      font-size: 11px;
+      color: var(--red);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      margin-bottom: 16px;
+    }
+
+    /* ── HEADLINE — partially over image ─────────────── */
+    .section-headline {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      max-width: 720px;
+      margin-bottom: 0;
+      /* text-shadow for legibility where image is bright */
+      text-shadow: 0 2px 24px rgba(0,0,0,0.6);
+    }
+
+    /* ── DARK BODY ZONE — below hero ─────────────────── */
+    .body-section {
+      background: var(--bg);
+      padding: 48px 64px 96px;
+    }
+    .body-text {
+      max-width: 680px;
+    }
+    .body-text p {
+      font-family: 'Karla', sans-serif;
+      font-size: 17px;
+      line-height: 1.78;
+      color: var(--soft);
+      margin-bottom: 20px;
+    }
+    .body-text p.punchline {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* ── SECTION 2 ───────────────────────────────────── */
+    .section-alt {
+      background: var(--bg-alt);
+      padding: 80px 64px;
+    }
+    .section-alt .eyebrow { margin-bottom: 16px; }
+    .section-alt h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 32px;
+      max-width: 640px;
+    }
+    .section-alt p {
+      font-family: 'Karla', sans-serif;
+      font-size: 17px;
+      line-height: 1.78;
+      color: var(--soft);
+      max-width: 680px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <span class="logo">SkemaLS</span>
+    <a href="#">About</a>
+    <a href="#">The Work</a>
+    <a href="#">FAQ</a>
+    <a href="#">Contact</a>
+    <a href="#" class="cta">See If You Qualify</a>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <!-- ── HERO — pure image, no text ───────────────── -->
+    <section class="hero">
+      <div class="hero-image"></div>
+      <div class="hero-fade-bottom"></div>
+    </section>
+
+    <!-- ── CONTENT — transparent, floats over hero ──── -->
+    <section class="content-section">
+      <div class="headshot-card">
+        <img src="/images/camden-headshot.jpg" alt="Camden Bennett" />
+        <p class="card-label">Camden Bennett · Founder</p>
+      </div>
+      <p class="eyebrow">About Camden</p>
+      <h1 class="section-headline">I built this because I needed it. Not because I'd figured it out.</h1>
+    </section>
+
+    <!-- ── BODY — dark section below hero ───────────── -->
+    <section class="body-section">
+      <div class="body-text">
+        <p>The work was there. I knew what would grow the brokerage — email outreach, strategic planning, the high-ROI activities that compound over time. I knew exactly what those were.</p>
+        <p class="punchline">I just couldn't get to them.</p>
+        <p>Every day I showed up intending to move something forward. By the end of it, I'd handled interruptions, answered questions, responded to emails, and put out whatever fires had started that day. The reactive layer of the business consumed everything. The work that actually mattered — the kind that builds something instead of just maintaining it — kept getting pushed.</p>
+        <p>The cost wasn't measurable in dollars. It was measured in the accumulation of things I knew I should be doing that I never got to. The stress of knowing the gap was widening. The exhaustion of working hard while feeling perpetually behind.</p>
+        <p>I didn't recognize it as a systems problem for a long time. I thought I needed more discipline. I tried using headphones to shut out office activity, earlier start times, notebooks, multiple calendars, productivity books, task list apps, unstructured AI tools. Some of it helped briefly. None of it lasted.</p>
+        <p>The shift came when I understood what was actually happening: context switching was destroying my capacity to do meaningful work, and I had no architecture protecting the time that mattered from everything competing for it.</p>
+        <p class="punchline">So I built one.</p>
+      </div>
+    </section>
+
+    <!-- ── SECTION 2 preview ─────────────────────────── -->
+    <section class="section-alt">
+      <p class="eyebrow">The Background</p>
+      <h2>Different domain. Identical mechanism.</h2>
+      <p>I grew up in Wyoming. Joined the Navy at 19 and spent a total of fifteen years there.</p>
+      <p>My first job was as a Navy Diver — underwater inspections, hull cleanings, repairs on ships and submarines, work inside ballast tanks, occasional light salvage. It's a job that demands precision and focus in unforgiving conditions.</p>
+      <p>I earned a dual bachelor's degree in English and Anthropology between tours, which led to a commission as an Intelligence Officer...</p>
+    </section>
+
+  </div>
+
+</body>
+</html>
