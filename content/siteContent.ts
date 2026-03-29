@@ -359,82 +359,60 @@ export const founder = {
 
 export const qualifierForm = {
   label: "See If You Qualify",
-  headline: "Find out which path is yours.",
-  subhead: "Five questions. 90 seconds. No sales call until there's a fit.",
+  headline: "Apply for a Discovery Call.",
+  subhead: "Six questions. Takes three minutes. Camden reviews every application personally.",
   steps: [
     {
+      id: "businessContext",
+      question: "What type of business do you run, and approximately what's your annual revenue?",
+      type: "textarea" as const,
+      placeholder: "",
+    },
+    {
       id: "path",
-      question: "Is the problem primarily…",
+      question: "Is the problem primarily personal, organizational, or both?",
       type: "single-select" as const,
       options: [
-        { label: "More personal — habits, focus, consistency", value: "A" },
+        { label: "More personal — habits, focus, execution", value: "A" },
         { label: "More business — operations, team, systems", value: "B" },
-        { label: "Both — it's all connected", value: "both" },
+        { label: "Both — it's all connected", value: "A_both" },
         {
-          label:
-            "I lead a larger team or organization — my situation needs a custom conversation",
-          value: "custom",
+          label: "I lead a larger team or organization — my situation needs a custom conversation",
+          value: "C",
         },
       ],
     },
     {
-      id: "frustration",
-      question: "What does a frustrating day look like right now?",
+      id: "executionGap",
+      question: "What is the single biggest execution gap in your business right now?",
       type: "textarea" as const,
-      placeholder: "Be specific — this shapes what we build.",
+      placeholder: "",
     },
     {
-      id: "tried",
-      question: "What have you already tried?",
-      type: "multi-select" as const,
-      options: [
-        { label: "Productivity apps (Notion, Todoist, Asana, etc.)", value: "apps" },
-        { label: "Books and courses (Atomic Habits, GTD, etc.)", value: "books" },
-        { label: "Coaching or consulting", value: "coaching" },
-        { label: "AI tools (ChatGPT, Claude, etc.)", value: "ai" },
-        { label: "Nothing yet — I've been winging it", value: "nothing" },
-      ],
+      id: "priorAttempts",
+      question: "What have you already tried to close that gap?",
+      type: "textarea" as const,
+      placeholder: "",
     },
     {
-      id: "outcome",
-      question: "What outcome would make this worth it in 90 days?",
+      id: "motivation",
+      question: "Why is now the right time to address this?",
       type: "textarea" as const,
       placeholder: "",
     },
     {
       id: "contact",
-      question: "Where should we send your results?",
+      question: "Name and email.",
       type: "contact" as const,
       namePlaceholder: "Your name",
       emailPlaceholder: "your@email.com",
     },
   ],
-  result: {
-    A: {
-      pathLabel: "PATH A",
-      title: "Your path is individual execution.",
-    },
-    B: {
-      pathLabel: "PATH B",
-      title: "Your path is business diagnostics.",
-    },
-    C: {
-      pathLabel: "PATH C",
-      title: "Your path is the hybrid — personal + business.",
-    },
-    custom: {
-      pathLabel: "CUSTOM PATH",
-      title: "Your situation needs a custom conversation.",
-    },
-  },
-  resultDescription:
-    "Book a free 15-minute call and we'll talk through what your system could look like. No pitch. No pressure.",
-  resultCta: "Book Your Free Call",
   backLabel: "Back",
   nextLabel: "Next",
-  submitLabel: "See My Path",
-  afterSubmit:
-    "After you submit: Camden reviews your answers and responds within 24 hours to schedule a free 15-minute call. No pitch. No pressure. Just a real conversation about whether this is the right fit.",
+  submitLabel: "Submit Application",
+  confirmationMessage:
+    "Camden reviews all applications personally and responds within 24 hours. If it looks like a fit, you'll receive a link to schedule a 20-minute discovery conversation — not a sales call. A real conversation about whether SkemaLS is the right tool for your situation.",
 };
 
 export const cta = {

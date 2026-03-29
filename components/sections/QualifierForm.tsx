@@ -1,51 +1,49 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { qualifierForm } from "@/content/siteContent";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 import Btn from "@/components/ui/Btn";
 
-type PathKey = "A" | "B" | "C" | "both" | "custom";
+// A_both → routes to PATH A tag. All unique values for clean selection state.
+const PATH_TAG_MAP: Record<string, string> = {
+  A: "PATH-A",
+  B: "PATH-B",
+  A_both: "PATH-A",
+  C: "PATH-C",
+};
 
 interface FormState {
+  businessContext: string;
   path: string;
-  frustration: string;
-  tried: string[];
-  outcome: string;
+  executionGap: string;
+  priorAttempts: string;
+  motivation: string;
   name: string;
   email: string;
 }
 
 const initialState: FormState = {
+  businessContext: "",
   path: "",
-  frustration: "",
-  tried: [],
-  outcome: "",
+  executionGap: "",
+  priorAttempts: "",
+  motivation: "",
   name: "",
   email: "",
 };
 
-// Maps URL ?path= param to Q1 option values
-const PATH_PARAM_MAP: Record<string, string> = {
-  a: "A",
-  b: "B",
-  c: "C",
-};
+const textareaFields = ["businessContext", "executionGap", "priorAttempts", "motivation"];
 
 function isStepComplete(stepIndex: number, state: FormState): boolean {
   switch (stepIndex) {
-    case 0:
-      return state.path !== "";
-    case 1:
-      return state.frustration.trim() !== "";
-    case 2:
-      return true; // multi-select, optional
-    case 3:
-      return state.outcome.trim() !== "";
-    case 4:
-      return state.name.trim() !== "" && state.email.trim() !== "";
-    default:
-      return false;
+    case 0: return state.businessContext.trim() !== "";
+    case 1: return state.path !== "";
+    case 2: return state.executionGap.trim() !== "";
+    case 3: return state.priorAttempts.trim() !== "";
+    case 4: return state.motivation.trim() !== "";
+    case 5: return state.name.trim() !== "" && state.email.trim() !== "";
+    default: return false;
   }
 }
 
@@ -69,15 +67,6 @@ export default function QualifierForm() {
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState("");
 
-  // On mount: read ?path=a/b/c from URL and pre-select Q1
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const pathParam = params.get("path")?.toLowerCase();
-    if (pathParam && PATH_PARAM_MAP[pathParam]) {
-      setState((prev) => ({ ...prev, path: PATH_PARAM_MAP[pathParam] }));
-    }
-  }, []);
-
   const totalSteps = qualifierForm.steps.length;
   const currentStep = qualifierForm.steps[step];
   const canProceed = isStepComplete(step, state);
@@ -88,29 +77,28 @@ export default function QualifierForm() {
 
   function handleBack() {
     if (step > 0) setStep(step - 1);
-    // If navigating back to step 0, clear the pre-selected path so the
-    // user can make a fresh choice without the URL param locking them in.
-    if (step === 1) {
-      setState((prev) => ({ ...prev, path: "" }));
-    }
   }
 
   async function handleSubmit() {
     setSubmitting(true);
     setSubmitError("");
     try {
+      const payload = {
+        ...state,
+        pathTag: PATH_TAG_MAP[state.path] ?? "PATH-UNKNOWN",
+      };
       const res = await fetch("/api/qualify", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(state),
+        body: JSON.stringify(payload),
       });
       if (!res.ok) throw new Error("Send failed");
-      // Fire GA4 conversion event
+
       type GtagFn = (...args: unknown[]) => void;
       if (typeof window !== "undefined" && typeof (window as Window & { gtag?: GtagFn }).gtag === "function") {
-        (window as Window & { gtag?: GtagFn }).gtag!("event", "qualifier_submit", {
+        (window as Window & { gtag?: GtagFn }).gtag!("event", "application_submit", {
           event_category: "engagement",
-          event_label: `PATH_${state.path}`,
+          event_label: PATH_TAG_MAP[state.path] ?? "PATH-UNKNOWN",
         });
       }
       setSubmitted(true);
@@ -120,32 +108,6 @@ export default function QualifierForm() {
       setSubmitting(false);
     }
   }
-
-  function toggleMulti(value: string) {
-    setState((prev) => ({
-      ...prev,
-      tried: prev.tried.includes(value)
-        ? prev.tried.filter((v) => v !== value)
-        : [...prev.tried, value],
-    }));
-  }
-
-  const validPathKeys: PathKey[] = ["A", "B", "C", "both", "custom"];
-  // "both" resolves to PATH A result; "custom" resolves to custom result
-  type ResultKey = "A" | "B" | "C" | "custom";
-  const resolvedKey: ResultKey =
-    state.path === "both" ? "A" : (state.path as ResultKey);
-  const pathResult =
-    state.path && validPathKeys.includes(state.path as PathKey)
-      ? qualifierForm.result[resolvedKey]
-      : qualifierForm.result["A"];
-
-  const pathColor =
-    state.path === "A" || state.path === "both"
-      ? "#DC2626"
-      : state.path === "B"
-      ? "#2563EB"
-      : "#7C3AED";
 
   return (
     <SectionWrapper
@@ -178,7 +140,7 @@ export default function QualifierForm() {
       <div style={{ maxWidth: "560px" }}>
         {!submitted ? (
           <>
-            {/* Progress bar */}
+            {/* Progress bar — 6 segments */}
             <div className="flex gap-1.5 mb-10">
               {Array.from({ length: totalSteps }).map((_, i) => (
                 <div
@@ -187,8 +149,7 @@ export default function QualifierForm() {
                     flex: 1,
                     height: "3px",
                     borderRadius: "2px",
-                    background:
-                      i <= step ? "#DC2626" : "rgba(255,255,255,0.06)",
+                    background: i <= step ? "#DC2626" : "rgba(255,255,255,0.06)",
                     transition: "background-color 0.3s",
                   }}
                 />
@@ -203,7 +164,21 @@ export default function QualifierForm() {
               {currentStep.question}
             </p>
 
-            {/* Input area */}
+            {/* Textarea */}
+            {currentStep.type === "textarea" &&
+              textareaFields.includes(currentStep.id) && (
+                <textarea
+                  rows={4}
+                  placeholder={"placeholder" in currentStep ? currentStep.placeholder : ""}
+                  value={state[currentStep.id as keyof FormState] as string}
+                  onChange={(e) =>
+                    setState({ ...state, [currentStep.id]: e.target.value })
+                  }
+                  style={inputStyle}
+                />
+              )}
+
+            {/* Single-select — unique values, clean highlight */}
             {currentStep.type === "single-select" && "options" in currentStep && (
               <div className="flex flex-col gap-3">
                 {currentStep.options!.map((opt) => {
@@ -232,51 +207,7 @@ export default function QualifierForm() {
               </div>
             )}
 
-            {currentStep.type === "textarea" && "placeholder" in currentStep && (
-              <textarea
-                rows={4}
-                placeholder={currentStep.placeholder}
-                value={
-                  currentStep.id === "frustration" ? state.frustration : state.outcome
-                }
-                onChange={(e) =>
-                  setState({
-                    ...state,
-                    [currentStep.id]: e.target.value,
-                  })
-                }
-                style={inputStyle}
-              />
-            )}
-
-            {currentStep.type === "multi-select" && "options" in currentStep && (
-              <div className="flex flex-col gap-3">
-                {currentStep.options!.map((opt) => {
-                  const selected = state.tried.includes(opt.value);
-                  return (
-                    <button
-                      key={opt.value}
-                      onClick={() => toggleMulti(opt.value)}
-                      className="text-left font-body rounded-lg transition-all duration-150"
-                      style={{
-                        padding: "14px 18px",
-                        fontSize: "15px",
-                        background: selected
-                          ? "rgba(220,38,38,0.1)"
-                          : "rgba(255,255,255,0.03)",
-                        border: selected
-                          ? "1px solid rgba(220,38,38,0.3)"
-                          : "1px solid rgba(255,255,255,0.06)",
-                        color: selected ? "#F1F0EE" : "#C4C3BF",
-                      }}
-                    >
-                      {opt.label}
-                    </button>
-                  );
-                })}
-              </div>
-            )}
-
+            {/* Contact fields */}
             {currentStep.type === "contact" && (
               <div className="flex flex-col gap-4">
                 <input
@@ -345,6 +276,7 @@ export default function QualifierForm() {
                 </Btn>
               )}
             </div>
+
             {submitError && (
               <p className="font-body text-primary mt-4" style={{ fontSize: "14px" }}>
                 {submitError}
@@ -352,7 +284,7 @@ export default function QualifierForm() {
             )}
           </>
         ) : (
-          /* Result screen */
+          /* Confirmation screen */
           <div
             className="rounded-xl"
             style={{
@@ -361,38 +293,18 @@ export default function QualifierForm() {
               padding: "36px 32px",
             }}
           >
-            <p
-              className="font-heading font-bold uppercase tracking-widest text-xs mb-4"
-              style={{ color: pathColor }}
-            >
-              {pathResult.pathLabel}
+            <p className="font-heading font-bold text-primary uppercase tracking-widest text-xs mb-4">
+              Application received
             </p>
-            <h3
-              className="font-heading font-bold text-text-main mb-4"
-              style={{ fontSize: "22px", lineHeight: 1.3, letterSpacing: "-0.01em" }}
-            >
-              {pathResult.title}
-            </h3>
             <p
-              className="font-body text-text-soft mb-8"
-              style={{ fontSize: "16px", lineHeight: 1.7 }}
+              className="font-body text-text-soft"
+              style={{ fontSize: "16px", lineHeight: 1.8 }}
             >
-              {qualifierForm.resultDescription}
+              {qualifierForm.confirmationMessage}
             </p>
-            <Btn as="a" href="/contact">
-              {qualifierForm.resultCta}
-            </Btn>
           </div>
         )}
       </div>
-
-      {/* After-submit expectations */}
-      <p
-        className="font-body text-muted mt-8"
-        style={{ fontSize: "13px", lineHeight: 1.8, maxWidth: "480px" }}
-      >
-        {qualifierForm.afterSubmit}
-      </p>
     </SectionWrapper>
   );
 }
