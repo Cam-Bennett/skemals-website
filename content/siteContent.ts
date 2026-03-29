@@ -58,6 +58,18 @@ export const priorAttempts = {
   ],
 };
 
+export const costOfInaction = {
+  eyebrow: "WHAT THE GAP IS ACTUALLY COSTING YOU.",
+  paragraphs: [
+    "Most business owners underestimate the execution gap because they measure effort, not output.",
+    "Here's a different way to look at it. If your business is producing $300,000 a year and executing at 70% of its potential — the gap is $90,000. Not because the strategy is wrong. Because the execution layer underneath it is leaking.",
+    "That number lives somewhere specific. In the follow-up that didn't happen. The proposal that went out a week late. The initiative that never got two consecutive hours of focused work. The hire you haven't had time to think through properly.",
+    "Every week the infrastructure problem stays unsolved, the gap compounds. Not dramatically — just steadily. The same way a slow leak drains a tank.",
+    "At $1,000 a month for three months (recommended baseline), SkemaLS costs $3,000. If it closes 20% of a $90,000 execution gap, the return is $18,000. If it closes half — the math becomes obvious.",
+    "The question isn't whether you can afford it. It's what it costs to leave the gap open for another year.",
+  ],
+};
+
 export const proofInsight = {
   quote:
     "Most of my clients come in describing the wrong problem. Design tools, marketing help, bookkeeping fixes — none of those are the actual issue. The intake process exists because people describe symptoms, not root causes. Finding the actual problem is the first move.",
