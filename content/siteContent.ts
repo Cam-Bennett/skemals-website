@@ -282,6 +282,11 @@ export const qualifierForm = {
         { label: "More personal — habits, focus, consistency", value: "A" },
         { label: "More business — operations, team, systems", value: "B" },
         { label: "Both — it's all connected", value: "A" },
+        {
+          label:
+            "I lead a larger team or organization — my situation needs a custom conversation",
+          value: "custom",
+        },
       ],
     },
     {
@@ -328,6 +333,10 @@ export const qualifierForm = {
     C: {
       pathLabel: "PATH C",
       title: "Your path is the hybrid — personal + business.",
+    },
+    custom: {
+      pathLabel: "CUSTOM PATH",
+      title: "Your situation needs a custom conversation.",
     },
   },
   resultDescription:
