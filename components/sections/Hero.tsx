@@ -114,7 +114,7 @@ export default function Hero() {
             <Btn as="a" href="#qualifier" size="lg">
               {hero.ctaPrimary}
             </Btn>
-            <Btn as="a" href="#how-it-works" variant="secondary" size="lg">
+            <Btn as="a" href="#paths" variant="secondary" size="lg">
               {hero.ctaSecondary}
             </Btn>
           </div>
