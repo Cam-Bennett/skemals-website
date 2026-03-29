@@ -154,29 +154,31 @@ export default function PricingPage() {
           padding: "96px 24px 80px",
         }}
       >
-        <div className="max-w-site mx-auto" style={{ maxWidth: "780px" }}>
-          <p
-            className="font-body font-semibold text-primary uppercase tracking-widest mb-4"
-            style={{ fontSize: "11px", letterSpacing: "0.14em" }}
-          >
-            {pricing.hero.eyebrow}
-          </p>
-          <h1
-            className="font-heading font-bold text-text-main mb-6"
-            style={{
-              fontSize: "clamp(2rem, 4.5vw, 3.2rem)",
-              lineHeight: 1.1,
-              letterSpacing: "-0.02em",
-            }}
-          >
-            {pricing.hero.headline}
-          </h1>
-          <p
-            className="font-body text-text-soft"
-            style={{ fontSize: "18px", lineHeight: 1.8, maxWidth: "620px" }}
-          >
-            {pricing.hero.body}
-          </p>
+        <div className="max-w-site mx-auto">
+          <div style={{ maxWidth: "780px" }}>
+            <p
+              className="font-body font-semibold text-primary uppercase tracking-widest mb-4"
+              style={{ fontSize: "11px", letterSpacing: "0.14em" }}
+            >
+              {pricing.hero.eyebrow}
+            </p>
+            <h1
+              className="font-heading font-bold text-text-main mb-6"
+              style={{
+                fontSize: "clamp(2rem, 4.5vw, 3.2rem)",
+                lineHeight: 1.1,
+                letterSpacing: "-0.02em",
+              }}
+            >
+              {pricing.hero.headline}
+            </h1>
+            <p
+              className="font-body text-text-soft"
+              style={{ fontSize: "18px", lineHeight: 1.8, maxWidth: "620px" }}
+            >
+              {pricing.hero.body}
+            </p>
+          </div>
         </div>
       </section>
 
