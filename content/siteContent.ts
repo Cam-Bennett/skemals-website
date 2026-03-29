@@ -37,11 +37,12 @@ export const hero = {
 export const empathy = {
   headline: "The Cure for Your Chaos.",
   paragraphs: [
-    "Another day ends. You're tired. You worked hard. And you have nothing concrete to show for it. Not because you didn't try — because nothing you've tried was built for how you actually work.",
-    "You've read the books. Downloaded the apps. Tried time-blocking, color-coded calendars, accountability partners — none of it stuck because none of it was built for you.",
-    "This isn't a discipline problem. It's a systems problem. And this is a solvable problem.",
+    "Here's the moment most business owners recognize. It's 4pm. You've been working since 7. You're exhausted. And when you try to name what actually moved forward today — you struggle.",
+    "Emails answered. Fires handled. Questions fielded. The reactive layer of the business got your full attention and your best hours.",
+    "The work that would have actually mattered — the proposal, the strategy, the thing you've been trying to carve out two hours for — is still where it was this morning.",
+    "That's not how capable people fail. That's what happens when capable people have no architecture protecting their most important work from everything else competing for it.",
   ],
-  emphasizedIndex: 2,
+  emphasizedIndex: -1,
 };
 
 export const proofInsight = {
