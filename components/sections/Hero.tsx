@@ -20,17 +20,17 @@ export default function Hero() {
           backgroundImage: "url('/images/hero-abstract.png')",
           backgroundSize: "cover",
           backgroundPosition: "center 40%",
-          opacity: 0.35,
+          opacity: 0.75,
         }}
       />
 
-      {/* Gradient overlay */}
+      {/* Gradient overlay — dark left (text), open right (colors) */}
       <div
         aria-hidden="true"
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(135deg, rgba(10,10,18,0.92) 0%, rgba(10,10,18,0.5) 50%, rgba(10,10,18,0.85) 100%)",
+            "linear-gradient(to right, rgba(10,10,18,0.92) 0%, rgba(10,10,18,0.60) 42%, rgba(10,10,18,0.08) 100%)",
         }}
       />
 
