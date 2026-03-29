@@ -8,7 +8,7 @@ export const nav = {
     { label: "FAQ", href: "/faq" },
     { label: "Contact", href: "/contact" },
   ],
-  cta: "Find Your Path",
+  cta: "See If You Qualify",
 };
 
 // ARCHIVED: "Your own AI execution system." + "Built by a coach. Running every morning."
@@ -24,7 +24,7 @@ export const hero = {
   subheadline: "",
   subtitle:
     "That's not a discipline problem. That's what happens when capable people have no system holding the structure in place.",
-  ctaPrimary: "Find Your Path",
+  ctaPrimary: "See If You Qualify",
   ctaSecondary: "See How It Works",
   featureStrip: [
     "Pattern Recognition",
@@ -358,7 +358,7 @@ export const founder = {
 };
 
 export const qualifierForm = {
-  label: "Get Started",
+  label: "See If You Qualify",
   headline: "Find out which path is yours.",
   subhead: "Five questions. 90 seconds. No sales call until there's a fit.",
   steps: [
@@ -441,7 +441,7 @@ export const cta = {
   headline: "Ready to stop carrying everything in your head?",
   description:
     "15 minutes. Free. We'll talk through what you're dealing with and whether a MySkema system makes sense. No pitch. No pressure.",
-  buttonLabel: "Find Your Path",
+  buttonLabel: "See If You Qualify",
   trustLine: "You own your account. You own your data. No lock-in. No black box.",
   contact: "camden@skemals.com · 801-910-6528",
 };
@@ -525,7 +525,7 @@ export const about = {
     ],
   },
   cta: {
-    buttonLabel: "Find Your Path",
+    buttonLabel: "See If You Qualify",
     buttonHref: "/#qualifier",
   },
 };
@@ -583,7 +583,7 @@ export const faq = {
   cta: {
     headline: "Still have questions?",
     body: "Camden reviews every qualifier personally. The fastest way to get answers is to start.",
-    buttonLabel: "Find Your Path",
+    buttonLabel: "See If You Qualify",
     buttonHref: "/#qualifier",
   },
 };
@@ -592,7 +592,7 @@ export const contact = {
   eyebrow: "GET IN TOUCH",
   headline: "Start with the qualifier.",
   body: "The fastest path to working together is the 5-question qualifier. It takes 90 seconds, routes you to the right path, and gets your answers directly to Camden. No intake form. No sales call until there's a fit.",
-  buttonLabel: "Find Your Path",
+  buttonLabel: "See If You Qualify",
   buttonHref: "/#qualifier",
   directContact: {
     label: "Prefer to reach out directly?",
@@ -609,7 +609,7 @@ export const services = {
   cta: {
     headline: "Not sure which path is yours?",
     body: "The qualifier takes 90 seconds. Camden reviews every submission personally.",
-    buttonLabel: "Find Your Path",
+    buttonLabel: "See If You Qualify",
     buttonHref: "/#qualifier",
   },
 };
@@ -754,7 +754,7 @@ export const pricing = {
       "Progressive system upgrades as you level up",
       "Your system lives in your own account — keeps running even if you stop working with Camden",
     ],
-    cta: { label: "Find Your Path", href: "/#qualifier" },
+    cta: { label: "Apply for a Discovery Call", href: "/#qualifier" },
   },
   pathB: {
     eyebrow: "PATH B — ORGANIZATIONAL",
@@ -788,7 +788,7 @@ export const pricing = {
       "Not sure which path applies to you? The intake determines it. Most clients find out during the qualifier conversation.",
     ],
     price: "Custom quote based on scope.",
-    cta: { label: "Find Your Path", href: "/#qualifier" },
+    cta: { label: "Apply for a Discovery Call", href: "/#qualifier" },
   },
   riskReversal: {
     eyebrow: "HOW THIS WORKS — BEFORE YOU COMMIT.",
@@ -834,7 +834,7 @@ export const pricing = {
     headline: "The system starts at $1,000/month.",
     subheadline:
       "That's roughly $33/day for an AI system that runs every morning, catches the patterns you can't see, and gets sharper every week.",
-    cta: { label: "Find Your Path", href: "/#qualifier" },
+    cta: { label: "Apply for a Discovery Call", href: "/#qualifier" },
     microCopy:
       "No commitment until there's a fit. Camden reviews every qualifier personally.",
   },

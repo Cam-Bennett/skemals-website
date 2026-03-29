@@ -195,7 +195,7 @@ export default function ArticlePage({ params }: Props) {
             Five questions. 90 seconds. No sales call until there&apos;s a fit.
           </p>
           <Btn as="a" href="/#qualifier" size="lg">
-            Find Your Path
+            See If You Qualify
           </Btn>
         </div>
       </SectionWrapper>
