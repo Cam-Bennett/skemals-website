@@ -152,7 +152,7 @@ export const features = {
       "Week 1: Daily check-in and pattern recognition.",
       "Week 2: Priority filtering and decision support added.",
       "Week 4: Strategic modules and deeper pattern analysis.",
-      "Later: Notion connects as a persistent memory layer — tasks, leads, finances, goals, all accessible through conversation. No dashboard to manage. The system surfaces what matters.",
+      "Month 3: The system is running your task triage, your decision framework, your pattern recognition, and whatever your work actually demands. That's the ceiling — and it's different for every client.",
     ],
     closing:
       "The check-in doesn't replace protected time. It produces it. Ten minutes of structured focus that ends with a clear priority for the next two hours. That's the whole mechanism.",
