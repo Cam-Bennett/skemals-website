@@ -1,6 +1,7 @@
 import Nav from "@/components/sections/Nav";
 import Hero from "@/components/sections/Hero";
 import EmpathyHook from "@/components/sections/EmpathyHook";
+import PriorAttempts from "@/components/sections/PriorAttempts";
 import ProofInsight from "@/components/sections/ProofInsight";
 import SchemaDefinition from "@/components/sections/SchemaDefinition";
 import PathSelector from "@/components/sections/PathSelector";
@@ -20,6 +21,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <EmpathyHook />
+      <PriorAttempts />
       <ProofInsight />
       <SchemaDefinition />
       <PathSelector />

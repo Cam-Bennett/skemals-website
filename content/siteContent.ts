@@ -45,6 +45,19 @@ export const empathy = {
   emphasizedIndex: -1,
 };
 
+export const priorAttempts = {
+  eyebrow: "YOU'VE ALREADY TRIED TO FIX THIS.",
+  paragraphs: [
+    "You downloaded the apps. Set up the system. Used it for two weeks.",
+    "The time-blocking. Color-coded calendar. Protected blocks that evaporated the first time someone needed something.",
+    "The accountability partner. Good intentions. Both of you got busy.",
+    "You hired a coach. Valuable sessions. The momentum didn't last.",
+    "The journal. The notebook. The sticky notes on the monitor. The running task list that became its own source of anxiety.",
+    "None of it held — not because you didn't commit to it, but because none of it was built around how you actually work. Every system you've tried was designed for a generic person. At the first point it didn't match your specific patterns, your specific business, your specific week — it broke.",
+    "That's not a failure of discipline. That's a design problem. You were using the wrong tool for the job.",
+  ],
+};
+
 export const proofInsight = {
   quote:
     "Most of my clients come in describing the wrong problem. Design tools, marketing help, bookkeeping fixes — none of those are the actual issue. The intake process exists because people describe symptoms, not root causes. Finding the actual problem is the first move.",
