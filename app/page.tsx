@@ -1,4 +1,4 @@
-import Nav from "@/components/sections/Nav";
+import HomepageNav from "@/components/sections/HomepageNav";
 import Hero from "@/components/sections/Hero";
 import EmpathyHook from "@/components/sections/EmpathyHook";
 import PriorAttempts from "@/components/sections/PriorAttempts";
@@ -21,7 +21,7 @@ import Footer from "@/components/sections/Footer";
 export default function Home() {
   return (
     <main>
-      <Nav />
+      <HomepageNav />
       <Hero />
       <EmpathyHook />
       <PriorAttempts />

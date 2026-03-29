@@ -426,7 +426,13 @@ export const cta = {
 
 export const footer = {
   logo: "SkemaLS",
-  links: ["About", "Pricing", "FAQ", "Contact"],
+  links: [
+    { label: "About", href: "/about" },
+    { label: "The Work", href: "/the-work" },
+    { label: "Pricing", href: "/pricing" },
+    { label: "FAQ", href: "/faq" },
+    { label: "Contact", href: "/contact" },
+  ],
   legalLinks: ["Privacy Policy"],
   location: "Pinedale, Wyoming",
 };

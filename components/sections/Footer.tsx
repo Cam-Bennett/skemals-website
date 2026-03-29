@@ -19,12 +19,12 @@ export default function Footer() {
         <div className="flex flex-wrap items-center gap-6">
           {footer.links.map((link) => (
             <a
-              key={link}
-              href={`/${link.toLowerCase()}`}
+              key={link.href}
+              href={link.href}
               className="font-body text-muted hover:text-text-soft transition-colors duration-150"
               style={{ fontSize: "12px", textDecoration: "none" }}
             >
-              {link}
+              {link.label}
             </a>
           ))}
         </div>
