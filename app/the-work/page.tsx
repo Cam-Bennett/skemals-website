@@ -67,12 +67,6 @@ export default function TheWorkPage() {
                 }}
                 className="group"
               >
-                <p
-                  className="font-body font-semibold text-primary uppercase tracking-widest mb-3"
-                  style={{ fontSize: "11px", letterSpacing: "0.14em" }}
-                >
-                  {article.category}
-                </p>
                 <h2
                   className="font-heading font-bold text-text-main mb-3 group-hover:text-primary"
                   style={{
