@@ -64,7 +64,7 @@ export const pathSelector = {
       color: "#DC2626",
       title: "The Person",
       description:
-        "The problem is internal — habits, focus, patterns. You need an AI system configured around your goals that holds you accountable every morning.",
+        "One person. One system. Built around your goals, your patterns, and whatever your life contains — business, personal, or both. The system captures what's in your head and finds the patterns across all of it.",
       cta: "This sounds like me →",
     },
     {
@@ -72,20 +72,12 @@ export const pathSelector = {
       color: "#2563EB",
       title: "The Business",
       description:
-        "The dysfunction is structural. Your people are capable but the business has no operating system underneath it. You need a diagnostic and a working system.",
-      cta: "This sounds like me →",
-    },
-    {
-      id: "C",
-      color: "#7C3AED",
-      title: "Both",
-      description:
-        "Your personal challenges and business challenges are inseparable. You need a personal accountability layer plus a business diagnostic. Most business owners land here.",
+        "The problem requires building systems for more than one person. Your people are capable — the workflows, communication, and execution layer underneath them isn't. You need a diagnostic and systems your team can actually run.",
       cta: "This sounds like me →",
     },
   ],
   footnote:
-    "No technical background needed. If Camden decides there's a fit, he handles the entire setup.",
+    "Not sure which fits? The intake determines it.",
 };
 
 export const howItWorks = {
