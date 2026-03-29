@@ -659,6 +659,7 @@ export const faq = {
         "PATH B is for teams of up to three people in the same organization where the dysfunction is structural. The people are capable — the systems underneath them aren't.",
         "PATH C is for situations that don't fit either path — larger organizations, engagements that require custom deliverables, or complexity that needs investigation before anything can be scoped.",
         "SkemaLS has worked for a real estate broker, serial entrepreneurs, executive directors, property managers, and more. If you run something and feel behind your own potential, it's built for you.",
+        "Not sure which path fits? The intake determines it. The discovery call is free, takes 15 minutes, and Camden reviews every application personally.",
       ],
     },
   ],
