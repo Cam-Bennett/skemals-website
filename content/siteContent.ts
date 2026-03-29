@@ -650,9 +650,10 @@ export const faq = {
 
 export const contact = {
   eyebrow: "GET IN TOUCH",
-  headline: "Start with the qualifier.",
-  body: "The fastest path to working together is the 5-question qualifier. It takes 90 seconds, routes you to the right path, and gets your answers directly to Camden. No intake form. No sales call until there's a fit.",
-  buttonLabel: "See If You Qualify",
+  headline: "Start with the application.",
+  body: "The fastest path to working together is the application form. Six questions. Takes about three minutes. Camden reviews every submission personally and responds within 24 hours.",
+  body2: "If it looks like a fit, you'll receive a link to schedule a 20-minute discovery conversation — not a sales call. A real conversation about whether SkemaLS is the right tool for your situation.",
+  buttonLabel: "Apply Now",
   buttonHref: "/#qualifier",
   directContact: {
     label: "Prefer to reach out directly?",

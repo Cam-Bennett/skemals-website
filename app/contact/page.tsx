@@ -8,7 +8,7 @@ import { contact } from "@/content/siteContent";
 export const metadata: Metadata = {
   title: "Contact — SkemaLS",
   description:
-    "Start with the 5-question qualifier. 90 seconds. Routes you to the right path and gets your answers directly to Camden.",
+    "Start with the application form. Six questions, three minutes. Camden reviews every submission personally and responds within 24 hours.",
 };
 
 export default function ContactPage() {
@@ -75,10 +75,16 @@ export default function ContactPage() {
 
           {/* Body */}
           <p
-            className="font-body text-text-soft mb-10"
+            className="font-body text-text-soft mb-5"
             style={{ fontSize: "17px", lineHeight: 1.8, maxWidth: "520px" }}
           >
             {contact.body}
+          </p>
+          <p
+            className="font-body text-text-soft mb-10"
+            style={{ fontSize: "17px", lineHeight: 1.8, maxWidth: "520px" }}
+          >
+            {contact.body2}
           </p>
 
           {/* CTA */}
