@@ -282,7 +282,7 @@ export const qualifierForm = {
       options: [
         { label: "More personal — habits, focus, consistency", value: "A" },
         { label: "More business — operations, team, systems", value: "B" },
-        { label: "Both — it's all connected", value: "A" },
+        { label: "Both — it's all connected", value: "both" },
         {
           label:
             "I lead a larger team or organization — my situation needs a custom conversation",

@@ -5,7 +5,7 @@ import { qualifierForm } from "@/content/siteContent";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 import Btn from "@/components/ui/Btn";
 
-type PathKey = "A" | "B" | "C" | "custom";
+type PathKey = "A" | "B" | "C" | "both" | "custom";
 
 interface FormState {
   path: string;
@@ -130,14 +130,18 @@ export default function QualifierForm() {
     }));
   }
 
-  const validPathKeys: PathKey[] = ["A", "B", "C", "custom"];
+  const validPathKeys: PathKey[] = ["A", "B", "C", "both", "custom"];
+  // "both" resolves to PATH A result; "custom" resolves to custom result
+  type ResultKey = "A" | "B" | "C" | "custom";
+  const resolvedKey: ResultKey =
+    state.path === "both" ? "A" : (state.path as ResultKey);
   const pathResult =
     state.path && validPathKeys.includes(state.path as PathKey)
-      ? qualifierForm.result[state.path as PathKey]
+      ? qualifierForm.result[resolvedKey]
       : qualifierForm.result["A"];
 
   const pathColor =
-    state.path === "A"
+    state.path === "A" || state.path === "both"
       ? "#DC2626"
       : state.path === "B"
       ? "#2563EB"
