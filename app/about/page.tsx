@@ -5,6 +5,7 @@ import Image from "next/image";
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
 import SectionWrapper from "@/components/ui/SectionWrapper";
+import GrainOverlay from "@/components/ui/GrainOverlay";
 import Btn from "@/components/ui/Btn";
 import { about } from "@/content/siteContent";
 
@@ -42,13 +43,10 @@ function useReveal() {
 }
 
 /* ------------------------------------------------------------------ */
-/* Reusable sub-components                                              */
+/* Sub-components                                                       */
 /* ------------------------------------------------------------------ */
 
-interface EyebrowProps {
-  text: string;
-}
-function Eyebrow({ text }: EyebrowProps) {
+function Eyebrow({ text }: { text: string }) {
   return (
     <p
       className="font-body font-semibold text-primary uppercase tracking-widest mb-4"
@@ -59,10 +57,7 @@ function Eyebrow({ text }: EyebrowProps) {
   );
 }
 
-interface HeadlineProps {
-  text: string;
-}
-function SectionHeadline({ text }: HeadlineProps) {
+function SectionHeadline({ text }: { text: string }) {
   return (
     <h2
       className="font-heading font-bold text-text-main mb-8"
@@ -77,11 +72,7 @@ function SectionHeadline({ text }: HeadlineProps) {
   );
 }
 
-interface BodyParaProps {
-  text: string;
-  delayMs?: number;
-}
-function BodyPara({ text, delayMs = 0 }: BodyParaProps) {
+function BodyPara({ text, delayMs = 0 }: { text: string; delayMs?: number }) {
   return (
     <p
       data-reveal
@@ -103,7 +94,6 @@ export default function AboutPage() {
 
   return (
     <>
-      {/* Inline reveal styles — avoids external CSS file dependency */}
       <style>{`
         .reveal-hidden {
           opacity: 0;
@@ -116,48 +106,77 @@ export default function AboutPage() {
           transform: none !important;
         }
         @media (prefers-reduced-motion: reduce) {
-          .reveal-hidden {
-            opacity: 1;
-            transform: none;
-            transition: none;
-          }
+          .reveal-hidden { opacity: 1; transform: none; transition: none; }
         }
       `}</style>
 
-      <main style={{ paddingTop: "64px" /* nav height */ }}>
+      <main style={{ paddingTop: "64px" }}>
         <Nav />
 
-        {/* ── SECTION 1 — Hard split: dark left / image right ─────── */}
+        {/* ── HERO — full-width image, no text ─────────────────────── */}
         <section
           style={{
-            display: "flex",
-            minHeight: "80vh",
+            position: "relative",
+            height: "clamp(420px, 60vw, 740px)",
             overflow: "hidden",
+            background: "#0A0A12",
           }}
         >
-          {/* LEFT — solid dark panel with headshot + text */}
-          <div
+          <Image
+            src="/images/abstract-3.png"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
             style={{
-              flex: "0 0 50%",
-              background: "#0A0A12",
-              padding: "80px 56px 80px 48px",
-              display: "flex",
-              alignItems: "center",
+              objectFit: "cover",
+              objectPosition: "center 20%",
+              opacity: 0.95,
             }}
-          >
+          />
+          {/* Thin bottom fade only — image does the work */}
+          <div
+            aria-hidden="true"
+            style={{
+              position: "absolute",
+              bottom: 0, left: 0, right: 0,
+              height: "160px",
+              background: "linear-gradient(to bottom, transparent, #0A0A12)",
+            }}
+          />
+          <GrainOverlay />
+        </section>
+
+        {/* ── HEADSHOT + EYEBROW + H1 — transparent, floats over hero  */}
+        <section
+          className="px-6"
+          style={{
+            background: "transparent",
+            marginTop: "clamp(-280px, -38vw, -460px)",
+            position: "relative",
+            zIndex: 10,
+          }}
+        >
+          <div className="max-w-site mx-auto">
+            {/* Headshot card */}
             <div
-              className="flex flex-col md:flex-row gap-10 items-start"
-              style={{ maxWidth: "560px" }}
+              style={{
+                width: "200px",
+                marginBottom: "24px",
+                background: "#111119",
+                border: "1px solid rgba(255,255,255,0.10)",
+                borderRadius: "14px",
+                padding: "12px",
+                boxShadow: "0 32px 80px rgba(0,0,0,0.65), 0 4px 20px rgba(0,0,0,0.50)",
+              }}
             >
-              {/* Headshot */}
               <div
-                className="relative rounded-xl overflow-hidden reveal-hidden flex-shrink-0"
-                data-reveal
-                data-reveal-delay="0"
                 style={{
-                  width: "160px",
-                  aspectRatio: "4 / 5",
-                  border: "1px solid rgba(255,255,255,0.10)",
+                  position: "relative",
+                  width: "176px",
+                  height: "220px",
+                  borderRadius: "8px",
+                  overflow: "hidden",
                 }}
               >
                 <Image
@@ -165,58 +184,57 @@ export default function AboutPage() {
                   alt={about.section1.imageAlt}
                   fill
                   priority
-                  className="object-cover object-top"
-                  style={{ filter: "brightness(0.95) contrast(1.05)" }}
-                  sizes="160px"
+                  sizes="176px"
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: "top",
+                    filter: "brightness(0.96) contrast(1.04)",
+                  }}
                 />
               </div>
-
-              {/* Text */}
-              <div className="flex flex-col gap-5">
-                <Eyebrow text={about.section1.eyebrow} />
-                <h1
-                  data-reveal
-                  data-reveal-delay="80"
-                  className="font-heading font-bold text-text-main reveal-hidden"
-                  style={{
-                    fontSize: "clamp(1.6rem, 2.8vw, 2.4rem)",
-                    lineHeight: 1.1,
-                    letterSpacing: "-0.02em",
-                  }}
-                >
-                  {about.section1.headline}
-                </h1>
-                {about.section1.paragraphs.map((p, i) => (
-                  <BodyPara key={i} text={p} delayMs={(i + 1) * 80} />
-                ))}
-              </div>
+              <p
+                className="font-body font-semibold text-muted uppercase text-center"
+                style={{ fontSize: "11px", letterSpacing: "0.05em", marginTop: "10px" }}
+              >
+                Camden Bennett · Founder
+              </p>
             </div>
-          </div>
 
-          {/* RIGHT — image at near-full opacity, thin feather at seam */}
-          <div style={{ flex: 1, position: "relative", overflow: "hidden" }}>
-            <Image
-              src="/images/abstract-3.png"
-              alt=""
-              fill
-              priority
-              sizes="50vw"
-              style={{ objectFit: "cover", objectPosition: "center", opacity: 0.92 }}
-            />
-            {/* Thin left-edge feather to blend with dark panel */}
-            <div
+            {/* Eyebrow */}
+            <Eyebrow text={about.section1.eyebrow} />
+
+            {/* H1 — partially over hero image */}
+            <h1
+              className="font-heading font-bold text-text-main"
               style={{
-                position: "absolute",
-                inset: "0 auto 0 0",
-                width: "100px",
-                background: "linear-gradient(to right, #0A0A12, transparent)",
-                zIndex: 1,
+                fontSize: "clamp(2rem, 4vw, 3.2rem)",
+                lineHeight: 1.08,
+                letterSpacing: "-0.03em",
+                maxWidth: "720px",
+                textShadow: "0 2px 24px rgba(0,0,0,0.55)",
               }}
-            />
+            >
+              {about.section1.headline}
+            </h1>
           </div>
         </section>
 
-        {/* ── SECTION 2 — The Search ───────────────────────────────── */}
+        {/* ── SECTION 1 BODY — dark, all paragraphs ────────────────── */}
+        <section
+          className="relative overflow-hidden px-6"
+          style={{ background: "#0A0A12", paddingTop: "56px", paddingBottom: "96px" }}
+        >
+          <GrainOverlay />
+          <div className="relative z-10 max-w-site mx-auto">
+            <div className="flex flex-col gap-5" style={{ maxWidth: "720px" }}>
+              {about.section1.paragraphs.map((p, i) => (
+                <BodyPara key={i} text={p} delayMs={i * 60} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── SECTION 2 — The Background ───────────────────────────── */}
         <SectionWrapper bgAlt>
           <Eyebrow text={about.section2.eyebrow} />
           <div
@@ -234,7 +252,7 @@ export default function AboutPage() {
           </div>
         </SectionWrapper>
 
-        {/* ── SECTION 3 — The Background ──────────────────────────── */}
+        {/* ── SECTION 3 — How I Work Now ───────────────────────────── */}
         <SectionWrapper
           style={{
             background:
@@ -257,7 +275,7 @@ export default function AboutPage() {
           </div>
         </SectionWrapper>
 
-        {/* ── SECTION 4 — What This Produces ──────────────────────── */}
+        {/* ── SECTION 4 — What This Produces ───────────────────────── */}
         <SectionWrapper bgAlt>
           <Eyebrow text={about.section4.eyebrow} />
           <div
@@ -268,7 +286,6 @@ export default function AboutPage() {
           >
             <SectionHeadline text={about.section4.headline} />
           </div>
-
           <div className="flex flex-col gap-5" style={{ maxWidth: "720px" }}>
             {about.section4.paragraphs.map((p, i) => (
               <BodyPara key={i} text={p} delayMs={i * 60} />
