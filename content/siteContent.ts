@@ -169,6 +169,7 @@ export const mechanism = {
   bodyPart2: [
     "MySkema is a custom Claude project configured around how you specifically work — your goals, your values, your decision framework, your resistance patterns, and the specific ways you consistently get stuck.",
     "Not a template. A configuration built from a 60–75 minute deep-dive interview about you.",
+    "This works across industries because it's built around how you operate — your patterns, your decisions, your avoidance loops — not your field. The AI doesn't need to know construction or finance. It needs to know you.",
     "It runs inside your own account. It retains everything. It knows what you said you'd do last Tuesday. It knows the project you've been pushing to next week for a month. It catches the contradictions between what you say you want and what you're actually spending your time on — and it surfaces them without ego, without agenda, and without letting you off the hook.",
     "Camden reviews your weekly summary every Friday. He reads what the AI surfaced, identifies what it missed, and adjusts the system accordingly. That human interpretation layer — applied to weeks of your actual behavioral data — is what no tool or coach replicates on their own.",
     "The system gets sharper the longer you use it. Month one, it knows your goals. Month two, it knows your patterns. Month three, it's running your task triage, your decision framework, your morning ritual, and whatever your work actually demands.",
