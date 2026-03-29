@@ -24,6 +24,8 @@ export const hero = {
   subheadline: "",
   subtitle:
     "That's not a discipline problem. That's what happens when capable people have no system holding the structure in place.",
+  discoveryLine:
+    "If you've been reading the books, watching the videos, and still can't close the gap — this is what was missing.",
   ctaPrimary: "See If You Qualify",
   ctaSecondary: "See How It Works",
   featureStrip: [

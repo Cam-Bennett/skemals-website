@@ -100,7 +100,7 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p
-            className="font-body text-text-main mb-10"
+            className="font-body text-text-main mb-4"
             style={{
               fontSize: "17px",
               lineHeight: 1.7,
@@ -110,6 +110,16 @@ export default function Hero() {
           >
             {hero.subtitle}
           </p>
+
+          {/* Discovery line */}
+          {hero.discoveryLine && (
+            <p
+              className="font-body text-muted mb-8"
+              style={{ fontSize: "14px", lineHeight: 1.7, maxWidth: "480px" }}
+            >
+              {hero.discoveryLine}
+            </p>
+          )}
 
           {/* CTAs */}
           <div className="flex flex-wrap gap-4 mb-4">
