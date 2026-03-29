@@ -1,6 +1,6 @@
 # SkemaLS
 
-> SkemaLS builds custom AI accountability systems for business owners and
+> SkemaLS builds custom AI execution systems for business owners and
 individuals who want to perform at their potential but can't close the gap
 between intention and result. Founded by Camden Bennett in Pinedale, Wyoming.
 
@@ -13,7 +13,7 @@ review. System is progressively refined over time. The client owns the
 account and all data.
 
 ## The Three Paths
-- PATH A (The Person): Individual accountability system for solo operators,
+- PATH A (The Person): Individual execution system for solo operators,
   executives, and business owners. Custom Claude project, weekly coaching
   review, progressive deployment.
 - PATH B (The Business): Business diagnostic and AI systems plan for
