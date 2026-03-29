@@ -257,7 +257,7 @@ export default function AboutPage() {
           </div>
         </SectionWrapper>
 
-        {/* ── SECTION 4 — How I Work Now ──────────────────────────── */}
+        {/* ── SECTION 4 — What This Produces ──────────────────────── */}
         <SectionWrapper bgAlt>
           <Eyebrow text={about.section4.eyebrow} />
           <div
@@ -273,44 +273,10 @@ export default function AboutPage() {
             {about.section4.paragraphs.map((p, i) => (
               <BodyPara key={i} text={p} delayMs={i * 60} />
             ))}
-
-            {/* Bulleted list */}
-            <ul
-              data-reveal
-              data-reveal-delay="180"
-              className="reveal-hidden flex flex-col gap-3"
-              style={{
-                paddingLeft: "0",
-                listStyle: "none",
-                margin: "0",
-              }}
-            >
-              {about.section4.listItems.map((item, i) => (
-                <li
-                  key={i}
-                  className="font-body text-text-soft flex gap-3"
-                  style={{ fontSize: "16px", lineHeight: 1.8 }}
-                >
-                  <span
-                    className="flex-shrink-0 text-primary font-semibold"
-                    style={{ marginTop: "2px" }}
-                    aria-hidden="true"
-                  >
-                    —
-                  </span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-
-            <BodyPara
-              text={about.section4.closingParagraph}
-              delayMs={240}
-            />
           </div>
         </SectionWrapper>
 
-        {/* ── SECTION 5 — What I Build For You ────────────────────── */}
+        {/* ── SECTION 5 — Why This Works ───────────────────────────── */}
         <SectionWrapper
           style={{
             background:
@@ -333,12 +299,27 @@ export default function AboutPage() {
             ))}
           </div>
 
+          {/* Byline */}
+          <p
+            data-reveal
+            data-reveal-delay="200"
+            className="font-body reveal-hidden"
+            style={{
+              fontSize: "13px",
+              color: "#6B7280",
+              marginTop: "40px",
+              maxWidth: "720px",
+            }}
+          >
+            {about.section5.byline}
+          </p>
+
           {/* CTA */}
           <div
             data-reveal
             data-reveal-delay="360"
             className="reveal-hidden"
-            style={{ marginTop: "48px" }}
+            style={{ marginTop: "40px" }}
           >
             <Btn as="a" href={about.cta.buttonHref} size="lg">
               {about.cta.buttonLabel}
