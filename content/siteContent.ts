@@ -120,6 +120,30 @@ export const pathSelector = {
   ],
 };
 
+export const identityFrame = {
+  eyebrow: "WHO THIS IS FOR — AND WHO IT ISN'T.",
+  intro: [
+    "SkemaLS is for those who know how to work hard. The people who get the most from this system are already capable, already motivated, and already aware of the gap between what they're producing and what they're capable of.",
+    "What they don't have is the architecture underneath their effort.",
+  ],
+  forYouLabel: "This is for you if:",
+  forYou: [
+    "You run a service business and your strategy is right — execution is where it breaks down",
+    "You're highly self-aware but perpetually behind your own potential",
+    "You've read the frameworks, understand the principles, and can't consistently apply them alone",
+    "You want a system, not a cheerleader",
+    "You've already tried the standard solutions and found them too shallow for the actual complexity of running a business",
+  ],
+  notForYouLabel: "This is not for you if:",
+  notForYou: [
+    "You want someone to do the work for you",
+    "You're looking for motivation or inspiration — you don't have a motivation problem",
+    "You're not willing to show up for a system consistently",
+    "You're in the \"I'll get to this eventually\" stage of your business",
+  ],
+  closing: "If you fit the first list and not the second — this is the right fit for you.",
+};
+
 export const mechanism = {
   eyebrow: "WHY NOTHING CLOSED THE GAP.",
   bodyPart1: [

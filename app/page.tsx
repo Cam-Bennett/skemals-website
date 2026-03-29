@@ -7,6 +7,7 @@ import ProofInsight from "@/components/sections/ProofInsight";
 import SchemaDefinition from "@/components/sections/SchemaDefinition";
 import PathSelector from "@/components/sections/PathSelector";
 import Mechanism from "@/components/sections/Mechanism";
+import IdentityFrame from "@/components/sections/IdentityFrame";
 import HowItWorks from "@/components/sections/HowItWorks";
 import Features from "@/components/sections/Features";
 import WhatItsNot from "@/components/sections/WhatItsNot";
@@ -27,8 +28,9 @@ export default function Home() {
       <CostOfInaction />
       <ProofInsight />
       <SchemaDefinition />
-      <PathSelector />
       <Mechanism />
+      <IdentityFrame />
+      <PathSelector />
       <HowItWorks />
       <Features />
       <WhatItsNot />
