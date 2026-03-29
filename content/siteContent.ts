@@ -354,7 +354,7 @@ export const cta = {
 
 export const footer = {
   logo: "SkemaLS",
-  links: ["About", "FAQ", "Contact"],
+  links: ["About", "Pricing", "FAQ", "Contact"],
   legalLinks: ["Privacy Policy"],
   location: "Pinedale, Wyoming",
 };
@@ -620,4 +620,111 @@ export const privacyPolicy = {
       },
     },
   ],
+};
+
+export const pricing = {
+  meta: {
+    title: "Pricing — SkemaLS",
+    description:
+      "What SkemaLS costs — and what it's worth. PATH A starts at $1,000/month. PATH B from $1,500/month. PATH C custom.",
+  },
+  hero: {
+    eyebrow: "INVESTMENT",
+    headline: "What SkemaLS costs — and what it's worth.",
+    body: "The right question isn't what you pay per month. It's what it costs to stay stuck for another year. Recovered time, clearer decisions, forward momentum on the things that keep getting pushed — that's the return. The investment is what makes the system real.",
+  },
+  pathA: {
+    eyebrow: "PATH A — INDIVIDUAL",
+    eyebrowColor: "#DC2626",
+    headline: "One person. One system. Built from a real conversation.",
+    body: [
+      "PATH A is for one person — a solo operator, executive, or business owner who works hard and can't close the gap between intention and result. The system handles whatever your life contains. Business, personal, or both. PATH A doesn't separate domains — it captures what's in your head and finds the patterns across all of it.",
+      "The engagement begins with a 60–75 minute deep-dive interview. Camden maps your goals, decision framework, behavioral patterns, and specific avoidance loops. The result is a custom AI system that runs inside your own Claude account, knows what you said you'd do, and won't let you forget it.",
+    ],
+    price: "$1,000/month",
+    includes: [
+      "Intake form",
+      "Deep-dive interview",
+      "Custom Project Instructions",
+      "Interview Summary with coaching feedback",
+      "Setup Email",
+      "Weekly progress review",
+      "Progressive system upgrades as you level up",
+      "Your system lives in your own account — keeps running even if you stop working with Camden",
+    ],
+    cta: { label: "Find Your Path", href: "/#qualifier" },
+  },
+  pathB: {
+    eyebrow: "PATH B — ORGANIZATIONAL",
+    eyebrowColor: "#7C3AED",
+    headline: "Multiple people. Organizational scope. Executable Monday morning.",
+    body: [
+      "PATH B is for teams and organizations where the problem isn't one person's productivity — it's how the organization operates, markets, communicates, or executes. The bottlenecks live between people, in workflows, in systems that don't exist yet.",
+      "The trigger is simple: does solving this require building systems for more than one person? If yes — PATH B.",
+      "Every engagement starts with a diagnostic. Camden maps the people, their workflows, and where time disappears before designing anything. Deliverables include a bottleneck map, a people map, named Claude Projects configured for each person executing the work, and a phased implementation plan with clear ownership and time estimates.",
+    ],
+    price: "$1,500/month (1–3 person teams)",
+    priceNote:
+      "Larger organizations and project-based engagements are quoted after a discovery conversation.",
+    includes: [
+      "Organizational diagnostic",
+      "Bottleneck and people mapping",
+      "Individual Claude Project deployments for each team member",
+      "Phased implementation plan",
+    ],
+    includesNote:
+      "Standard PATH B configures and deploys existing systems — websites, custom dashboards, and purpose-built applications are separate engagements.",
+    cta: { label: "Start the conversation", href: "/#qualifier?path=b" },
+  },
+  pathC: {
+    eyebrow: "PATH C — SPECIAL PROJECTS",
+    eyebrowColor: "#06B6D4",
+    headline: "When the situation requires more than configuration.",
+    body: [
+      "PATH C triggers when solving the problem requires Camden to produce external deliverables that live outside the client's personal system — a research brief, a strategic document, a legal education resource, a knowledge base built for a specific business situation.",
+      "MySkema is still the foundation. The extra work is the overlay.",
+      "Not sure which path applies to you? The intake determines it. Most clients find out during the qualifier conversation.",
+    ],
+    price: "Custom quote based on scope.",
+    cta: { label: "Find Your Path", href: "/#qualifier" },
+  },
+  faq: {
+    eyebrow: "COMMON QUESTIONS",
+    headline: "A few things people ask before committing.",
+    items: [
+      {
+        question: "Is there a minimum commitment?",
+        answer:
+          "We're establishing a three-month minimum across all engagements. Transformation doesn't happen in thirty days. Three months gives the system enough cycles to produce real pattern data and gives the coaching enough time to produce results you can point to. You'll know by month two whether it's working.",
+      },
+      {
+        question: "Do you offer discounts?",
+        answer:
+          "No. If the scope isn't right, we adjust the scope. Discounting a price that was set correctly doesn't serve either of us.",
+      },
+      {
+        question: "What's included in the monthly investment?",
+        answer:
+          "The intake form and deep-dive interview. Custom system build — Project Instructions, Interview Summary, Setup Email. Weekly coaching review of your Friday summary. Progressive system upgrades as you level up. Camden's pattern recognition across your data accumulated over weeks and months — not just a check-in call.",
+      },
+      {
+        question: "What does it cost to run the system day-to-day?",
+        answer:
+          "A Claude account runs approximately $20/month. That's yours — separate from the coaching investment. You own it whether we're working together or not.",
+      },
+      {
+        question: "What if I'm not ready for a full engagement?",
+        answer:
+          "The qualifier takes 90 seconds. If you're not the right fit yet, Camden will tell you directly and you won't be pushed toward a call. No pitch. No pressure.",
+      },
+    ],
+  },
+  footerCta: {
+    headline: "The system starts at $1,000/month.",
+    subheadline:
+      "That's roughly $33/day for an AI system that runs every morning, catches the patterns you can't see, and gets sharper every week.",
+    cta: { label: "Find Your Path", href: "/#qualifier" },
+    microCopy:
+      "No commitment until there's a fit. Camden reviews every qualifier personally.",
+  },
 };
