@@ -790,6 +790,15 @@ export const pricing = {
     price: "Custom quote based on scope.",
     cta: { label: "Find Your Path", href: "/#qualifier" },
   },
+  riskReversal: {
+    eyebrow: "HOW THIS WORKS — BEFORE YOU COMMIT.",
+    paragraphs: [
+      "SkemaLS doesn't take every client who applies.",
+      "The qualifier conversation is a mutual evaluation. You're assessing whether this is the right fit for your business. Camden is assessing whether he can produce the results you're looking for. If it isn't a fit — for either side — that gets said directly. No pressure close. No follow-up sequences.",
+      "The intake process exists because the wrong engagement serves no one. A client who isn't ready to show up consistently won't get results. A business Camden can't move forward isn't worth the calendar time. The filter protects both parties.",
+      "If you get through the qualifier and Camden believes he can produce results for your situation, you'll know exactly what the first 90 days look like before you agree to anything.",
+    ],
+  },
   faq: {
     eyebrow: "COMMON QUESTIONS",
     headline: "A few things people ask before committing.",
