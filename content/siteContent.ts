@@ -727,6 +727,14 @@ export const pricing = {
     headline: "What SkemaLS costs — and what it's worth.",
     body: "The right question isn't what you pay per month. It's what it costs to stay stuck for another year. Recovered time, clearer decisions, forward momentum on the things that keep getting pushed — that's the return. The investment is what makes the system real.",
   },
+  investmentContext: {
+    eyebrow: "THE INVESTMENT IN CONTEXT.",
+    paragraphs: [
+      "A qualified business coach might run $500 to $1,500 per session. One session, once or twice a month, with significant context-switching between their other clients. Valuable — but the execution window is narrow. Between sessions you're on your own.",
+      "SkemaLS operates at your actual working cadence. Daily, not weekly. Not monthly. Full context retained across your entire engagement. Camden reviews your behavioral data every Friday — not a 50-minute snapshot, but weeks of accumulated pattern recognition.",
+      "At $1,000 a month for three months, that's around $8 a day for the year. Less than many businesses spend on software they're not fully using — for a system that actively manages your execution every morning, gets sharper every week, and stays with you after the active coaching is complete.",
+    ],
+  },
   pathA: {
     eyebrow: "PATH A — INDIVIDUAL",
     eyebrowColor: "#DC2626",

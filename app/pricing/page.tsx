@@ -182,6 +182,29 @@ export default function PricingPage() {
         </div>
       </section>
 
+      {/* ── Investment context ──────────────────────────────────── */}
+      <SectionWrapper bgAlt>
+        <div style={{ maxWidth: "680px" }}>
+          <p
+            className="font-body font-semibold text-primary uppercase tracking-widest mb-8"
+            style={{ fontSize: "11px", letterSpacing: "0.14em" }}
+          >
+            {pricing.investmentContext.eyebrow}
+          </p>
+          <div className="flex flex-col gap-5">
+            {pricing.investmentContext.paragraphs.map((p, i) => (
+              <p
+                key={i}
+                className="font-body text-text-soft"
+                style={{ fontSize: "17px", lineHeight: 1.75 }}
+              >
+                {p}
+              </p>
+            ))}
+          </div>
+        </div>
+      </SectionWrapper>
+
       {/* ── PATH A ──────────────────────────────────────────────── */}
       <PathSection
         eyebrow={pricing.pathA.eyebrow}
