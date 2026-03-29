@@ -120,6 +120,24 @@ export const pathSelector = {
   ],
 };
 
+export const mechanism = {
+  eyebrow: "WHY NOTHING CLOSED THE GAP.",
+  bodyPart1: [
+    "Every system you've tried operated at the wrong layer. Not the wrong idea — the wrong architecture.",
+    "You need something that runs at your actual working cadence. Daily, not monthly. Something that retains context across weeks and months — not just within a single session. Something that accumulates enough data about your specific patterns to name the loop you're living inside when you can't see it yourself.",
+    "That's what doesn't exist in any tool, app, or coaching model you've already encountered.",
+  ],
+  reveal: "YOUR OWN AI EXECUTION SYSTEM. BUILT BY A COACH. RUNNING EVERY MORNING.",
+  bodyPart2: [
+    "MySkema is a custom Claude project configured around how you specifically work — your goals, your values, your decision framework, your resistance patterns, and the specific ways you consistently get stuck.",
+    "Not a template. A configuration built from a 60–75 minute deep-dive interview about you.",
+    "It runs inside your own account. It retains everything. It knows what you said you'd do last Tuesday. It knows the project you've been pushing to next week for a month. It catches the contradictions between what you say you want and what you're actually spending your time on — and it surfaces them without ego, without agenda, and without letting you off the hook.",
+    "Camden reviews your weekly summary every Friday. He reads what the AI surfaced, identifies what it missed, and adjusts the system accordingly. That human interpretation layer — applied to weeks of your actual behavioral data — is what no tool or coach replicates on their own.",
+    "The system gets sharper the longer you use it. Month one, it knows your goals. Month two, it knows your patterns. Month three, it's running your task triage, your decision framework, your morning ritual, and whatever your work actually demands.",
+    "It starts with 10 minutes every morning. That's the entry point. The ceiling is the size of your work.",
+  ],
+};
+
 export const howItWorks = {
   label: "How It Works",
   headline: "Three steps. Every path.",
