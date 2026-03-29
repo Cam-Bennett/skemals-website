@@ -45,6 +45,20 @@ export const empathy = {
   emphasizedIndex: -1,
 };
 
+export const practiceRequirement = {
+  eyebrow: "ONE THING TO UNDERSTAND BEFORE YOU APPLY.",
+  paragraphs: [
+    "The system works because you work it.",
+    "The morning check-in is the raw material. What you put into it — your actual thinking, your real priorities, your honest assessment of where you are — is what the AI pattern-recognizes from. A half-effort check-in produces half-effort pattern recognition. The coaching response Camden sends on Friday is only as precise as the data you gave the system that week.",
+    "This isn't a passive system. It doesn't run in the background while you do other things. It runs in ten minutes every morning because you sit down and run it.",
+    "Clients who treat the check-in as a checkbox don't get results. Clients who treat it as the most important ten minutes of their day do.",
+  ],
+  closingLines: [
+    "If that's a problem — this isn't the right fit.",
+    "If that's obvious — keep reading.",
+  ],
+};
+
 export const priorAttempts = {
   eyebrow: "YOU'VE ALREADY TRIED TO FIX THIS.",
   paragraphs: [

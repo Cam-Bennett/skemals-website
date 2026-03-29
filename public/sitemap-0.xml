@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://skemals.com/icon</loc><lastmod>2026-03-29T22:12:57.800Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://skemals.com/opengraph-image</loc><lastmod>2026-03-29T22:12:57.801Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://skemals.com/about</loc><lastmod>2026-03-29T22:12:57.801Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://skemals.com</loc><lastmod>2026-03-29T22:12:57.801Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://skemals.com/privacy</loc><lastmod>2026-03-29T22:12:57.801Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://skemals.com/pricing</loc><lastmod>2026-03-29T22:12:57.801Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://skemals.com/faq</loc><lastmod>2026-03-29T22:12:57.801Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://skemals.com/contact</loc><lastmod>2026-03-29T22:12:57.801Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://skemals.com/the-work/how-i-built-my-ai-operating-system</loc><lastmod>2026-03-29T22:12:57.801Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://skemals.com/the-work/what-is-an-ai-accountability-system</loc><lastmod>2026-03-29T22:12:57.801Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://skemals.com/the-work/why-time-blocking-fails-business-owners</loc><lastmod>2026-03-29T22:12:57.801Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://skemals.com/the-work</loc><lastmod>2026-03-29T22:12:57.801Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://skemals.com/opengraph-image</loc><lastmod>2026-03-29T22:54:16.609Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://skemals.com/icon</loc><lastmod>2026-03-29T22:54:16.610Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://skemals.com/about</loc><lastmod>2026-03-29T22:54:16.610Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://skemals.com</loc><lastmod>2026-03-29T22:54:16.610Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://skemals.com/contact</loc><lastmod>2026-03-29T22:54:16.610Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://skemals.com/the-work</loc><lastmod>2026-03-29T22:54:16.610Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://skemals.com/faq</loc><lastmod>2026-03-29T22:54:16.610Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://skemals.com/privacy</loc><lastmod>2026-03-29T22:54:16.610Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://skemals.com/pricing</loc><lastmod>2026-03-29T22:54:16.610Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://skemals.com/the-work/how-i-built-my-ai-operating-system</loc><lastmod>2026-03-29T22:54:16.610Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://skemals.com/the-work/what-is-an-ai-accountability-system</loc><lastmod>2026-03-29T22:54:16.610Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://skemals.com/the-work/why-time-blocking-fails-business-owners</loc><lastmod>2026-03-29T22:54:16.610Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>

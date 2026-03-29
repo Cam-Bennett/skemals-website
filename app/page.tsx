@@ -10,6 +10,7 @@ import Mechanism from "@/components/sections/Mechanism";
 import IdentityFrame from "@/components/sections/IdentityFrame";
 import HowItWorks from "@/components/sections/HowItWorks";
 import Features from "@/components/sections/Features";
+import PracticeRequirement from "@/components/sections/PracticeRequirement";
 import WhatItsNot from "@/components/sections/WhatItsNot";
 import PractitionerProof from "@/components/sections/PractitionerProof";
 import ClientProof from "@/components/sections/ClientProof";
@@ -29,10 +30,11 @@ export default function Home() {
       <ProofInsight />
       <SchemaDefinition />
       <Mechanism />
-      <IdentityFrame />
       <PathSelector />
       <HowItWorks />
       <Features />
+      <PracticeRequirement />
+      <IdentityFrame />
       <WhatItsNot />
       <PractitionerProof />
       <ClientProof />
