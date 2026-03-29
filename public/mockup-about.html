@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Hero — Mockup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Karla:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0A0A12; color: #F1F0EE; font-family: 'Karla', sans-serif; }
+
+    /* ── Labels ──────────────────────────────────────────── */
+    .option-label {
+      background: #0A0A12;
+      padding: 32px 48px 16px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #6B7280;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .option-label span { color: #DC2626; margin-right: 8px; }
+
+    /* ── Shared text styles ──────────────────────────────── */
+    .eyebrow {
+      font-family: 'Karla', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #DC2626;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: #F1F0EE;
+      margin-bottom: 24px;
+    }
+    p {
+      font-family: 'Karla', sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #C4C3BF;
+      margin-bottom: 16px;
+    }
+
+    /* ── Headshot placeholder ────────────────────────────── */
+    .headshot {
+      width: 220px;
+      aspect-ratio: 4/5;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.10);
+      flex-shrink: 0;
+      position: relative;
+    }
+    .headshot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      filter: brightness(0.95) contrast(1.05);
+    }
+
+    /* ════════════════════════════════════════════════════════
+       OPTION 1 — Hard split panel
+       Left: solid dark + text | Right: image full opacity
+    ════════════════════════════════════════════════════════ */
+    .opt1 {
+      display: flex;
+      min-height: 72vh;
+      overflow: hidden;
+    }
+    .opt1-left {
+      flex: 0 0 52%;
+      background: #0A0A12;
+      padding: 72px 56px 72px 48px;
+      display: flex;
+      align-items: center;
+    }
+    .opt1-left-inner {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+      max-width: 640px;
+    }
+    .opt1-right {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+    }
+    .opt1-right img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      opacity: 0.92;
+    }
+    /* thin feather on the seam so it doesn't hard-cut */
+    .opt1-right::before {
+      content: '';
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 80px;
+      background: linear-gradient(to right, #0A0A12, transparent);
+      z-index: 1;
+    }
+
+    /* ════════════════════════════════════════════════════════
+       OPTION 2 — Image strip above text
+       Top band: full-width image (no overlay) + eyebrow/headline
+       Bottom band: dark section with body copy
+    ════════════════════════════════════════════════════════ */
+    .opt2-top {
+      position: relative;
+      min-height: 46vh;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      padding: 48px 48px 0;
+    }
+    .opt2-top img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+      opacity: 0.88;
+    }
+    /* bottom fade so text below doesn't hard-cut from image */
+    .opt2-top::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 120px;
+      background: linear-gradient(to bottom, transparent, #0A0A12);
+      z-index: 1;
+    }
+    /* left-side legibility guard just for eyebrow/headline */
+    .opt2-top::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(10,10,18,0.80) 0%, rgba(10,10,18,0.30) 45%, rgba(10,10,18,0.0) 80%);
+      z-index: 1;
+    }
+    .opt2-top-content {
+      position: relative;
+      z-index: 2;
+      max-width: 620px;
+      padding-bottom: 48px;
+    }
+    .opt2-bottom {
+      background: #0A0A12;
+      padding: 48px 48px 72px;
+      display: flex;
+      gap: 48px;
+      align-items: flex-start;
+    }
+    .opt2-bottom-text {
+      max-width: 620px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── OPTION 1 ─────────────────────────────────────── -->
+  <div class="option-label"><span>Option 1</span> Hard split — dark left panel / image right</div>
+  <div class="opt1">
+    <div class="opt1-left">
+      <div class="opt1-left-inner">
+        <!-- Headshot -->
+        <div class="headshot">
+          <img src="/images/camden-headshot.jpg" alt="Camden Bennett" />
+        </div>
+        <!-- Text -->
+        <div>
+          <p class="eyebrow">About Camden</p>
+          <h1>I didn't figure it out. I built my way out.</h1>
+          <p>I know what it's like to end a day exhausted with nothing to show for it. Not because I didn't work. I worked constantly. I was available to everyone, responsive to everything, and in control of nothing.</p>
+          <p>I realized this when I took over as broker of Pinedale Properties, the top-producing real estate brokerage in Sublette County, Wyoming. More responsibility. More people depending on me. And a growing gap between how hard I was working and what I was actually producing.</p>
+          <p>I didn't have a discipline problem. I simply had no systems.</p>
+        </div>
+      </div>
+    </div>
+    <div class="opt1-right">
+      <img src="/images/abstract-3.png" alt="" />
+    </div>
+  </div>
+
+  <!-- ── OPTION 2 ─────────────────────────────────────── -->
+  <div class="option-label"><span>Option 2</span> Image strip above — headline in image, body below</div>
+  <div class="opt2-top">
+    <img src="/images/abstract-3.png" alt="" />
+    <div class="opt2-top-content">
+      <p class="eyebrow">About Camden</p>
+      <h1>I didn't figure it out. I built my way out.</h1>
+    </div>
+  </div>
+  <div class="opt2-bottom">
+    <div class="headshot" style="flex-shrink:0;">
+      <img src="/images/camden-headshot.jpg" alt="Camden Bennett" />
+    </div>
+    <div class="opt2-bottom-text">
+      <p>I know what it's like to end a day exhausted with nothing to show for it. Not because I didn't work. I worked constantly. I was available to everyone, responsive to everything, and in control of nothing.</p>
+      <p>I realized this when I took over as broker of Pinedale Properties, the top-producing real estate brokerage in Sublette County, Wyoming. More responsibility. More people depending on me. And a growing gap between how hard I was working and what I was actually producing.</p>
+      <p>I didn't have a discipline problem. I simply had no systems.</p>
+    </div>
+  </div>
+
+</body>
+</html>
