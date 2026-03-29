@@ -112,13 +112,24 @@ export default function Hero() {
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-wrap gap-4 mb-14">
+          <div className="flex flex-wrap gap-4 mb-4">
             <Btn as="a" href="#qualifier" size="lg">
               {hero.ctaPrimary}
             </Btn>
             <Btn as="a" href="#paths" variant="secondary" size="lg">
               {hero.ctaSecondary}
             </Btn>
+          </div>
+
+          {/* Pricing anchor */}
+          <div className="mb-10">
+            <a
+              href="/pricing"
+              className="font-body text-muted hover:text-text-soft transition-colors duration-150"
+              style={{ fontSize: "13px", textDecoration: "none" }}
+            >
+              See pricing →
+            </a>
           </div>
 
           {/* Feature strip */}
