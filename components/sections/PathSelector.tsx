@@ -65,7 +65,7 @@ export default function PathSelector() {
               {path.description}
             </p>
             <a
-              href={`/?path=${path.id.toLowerCase()}#qualifier`}
+              href={path.id === "C" ? "/#qualifier" : `/?path=${path.id.toLowerCase()}#qualifier`}
               className="font-body font-semibold text-sm transition-colors duration-150"
               style={{ color: path.color, textDecoration: "none" }}
             >
@@ -74,14 +74,6 @@ export default function PathSelector() {
           </div>
         ))}
       </div>
-
-      {/* Footnote */}
-      <p
-        className="font-body text-muted mt-8"
-        style={{ fontSize: "14px", lineHeight: 1.6 }}
-      >
-        {pathSelector.footnote}
-      </p>
     </SectionWrapper>
   );
 }

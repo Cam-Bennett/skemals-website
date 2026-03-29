@@ -75,9 +75,15 @@ export const pathSelector = {
         "The problem requires building systems for more than one person. Your people are capable — the workflows, communication, and execution layer underneath them isn't. You need a diagnostic and systems your team can actually run.",
       cta: "This sounds like me →",
     },
+    {
+      id: "C",
+      color: "#7C3AED",
+      title: "Custom",
+      description:
+        "If your situation doesn't fit PATH A or PATH B, PATH C offers a custom solution that emerges during intake. It can be more than either path, less, or simply different. Custom deliverables — research briefs, strategic documents, knowledge bases — are built alongside your MySkema when your situation calls for it.",
+      cta: "Tell me about your situation →",
+    },
   ],
-  footnote:
-    "Not sure which fits? The intake determines it.",
 };
 
 export const howItWorks = {
