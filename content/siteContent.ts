@@ -584,7 +584,7 @@ export const faq = {
     {
       question: "Do I need to know how to use AI?",
       answer: [
-        "No. Camden builds the entire system. You interact with it the same way you'd type a text message or a word processing document — you type what's on your mind, and it responds. There's no software to install, only a very basic interface to learn, and minimal settings to configure. If you can use common software, you can use this.",
+        "No. Camden builds the entire system and sends a setup walkthrough. You don't configure anything. You interact with it the same way you'd type a text message or a word processing document — you type what's on your mind, and it responds. There's no software to install, only a very basic interface to learn, and minimal settings to configure. If you can use common software, you can use this.",
       ],
     },
     {
