@@ -128,43 +128,51 @@ export default function AboutPage() {
         <Nav />
 
         {/* ── SECTION 1 — Two-column hero ─────────────────────────── */}
-        <SectionWrapper
+        <section
           style={{
             position: "relative",
             overflow: "hidden",
             background: "#0A0A12",
+            minHeight: "70vh",
+            display: "flex",
+            alignItems: "center",
+            padding: "96px 24px",
           }}
         >
-          {/* Abstract background image */}
+          {/* Abstract background — fills full section */}
           <Image
             src="/images/abstract-3.png"
             alt=""
             fill
             priority
             sizes="100vw"
-            style={{ objectFit: "cover", opacity: 0.45, zIndex: 0 }}
+            style={{ objectFit: "cover", opacity: 0.75, zIndex: 0 }}
           />
-          {/* Dark overlay */}
+          {/* Gradient overlay — dark left (text), open right (colors) */}
           <div
             style={{
               position: "absolute",
               inset: 0,
-              background: "rgba(10,10,18,0.48)",
+              background:
+                "linear-gradient(to right, rgba(10,10,18,0.92) 0%, rgba(10,10,18,0.62) 45%, rgba(10,10,18,0.08) 100%)",
               zIndex: 1,
             }}
           />
-          {/* Content sits above */}
-          <div style={{ position: "relative", zIndex: 2 }}>
-            {/* Headshot */}
+
+          {/* Two-column layout */}
+          <div
+            className="max-w-site mx-auto w-full flex flex-col md:flex-row gap-12 md:gap-16 items-start"
+            style={{ position: "relative", zIndex: 2 }}
+          >
+            {/* Left — headshot */}
             <div
-              className="relative rounded-xl overflow-hidden reveal-hidden"
+              className="relative rounded-xl overflow-hidden reveal-hidden flex-shrink-0"
               data-reveal
               data-reveal-delay="0"
               style={{
-                width: "min(220px, 100%)",
+                width: "min(240px, 100%)",
                 aspectRatio: "4 / 5",
-                border: "1px solid rgba(255,255,255,0.06)",
-                marginBottom: "32px",
+                border: "1px solid rgba(255,255,255,0.10)",
               }}
             >
               <Image
@@ -174,12 +182,12 @@ export default function AboutPage() {
                 priority
                 className="object-cover object-top"
                 style={{ filter: "brightness(0.95) contrast(1.05)" }}
-                sizes="220px"
+                sizes="240px"
               />
             </div>
 
-            {/* Text — full left-aligned block */}
-            <div className="flex flex-col gap-5" style={{ maxWidth: "680px" }}>
+            {/* Right — text */}
+            <div className="flex flex-col gap-5" style={{ maxWidth: "620px" }}>
               <Eyebrow text={about.section1.eyebrow} />
               <h1
                 data-reveal
@@ -199,7 +207,7 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
-        </SectionWrapper>
+        </section>
 
         {/* ── SECTION 2 — The Search ───────────────────────────────── */}
         <SectionWrapper bgAlt>

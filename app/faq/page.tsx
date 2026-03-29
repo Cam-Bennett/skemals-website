@@ -39,11 +39,15 @@ export default function FAQPage() {
         <Nav />
 
         {/* ── Header section ──────────────────────────────────────── */}
-        <SectionWrapper
+        <section
           style={{
             position: "relative",
             overflow: "hidden",
             background: "#0A0A12",
+            minHeight: "52vh",
+            display: "flex",
+            alignItems: "center",
+            padding: "96px 24px",
           }}
         >
           <Image
@@ -52,17 +56,18 @@ export default function FAQPage() {
             fill
             priority
             sizes="100vw"
-            style={{ objectFit: "cover", opacity: 0.45, zIndex: 0 }}
+            style={{ objectFit: "cover", opacity: 0.75, zIndex: 0 }}
           />
           <div
             style={{
               position: "absolute",
               inset: 0,
-              background: "rgba(10,10,18,0.48)",
+              background:
+                "linear-gradient(to right, rgba(10,10,18,0.92) 0%, rgba(10,10,18,0.60) 45%, rgba(10,10,18,0.08) 100%)",
               zIndex: 1,
             }}
           />
-          <div style={{ position: "relative", zIndex: 2 }}>
+          <div className="max-w-site mx-auto w-full" style={{ position: "relative", zIndex: 2 }}>
             <p
               className="font-body font-semibold text-primary uppercase tracking-widest mb-4"
               style={{ fontSize: "11px", letterSpacing: "0.14em" }}
@@ -81,7 +86,7 @@ export default function FAQPage() {
               {faq.headline}
             </h1>
           </div>
-        </SectionWrapper>
+        </section>
 
         {/* ── Accordion section ───────────────────────────────────── */}
         <SectionWrapper bgAlt>

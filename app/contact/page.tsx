@@ -35,14 +35,15 @@ export default function ContactPage() {
           fill
           priority
           sizes="100vw"
-          style={{ objectFit: "cover", opacity: 0.45, zIndex: 0 }}
+          style={{ objectFit: "cover", opacity: 0.75, zIndex: 0 }}
         />
-        {/* Dark overlay */}
+        {/* Gradient overlay — dark left (text), open right (colors) */}
         <div
           style={{
             position: "absolute",
             inset: 0,
-            background: "rgba(10,10,18,0.48)",
+            background:
+              "linear-gradient(to right, rgba(10,10,18,0.92) 0%, rgba(10,10,18,0.58) 42%, rgba(10,10,18,0.06) 100%)",
             zIndex: 1,
           }}
         />
