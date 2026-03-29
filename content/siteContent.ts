@@ -568,6 +568,8 @@ export const faq = {
         "Generic systems break at the first point they don't match how you actually work — your energy patterns, your interruption reality, your specific failure modes. SkemaLS starts with a 60–75 minute interview specifically to find those points before building anything. The system is configured around what that conversation reveals, not around a template.",
         "It also starts small. Week 1 is one habit: a 10-minute morning check-in. Nothing else is added until that's established. The system earns its complexity — it doesn't front-load it.",
         "If you've abandoned every other system you've tried, that's not evidence that you can't do this. It's evidence that none of them were built for you.",
+        "The start is simple.",
+        "The practice isn't optional.",
       ],
     },
     {
