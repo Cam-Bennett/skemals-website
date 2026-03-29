@@ -31,12 +31,6 @@ export default function CTA() {
           className="font-body text-text-soft mb-6"
           style={{ fontSize: "15px" }}
         >
-          {cta.pricing}
-        </p>
-        <p
-          className="font-body text-muted mb-4"
-          style={{ fontSize: "13px", letterSpacing: "0.04em" }}
-        >
           {cta.trustLine}
         </p>
         <p

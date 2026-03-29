@@ -357,7 +357,6 @@ export const cta = {
   buttonLabel: "Find Your Path",
   trustLine: "You own your account. You own your data. No lock-in. No black box.",
   contact: "camden@skemals.com · 801-910-6528",
-  pricing: "PATH A starts at $750 — includes your custom system build and three months of weekly coaching review. Business engagements are quoted by scope.",
 };
 
 export const footer = {
