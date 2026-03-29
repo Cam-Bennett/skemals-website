@@ -10,7 +10,7 @@ import { faq } from "@/content/siteContent";
 export const metadata: Metadata = {
   title: "FAQ — SkemaLS",
   description:
-    "Common questions about SkemaLS, MySkema, and how the AI accountability system works. Built by Camden Bennett.",
+    "Common questions about SkemaLS, MySkema, and how the AI execution system works. Built by Camden Bennett.",
 };
 
 /* ── FAQPage JSON-LD schema ──────────────────────────────────────── */

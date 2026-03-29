@@ -11,15 +11,15 @@ export const nav = {
   cta: "Find Your Path",
 };
 
-// ARCHIVED: "Your own AI accountability system." + "Built by a coach. Running every morning."
+// ARCHIVED: "Your own AI execution system." + "Built by a coach. Running every morning."
 // Moved out of hero — available for reuse in mechanism/how-it-works section
 export const heroArchived = {
-  headline: "Your own AI accountability system.",
+  headline: "Your own AI execution system.",
   subheadline: "Built by a coach. Running every morning.",
 };
 
 export const hero = {
-  eyebrow: "CUSTOM ACCOUNTABILITY SYSTEMS",
+  eyebrow: "CUSTOM EXECUTION SYSTEMS",
   headline: "You start every week knowing exactly what matters. By Thursday it looks nothing like the plan.",
   subheadline: "",
   subtitle:
@@ -28,7 +28,7 @@ export const hero = {
   ctaSecondary: "See How It Works",
   featureStrip: [
     "Pattern Recognition",
-    "Daily Accountability",
+    "Daily Execution",
     "Priority Filtering",
     "Progress Tracking",
   ],
@@ -162,7 +162,7 @@ export const features = {
         "The AI catches contradictions between what you say you want and what you're actually doing. Avoidance patterns. Momentum trends. Energy cycles. The things you consistently skip, delay, or rationalize away — surfaced automatically.",
     },
     {
-      title: "Accountability That Doesn't Flinch",
+      title: "Execution That Doesn't Flinch",
       description:
         "Missed a commitment? It notices. Avoiding the hard thing? It says so. But it also catches wins you'd overlook, reinforces momentum when you're building it, and reminds you of past efforts paying off right now. Brutal honesty. Genuine encouragement. Both.",
     },
@@ -358,7 +358,7 @@ export const qualifierForm = {
   result: {
     A: {
       pathLabel: "PATH A",
-      title: "Your path is individual accountability.",
+      title: "Your path is individual execution.",
     },
     B: {
       pathLabel: "PATH B",
@@ -483,7 +483,7 @@ export const faq = {
     {
       question: "What is SkemaLS?",
       answer:
-        "SkemaLS builds custom AI accountability systems for business owners and individuals. The system — called MySkema — is configured around your specific goals, patterns, and the ways you consistently get stuck. It runs in your own Claude account every morning. Your coach reviews your progress weekly and adjusts the system over time. It's not an app, not a course, and not a template. Every deployment is built from scratch.",
+        "SkemaLS builds custom AI execution systems for business owners and individuals. The system — called MySkema — is configured around your specific goals, patterns, and the ways you consistently get stuck. It runs in your own Claude account every morning. Your coach reviews your progress weekly and adjusts the system over time. It's not an app, not a course, and not a template. Every deployment is built from scratch.",
     },
     {
       question: "How is this different from hiring a coach?",

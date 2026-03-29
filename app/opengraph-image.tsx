@@ -4,7 +4,7 @@ import { join } from "path";
 
 export const runtime = "nodejs"; // fs requires nodejs runtime
 
-export const alt = "SkemaLS — Your Own AI Accountability System";
+export const alt = "SkemaLS — Your Own AI Execution System";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -107,7 +107,7 @@ export default async function Image() {
               marginBottom: "20px",
             }}
           >
-            Your own AI accountability system.
+            Your own AI execution system.
           </div>
 
           {/* Tagline */}

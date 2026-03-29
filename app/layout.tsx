@@ -18,14 +18,14 @@ const karla = Karla({
 });
 
 export const metadata: Metadata = {
-  title: "SkemaLS — Your Own AI Accountability System",
+  title: "SkemaLS — Your Own AI Execution System",
   description:
-    "Custom AI accountability systems for business owners who can't stay consistent. Built by Camden Bennett. 10 minutes every morning. Configured for you, not a template.",
+    "Custom AI execution systems for business owners who can't stay consistent. Built by Camden Bennett. 10 minutes every morning. Configured for you, not a template.",
   metadataBase: new URL("https://skemals.com"),
   openGraph: {
-    title: "SkemaLS — Your Own AI Accountability System",
+    title: "SkemaLS — Your Own AI Execution System",
     description:
-      "Custom-configured AI accountability for business owners who can't close the gap between intention and result. Built by Camden Bennett.",
+      "Custom-configured AI execution for business owners who can't close the gap between intention and result. Built by Camden Bennett.",
     url: "https://skemals.com",
     siteName: "SkemaLS",
     locale: "en_US",
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SkemaLS — Your Own AI Accountability System",
+    title: "SkemaLS — Your Own AI Execution System",
     description:
-      "Custom-configured AI accountability for business owners who can't close the gap between intention and result. Built by Camden Bennett.",
+      "Custom-configured AI execution for business owners who can't close the gap between intention and result. Built by Camden Bennett.",
   },
 };
 
@@ -48,7 +48,7 @@ const orgSchema = {
       name: "SkemaLS",
       url: "https://skemals.com",
       description:
-        "Custom AI accountability systems for business owners. Built by Camden Bennett.",
+        "Custom AI execution systems for business owners. Built by Camden Bennett.",
       founder: { "@id": "https://skemals.com/#person" },
       address: {
         "@type": "PostalAddress",
@@ -68,7 +68,7 @@ const orgSchema = {
       name: "Camden Bennett",
       jobTitle: "Founder, SkemaLS",
       description:
-        "Former U.S. Navy Diver and Intelligence Officer. Real estate broker. Founder of SkemaLS AI accountability coaching.",
+        "Former U.S. Navy Diver and Intelligence Officer. Real estate broker. Founder of SkemaLS AI execution coaching.",
       url: "https://skemals.com/about",
       image: "https://skemals.com/_next/image?url=%2Fimages%2Fcamden-headshot.jpg",
     },
