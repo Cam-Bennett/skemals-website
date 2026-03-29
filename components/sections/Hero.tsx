@@ -84,17 +84,19 @@ export default function Hero() {
         }}
       >
         <div className="max-w-site mx-auto">
-          {/* Subheadline */}
-          <p
-            className="font-heading font-semibold text-text-soft mb-5"
-            style={{
-              fontSize: "clamp(1.1rem, 2vw, 1.4rem)",
-              letterSpacing: "-0.01em",
-              maxWidth: "520px",
-            }}
-          >
-            {hero.subheadline}
-          </p>
+          {/* Subheadline — only renders if populated */}
+          {hero.subheadline && (
+            <p
+              className="font-heading font-semibold text-text-soft mb-5"
+              style={{
+                fontSize: "clamp(1.1rem, 2vw, 1.4rem)",
+                letterSpacing: "-0.01em",
+                maxWidth: "520px",
+              }}
+            >
+              {hero.subheadline}
+            </p>
+          )}
 
           {/* Subtitle */}
           <p

@@ -11,12 +11,19 @@ export const nav = {
   cta: "Find Your Path",
 };
 
-export const hero = {
-  eyebrow: "AI-POWERED ACCOUNTABILITY",
+// ARCHIVED: "Your own AI accountability system." + "Built by a coach. Running every morning."
+// Moved out of hero — available for reuse in mechanism/how-it-works section
+export const heroArchived = {
   headline: "Your own AI accountability system.",
   subheadline: "Built by a coach. Running every morning.",
+};
+
+export const hero = {
+  eyebrow: "CUSTOM ACCOUNTABILITY SYSTEMS",
+  headline: "You start every week knowing exactly what matters. By Thursday it looks nothing like the plan.",
+  subheadline: "",
   subtitle:
-    "For business owners who can't close the gap between who they are and who they need to be. Custom-configured for your goals, your patterns, and the specific ways you get stuck — not a template, not an app, not someone else's system.",
+    "That's not a discipline problem. That's what happens when capable people have no system holding the structure in place.",
   ctaPrimary: "Find Your Path",
   ctaSecondary: "See How It Works",
   featureStrip: [
