@@ -101,8 +101,8 @@ export default function ContactPage() {
             }}
           >
             <p
-              className="font-body text-muted mb-4"
-              style={{ fontSize: "13px", letterSpacing: "0.04em" }}
+              className="font-body font-semibold text-text-soft mb-4"
+              style={{ fontSize: "15px", letterSpacing: "0.01em" }}
             >
               {contact.directContact.label}
             </p>
