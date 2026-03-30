@@ -91,7 +91,7 @@ export default function FAQPage() {
         </section>
 
         {/* ── Accordion section ───────────────────────────────────── */}
-        <SectionWrapper bgAlt>
+        <SectionWrapper bgAlt style={{ paddingTop: "40px" }}>
           <div style={{ maxWidth: "800px" }}>
             <Accordion items={faq.items} />
           </div>
