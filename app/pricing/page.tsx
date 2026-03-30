@@ -176,7 +176,7 @@ export default function PricingPage() {
         }}
       >
         <Image
-          src="/images/abstract-4.png"
+          src="/images/Abstract-4.png"
           alt=""
           fill
           priority
