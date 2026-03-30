@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
 import SectionWrapper from "@/components/ui/SectionWrapper";
@@ -165,29 +166,52 @@ export default function PricingPage() {
       {/* ── Hero ──────────────────────────────────────────────── */}
       <section
         style={{
+          position: "relative",
+          overflow: "hidden",
           background: "#0A0A12",
-          padding: "96px 24px 80px",
+          minHeight: "52vh",
+          display: "flex",
+          alignItems: "flex-end",
+          padding: "0 24px 56px",
         }}
       >
-        <div className="max-w-site mx-auto">
-          <div style={{ maxWidth: "780px" }}>
-            <p
-              className="font-body font-semibold text-primary uppercase tracking-widest mb-4"
-              style={{ fontSize: "11px", letterSpacing: "0.14em" }}
-            >
-              {pricing.hero.eyebrow}
-            </p>
-            <h1
-              className="font-heading font-bold text-text-main"
-              style={{
-                fontSize: "clamp(2rem, 4.5vw, 3.2rem)",
-                lineHeight: 1.1,
-                letterSpacing: "-0.02em",
-              }}
-            >
-              {pricing.hero.headline}
-            </h1>
-          </div>
+        <Image
+          src="/images/abstract-4.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          style={{ objectFit: "cover", opacity: 0.95, zIndex: 0 }}
+        />
+        {/* Bottom fade for headline contrast */}
+        <div
+          style={{
+            position: "absolute",
+            bottom: 0, left: 0, right: 0,
+            height: "320px",
+            background: "linear-gradient(to bottom, transparent, rgba(10,10,18,0.7) 50%, #0A0A12)",
+            zIndex: 1,
+          }}
+        />
+        <div className="max-w-site mx-auto w-full" style={{ position: "relative", zIndex: 2 }}>
+          <p
+            className="font-body font-semibold text-primary uppercase tracking-widest mb-4"
+            style={{ fontSize: "11px", letterSpacing: "0.14em" }}
+          >
+            {pricing.hero.eyebrow}
+          </p>
+          <h1
+            className="font-heading font-bold text-text-main"
+            style={{
+              fontSize: "clamp(2rem, 4.5vw, 3.2rem)",
+              lineHeight: 1.1,
+              letterSpacing: "-0.02em",
+              maxWidth: "720px",
+              textShadow: "0 2px 20px rgba(0,0,0,0.5)",
+            }}
+          >
+            {pricing.hero.headline}
+          </h1>
         </div>
       </section>
 
