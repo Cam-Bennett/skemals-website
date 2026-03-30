@@ -63,8 +63,8 @@ export default function FAQPage() {
             style={{
               position: "absolute",
               bottom: 0, left: 0, right: 0,
-              height: "140px",
-              background: "linear-gradient(to bottom, transparent, #0A0A12)",
+              height: "320px",
+              background: "linear-gradient(to bottom, transparent, rgba(10,10,18,0.7) 50%, #0A0A12)",
               zIndex: 1,
             }}
           />
