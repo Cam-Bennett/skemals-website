@@ -46,8 +46,8 @@ export default function FAQPage() {
             background: "#0A0A12",
             minHeight: "52vh",
             display: "flex",
-            alignItems: "center",
-            padding: "96px 24px",
+            alignItems: "flex-end",
+            padding: "0 24px 56px",
           }}
         >
           <Image
@@ -56,14 +56,15 @@ export default function FAQPage() {
             fill
             priority
             sizes="100vw"
-            style={{ objectFit: "cover", opacity: 0.75, zIndex: 0 }}
+            style={{ objectFit: "cover", opacity: 0.95, zIndex: 0 }}
           />
+          {/* Thin bottom fade only — no side overlay */}
           <div
             style={{
               position: "absolute",
-              inset: 0,
-              background:
-                "linear-gradient(to right, rgba(10,10,18,0.92) 0%, rgba(10,10,18,0.60) 45%, rgba(10,10,18,0.08) 100%)",
+              bottom: 0, left: 0, right: 0,
+              height: "140px",
+              background: "linear-gradient(to bottom, transparent, #0A0A12)",
               zIndex: 1,
             }}
           />
@@ -81,6 +82,7 @@ export default function FAQPage() {
                 lineHeight: 1.1,
                 letterSpacing: "-0.02em",
                 maxWidth: "720px",
+                textShadow: "0 2px 20px rgba(0,0,0,0.5)",
               }}
             >
               {faq.headline}
