@@ -545,7 +545,7 @@ export default function MySkemaLitePage() {
             }}
           >
             14 days.{" "}
-            <span style={{ color: "#DC2626" }}>No cost.</span> No obligation.
+            <span style={{ color: "#DC2626" }}>No cost.</span> No credit card. No obligation.
           </h2>
           <p className="font-body text-text-soft mb-10" style={{ fontSize: "17px", lineHeight: 1.8 }}>
             You&apos;ll receive your first prompt today. One per day for 14 days. The journal lives in your own Claude account — you own it.

@@ -96,7 +96,7 @@ export default function FreeTrialForm() {
 
       <div>
         <label htmlFor="email" style={labelStyle}>Email Address</label>
-        <input type="email" id="email" name="email" required placeholder="where to send your first prompt" style={inputStyle} />
+        <input type="email" id="email" name="email" required placeholder="Where to send your setup instructions" style={inputStyle} />
       </div>
 
       <div>
