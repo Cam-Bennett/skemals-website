@@ -131,14 +131,21 @@ export default function Hero() {
             </Btn>
           </div>
 
-          {/* Pricing anchor */}
-          <div className="mb-10">
+          {/* Muted anchors */}
+          <div className="flex flex-wrap gap-6 mb-10">
             <a
               href="/pricing"
               className="font-body text-muted hover:text-text-soft transition-colors duration-150"
               style={{ fontSize: "13px", textDecoration: "none" }}
             >
               See pricing →
+            </a>
+            <a
+              href="/myskema-lite"
+              className="font-body text-muted hover:text-text-soft transition-colors duration-150"
+              style={{ fontSize: "13px", textDecoration: "none" }}
+            >
+              Try MySkema Lite free →
             </a>
           </div>
 

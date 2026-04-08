@@ -124,6 +124,16 @@ export default function FAQPage() {
             <Btn as="a" href={faq.cta.buttonHref} size="lg">
               {faq.cta.buttonLabel}
             </Btn>
+            <p className="font-body text-muted mt-6" style={{ fontSize: "13px" }}>
+              Not ready to apply?{" "}
+              <a
+                href="/myskema-lite"
+                className="hover:text-text-soft transition-colors duration-150"
+                style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: "3px" }}
+              >
+                Try MySkema Lite free — 14 days, no commitment.
+              </a>
+            </p>
           </div>
         </SectionWrapper>
 

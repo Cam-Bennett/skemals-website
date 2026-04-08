@@ -359,6 +359,16 @@ export default function PricingPage() {
           >
             {pricing.footerCta.microCopy}
           </p>
+          <p className="font-body text-muted mt-4" style={{ fontSize: "13px" }}>
+            Not ready to commit?{" "}
+            <a
+              href="/myskema-lite"
+              className="hover:text-text-soft transition-colors duration-150"
+              style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: "3px" }}
+            >
+              Try MySkema Lite free — 14 days, no obligation.
+            </a>
+          </p>
         </div>
       </SectionWrapper>
 
