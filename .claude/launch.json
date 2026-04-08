@@ -3,9 +3,10 @@
   "configurations": [
     {
       "name": "skemals-website",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
-      "port": 3000
+      "runtimeExecutable": "/usr/local/bin/node",
+      "runtimeArgs": ["/Users/camdenbennett/Documents/02 Areas/AI/Claude/Claude Code/projects/skemals-website/node_modules/.bin/next", "dev"],
+      "port": 3000,
+      "autoPort": true
     }
   ]
 }
