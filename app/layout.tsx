@@ -33,6 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@camdenbennett",
     title: "SkemaLS — Your Own AI Execution System",
     description:
       "Custom-configured AI execution systems for business owners who can't close the gap between intention and result. Built by Camden Bennett.",
@@ -63,6 +64,15 @@ const orgSchema = {
       },
     },
     {
+      "@type": "WebSite",
+      "@id": "https://skemals.com/#website",
+      url: "https://skemals.com",
+      name: "SkemaLS",
+      description:
+        "Custom AI execution systems for business owners who can't close the gap between intention and result.",
+      publisher: { "@id": "https://skemals.com/#organization" },
+    },
+    {
       "@type": "Person",
       "@id": "https://skemals.com/#person",
       name: "Camden Bennett",
@@ -70,7 +80,7 @@ const orgSchema = {
       description:
         "Former U.S. Navy Diver and Intelligence Officer. Real estate broker. Founder of SkemaLS AI execution coaching.",
       url: "https://skemals.com/about",
-      image: "https://skemals.com/_next/image?url=%2Fimages%2Fcamden-headshot.jpg",
+      image: "https://skemals.com/images/camden-headshot.jpg",
     },
   ],
 };
