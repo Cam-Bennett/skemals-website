@@ -100,12 +100,11 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p
-            className="font-body text-text-main mb-4"
+            className="font-body text-text-soft mb-4"
             style={{
-              fontSize: "17px",
-              lineHeight: 1.7,
-              opacity: 0.6,
-              maxWidth: "520px",
+              fontSize: "clamp(17px, 1.8vw, 20px)",
+              lineHeight: 1.75,
+              maxWidth: "560px",
             }}
           >
             {hero.subtitle}
@@ -114,8 +113,8 @@ export default function Hero() {
           {/* Discovery line */}
           {hero.discoveryLine && (
             <p
-              className="font-body text-muted mb-8"
-              style={{ fontSize: "14px", lineHeight: 1.7, maxWidth: "480px" }}
+              className="font-body text-text-soft mb-8"
+              style={{ fontSize: "clamp(15px, 1.5vw, 17px)", lineHeight: 1.75, maxWidth: "520px", opacity: 0.75 }}
             >
               {hero.discoveryLine}
             </p>
