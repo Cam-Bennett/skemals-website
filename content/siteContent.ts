@@ -453,7 +453,7 @@ export const footer = {
     { label: "FAQ", href: "/faq" },
     { label: "Contact", href: "/contact" },
   ],
-  legalLinks: ["Privacy Policy"],
+  legalLinks: ["Privacy Policy", "Terms of Service"],
   location: "Pinedale, Wyoming",
 };
 
