@@ -9,11 +9,45 @@ export const metadata: Metadata = {
   title: "Contact — SkemaLS",
   description:
     "Start with the application form. Six questions, three minutes. Camden reviews every submission personally and responds within 24 hours.",
+  alternates: {
+    canonical: "https://skemals.com/contact",
+  },
+  openGraph: {
+    title: "Contact — SkemaLS",
+    description:
+      "Start with the application form. Six questions, three minutes. Camden reviews every submission personally and responds within 24 hours.",
+    url: "https://skemals.com/contact",
+    siteName: "SkemaLS",
+    type: "website",
+  },
+};
+
+const contactBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://skemals.com/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Contact",
+      item: "https://skemals.com/contact",
+    },
+  ],
 };
 
 export default function ContactPage() {
   return (
     <main style={{ paddingTop: "64px" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactBreadcrumb) }}
+      />
       <Nav />
 
       {/* ── Main section ─────────────────────────────────────────── */}

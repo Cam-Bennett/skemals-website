@@ -11,11 +11,45 @@ export const metadata: Metadata = {
   title: "The Work — SkemaLS",
   description:
     "Case studies, process writing, and field notes from inside the system. Written for business owners who've already tried the standard solutions.",
+  alternates: {
+    canonical: "https://skemals.com/the-work",
+  },
+  openGraph: {
+    title: "The Work — SkemaLS",
+    description:
+      "Case studies, process writing, and field notes from inside the system. Written for business owners who've already tried the standard solutions.",
+    url: "https://skemals.com/the-work",
+    siteName: "SkemaLS",
+    type: "website",
+  },
+};
+
+const theWorkBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://skemals.com/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "The Work",
+      item: "https://skemals.com/the-work",
+    },
+  ],
 };
 
 export default function TheWorkPage() {
   return (
     <main style={{ paddingTop: "64px" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(theWorkBreadcrumb) }}
+      />
       <Nav />
 
       {/* ── Header ─────────────────────────────────────────────────── */}
@@ -40,7 +74,7 @@ export default function TheWorkPage() {
             maxWidth: "680px",
           }}
         >
-          {theWork.headline}
+          Writing from inside the system.
         </h1>
       </SectionWrapper>
 

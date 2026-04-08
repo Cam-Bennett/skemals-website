@@ -21,6 +21,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${article.title} — SkemaLS`,
     description: article.excerpt,
+    alternates: {
+      canonical: `https://skemals.com/the-work/${article.slug}`,
+    },
+    openGraph: {
+      title: `${article.title} — SkemaLS`,
+      description: article.excerpt,
+      url: `https://skemals.com/the-work/${article.slug}`,
+      siteName: "SkemaLS",
+      type: "article",
+    },
   };
 }
 
@@ -120,8 +130,67 @@ export default function ArticlePage({ params }: Props) {
     day: "numeric",
   });
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://skemals.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "The Work",
+        item: "https://skemals.com/the-work",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: article.title,
+        item: `https://skemals.com/the-work/${article.slug}`,
+      },
+    ],
+  };
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: article.title,
+    description: article.excerpt,
+    url: `https://skemals.com/the-work/${article.slug}`,
+    datePublished: article.date,
+    dateModified: article.date,
+    author: {
+      "@type": "Person",
+      "@id": "https://skemals.com/#person",
+      name: "Camden Bennett",
+      url: "https://skemals.com/about",
+    },
+    publisher: {
+      "@type": "Organization",
+      "@id": "https://skemals.com/#organization",
+      name: "SkemaLS",
+      url: "https://skemals.com",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://skemals.com/the-work/${article.slug}`,
+    },
+  };
+
   return (
     <main style={{ paddingTop: "64px" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <Nav />
 
       {/* ── Article header ─────────────────────────────────────────── */}

@@ -7,6 +7,17 @@ export const metadata: Metadata = {
   title: "Terms of Service — SkemaLS",
   description:
     "Terms of service for SkemaLS AI execution system and coaching services.",
+  alternates: {
+    canonical: "https://skemals.com/terms-of-service",
+  },
+  openGraph: {
+    title: "Terms of Service — SkemaLS",
+    description:
+      "Terms of service for SkemaLS AI execution system and coaching services.",
+    url: "https://skemals.com/terms-of-service",
+    siteName: "SkemaLS",
+    type: "website",
+  },
 };
 
 const EFFECTIVE_DATE = "March 29, 2026";
@@ -102,9 +113,32 @@ const sections: Section[] = [
   },
 ];
 
+const termsBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://skemals.com/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Terms of Service",
+      item: "https://skemals.com/terms-of-service",
+    },
+  ],
+};
+
 export default function TermsPage() {
   return (
     <main style={{ paddingTop: "64px" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(termsBreadcrumb) }}
+      />
       <Nav />
 
       {/* ── Header ───────────────────────────────────────────────── */}

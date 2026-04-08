@@ -11,6 +11,17 @@ export const metadata: Metadata = {
   title: "FAQ — SkemaLS",
   description:
     "Common questions about SkemaLS, MySkema, and how the AI execution system works. Built by Camden Bennett.",
+  alternates: {
+    canonical: "https://skemals.com/faq",
+  },
+  openGraph: {
+    title: "FAQ — SkemaLS",
+    description:
+      "Common questions about SkemaLS, MySkema, and how the AI execution system works. Built by Camden Bennett.",
+    url: "https://skemals.com/faq",
+    siteName: "SkemaLS",
+    type: "website",
+  },
 };
 
 /* ── FAQPage JSON-LD schema ──────────────────────────────────────── */
@@ -27,12 +38,35 @@ const faqSchema = {
   })),
 };
 
+const faqBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://skemals.com/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "FAQ",
+      item: "https://skemals.com/faq",
+    },
+  ],
+};
+
 export default function FAQPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqBreadcrumb) }}
       />
 
       <main style={{ paddingTop: "64px" }}>

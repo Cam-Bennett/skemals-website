@@ -9,6 +9,17 @@ export const metadata: Metadata = {
   title: "MySkema Lite — Free 14-Day Experience | SkemaLS",
   description:
     "14 days of structured journaling that shows you exactly what's costing you. Free. No coaching yet — just clarity.",
+  alternates: {
+    canonical: "https://skemals.com/myskema-lite",
+  },
+  openGraph: {
+    title: "MySkema Lite — Free 14-Day Experience | SkemaLS",
+    description:
+      "14 days of structured journaling that shows you exactly what's costing you. Free. No coaching yet — just clarity.",
+    url: "https://skemals.com/myskema-lite",
+    siteName: "SkemaLS",
+    type: "website",
+  },
 };
 
 const phases = [
@@ -60,9 +71,32 @@ const fullItems = [
   "90-day transformation with weekly review and external accountability",
 ];
 
+const liteBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://skemals.com/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "MySkema Lite",
+      item: "https://skemals.com/myskema-lite",
+    },
+  ],
+};
+
 export default function MySkemaLitePage() {
   return (
     <main style={{ paddingTop: "64px" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(liteBreadcrumb) }}
+      />
       <Nav />
 
       {/* ── Hero ────────────────────────────────────────────────── */}

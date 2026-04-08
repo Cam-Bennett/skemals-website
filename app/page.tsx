@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import HomepageNav from "@/components/sections/HomepageNav";
 import Hero from "@/components/sections/Hero";
 import EmpathyHook from "@/components/sections/EmpathyHook";
@@ -18,6 +19,24 @@ import Founder from "@/components/sections/Founder";
 import QualifierForm from "@/components/sections/QualifierForm";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
+
+export const metadata: Metadata = {
+  title: "SkemaLS — Your Own AI Execution System",
+  description:
+    "Custom AI execution systems for business owners who can't close the gap between intention and result. Built by Camden Bennett. 10 minutes every morning. Configured for you, not a template.",
+  alternates: {
+    canonical: "https://skemals.com/",
+  },
+  openGraph: {
+    title: "SkemaLS — Your Own AI Execution System",
+    description:
+      "Custom-configured AI execution systems for business owners who can't close the gap between intention and result. Built by Camden Bennett.",
+    url: "https://skemals.com/",
+    siteName: "SkemaLS",
+    locale: "en_US",
+    type: "website",
+  },
+};
 
 export default function Home() {
   return (

@@ -8,8 +8,18 @@ import Btn from "@/components/ui/Btn";
 import { pricing } from "@/content/siteContent";
 
 export const metadata: Metadata = {
-  title: pricing.meta.title,
+  title: "Pricing — SkemaLS",
   description: pricing.meta.description,
+  alternates: {
+    canonical: "https://skemals.com/pricing",
+  },
+  openGraph: {
+    title: "Pricing — SkemaLS",
+    description: pricing.meta.description,
+    url: "https://skemals.com/pricing",
+    siteName: "SkemaLS",
+    type: "website",
+  },
 };
 
 /* ── Shared include-list item ──────────────────────────────── */
@@ -157,10 +167,97 @@ function PathSection({
   );
 }
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "MySkema AI Accountability System",
+  description:
+    "Custom-built AI execution system for business owners. Includes intake interview, system configuration, daily check-in, and weekly coaching review. Not a template — built specifically for your goals, patterns, and constraints.",
+  provider: {
+    "@type": "Organization",
+    "@id": "https://skemals.com/#organization",
+    name: "SkemaLS",
+  },
+  areaServed: "United States",
+  url: "https://skemals.com/pricing",
+  offers: [
+    {
+      "@type": "Offer",
+      name: "PATH A — Individual",
+      price: "1000",
+      priceCurrency: "USD",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: "1000",
+        priceCurrency: "USD",
+        unitText: "MONTH",
+      },
+      eligibleRegion: "US",
+    },
+    {
+      "@type": "Offer",
+      name: "PATH B — Organizational (1–3 person teams)",
+      price: "1500",
+      priceCurrency: "USD",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: "1500",
+        priceCurrency: "USD",
+        unitText: "MONTH",
+      },
+      eligibleRegion: "US",
+    },
+  ],
+};
+
+const pricingFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: pricing.faq.items.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer.join(" "),
+    },
+  })),
+};
+
+const pricingBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://skemals.com/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Pricing",
+      item: "https://skemals.com/pricing",
+    },
+  ],
+};
+
 /* ── Page ───────────────────────────────────────────────────── */
 export default function PricingPage() {
   return (
     <main style={{ paddingTop: "64px" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(pricingFaqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(pricingBreadcrumb) }}
+      />
       <Nav />
 
       {/* ── Hero ──────────────────────────────────────────────── */}
