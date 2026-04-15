@@ -77,7 +77,7 @@ function renderSection(section: ArticleSection, i: number) {
             lineHeight: 1.8,
             fontStyle: "italic",
             paddingLeft: "24px",
-            borderLeft: "2px solid rgba(220,38,38,0.4)",
+            borderLeft: "2px solid rgba(200,155,60,0.4)",
             marginTop: "8px",
             marginBottom: "24px",
           }}
@@ -197,7 +197,7 @@ export default function ArticlePage({ params }: Props) {
       <SectionWrapper
         style={{
           background:
-            "radial-gradient(ellipse at 60% 0%, rgba(220,38,38,0.07) 0%, transparent 55%), #0F1B2D",
+            "radial-gradient(ellipse at 60% 0%, rgba(200,155,60,0.06) 0%, transparent 55%), #0F1B2D",
         }}
       >
         <div style={{ maxWidth: "720px" }}>
@@ -237,7 +237,7 @@ export default function ArticlePage({ params }: Props) {
       <SectionWrapper
         style={{
           background:
-            "radial-gradient(ellipse at 40% 80%, rgba(37,99,235,0.07) 0%, transparent 55%), #0F1B2D",
+            "radial-gradient(ellipse at 40% 80%, rgba(200,155,60,0.05) 0%, transparent 55%), #0F1B2D",
         }}
       >
         <div style={{ maxWidth: "560px" }}>

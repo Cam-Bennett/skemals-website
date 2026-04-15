@@ -98,7 +98,7 @@ export default function FAQPage() {
               position: "absolute",
               bottom: 0, left: 0, right: 0,
               height: "320px",
-              background: "linear-gradient(to bottom, transparent, rgba(10,10,18,0.7) 50%, #0F1B2D)",
+              background: "linear-gradient(to bottom, transparent, rgba(15,27,45,0.7) 50%, #0F1B2D)",
               zIndex: 1,
             }}
           />
@@ -135,7 +135,7 @@ export default function FAQPage() {
         <SectionWrapper
           style={{
             background:
-              "radial-gradient(ellipse at 30% 80%, rgba(37,99,235,0.07) 0%, transparent 55%), #0F1B2D",
+              "radial-gradient(ellipse at 30% 80%, rgba(200,155,60,0.05) 0%, transparent 55%), #0F1B2D",
           }}
         >
           <div style={{ maxWidth: "600px" }}>

@@ -77,7 +77,7 @@ export default function ContactPage() {
             position: "absolute",
             inset: 0,
             background:
-              "linear-gradient(to right, rgba(10,10,18,0.92) 0%, rgba(10,10,18,0.58) 42%, rgba(10,10,18,0.06) 100%)",
+              "linear-gradient(to right, rgba(15,27,45,0.92) 0%, rgba(15,27,45,0.58) 42%, rgba(15,27,45,0.06) 100%)",
             zIndex: 1,
           }}
         />

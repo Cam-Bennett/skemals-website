@@ -14,51 +14,34 @@ export default function PrivacyPage() {
     <main style={{ paddingTop: "64px" }}>
       <Nav />
 
-      <SectionWrapper
-        style={{
-          background:
-            "radial-gradient(ellipse at 60% 0%, rgba(37,99,235,0.06) 0%, transparent 55%), #0A0A12",
-        }}
-      >
-        {/* Header */}
+      <SectionWrapper variant="light">
         <div style={{ maxWidth: "720px", marginBottom: "56px" }}>
           <h1
-            className="font-heading font-bold text-text-main mb-4"
+            className="font-serif font-semibold mb-4"
             style={{
               fontSize: "clamp(2rem, 4vw, 3rem)",
               lineHeight: 1.1,
-              letterSpacing: "-0.02em",
+              color: "#1A1A1A",
             }}
           >
             {privacyPolicy.title}
           </h1>
-          <p className="font-body text-muted" style={{ fontSize: "13px", lineHeight: 1.8 }}>
+          <p className="font-sans" style={{ fontSize: "13px", lineHeight: 1.8, color: "#6B7280" }}>
             Effective Date: {privacyPolicy.effectiveDate} · Last Updated: {privacyPolicy.lastUpdated}
             <br />
             {privacyPolicy.contact} · {privacyPolicy.location}
           </p>
         </div>
 
-        {/* Sections */}
-        <div
-          style={{
-            maxWidth: "720px",
-            display: "flex",
-            flexDirection: "column",
-            gap: "48px",
-          }}
-        >
+        <div style={{ maxWidth: "720px", display: "flex", flexDirection: "column", gap: "48px" }}>
           {privacyPolicy.sections.map((section, i) => (
             <div
               key={i}
-              style={{
-                paddingTop: "40px",
-                borderTop: "1px solid rgba(255,255,255,0.06)",
-              }}
+              style={{ paddingTop: "40px", borderTop: "1px solid #E5E1D8" }}
             >
               <h2
-                className="font-heading font-semibold text-text-main mb-4"
-                style={{ fontSize: "18px", letterSpacing: "-0.01em" }}
+                className="font-serif font-semibold mb-4"
+                style={{ fontSize: "18px", color: "#1A1A1A" }}
               >
                 {section.heading}
               </h2>
@@ -68,8 +51,8 @@ export default function PrivacyPage() {
                   {section.body.split("\n\n").map((para, j) => (
                     <p
                       key={j}
-                      className="font-body text-text-soft mb-4"
-                      style={{ fontSize: "15px", lineHeight: 1.85 }}
+                      className="font-sans mb-4"
+                      style={{ fontSize: "15px", lineHeight: 1.85, color: "#6B7280" }}
                     >
                       {para}
                     </p>
@@ -80,8 +63,8 @@ export default function PrivacyPage() {
               {"subsections" in section && section.subsections && (
                 <ul style={{ listStyle: "none", padding: 0, margin: "8px 0 0", display: "flex", flexDirection: "column", gap: "12px" }}>
                   {section.subsections.map((sub, j) => (
-                    <li key={j} className="font-body text-text-soft" style={{ fontSize: "15px", lineHeight: 1.85 }}>
-                      <span className="text-text-main font-semibold">{sub.label}</span>{" "}
+                    <li key={j} className="font-sans" style={{ fontSize: "15px", lineHeight: 1.85, color: "#6B7280" }}>
+                      <span className="font-semibold" style={{ color: "#1A1A1A" }}>{sub.label}</span>{" "}
                       {sub.text}
                     </li>
                   ))}
@@ -91,7 +74,7 @@ export default function PrivacyPage() {
               {"list" in section && section.list && (
                 <ul style={{ paddingLeft: "20px", margin: "0 0 16px", display: "flex", flexDirection: "column", gap: "6px" }}>
                   {section.list.map((item, j) => (
-                    <li key={j} className="font-body text-text-soft" style={{ fontSize: "15px", lineHeight: 1.85 }}>
+                    <li key={j} className="font-sans" style={{ fontSize: "15px", lineHeight: 1.85, color: "#6B7280" }}>
                       {item}
                     </li>
                   ))}
@@ -99,18 +82,18 @@ export default function PrivacyPage() {
               )}
 
               {"footer" in section && section.footer && (
-                <p className="font-body text-text-soft mt-4" style={{ fontSize: "15px", lineHeight: 1.85 }}>
+                <p className="font-sans mt-4" style={{ fontSize: "15px", lineHeight: 1.85, color: "#6B7280" }}>
                   {section.footer}
                 </p>
               )}
 
               {"contact" in section && section.contact && (
-                <div className="font-body text-text-soft mt-2" style={{ fontSize: "15px", lineHeight: 2 }}>
-                  <p className="text-text-main font-semibold">{section.contact.name}</p>
+                <div className="font-sans mt-2" style={{ fontSize: "15px", lineHeight: 2, color: "#6B7280" }}>
+                  <p className="font-semibold" style={{ color: "#1A1A1A" }}>{section.contact.name}</p>
                   <p>{section.contact.company}</p>
                   <a
                     href={`mailto:${section.contact.email}`}
-                    className="text-primary hover:opacity-80 transition-opacity"
+                    className="text-gold hover:opacity-80 transition-opacity"
                     style={{ textDecoration: "none" }}
                   >
                     {section.contact.email}

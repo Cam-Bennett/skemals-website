@@ -286,7 +286,7 @@ export default function PricingPage() {
             position: "absolute",
             bottom: 0, left: 0, right: 0,
             height: "320px",
-            background: "linear-gradient(to bottom, transparent, rgba(10,10,18,0.7) 50%, #0F1B2D)",
+            background: "linear-gradient(to bottom, transparent, rgba(15,27,45,0.7) 50%, #0F1B2D)",
             zIndex: 1,
           }}
         />

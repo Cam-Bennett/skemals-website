@@ -56,7 +56,7 @@ export default function TheWorkPage() {
       <SectionWrapper
         style={{
           background:
-            "radial-gradient(ellipse at 60% 0%, rgba(220,38,38,0.08) 0%, transparent 55%), #0F1B2D",
+            "radial-gradient(ellipse at 60% 0%, rgba(200,155,60,0.06) 0%, transparent 55%), #0F1B2D",
         }}
       >
         <p
