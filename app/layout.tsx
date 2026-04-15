@@ -1,40 +1,39 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Karla } from "next/font/google";
+import { Playfair_Display, Inter } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({
+const playfair = Playfair_Display({
   subsets: ["latin"],
+  variable: "--font-serif",
   weight: ["400", "500", "600", "700"],
-  variable: "--font-space-grotesk",
   display: "swap",
 });
 
-const karla = Karla({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-karla",
+  variable: "--font-sans",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "SkemaLS — Your Own AI Execution System",
+  title: "Pallume — Your Own AI Execution System",
   description:
     "Custom AI execution systems for business owners who can't close the gap between intention and result. Built by Camden Bennett. 10 minutes every morning. Configured for you, not a template.",
-  metadataBase: new URL("https://skemals.com"),
+  metadataBase: new URL("https://pallume.com"),
   openGraph: {
-    title: "SkemaLS — Your Own AI Execution System",
+    title: "Pallume — Your Own AI Execution System",
     description:
       "Custom-configured AI execution systems for business owners who can't close the gap between intention and result. Built by Camden Bennett.",
-    url: "https://skemals.com",
-    siteName: "SkemaLS",
+    url: "https://pallume.com",
+    siteName: "Pallume",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     site: "@camdenbennett",
-    title: "SkemaLS — Your Own AI Execution System",
+    title: "Pallume — Your Own AI Execution System",
     description:
       "Custom-configured AI execution systems for business owners who can't close the gap between intention and result. Built by Camden Bennett.",
   },
@@ -45,12 +44,12 @@ const orgSchema = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://skemals.com/#organization",
-      name: "SkemaLS",
-      url: "https://skemals.com",
+      "@id": "https://pallume.com/#organization",
+      name: "Pallume",
+      url: "https://pallume.com",
       description:
         "Custom AI execution systems for business owners. Built by Camden Bennett.",
-      founder: { "@id": "https://skemals.com/#person" },
+      founder: { "@id": "https://pallume.com/#person" },
       address: {
         "@type": "PostalAddress",
         addressLocality: "Pinedale",
@@ -65,22 +64,22 @@ const orgSchema = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://skemals.com/#website",
-      url: "https://skemals.com",
-      name: "SkemaLS",
+      "@id": "https://pallume.com/#website",
+      url: "https://pallume.com",
+      name: "Pallume",
       description:
         "Custom AI execution systems for business owners who can't close the gap between intention and result.",
-      publisher: { "@id": "https://skemals.com/#organization" },
+      publisher: { "@id": "https://pallume.com/#organization" },
     },
     {
       "@type": "Person",
-      "@id": "https://skemals.com/#person",
+      "@id": "https://pallume.com/#person",
       name: "Camden Bennett",
-      jobTitle: "Founder, SkemaLS",
+      jobTitle: "Founder, Pallume",
       description:
-        "Former U.S. Navy Diver and Intelligence Officer. Real estate broker. Founder of SkemaLS AI execution coaching.",
-      url: "https://skemals.com/about",
-      image: "https://skemals.com/images/camden-headshot.jpg",
+        "Former U.S. Navy Diver and Intelligence Officer. Real estate broker. Founder of Pallume AI execution coaching.",
+      url: "https://pallume.com/about",
+      image: "https://pallume.com/images/camden-headshot.jpg",
     },
   ],
 };
@@ -91,7 +90,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${karla.variable}`}>
+    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <head>
         <script
           type="application/ld+json"

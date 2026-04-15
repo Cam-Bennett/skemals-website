@@ -1,14 +1,14 @@
 // All site copy lives here. Never hardcode strings in components.
 
 export const nav = {
-  logo: "SkemaLS",
+  logo: "Pallume",
   links: [
     { label: "About", href: "/about" },
     { label: "The Work", href: "/the-work" },
     { label: "FAQ", href: "/faq" },
-    { label: "Contact", href: "/contact" },
   ],
-  cta: "See If You Qualify",
+  cta: "Apply Now",
+  ctaHref: "/contact",
 };
 
 // ARCHIVED: "Your own AI execution system." + "Built by a coach. Running every morning."
@@ -75,13 +75,35 @@ export const priorAttempts = {
 };
 
 export const costOfInaction = {
-  eyebrow: "WHAT THE GAP IS ACTUALLY COSTING YOU.",
+  eyebrow: "WHAT THE GAP COSTS",
+  label: "WHAT THE GAP COSTS",
+  headline: "What this looks like in a $1M business",
+  stats: [
+    {
+      number: "$300K",
+      label: "Strategic capacity",
+      description:
+        "For a solo operator doing $1M, the operator's time is realistically worth $300K. That's the strategic capacity — the work only you can do.",
+    },
+    {
+      number: "70%",
+      label: "Time in reactive mode",
+      description:
+        "Most operators spend the majority of their week in reactive mode. If even half your week goes to reactive work, the strategic capacity you're actually deploying is a fraction of what's available.",
+    },
+    {
+      number: "$90K+",
+      label: "Annual value in the gap",
+      description:
+        "A conservative estimate of annual value sitting in the gap between what you planned to do and what actually happened. Not lost revenue — lost leverage.",
+    },
+  ],
   paragraphs: [
     "Most business owners underestimate the execution gap because they measure effort, not output.",
     "Here's a different way to look at it. If your business is producing $300,000 a year and executing at 70% of its potential — the gap is $90,000. Not because the strategy is wrong. Because the execution layer underneath it is leaking.",
     "That number lives somewhere specific. In the follow-up that didn't happen. The proposal that went out a week late. The initiative that never got two consecutive hours of focused work. The hire you haven't had time to think through properly.",
     "Every week the infrastructure problem stays unsolved, the gap compounds. Not dramatically — just steadily. The same way a slow leak drains a tank.",
-    "At $1,000 a month for three months (recommended baseline), SkemaLS costs $3,000. If it closes 20% of a $90,000 execution gap, the return is $18,000. If it closes half — the math becomes obvious.",
+    "At $1,000 a month for three months (recommended baseline), Pallume costs $3,000. If it closes 20% of a $90,000 execution gap, the return is $18,000. If it closes half — the math becomes obvious.",
     "The question isn't whether you can afford it. It's what it costs to leave the gap open for another year.",
   ],
 };
@@ -98,7 +120,7 @@ export const schemaDefinition = {
   definition:
     "A mental framework that organizes and interprets information. Your underlying set of instructions — the patterns, beliefs, and decision-making rules that drive how you operate daily.",
   etymology: "Origin: Greek skhēma — form, figure, plan.",
-  brandHeadline: "SkemaLS — Skema Life System.",
+  brandHeadline: "Pallume — Skema Life System.",
   brandDescription:
     "Your goals. Your values. Your decision filters. Your patterns — built into an AI system you interact with every day.",
   brandPunchline: "It's not advice. It's your operating system, externalized.",
@@ -130,7 +152,7 @@ export const pathSelector = {
       color: "#7C3AED",
       title: "Custom",
       description:
-        "If your situation doesn't fit PATH A or PATH B, PATH C offers a custom solution that emerges during intake. It can be more than either path, less, or simply different. Custom deliverables — research briefs, strategic documents, knowledge bases — are built alongside your MySkema when your situation calls for it.",
+        "If your situation doesn't fit PATH A or PATH B, PATH C offers a custom solution that emerges during intake. It can be more than either path, less, or simply different. Custom deliverables — research briefs, strategic documents, knowledge bases — are built alongside your Pallume Journal when your situation calls for it.",
       cta: "Tell me about your situation →",
     },
   ],
@@ -139,7 +161,7 @@ export const pathSelector = {
 export const identityFrame = {
   eyebrow: "WHO THIS IS FOR — AND WHO IT ISN'T.",
   intro: [
-    "SkemaLS is for those who know how to work hard. The people who get the most from this system are already capable, already motivated, and already aware of the gap between what they're producing and what they're capable of.",
+    "Pallume is for those who know how to work hard. The people who get the most from this system are already capable, already motivated, and already aware of the gap between what they're producing and what they're capable of.",
     "What they don't have is the architecture underneath their effort.",
   ],
   forYouLabel: "This is for you if:",
@@ -169,7 +191,7 @@ export const mechanism = {
   ],
   reveal: "YOUR OWN AI EXECUTION SYSTEM. BUILT BY A COACH. RUNNING EVERY MORNING.",
   bodyPart2: [
-    "MySkema is a custom Claude project configured around how you specifically work — your goals, your values, your decision framework, your resistance patterns, and the specific ways you consistently get stuck.",
+    "Pallume Journal is a custom Claude project configured around how you specifically work — your goals, your values, your decision framework, your resistance patterns, and the specific ways you consistently get stuck.",
     "Not a template. A configuration built from a 60–75 minute deep-dive interview about you.",
     "This works across industries because it's built around how you operate — your patterns, your decisions, your avoidance loops — not your field. The AI doesn't need to know construction or finance. It needs to know you.",
     "It runs inside your own account. It retains everything. It knows what you said you'd do last Tuesday. It knows the project you've been pushing to next week for a month. It catches the contradictions between what you say you want and what you're actually spending your time on — and it surfaces them without ego, without agenda, and without letting you off the hook.",
@@ -209,7 +231,7 @@ export const howItWorks = {
 
 export const features = {
   label: "What You Get",
-  headline: "MySkema. Your personal operating system.",
+  headline: "Pallume Journal. Your personal operating system.",
   subhead:
     "One place. 10 minutes every morning. A system that orders your day, tracks your goals, captures your ideas, and holds you accountable — then speaks back to you.",
   cards: [
@@ -370,9 +392,9 @@ export const founder = {
   label: "About Camden",
   headline: "Camden Bennett",
   imageSrc: "/images/camden-headshot.jpg",
-  imageAlt: "Camden Bennett, founder of SkemaLS",
+  imageAlt: "Camden Bennett, founder of Pallume",
   bio: [
-    "I didn't build SkemaLS because I had it figured out. I built it because I didn't. What changed wasn't a book or a framework — it was building a system from scratch around my specific goals and patterns, then running it every morning until the evidence showed up in my days.",
+    "I didn't build Pallume because I had it figured out. I built it because I didn't. What changed wasn't a book or a framework — it was building a system from scratch around my specific goals and patterns, then running it every morning until the evidence showed up in my days.",
     "I spent 15 years in the Navy — Diver, then Intelligence Officer. Later, real estate broker of local top-producing brokerage. Problem solving and data clarity were already important to me, but when I started running a real estate brokerage, I needed productivity that I didn't have. I now run the same system in my business that I build for every client. That's not a credential. That's a requirement.",
   ],
 };
@@ -432,36 +454,36 @@ export const qualifierForm = {
   nextLabel: "Next",
   submitLabel: "Submit Application",
   confirmationMessage:
-    "Camden reviews all applications personally and responds within 24 hours. If it looks like a fit, you'll receive a link to schedule a 20-minute discovery conversation — not a sales call. A real conversation about whether SkemaLS is the right tool for your situation.",
+    "Camden reviews all applications personally and responds within 24 hours. If it looks like a fit, you'll receive a link to schedule a 20-minute discovery conversation — not a sales call. A real conversation about whether Pallume is the right tool for your situation.",
 };
 
 export const cta = {
   headline: "Ready to stop carrying everything in your head?",
   description:
-    "15 minutes. Free. We'll talk through what you're dealing with and whether a MySkema system makes sense. No pitch. No pressure.",
+    "15 minutes. Free. We'll talk through what you're dealing with and whether a Pallume Journal system makes sense. No pitch. No pressure.",
   buttonLabel: "See If You Qualify",
   trustLine: "You own your account. You own your data. No lock-in. No black box.",
-  contact: "camden@skemals.com · 801-910-6528",
+  contact: "[EMAIL] · 801-910-6528",
 };
 
 export const footer = {
-  logo: "SkemaLS",
+  logo: "Pallume",
   links: [
     { label: "About", href: "/about" },
     { label: "The Work", href: "/the-work" },
-    { label: "Pricing", href: "/pricing" },
     { label: "FAQ", href: "/faq" },
-    { label: "Contact", href: "/contact" },
+    { label: "Apply", href: "/contact" },
+    { label: "Privacy", href: "/privacy-policy" },
+    { label: "Terms", href: "/terms-of-service" },
   ],
-  legalLinks: ["Privacy Policy", "Terms of Service"],
   location: "Pinedale, Wyoming",
 };
 
 export const about = {
   meta: {
-    title: "About Camden Bennett — SkemaLS",
+    title: "About Camden Bennett — Pallume",
     description:
-      "Camden Bennett built SkemaLS for himself before offering it to clients. 15 years in the Navy. Real estate broker. Founder of an AI execution system that runs every morning.",
+      "Camden Bennett built Pallume for himself before offering it to clients. 15 years in the Navy. Real estate broker. Founder of an AI execution system that runs every morning.",
   },
   section1: {
     eyebrow: "ABOUT CAMDEN",
@@ -476,7 +498,7 @@ export const about = {
       "So I built one.",
     ],
     imageSrc: "/images/camden-headshot.jpg",
-    imageAlt: "Camden Bennett, founder of SkemaLS",
+    imageAlt: "Camden Bennett, founder of Pallume",
   },
   section2: {
     eyebrow: "THE BACKGROUND",
@@ -486,7 +508,7 @@ export const about = {
       "My first job was as a Navy Diver — underwater inspections, hull cleanings, repairs on ships and submarines, work inside ballast tanks, occasional light salvage. It's a job that demands precision and focus in unforgiving conditions.",
       "I earned a dual bachelor's degree in English and Anthropology between tours, which led to a commission as an Intelligence Officer. I deployed on the USS JOHN C STENNIS (CVN-74) on the admiral's staff. My job was to monitor the maritime environment for threats and brief decision-makers accurately enough that they could act with confidence.",
       "In intelligence work, the goal isn't just to gather information — it's to synthesize it into something actionable. Bad analysis, delivered with confidence, gets people hurt. You learn to distinguish signal from noise. You learn that the quality of a decision is only as good as the clarity of the information feeding it.",
-      "That's the same skill at the core of SkemaLS. A weekly journal surfaces raw data. Pattern recognition finds what matters inside it. The coaching response turns that into a decision the client can act on. Different domain. Identical mechanism.",
+      "That's the same skill at the core of Pallume. A weekly journal surfaces raw data. Pattern recognition finds what matters inside it. The coaching response turns that into a decision the client can act on. Different domain. Identical mechanism.",
       "I came back to Wyoming when it was time to leave the Navy. My connections were here. My real estate career opportunity was here. I became the managing broker of the top-producing brokerage in Sublette County — and that's when the execution problem I'd been managing finally outran me.",
     ],
   },
@@ -495,7 +517,7 @@ export const about = {
     headline: "What a morning actually looks like.",
     paragraphs: [
       "I'm up by six. Three or four days a week I run and do a calisthenics routine. I fast until lunch four days per week. Coffee, supplements for cognitive function, electrolytes, music. I read my Bible.",
-      "Then I open MySkema, type the time and date, and say: Let's run a journal.",
+      "Then I open Pallume Journal, type the time and date, and say: Let's run a journal.",
       "Ten minutes. Designed for focus, not reflection. The system walks me through it:",
       "A gratitude entry. One thing.",
       "A brain dump of whatever's creating noise — worries, anxieties, unresolved things. Getting them out of my head clears space for actual work.",
@@ -525,7 +547,7 @@ export const about = {
       "The clients who take it seriously and run with it close the gap. Not because of motivation. Because the system holds when the motivation doesn't.",
     ],
     byline:
-      "Camden Bennett — Founder, SkemaLS. Managing Broker, Pinedale Properties. 15 years U.S. Navy.",
+      "Camden Bennett — Founder, Pallume. Managing Broker, Pinedale Properties. 15 years U.S. Navy.",
   },
   cta: {
     buttonLabel: "See If You Qualify",
@@ -538,16 +560,16 @@ export const faq = {
   headline: "Everything you're probably wondering.",
   items: [
     {
-      question: "What is SkemaLS?",
+      question: "What is Pallume?",
       answer: [
-        "SkemaLS builds custom AI execution systems for business owners and individuals. The system — called MySkema — is configured around your specific goals, patterns, and the ways you consistently get stuck. It runs in your own Claude account every morning. Your coach reviews your progress weekly and adjusts the system over time. It's not an app, not a course, and not a template. Every deployment is built from scratch.",
-        "The coaching layer is backed by over a dozen research documents built from real client data — weekly MySkema updates analyzed across months of engagements. The pattern recognition isn't guesswork. It's documented.",
+        "Pallume builds custom AI execution systems for business owners and individuals. The system — called Pallume Journal — is configured around your specific goals, patterns, and the ways you consistently get stuck. It runs in your own Claude account every morning. Your coach reviews your progress weekly and adjusts the system over time. It's not an app, not a course, and not a template. Every deployment is built from scratch.",
+        "The coaching layer is backed by over a dozen research documents built from real client data — weekly Pallume Journal updates analyzed across months of engagements. The pattern recognition isn't guesswork. It's documented.",
       ],
     },
     {
-      question: "What is MySkema?",
+      question: "What is Pallume Journal?",
       answer: [
-        "MySkema is your personal AI system — a custom Claude project configured around how you specifically work. Your goals, your values, your decision framework, your resistance patterns.",
+        "Pallume Journal is your personal AI system — a custom Claude project configured around how you specifically work. Your goals, your values, your decision framework, your resistance patterns.",
         "You use it every morning in a 10-minute check-in. It captures your thinking, tracks your priorities, and catches the contradictions between what you say you want and what you're actually spending your time on. Over weeks and months it accumulates enough data about your patterns to name the loops you're living inside — the ones you can't see from the inside.",
         "You own the account. You own the data. If you stop working with Camden, the system keeps running.",
       ],
@@ -556,7 +578,7 @@ export const faq = {
       question: "How is this different from hiring a coach?",
       answer: [
         "Traditional coaching produces insights. Valuable ones. But insights without daily structure fade within days.",
-        "SkemaLS produces a system that operates between sessions — a daily check-in that captures what's actually happening in your work, surfaces the patterns your coach needs to see, and keeps the priorities Camden identified with you in front of you every morning.",
+        "Pallume produces a system that operates between sessions — a daily check-in that captures what's actually happening in your work, surfaces the patterns your coach needs to see, and keeps the priorities Camden identified with you in front of you every morning.",
         "The system requires your engagement. That's not a caveat — it's the mechanism. What's different from a journal or a coaching call is what happens with your engagement: it gets read, analyzed, and responded to every week. The data accumulates. The coaching gets more precise over time because it's built on months of your actual behavioral data, not a 50-minute snapshot.",
         "The only real point of failure is disengagement. If you show up, the system works. The 10-minute morning check-in may become the easiest part of your day to protect — because it's the part that makes everything else clearer.",
       ],
@@ -565,7 +587,7 @@ export const faq = {
       question: "I've tried execution systems before. They didn't stick.",
       answer: [
         "They didn't stick because they were designed for a generic person and deployed all at once.",
-        "Generic systems break at the first point they don't match how you actually work — your energy patterns, your interruption reality, your specific failure modes. SkemaLS starts with a 60–75 minute interview specifically to find those points before building anything. The system is configured around what that conversation reveals, not around a template.",
+        "Generic systems break at the first point they don't match how you actually work — your energy patterns, your interruption reality, your specific failure modes. Pallume starts with a 60–75 minute interview specifically to find those points before building anything. The system is configured around what that conversation reveals, not around a template.",
         "It also starts small. Week 1 is one habit: a 10-minute morning check-in. Nothing else is added until that's established. The system earns its complexity — it doesn't front-load it.",
         "If you've abandoned every other system you've tried, that's not evidence that you can't do this. It's evidence that none of them were built for you.",
         "The start is simple.",
@@ -577,7 +599,7 @@ export const faq = {
       answer: [
         "You could open ChatGPT and ask it to hold you accountable. It will agree to do that. Next Tuesday it might not remember any of it.",
         "The difference isn't the AI capability. It's the configuration, the context retention, and the human interpretation layer.",
-        "MySkema is a custom Claude project built from a 60–75 minute interview about how you specifically work. It retains everything across your entire engagement. It knows your goals, your patterns, your avoidance loops, and what you said you'd do last week. A self-configured general-purpose tool doesn't have any of that — because nobody built it around you.",
+        "Pallume Journal is a custom Claude project built from a 60–75 minute interview about how you specifically work. It retains everything across your entire engagement. It knows your goals, your patterns, your avoidance loops, and what you said you'd do last week. A self-configured general-purpose tool doesn't have any of that — because nobody built it around you.",
         "And then there's Camden. He reads your weekly summary every Friday. He identifies what the AI surfaced, what it missed, and what the system needs to handle better. That human layer is what no self-configured ChatGPT prompt replicates.",
       ],
     },
@@ -639,7 +661,7 @@ export const faq = {
       question: "$1,000/month is a lot.",
       answer: [
         "It depends entirely on what the gap is costing you.",
-        "If your business is producing $300,000 a year and executing at 70% of its potential, the execution gap is $90,000. SkemaLS at $1,000/month for three months costs $3,000. If it closes 20% of that gap, the return is $18,000. If it closes half — the math becomes obvious.",
+        "If your business is producing $300,000 a year and executing at 70% of its potential, the execution gap is $90,000. Pallume at $1,000/month for three months costs $3,000. If it closes 20% of that gap, the return is $18,000. If it closes half — the math becomes obvious.",
         "The question isn't whether $1,000/month is a lot in isolation. It's what it costs to leave the execution gap open for another year.",
         "Most people who do that math don't need more convincing.",
       ],
@@ -658,7 +680,7 @@ export const faq = {
         "PATH A is for individuals — solo operators, executives, and business owners who are the bottleneck in their own execution. One person, one system.",
         "PATH B is for teams of up to three people in the same organization where the dysfunction is structural. The people are capable — the systems underneath them aren't.",
         "PATH C is for situations that don't fit either path — larger organizations, engagements that require custom deliverables, or complexity that needs investigation before anything can be scoped.",
-        "SkemaLS has worked for a real estate broker, serial entrepreneurs, executive directors, property managers, and more. If you run something and feel behind your own potential, it's built for you.",
+        "Pallume has worked for a real estate broker, serial entrepreneurs, executive directors, property managers, and more. If you run something and feel behind your own potential, it's built for you.",
         "Not sure which path fits? The intake determines it. The discovery call is free, takes 15 minutes, and Camden reviews every application personally.",
       ],
     },
@@ -675,12 +697,12 @@ export const contact = {
   eyebrow: "GET IN TOUCH",
   headline: "Start with the application.",
   body: "The fastest path to working together is the application form. Six questions. Takes about three minutes. Camden reviews every submission personally and responds within 24 hours.",
-  body2: "If it looks like a fit, you'll receive a link to schedule a 20-minute discovery conversation — not a sales call. A real conversation about whether SkemaLS is the right tool for your situation.",
+  body2: "If it looks like a fit, you'll receive a link to schedule a 20-minute discovery conversation — not a sales call. A real conversation about whether Pallume is the right tool for your situation.",
   buttonLabel: "Apply Now",
   buttonHref: "/#qualifier",
   directContact: {
     label: "Prefer to reach out directly?",
-    email: "camden@skemals.com",
+    email: "[EMAIL]",
     phone: "801-910-6528",
   },
 };
@@ -702,12 +724,12 @@ export const privacyPolicy = {
   title: "Privacy Policy",
   effectiveDate: "March 26, 2026",
   lastUpdated: "March 26, 2026",
-  contact: "camden@skemals.com | 801-910-6528",
+  contact: "[EMAIL] | 801-910-6528",
   location: "Pinedale, Wyoming",
   sections: [
     {
       heading: "What This Policy Covers",
-      body: "This Privacy Policy explains what information SkemaLS collects when you visit skemals.com, how that information is used, and what choices you have. SkemaLS is a one-person coaching practice operated by Camden Bennett. Your data is never sold, rented, or traded.",
+      body: "This Privacy Policy explains what information Pallume collects when you visit pallume.com, how that information is used, and what choices you have. Pallume is a one-person coaching practice operated by Camden Bennett. Your data is never sold, rented, or traded.",
     },
     {
       heading: "Information We Collect",
@@ -719,7 +741,7 @@ export const privacyPolicy = {
         },
         {
           label: "Information collected automatically:",
-          text: "When you visit skemals.com, standard web analytics tools collect basic technical data: pages visited, time spent on the site, device type, browser type, and general geographic location (city/country level). This data is aggregated and anonymous — it is not tied to your name or contact information.",
+          text: "When you visit pallume.com, standard web analytics tools collect basic technical data: pages visited, time spent on the site, device type, browser type, and general geographic location (city/country level). This data is aggregated and anonymous — it is not tied to your name or contact information.",
         },
         {
           label: "Cookies:",
@@ -733,7 +755,7 @@ export const privacyPolicy = {
       list: [
         "Respond to your inquiry",
         "Schedule and conduct an initial consultation",
-        "Build and deliver your MySkema system if you become a client",
+        "Build and deliver your Pallume Journal system if you become a client",
         "Send coaching feedback and session-related communications",
       ],
       footer: "We do not use your information for advertising, email marketing lists, or any purpose unrelated to the service you requested.",
@@ -756,7 +778,7 @@ export const privacyPolicy = {
         },
         {
           label: "Business transfer:",
-          text: "In the unlikely event SkemaLS is sold or merged, client data would transfer as part of the business. You would be notified before that occurs.",
+          text: "In the unlikely event Pallume is sold or merged, client data would transfer as part of the business. You would be notified before that occurs.",
         },
       ],
     },
@@ -773,11 +795,11 @@ export const privacyPolicy = {
         { label: "Request deletion", text: "of your information (subject to any legal obligations we have to retain records)" },
         { label: "Withdraw consent", text: "for any communication at any time" },
       ],
-      footer: "To exercise any of these rights, email camden@skemals.com. We will respond within 30 days.",
+      footer: "To exercise any of these rights, email [EMAIL]. We will respond within 30 days.",
     },
     {
       heading: "Children's Privacy",
-      body: "SkemaLS is a professional coaching service intended for adults. We do not knowingly collect personal information from anyone under the age of 18. If you believe a minor has submitted information through this site, contact us and we will delete it promptly.",
+      body: "Pallume is a professional coaching service intended for adults. We do not knowingly collect personal information from anyone under the age of 18. If you believe a minor has submitted information through this site, contact us and we will delete it promptly.",
     },
     {
       heading: "External Links",
@@ -792,8 +814,8 @@ export const privacyPolicy = {
       body: "Questions about this policy or your data:",
       contact: {
         name: "Camden Bennett",
-        company: "SkemaLS",
-        email: "camden@skemals.com",
+        company: "Pallume",
+        email: "[EMAIL]",
         location: "Pinedale, Wyoming",
       },
     },
@@ -802,19 +824,19 @@ export const privacyPolicy = {
 
 export const pricing = {
   meta: {
-    title: "Pricing — SkemaLS",
+    title: "Pricing — Pallume",
     description:
-      "What SkemaLS costs — and what it's worth. PATH A starts at $1,000/month. PATH B from $1,500/month. PATH C custom.",
+      "What Pallume costs — and what it's worth. PATH A starts at $1,000/month. PATH B from $1,500/month. PATH C custom.",
   },
   hero: {
     eyebrow: "INVESTMENT",
-    headline: "What SkemaLS costs — and what it's worth.",
+    headline: "What Pallume costs — and what it's worth.",
   },
   investmentContext: {
     eyebrow: "THE INVESTMENT IN CONTEXT.",
     paragraphs: [
       "A qualified business coach might run $500 to $1,500 per session. One session, once or twice a month, with significant context-switching between their other clients. Valuable — but the execution window is narrow. Between sessions you're on your own.",
-      "SkemaLS operates at your actual working cadence. Daily, not weekly. Not monthly. Full context retained across your entire engagement. Camden reviews your behavioral data every Friday — not a 50-minute snapshot, but weeks of accumulated pattern recognition.",
+      "Pallume operates at your actual working cadence. Daily, not weekly. Not monthly. Full context retained across your entire engagement. Camden reviews your behavioral data every Friday — not a 50-minute snapshot, but weeks of accumulated pattern recognition.",
       "At $1,000 a month for three months, that's around $8 a day for the year. Less than many businesses spend on software they're not fully using — for a system that actively manages your execution every morning, gets sharper every week, and stays with you after the active coaching is complete.",
     ],
   },
@@ -867,18 +889,18 @@ export const pricing = {
     headline: "When the situation requires more than configuration.",
     body: [
       "PATH C triggers when solving the problem requires Camden to produce external deliverables that live outside the client's personal system — a research brief, a strategic document, a legal education resource, a knowledge base built for a specific business situation.",
-      "MySkema is still the foundation. The extra work is the overlay.",
+      "Pallume Journal is still the foundation. The extra work is the overlay.",
       "Not sure which path applies to you? The intake determines it. Most clients find out during the discovery conversation.",
     ],
     price: "Custom quote based on scope.",
     scopeParagraph:
-      "PATH C scope is determined during the discovery conversation. Every engagement includes MySkema as the foundation — custom deliverables are scoped and built on top of it.",
+      "PATH C scope is determined during the discovery conversation. Every engagement includes Pallume Journal as the foundation — custom deliverables are scoped and built on top of it.",
     cta: { label: "Apply for a Discovery Call", href: "/#qualifier" },
   },
   riskReversal: {
     eyebrow: "HOW THIS WORKS — BEFORE YOU COMMIT.",
     paragraphs: [
-      "SkemaLS doesn't take every client who applies.",
+      "Pallume doesn't take every client who applies.",
       "The discovery conversation is a mutual evaluation. You're assessing whether this is the right fit for your business. Camden is assessing whether he can produce the results you're looking for. If it isn't a fit — for either side — that gets said directly. No pressure close. No follow-up sequences.",
       "The intake process exists because the wrong engagement serves no one. A client who isn't ready to show up consistently won't get results. A business Camden can't move forward isn't worth the calendar time. The filter protects both parties.",
       "If you get through the application process and Camden believes he can produce results for your situation, you'll know exactly what the first 90 days look like before you agree to anything.",
@@ -923,7 +945,7 @@ export const theWork = {
     "Case studies, process writing, and field notes from inside the system. Written for business owners who've already tried the standard solutions.",
   cta: {
     eyebrow: "READY TO START?",
-    body: "The articles describe what SkemaLS does and why it works. The application is where it starts.",
+    body: "The articles describe what Pallume does and why it works. The application is where it starts.",
     buttonLabel: "See If You Qualify",
     buttonHref: "/#qualifier",
   },

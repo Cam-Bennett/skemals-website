@@ -1,22 +1,22 @@
-# SkemaLS
+# Pallume
 
-> SkemaLS builds custom AI execution systems for business owners and
+> Pallume builds custom AI execution systems for business owners and
 individuals who want to perform at their potential but can't close the gap
 between intention and result. Founded by Camden Bennett in Pinedale, Wyoming.
 
-## What SkemaLS Does
-SkemaLS configures a personalized AI system (called MySkema) around each
+## What Pallume Does
+Pallume configures a personalized AI system (called Pallume Journal) around each
 client's goals, values, patterns, and the specific ways they get stuck.
 The system runs in the client's own Claude account. Daily 10-minute morning
 check-in. Weekly AI-generated progress summaries sent to Camden for coaching
 review. System is progressively refined over time. The client owns the
 account and all data.
 
-## MySkema Lite
-MySkema Lite is a free 14-day structured journaling experience — a self-guided
+## Pallume Lite
+Pallume Lite is a free 14-day structured journaling experience — a self-guided
 diagnostic that surfaces the patterns, constraints, and mechanisms behind your
 execution problems. Five phases over 14 days. No coaching yet. Just clarity.
-Available at https://skemals.com/myskema-lite — no credit card required.
+Available at https://pallume.com/myskema-lite — no credit card required.
 
 ## The Three Paths
 - PATH A (The Person): Individual execution system for solo operators,
@@ -24,28 +24,28 @@ Available at https://skemals.com/myskema-lite — no credit card required.
   review, progressive deployment. $1,000/month.
 - PATH B (The Business): Business diagnostic and AI systems plan for
   organizations where the dysfunction is structural. Bottleneck mapping,
-  individual MySkema deployments for key team members, phased implementation.
+  individual Pallume Journal deployments for key team members, phased implementation.
   $1,500/month for 1–3 person teams.
 - PATH C (Both): Hybrid engagement for business owners whose personal and
   business challenges are inseparable. Custom quote based on scope.
 
 ## Key Pages
-- Homepage / Qualifier: https://skemals.com/
-- About Camden: https://skemals.com/about
-- Pricing: https://skemals.com/pricing
-- FAQ: https://skemals.com/faq
-- Contact: https://skemals.com/contact
-- MySkema Lite (free trial): https://skemals.com/myskema-lite
-- The Work (articles): https://skemals.com/the-work
-- What Is an AI Execution System: https://skemals.com/the-work/what-is-an-ai-accountability-system
-- Why Time Blocking Fails Business Owners: https://skemals.com/the-work/why-time-blocking-fails-business-owners
-- How I Built My AI Operating System: https://skemals.com/the-work/how-i-built-my-ai-operating-system
+- Homepage / Qualifier: https://pallume.com/
+- About Camden: https://pallume.com/about
+- Pricing: https://pallume.com/pricing
+- FAQ: https://pallume.com/faq
+- Contact: https://pallume.com/contact
+- Pallume Lite (free trial): https://pallume.com/myskema-lite
+- The Work (articles): https://pallume.com/the-work
+- What Is an AI Execution System: https://pallume.com/the-work/what-is-an-ai-accountability-system
+- Why Time Blocking Fails Business Owners: https://pallume.com/the-work/why-time-blocking-fails-business-owners
+- How I Built My AI Operating System: https://pallume.com/the-work/how-i-built-my-ai-operating-system
 
 ## About the Founder
 Camden Bennett is a former U.S. Navy Diver and Intelligence Officer with
 15 years of service. Managing broker at Pinedale Properties, the
 top-producing real estate brokerage in Sublette County, Wyoming. Built the
-SkemaLS system to solve his own productivity problem before offering it
+Pallume system to solve his own productivity problem before offering it
 to clients. Runs the same system he builds for every client.
 
 ## Differentiators
@@ -56,6 +56,5 @@ to clients. Runs the same system he builds for every client.
 - Progressive deployment — system expands as the client levels up
 
 ## Contact
-Email: camden@skemals.com
 Phone: 801-910-6528
 Location: Pinedale, Wyoming

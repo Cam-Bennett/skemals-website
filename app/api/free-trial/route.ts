@@ -5,7 +5,7 @@ const DAY_1_PROMPT =
   "Without changing anything about your day, describe what happened from the moment you sat down to work until now. What did you intend to do? What did you actually do? Don't analyze it — just describe it.";
 
 const SETUP_INSTRUCTIONS = `1. Go to claude.ai (a free account works fine)
-2. Start a new chat — name it "MySkema Lite Journal"
+2. Start a new chat — name it "Pallume Journal Lite Journal"
 3. Paste today's prompt and respond honestly
 4. Keep all 14 entries in the same chat — the context builds over time`;
 
@@ -22,13 +22,13 @@ export async function POST(req: NextRequest) {
 
     // Day 1 email to the user
     await resend.emails.send({
-      from: "Camden at SkemaLS <onboarding@resend.dev>",
+      from: "Camden at Pallume <onboarding@resend.dev>",
       to: email,
-      subject: "Your MySkema Lite journey starts now — Day 1",
+      subject: "Your Pallume Journal Lite journey starts now — Day 1",
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 560px; margin: 0 auto; background: #0A0A12; color: #E2E2E8; padding: 48px 40px;">
           <p style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #DC2626; margin: 0 0 32px;">
-            MySkema Lite — Day 1 of 14
+            Pallume Journal Lite — Day 1 of 14
           </p>
 
           <h1 style="font-size: 26px; font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; color: #FFFFFF; margin: 0 0 20px;">
@@ -68,9 +68,9 @@ ${SETUP_INSTRUCTIONS}
 
           <div style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 24px;">
             <p style="font-size: 11px; color: rgba(255,255,255,0.2); line-height: 1.6; margin: 0;">
-              SkemaLS &middot; Pinedale, Wyoming &middot;
-              <a href="https://skemals.com" style="color: rgba(255,255,255,0.2); text-decoration: none;">skemals.com</a><br>
-              You signed up for MySkema Lite.
+              Pallume &middot; Pinedale, Wyoming &middot;
+              <a href="https://pallume.com" style="color: rgba(255,255,255,0.2); text-decoration: none;">pallume.com</a><br>
+              You signed up for Pallume Journal Lite.
             </p>
           </div>
         </div>
@@ -79,12 +79,12 @@ ${SETUP_INSTRUCTIONS}
 
     // Notification to Camden
     await resend.emails.send({
-      from: "MySkema Lite <onboarding@resend.dev>",
-      to: "camden@skemals.com",
+      from: "Pallume Journal Lite <onboarding@resend.dev>",
+      to: "[EMAIL]",
       subject: `New free trial signup — ${firstName}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 480px; margin: 0 auto; padding: 32px; color: #111;">
-          <h2 style="font-size: 20px; margin: 0 0 24px;">New MySkema Lite signup</h2>
+          <h2 style="font-size: 20px; margin: 0 0 24px;">New Pallume Journal Lite signup</h2>
           <table style="width: 100%; border-collapse: collapse; font-size: 15px;">
             <tr><td style="padding: 10px 0; color: #666; width: 160px; vertical-align: top;">Name</td><td style="padding: 10px 0; font-weight: 600;">${firstName}</td></tr>
             <tr style="background: #f9f9f9;"><td style="padding: 10px; color: #666; vertical-align: top;">Email</td><td style="padding: 10px; font-weight: 600;"><a href="mailto:${email}">${email}</a></td></tr>

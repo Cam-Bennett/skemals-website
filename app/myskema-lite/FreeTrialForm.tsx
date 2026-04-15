@@ -5,9 +5,9 @@ import Btn from "@/components/ui/Btn";
 
 const inputStyle: React.CSSProperties = {
   width: "100%",
-  background: "#0F0F1A",
-  border: "1px solid rgba(255,255,255,0.08)",
-  color: "#E2E2E8",
+  background: "#FFFFFF",
+  border: "1px solid #E5E1D8",
+  color: "#1A1A1A",
   fontFamily: "inherit",
   fontSize: "16px",
   padding: "14px 18px",
@@ -21,7 +21,7 @@ const labelStyle: React.CSSProperties = {
   fontSize: "10px",
   letterSpacing: "0.14em",
   textTransform: "uppercase",
-  color: "rgba(255,255,255,0.35)",
+  color: "rgba(0,0,0,0.4)",
   marginBottom: "10px",
   fontWeight: 600,
 };
@@ -53,7 +53,7 @@ export default function FreeTrialForm() {
       setStatus("success");
     } catch {
       setStatus("error");
-      setErrorMsg("Something went wrong. Email camden@skemals.com directly.");
+      setErrorMsg("Something went wrong. Email [EMAIL] directly.");
     }
   }
 
@@ -61,7 +61,7 @@ export default function FreeTrialForm() {
     return (
       <div
         style={{
-          background: "#0F0F1A",
+          background: "#FFFFFF",
           border: "1px solid rgba(255,255,255,0.06)",
           borderLeft: "3px solid #DC2626",
           padding: "48px",
@@ -149,7 +149,7 @@ export default function FreeTrialForm() {
       </div>
 
       <p className="font-body text-muted" style={{ fontSize: "12px", lineHeight: 1.7 }}>
-        Your email will be added to the SkemaLS list. You&apos;ll receive 14 daily prompts, then a follow-up sequence. Unsubscribe any time. I don&apos;t spam and I don&apos;t sell lists — I&apos;m a one-person operation in Wyoming.
+        Your email will be added to the Pallume list. You&apos;ll receive 14 daily prompts, then a follow-up sequence. Unsubscribe any time. I don&apos;t spam and I don&apos;t sell lists — I&apos;m a one-person operation in Wyoming.
       </p>
     </form>
   );

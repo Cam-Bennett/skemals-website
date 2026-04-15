@@ -8,30 +8,38 @@ export default function HomepageNav() {
     <nav
       className="fixed top-0 left-0 right-0 z-50 px-6"
       style={{
-        background: "rgba(10,10,18,0.82)",
-        backdropFilter: "blur(14px)",
-        WebkitBackdropFilter: "blur(14px)",
-        borderBottom: "1px solid rgba(255,255,255,0.06)",
+        background: "rgba(15,27,45,0.95)",
+        backdropFilter: "blur(16px)",
+        WebkitBackdropFilter: "blur(16px)",
+        borderBottom: "1px solid rgba(200,155,60,0.15)",
       }}
     >
       <div className="max-w-site mx-auto flex items-center justify-between h-16">
-        {/* Wordmark */}
         <a
           href="/"
-          className="font-heading font-bold text-xl text-primary tracking-tight"
+          className="font-serif font-bold text-xl tracking-tight text-textLight"
           style={{ textDecoration: "none" }}
         >
           {nav.logo}
         </a>
 
-        {/* Single CTA — no nav links */}
-        <Btn
-          as="a"
-          href="/#qualifier"
-          size="sm"
-        >
-          {nav.cta}
-        </Btn>
+        <div className="flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-7">
+            {nav.links.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="font-sans text-sm text-textLightMuted hover:text-textLight transition-colors duration-150"
+                style={{ textDecoration: "none" }}
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+          <Btn as="a" href={nav.ctaHref} size="sm">
+            {nav.cta}
+          </Btn>
+        </div>
       </div>
     </nav>
   );

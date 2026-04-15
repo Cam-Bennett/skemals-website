@@ -1,23 +1,22 @@
 import type { Metadata } from "next";
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
-import GrainOverlay from "@/components/ui/GrainOverlay";
 import Btn from "@/components/ui/Btn";
 import FreeTrialForm from "./FreeTrialForm";
 
 export const metadata: Metadata = {
-  title: "MySkema Lite — Free 14-Day Experience | SkemaLS",
+  title: "Pallume Journal Lite — Free 14-Day Experience | Pallume",
   description:
     "14 days of structured journaling that shows you exactly what's costing you. Free. No coaching yet — just clarity.",
   alternates: {
-    canonical: "https://skemals.com/myskema-lite",
+    canonical: "https://pallume.com/myskema-lite",
   },
   openGraph: {
-    title: "MySkema Lite — Free 14-Day Experience | SkemaLS",
+    title: "Pallume Journal Lite — Free 14-Day Experience | Pallume",
     description:
       "14 days of structured journaling that shows you exactly what's costing you. Free. No coaching yet — just clarity.",
-    url: "https://skemals.com/myskema-lite",
-    siteName: "SkemaLS",
+    url: "https://pallume.com/myskema-lite",
+    siteName: "Pallume",
     type: "website",
   },
 };
@@ -79,18 +78,18 @@ const liteBreadcrumb = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://skemals.com/",
+      item: "https://pallume.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
-      name: "MySkema Lite",
-      item: "https://skemals.com/myskema-lite",
+      name: "Pallume Journal Lite",
+      item: "https://pallume.com/myskema-lite",
     },
   ],
 };
 
-export default function MySkemaLitePage() {
+export default function PallumeJournalLitePage() {
   return (
     <main style={{ paddingTop: "64px" }}>
       <script
@@ -103,13 +102,12 @@ export default function MySkemaLitePage() {
       <section
         className="grid grid-cols-1 md:grid-cols-2"
         style={{
-          background: "#0A0A12",
+          background: "#0F1B2D",
           minHeight: "88vh",
           position: "relative",
           overflow: "hidden",
         }}
       >
-        <GrainOverlay />
 
         {/* Left — headline + CTA */}
         <div
@@ -126,7 +124,7 @@ export default function MySkemaLitePage() {
             className="font-body font-semibold text-primary uppercase tracking-widest mb-6"
             style={{ fontSize: "11px", letterSpacing: "0.14em" }}
           >
-            MySkema Lite — Free 14-Day Experience
+            Pallume Journal Lite — Free 14-Day Experience
           </p>
           <h1
             className="font-heading font-bold text-text-main"
@@ -182,7 +180,7 @@ export default function MySkemaLitePage() {
             position: "relative",
             alignItems: "center",
             justifyContent: "center",
-            background: "linear-gradient(135deg, #0A0A12 0%, #0f0f1a 50%, #0A0A12 100%)",
+            background: "linear-gradient(135deg, #0F1B2D 0%, #0f0f1a 50%, #0F1B2D 100%)",
           }}
         >
           <div
@@ -190,7 +188,7 @@ export default function MySkemaLitePage() {
               position: "absolute",
               inset: 0,
               backgroundImage:
-                "repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(220,38,38,0.025) 60px, rgba(220,38,38,0.025) 61px)",
+                "repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(200,155,60,0.025) 60px, rgba(200,155,60,0.025) 61px)",
             }}
           />
           <div
@@ -251,7 +249,7 @@ export default function MySkemaLitePage() {
         style={{
           borderTop: "1px solid rgba(255,255,255,0.06)",
           padding: "96px 24px",
-          background: "#0A0A12",
+          background: "#0F1B2D",
         }}
       >
         <div
@@ -356,7 +354,7 @@ export default function MySkemaLitePage() {
             </div>
             <div className="md:col-span-2">
               <p className="font-body text-text-soft mb-5" style={{ fontSize: "17px", lineHeight: 1.8 }}>
-                MySkema Lite is a structured diagnostic — not a productivity course, not a template pack, not another system to maintain. Each day takes 5–10 minutes. The prompts are designed to surface patterns you can&apos;t see from the inside of your own day.
+                Pallume Journal Lite is a structured diagnostic — not a productivity course, not a template pack, not another system to maintain. Each day takes 5–10 minutes. The prompts are designed to surface patterns you can&apos;t see from the inside of your own day.
               </p>
               <p className="font-body text-text-soft" style={{ fontSize: "17px", lineHeight: 1.8 }}>
                 By day 14, you won&apos;t have all the answers. But you&apos;ll be asking the right questions for the first time.
@@ -374,7 +372,7 @@ export default function MySkemaLitePage() {
             }}
           >
             {phases.map((phase) => (
-              <div key={phase.num} style={{ background: "#0A0A12", padding: "28px 20px" }}>
+              <div key={phase.num} style={{ background: "#0F1B2D", padding: "28px 20px" }}>
                 <p
                   className="font-heading font-bold"
                   style={{ fontSize: "36px", color: "rgba(255,255,255,0.07)", lineHeight: 1, marginBottom: "12px" }}
@@ -403,7 +401,7 @@ export default function MySkemaLitePage() {
       <section
         style={{
           padding: "96px 24px",
-          background: "#0A0A12",
+          background: "#0F1B2D",
           borderBottom: "1px solid rgba(255,255,255,0.06)",
         }}
       >
@@ -443,7 +441,7 @@ export default function MySkemaLitePage() {
                   borderBottom: "1px solid rgba(255,255,255,0.06)",
                 }}
               >
-                MySkema Lite — Free
+                Pallume Journal Lite — Free
               </p>
               {liteItems.map((item) => (
                 <div key={item} className="flex items-start gap-3 mb-4">
@@ -479,7 +477,7 @@ export default function MySkemaLitePage() {
                   transform: "translate(-50%, -50%)",
                   fontSize: "13px",
                   color: "rgba(255,255,255,0.15)",
-                  background: "#0A0A12",
+                  background: "#0F1B2D",
                   padding: "8px 4px",
                   letterSpacing: "0.1em",
                 }}
@@ -496,10 +494,10 @@ export default function MySkemaLitePage() {
                   fontSize: "11px",
                   letterSpacing: "0.15em",
                   paddingBottom: "16px",
-                  borderBottom: "1px solid rgba(220,38,38,0.2)",
+                  borderBottom: "1px solid rgba(200,155,60,0.2)",
                 }}
               >
-                Full MySkema — $1,000/mo
+                Full Pallume Journal — $1,000/mo
               </p>
               {fullItems.map((item) => (
                 <div key={item} className="flex items-start gap-3 mb-4">
@@ -556,13 +554,13 @@ export default function MySkemaLitePage() {
             No coaching yet. Just clarity. The coaching is what happens after.
           </p>
           <Btn as="a" href="#get-started" size="lg">
-            Start MySkema Lite — Free
+            Start Pallume Journal Lite — Free
           </Btn>
         </div>
       </section>
 
       {/* ── Form ────────────────────────────────────────────────── */}
-      <section id="get-started" style={{ padding: "96px 24px", background: "#0A0A12" }}>
+      <section id="get-started" style={{ padding: "96px 24px", background: "#0F1B2D" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <p
             className="font-body font-semibold text-primary uppercase tracking-widest mb-4"

@@ -8,18 +8,18 @@ import { articles } from "@/content/articles";
 import { theWork } from "@/content/siteContent";
 
 export const metadata: Metadata = {
-  title: "The Work — SkemaLS",
+  title: "The Work — Pallume",
   description:
     "Case studies, process writing, and field notes from inside the system. Written for business owners who've already tried the standard solutions.",
   alternates: {
-    canonical: "https://skemals.com/the-work",
+    canonical: "https://pallume.com/the-work",
   },
   openGraph: {
-    title: "The Work — SkemaLS",
+    title: "The Work — Pallume",
     description:
       "Case studies, process writing, and field notes from inside the system. Written for business owners who've already tried the standard solutions.",
-    url: "https://skemals.com/the-work",
-    siteName: "SkemaLS",
+    url: "https://pallume.com/the-work",
+    siteName: "Pallume",
     type: "website",
   },
 };
@@ -32,13 +32,13 @@ const theWorkBreadcrumb = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://skemals.com/",
+      item: "https://pallume.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "The Work",
-      item: "https://skemals.com/the-work",
+      item: "https://pallume.com/the-work",
     },
   ],
 };
@@ -56,7 +56,7 @@ export default function TheWorkPage() {
       <SectionWrapper
         style={{
           background:
-            "radial-gradient(ellipse at 60% 0%, rgba(220,38,38,0.08) 0%, transparent 55%), #0A0A12",
+            "radial-gradient(ellipse at 60% 0%, rgba(220,38,38,0.08) 0%, transparent 55%), #0F1B2D",
         }}
       >
         <p
@@ -79,7 +79,7 @@ export default function TheWorkPage() {
       </SectionWrapper>
 
       {/* ── Article list ───────────────────────────────────────────── */}
-      <SectionWrapper bgAlt>
+      <SectionWrapper variant="light">
         <div
           className="flex flex-col"
           style={{ maxWidth: "720px", gap: "0" }}

@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --font-space-grotesk: "Space Grotesk", sans-serif;
-  --font-karla: "Karla", sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", -apple-system, sans-serif;
 }
 
 html {
@@ -12,9 +12,9 @@ html {
 }
 
 body {
-  background: #0A0A12;
-  color: #F1F0EE;
-  font-family: var(--font-karla), sans-serif;
+  background: #F8F6F0;
+  color: #1A1A1A;
+  font-family: var(--font-sans), sans-serif;
   overflow-x: hidden;
 }
 
@@ -31,12 +31,12 @@ a {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #0A0A12;
+  background: #F8F6F0;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.1);
+  background: #E5E1D8;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: #C89B3C;
 }

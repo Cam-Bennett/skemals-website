@@ -3,14 +3,22 @@ import SectionWrapper from "@/components/ui/SectionWrapper";
 
 export default function EmpathyHook() {
   return (
-    <SectionWrapper bgAlt>
+    <SectionWrapper variant="light">
       <div className="max-w-2xl">
+        <p
+          className="font-sans font-semibold uppercase tracking-widest mb-6"
+          style={{ fontSize: "11px", letterSpacing: "0.14em", color: "#C89B3C" }}
+        >
+          THE EXECUTION GAP
+        </p>
+
         <h2
-          className="font-heading font-bold text-text-main mb-8"
+          className="font-serif font-semibold"
           style={{
-            fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)",
-            lineHeight: 1.1,
-            letterSpacing: "-0.02em",
+            fontSize: "clamp(28px, 3.5vw, 40px)",
+            lineHeight: 1.2,
+            color: "#1A1A1A",
+            marginBottom: "32px",
           }}
         >
           {empathy.headline}
@@ -20,12 +28,13 @@ export default function EmpathyHook() {
           {empathy.paragraphs.map((p, i) => (
             <p
               key={i}
-              className={`font-body ${
-                i === empathy.emphasizedIndex
-                  ? "text-text-main font-semibold"
-                  : "text-text-soft"
-              }`}
-              style={{ fontSize: "17px", lineHeight: 1.75 }}
+              className="font-sans"
+              style={{
+                fontSize: "17px",
+                lineHeight: 1.8,
+                color: i === empathy.emphasizedIndex ? "#1A1A1A" : "#6B7280",
+                fontWeight: i === empathy.emphasizedIndex ? 600 : 400,
+              }}
             >
               {p}
             </p>

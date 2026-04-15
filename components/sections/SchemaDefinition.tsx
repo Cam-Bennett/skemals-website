@@ -3,49 +3,49 @@ import SectionWrapper from "@/components/ui/SectionWrapper";
 
 export default function SchemaDefinition() {
   return (
-    <SectionWrapper bgAlt>
+    <SectionWrapper variant="light">
       <div className="max-w-2xl">
         {/* Dictionary entry */}
         <div
           className="mb-10 pb-10"
-          style={{ borderBottom: "1px solid rgba(255,255,255,0.06)" }}
+          style={{ borderBottom: "1px solid #E5E1D8" }}
         >
           <div className="flex items-baseline gap-3 mb-2 flex-wrap">
             <span
-              className="text-text-main"
               style={{
-                fontFamily: "Georgia, serif",
+                fontFamily: "Georgia, 'Playfair Display', serif",
                 fontStyle: "italic",
                 fontSize: "clamp(1.8rem, 3vw, 2.8rem)",
                 lineHeight: 1.1,
+                color: "#1A1A1A",
               }}
             >
               {schemaDefinition.term}
             </span>
             <span
-              className="font-body text-muted"
-              style={{ fontSize: "17px", letterSpacing: "0.02em" }}
+              className="font-sans"
+              style={{ fontSize: "17px", letterSpacing: "0.02em", color: "#6B7280" }}
             >
               {schemaDefinition.pronunciation}
             </span>
             <span
-              className="font-body text-muted italic"
-              style={{ fontSize: "14px" }}
+              className="font-sans italic"
+              style={{ fontSize: "14px", color: "#6B7280" }}
             >
               {schemaDefinition.partOfSpeech}
             </span>
           </div>
 
           <p
-            className="font-body text-text-soft mb-4"
-            style={{ fontSize: "17px", lineHeight: 1.75 }}
+            className="font-sans"
+            style={{ fontSize: "17px", lineHeight: 1.8, color: "#6B7280", marginBottom: "16px" }}
           >
             {schemaDefinition.definition}
           </p>
 
           <p
-            className="font-body text-muted"
-            style={{ fontSize: "13px", letterSpacing: "0.02em" }}
+            className="font-sans"
+            style={{ fontSize: "13px", letterSpacing: "0.02em", color: "#6B7280", opacity: 0.7 }}
           >
             {schemaDefinition.etymology}
           </p>
@@ -53,26 +53,26 @@ export default function SchemaDefinition() {
 
         {/* Brand reveal */}
         <h3
-          className="font-heading font-bold text-primary mb-4"
+          className="font-serif font-semibold mb-4"
           style={{
             fontSize: "clamp(1.4rem, 2.5vw, 1.8rem)",
-            letterSpacing: "-0.02em",
+            color: "#C89B3C",
           }}
         >
           {schemaDefinition.brandHeadline}
         </h3>
         <p
-          className="font-body text-text-soft mb-8"
-          style={{ fontSize: "17px", lineHeight: 1.75 }}
+          className="font-sans mb-8"
+          style={{ fontSize: "17px", lineHeight: 1.8, color: "#6B7280" }}
         >
           {schemaDefinition.brandDescription}
         </p>
         <p
-          className="font-heading font-semibold text-text-main"
+          className="font-serif font-semibold"
           style={{
             fontSize: "clamp(1.1rem, 2vw, 1.35rem)",
-            letterSpacing: "-0.02em",
             lineHeight: 1.3,
+            color: "#1A1A1A",
           }}
         >
           {schemaDefinition.brandPunchline}

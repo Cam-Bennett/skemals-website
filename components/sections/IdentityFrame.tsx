@@ -3,34 +3,31 @@ import SectionWrapper from "@/components/ui/SectionWrapper";
 
 export default function IdentityFrame() {
   return (
-    <SectionWrapper>
+    <SectionWrapper variant="white">
       <div className="max-w-2xl">
-        {/* Eyebrow only */}
         <p
-          className="font-body font-semibold text-primary uppercase tracking-widest mb-8"
-          style={{ fontSize: "11px", letterSpacing: "0.14em" }}
+          className="font-sans font-semibold uppercase tracking-widest mb-8"
+          style={{ fontSize: "11px", letterSpacing: "0.14em", color: "#C89B3C" }}
         >
           {identityFrame.eyebrow}
         </p>
 
-        {/* Intro paragraphs */}
         <div className="flex flex-col gap-5 mb-12">
           {identityFrame.intro.map((p, i) => (
             <p
               key={i}
-              className="font-body text-text-soft"
-              style={{ fontSize: "17px", lineHeight: 1.75 }}
+              className="font-sans"
+              style={{ fontSize: "17px", lineHeight: 1.8, color: "#6B7280" }}
             >
               {p}
             </p>
           ))}
         </div>
 
-        {/* For you list */}
         <div className="mb-10">
           <p
-            className="font-body font-semibold text-text-main mb-4"
-            style={{ fontSize: "14px", letterSpacing: "0.04em" }}
+            className="font-sans font-semibold mb-4"
+            style={{ fontSize: "14px", letterSpacing: "0.04em", color: "#1A1A1A" }}
           >
             {identityFrame.forYouLabel}
           </p>
@@ -38,10 +35,10 @@ export default function IdentityFrame() {
             {identityFrame.forYou.map((item, i) => (
               <li
                 key={i}
-                className="font-body text-text-soft flex gap-3"
-                style={{ fontSize: "16px", lineHeight: 1.65 }}
+                className="font-sans flex gap-3"
+                style={{ fontSize: "16px", lineHeight: 1.65, color: "#6B7280" }}
               >
-                <span className="text-primary mt-1 flex-shrink-0" style={{ fontSize: "12px" }}>
+                <span style={{ color: "#C89B3C", marginTop: "2px", flexShrink: 0, fontSize: "12px" }}>
                   ▸
                 </span>
                 {item}
@@ -50,17 +47,13 @@ export default function IdentityFrame() {
           </ul>
         </div>
 
-        {/* Not for you list — red left border signals exclusion */}
         <div
           className="mb-12"
-          style={{
-            borderLeft: "3px solid #DC2626",
-            paddingLeft: "20px",
-          }}
+          style={{ borderLeft: "3px solid #E5E1D8", paddingLeft: "20px" }}
         >
           <p
-            className="font-body font-semibold text-text-main mb-4"
-            style={{ fontSize: "14px", letterSpacing: "0.04em" }}
+            className="font-sans font-semibold mb-4"
+            style={{ fontSize: "14px", letterSpacing: "0.04em", color: "#1A1A1A" }}
           >
             {identityFrame.notForYouLabel}
           </p>
@@ -68,8 +61,8 @@ export default function IdentityFrame() {
             {identityFrame.notForYou.map((item, i) => (
               <li
                 key={i}
-                className="font-body text-text-soft"
-                style={{ fontSize: "16px", lineHeight: 1.65 }}
+                className="font-sans"
+                style={{ fontSize: "16px", lineHeight: 1.65, color: "#6B7280" }}
               >
                 {item}
               </li>
@@ -77,10 +70,9 @@ export default function IdentityFrame() {
           </ul>
         </div>
 
-        {/* Closing line */}
         <p
-          className="font-body font-semibold text-text-main"
-          style={{ fontSize: "17px", lineHeight: 1.6 }}
+          className="font-sans font-semibold"
+          style={{ fontSize: "17px", lineHeight: 1.6, color: "#1A1A1A" }}
         >
           {identityFrame.closing}
         </p>

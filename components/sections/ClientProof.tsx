@@ -3,60 +3,61 @@ import SectionWrapper from "@/components/ui/SectionWrapper";
 
 export default function ClientProof() {
   return (
-    <SectionWrapper bgAlt>
-      <p className="font-body font-semibold text-primary uppercase tracking-widest text-xs mb-4">
+    <SectionWrapper variant="white">
+      <p
+        className="font-sans font-semibold uppercase tracking-widest text-xs mb-4"
+        style={{ fontSize: "11px", letterSpacing: "0.14em", color: "#C89B3C" }}
+      >
         {clientProof.label}
       </p>
       <h2
-        className="font-heading font-bold text-text-main mb-3"
+        className="font-serif font-semibold mb-3"
         style={{
-          fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)",
-          lineHeight: 1.1,
-          letterSpacing: "-0.02em",
+          fontSize: "clamp(28px, 3.5vw, 40px)",
+          lineHeight: 1.2,
+          color: "#1A1A1A",
         }}
       >
         {clientProof.headline}
       </h2>
 
-      {/* Subhead sits ABOVE the cards */}
       <p
-        className="font-body text-text-soft mb-12 max-w-xl"
-        style={{ fontSize: "16px", lineHeight: 1.7 }}
+        className="font-sans mb-12 max-w-xl"
+        style={{ fontSize: "16px", lineHeight: 1.7, color: "#6B7280" }}
       >
         {clientProof.subhead}
       </p>
 
-      {/* Proof cards — 3 column grid */}
       <div
         className="grid gap-6 mb-8"
-        style={{
-          gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-        }}
+        style={{ gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))" }}
       >
         {clientProof.cards.map((card, i) => (
           <div
             key={i}
-            className="bg-bg-card rounded-xl flex flex-col"
+            className="rounded-xl flex flex-col"
             style={{
-              border: "1px solid rgba(255,255,255,0.06)",
+              background: "#FFFFFF",
+              border: "1px solid #E5E1D8",
+              borderTop: `3px solid ${card.eyebrowColor}`,
               padding: "28px 24px",
             }}
           >
             <p
-              className="font-body font-semibold uppercase tracking-widest mb-3"
+              className="font-sans font-semibold uppercase tracking-widest mb-3"
               style={{ fontSize: "11px", color: card.eyebrowColor }}
             >
               {card.eyebrow}
             </p>
             <h3
-              className="font-heading font-semibold text-text-main mb-3"
-              style={{ fontSize: "18px", letterSpacing: "-0.01em", lineHeight: 1.3 }}
+              className="font-serif font-semibold mb-3"
+              style={{ fontSize: "18px", lineHeight: 1.3, color: "#1A1A1A" }}
             >
               {card.headline}
             </h3>
             <p
-              className="font-body text-text-soft"
-              style={{ fontSize: "15px", lineHeight: 1.75 }}
+              className="font-sans"
+              style={{ fontSize: "15px", lineHeight: 1.75, color: "#6B7280" }}
             >
               {card.body}
             </p>
@@ -64,24 +65,24 @@ export default function ClientProof() {
         ))}
       </div>
 
-      {/* Quote card — only renders when testimonialPublished is true */}
       {clientProof.testimonialPublished && (
         <div
-          className="bg-bg-card rounded-xl"
+          className="rounded-xl"
           style={{
-            border: "1px solid rgba(255,255,255,0.06)",
+            background: "#F8F6F0",
+            border: "1px solid #E5E1D8",
             padding: "28px 24px",
           }}
         >
           <p
-            className="font-body text-text-soft italic mb-4"
-            style={{ fontSize: "17px", lineHeight: 1.7 }}
+            className="font-sans italic mb-4"
+            style={{ fontSize: "17px", lineHeight: 1.7, color: "#6B7280" }}
           >
             &ldquo;{clientProof.testimonial.quote}&rdquo;
           </p>
           <p
-            className="font-body font-semibold text-muted"
-            style={{ fontSize: "13px", letterSpacing: "0.04em" }}
+            className="font-sans font-semibold"
+            style={{ fontSize: "13px", letterSpacing: "0.04em", color: "#C89B3C" }}
           >
             {clientProof.testimonial.attribution}
           </p>

@@ -6,18 +6,18 @@ import Btn from "@/components/ui/Btn";
 import { contact } from "@/content/siteContent";
 
 export const metadata: Metadata = {
-  title: "Contact — SkemaLS",
+  title: "Contact — Pallume",
   description:
     "Start with the application form. Six questions, three minutes. Camden reviews every submission personally and responds within 24 hours.",
   alternates: {
-    canonical: "https://skemals.com/contact",
+    canonical: "https://pallume.com/contact",
   },
   openGraph: {
-    title: "Contact — SkemaLS",
+    title: "Contact — Pallume",
     description:
       "Start with the application form. Six questions, three minutes. Camden reviews every submission personally and responds within 24 hours.",
-    url: "https://skemals.com/contact",
-    siteName: "SkemaLS",
+    url: "https://pallume.com/contact",
+    siteName: "Pallume",
     type: "website",
   },
 };
@@ -30,13 +30,13 @@ const contactBreadcrumb = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://skemals.com/",
+      item: "https://pallume.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Contact",
-      item: "https://skemals.com/contact",
+      item: "https://pallume.com/contact",
     },
   ],
 };
@@ -55,7 +55,7 @@ export default function ContactPage() {
         style={{
           position: "relative",
           overflow: "hidden",
-          background: "#0A0A12",
+          background: "#0F1B2D",
           minHeight: "70vh",
           display: "flex",
           alignItems: "center",

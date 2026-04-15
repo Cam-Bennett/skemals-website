@@ -8,16 +8,16 @@ import Btn from "@/components/ui/Btn";
 import { pricing } from "@/content/siteContent";
 
 export const metadata: Metadata = {
-  title: "Pricing — SkemaLS",
+  title: "Pricing — Pallume",
   description: pricing.meta.description,
   alternates: {
-    canonical: "https://skemals.com/pricing",
+    canonical: "https://pallume.com/pricing",
   },
   openGraph: {
-    title: "Pricing — SkemaLS",
+    title: "Pricing — Pallume",
     description: pricing.meta.description,
-    url: "https://skemals.com/pricing",
-    siteName: "SkemaLS",
+    url: "https://pallume.com/pricing",
+    siteName: "Pallume",
     type: "website",
   },
 };
@@ -87,7 +87,7 @@ function PathSection({
   alt?: boolean;
 }) {
   return (
-    <SectionWrapper bgAlt={alt}>
+    <SectionWrapper variant={alt ? "light" : "white"}>
       <div style={{ maxWidth: "780px" }}>
         <p
           className="font-body font-semibold uppercase tracking-widest mb-4"
@@ -170,16 +170,16 @@ function PathSection({
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "MySkema AI Accountability System",
+  name: "Pallume Journal AI Accountability System",
   description:
     "Custom-built AI execution system for business owners. Includes intake interview, system configuration, daily check-in, and weekly coaching review. Not a template — built specifically for your goals, patterns, and constraints.",
   provider: {
     "@type": "Organization",
-    "@id": "https://skemals.com/#organization",
-    name: "SkemaLS",
+    "@id": "https://pallume.com/#organization",
+    name: "Pallume",
   },
   areaServed: "United States",
-  url: "https://skemals.com/pricing",
+  url: "https://pallume.com/pricing",
   offers: [
     {
       "@type": "Offer",
@@ -231,13 +231,13 @@ const pricingBreadcrumb = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://skemals.com/",
+      item: "https://pallume.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Pricing",
-      item: "https://skemals.com/pricing",
+      item: "https://pallume.com/pricing",
     },
   ],
 };
@@ -265,7 +265,7 @@ export default function PricingPage() {
         style={{
           position: "relative",
           overflow: "hidden",
-          background: "#0A0A12",
+          background: "#0F1B2D",
           minHeight: "52vh",
           display: "flex",
           alignItems: "flex-end",
@@ -286,7 +286,7 @@ export default function PricingPage() {
             position: "absolute",
             bottom: 0, left: 0, right: 0,
             height: "320px",
-            background: "linear-gradient(to bottom, transparent, rgba(10,10,18,0.7) 50%, #0A0A12)",
+            background: "linear-gradient(to bottom, transparent, rgba(10,10,18,0.7) 50%, #0F1B2D)",
             zIndex: 1,
           }}
         />
@@ -313,7 +313,7 @@ export default function PricingPage() {
       </section>
 
       {/* ── Investment context ──────────────────────────────────── */}
-      <SectionWrapper bgAlt>
+      <SectionWrapper variant="light">
         <div style={{ maxWidth: "680px" }}>
           <p
             className="font-body font-semibold text-primary uppercase tracking-widest mb-8"
@@ -398,7 +398,7 @@ export default function PricingPage() {
       </SectionWrapper>
 
       {/* ── FAQ ───────────────────────────────────────────────────── */}
-      <SectionWrapper bgAlt>
+      <SectionWrapper variant="light">
         <p
           className="font-body font-semibold text-primary uppercase tracking-widest mb-4"
           style={{ fontSize: "11px", letterSpacing: "0.14em" }}
@@ -425,8 +425,8 @@ export default function PricingPage() {
         <div
           className="rounded-2xl"
           style={{
-            background: "rgba(220,38,38,0.05)",
-            border: "1px solid rgba(220,38,38,0.15)",
+            background: "rgba(200,155,60,0.05)",
+            border: "1px solid rgba(200,155,60,0.15)",
             padding: "56px 48px",
             maxWidth: "680px",
           }}
@@ -463,7 +463,7 @@ export default function PricingPage() {
               className="hover:text-text-soft transition-colors duration-150"
               style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: "3px" }}
             >
-              Try MySkema Lite free — 14 days, no obligation.
+              Try Pallume Journal Lite free — 14 days, no obligation.
             </a>
           </p>
         </div>

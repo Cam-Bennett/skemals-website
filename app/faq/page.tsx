@@ -8,18 +8,18 @@ import Accordion from "@/components/ui/Accordion";
 import { faq } from "@/content/siteContent";
 
 export const metadata: Metadata = {
-  title: "FAQ — SkemaLS",
+  title: "FAQ — Pallume",
   description:
-    "Common questions about SkemaLS, MySkema, and how the AI execution system works. Built by Camden Bennett.",
+    "Common questions about Pallume, Pallume Journal, and how the AI execution system works. Built by Camden Bennett.",
   alternates: {
-    canonical: "https://skemals.com/faq",
+    canonical: "https://pallume.com/faq",
   },
   openGraph: {
-    title: "FAQ — SkemaLS",
+    title: "FAQ — Pallume",
     description:
-      "Common questions about SkemaLS, MySkema, and how the AI execution system works. Built by Camden Bennett.",
-    url: "https://skemals.com/faq",
-    siteName: "SkemaLS",
+      "Common questions about Pallume, Pallume Journal, and how the AI execution system works. Built by Camden Bennett.",
+    url: "https://pallume.com/faq",
+    siteName: "Pallume",
     type: "website",
   },
 };
@@ -46,13 +46,13 @@ const faqBreadcrumb = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://skemals.com/",
+      item: "https://pallume.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "FAQ",
-      item: "https://skemals.com/faq",
+      item: "https://pallume.com/faq",
     },
   ],
 };
@@ -77,7 +77,7 @@ export default function FAQPage() {
           style={{
             position: "relative",
             overflow: "hidden",
-            background: "#0A0A12",
+            background: "#0F1B2D",
             minHeight: "52vh",
             display: "flex",
             alignItems: "flex-end",
@@ -98,7 +98,7 @@ export default function FAQPage() {
               position: "absolute",
               bottom: 0, left: 0, right: 0,
               height: "320px",
-              background: "linear-gradient(to bottom, transparent, rgba(10,10,18,0.7) 50%, #0A0A12)",
+              background: "linear-gradient(to bottom, transparent, rgba(10,10,18,0.7) 50%, #0F1B2D)",
               zIndex: 1,
             }}
           />
@@ -125,7 +125,7 @@ export default function FAQPage() {
         </section>
 
         {/* ── Accordion section ───────────────────────────────────── */}
-        <SectionWrapper bgAlt style={{ paddingTop: "16px" }}>
+        <SectionWrapper variant="light" style={{ paddingTop: "16px" }}>
           <div style={{ maxWidth: "800px" }}>
             <Accordion items={faq.items} />
           </div>
@@ -135,7 +135,7 @@ export default function FAQPage() {
         <SectionWrapper
           style={{
             background:
-              "radial-gradient(ellipse at 30% 80%, rgba(37,99,235,0.07) 0%, transparent 55%), #0A0A12",
+              "radial-gradient(ellipse at 30% 80%, rgba(37,99,235,0.07) 0%, transparent 55%), #0F1B2D",
           }}
         >
           <div style={{ maxWidth: "600px" }}>
@@ -165,7 +165,7 @@ export default function FAQPage() {
                 className="hover:text-text-soft transition-colors duration-150"
                 style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: "3px" }}
               >
-                Try MySkema Lite free — 14 days, no commitment.
+                Try Pallume Journal Lite free — 14 days, no commitment.
               </a>
             </p>
           </div>

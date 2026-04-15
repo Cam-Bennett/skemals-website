@@ -70,7 +70,7 @@ const article: Article = {
     },
     {
       type: "paragraph",
-      text: "The system I use is called MySkema. It runs inside Claude, an AI platform I configure specifically around how I work — my goals, my values, my patterns, my specific failure modes. Every morning, I open it, type the time and date, and say:",
+      text: "The system I use is called Pallume Journal. It runs inside Claude, an AI platform I configure specifically around how I work — my goals, my values, my patterns, my specific failure modes. Every morning, I open it, type the time and date, and say:",
     },
     {
       type: "italic-paragraph",

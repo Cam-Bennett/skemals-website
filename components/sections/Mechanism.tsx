@@ -3,23 +3,21 @@ import SectionWrapper from "@/components/ui/SectionWrapper";
 
 export default function Mechanism() {
   return (
-    <SectionWrapper bgAlt>
+    <SectionWrapper variant="light">
       <div className="max-w-2xl">
-        {/* Eyebrow only — no headline */}
         <p
-          className="font-body font-semibold text-primary uppercase tracking-widest mb-8"
-          style={{ fontSize: "11px", letterSpacing: "0.14em" }}
+          className="font-sans font-semibold uppercase tracking-widest mb-8"
+          style={{ fontSize: "11px", letterSpacing: "0.14em", color: "#C89B3C" }}
         >
           {mechanism.eyebrow}
         </p>
 
-        {/* Body Part 1 */}
         <div className="flex flex-col gap-5 mb-16">
           {mechanism.bodyPart1.map((p, i) => (
             <p
               key={i}
-              className="font-body text-text-soft"
-              style={{ fontSize: "17px", lineHeight: 1.75 }}
+              className="font-sans"
+              style={{ fontSize: "17px", lineHeight: 1.8, color: "#6B7280" }}
             >
               {p}
             </p>
@@ -29,30 +27,29 @@ export default function Mechanism() {
         {/* Product reveal callout */}
         <div
           style={{
-            borderLeft: "3px solid #DC2626",
+            borderLeft: "3px solid #C89B3C",
             paddingLeft: "28px",
             marginBottom: "64px",
           }}
         >
           <p
-            className="font-heading font-bold text-text-main"
+            className="font-serif font-semibold"
             style={{
-              fontSize: "clamp(1.3rem, 2.8vw, 1.9rem)",
-              lineHeight: 1.15,
-              letterSpacing: "-0.01em",
+              fontSize: "clamp(1.2rem, 2.5vw, 1.7rem)",
+              lineHeight: 1.2,
+              color: "#1A1A1A",
             }}
           >
             {mechanism.reveal}
           </p>
         </div>
 
-        {/* Body Part 2 */}
         <div className="flex flex-col gap-5">
           {mechanism.bodyPart2.map((p, i) => (
             <p
               key={i}
-              className="font-body text-text-soft"
-              style={{ fontSize: "17px", lineHeight: 1.75 }}
+              className="font-sans"
+              style={{ fontSize: "17px", lineHeight: 1.8, color: "#6B7280" }}
             >
               {p}
             </p>

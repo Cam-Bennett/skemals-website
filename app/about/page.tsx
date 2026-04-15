@@ -5,7 +5,6 @@ import Image from "next/image";
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
 import SectionWrapper from "@/components/ui/SectionWrapper";
-import GrainOverlay from "@/components/ui/GrainOverlay";
 import Btn from "@/components/ui/Btn";
 import { about } from "@/content/siteContent";
 
@@ -119,7 +118,7 @@ export default function AboutPage() {
             position: "relative",
             height: "clamp(420px, 60vw, 740px)",
             overflow: "hidden",
-            background: "#0A0A12",
+            background: "#0F1B2D",
           }}
         >
           <Image
@@ -141,10 +140,9 @@ export default function AboutPage() {
               position: "absolute",
               bottom: 0, left: 0, right: 0,
               height: "160px",
-              background: "linear-gradient(to bottom, transparent, #0A0A12)",
+              background: "linear-gradient(to bottom, transparent, #0F1B2D)",
             }}
           />
-          <GrainOverlay />
         </section>
 
         {/* ── HEADSHOT + EYEBROW + H1 — transparent, floats over hero  */}
@@ -163,7 +161,7 @@ export default function AboutPage() {
               style={{
                 width: "200px",
                 marginBottom: "24px",
-                background: "#111119",
+                background: "#1B2838",
                 border: "1px solid rgba(255,255,255,0.10)",
                 borderRadius: "14px",
                 padding: "12px",
@@ -222,9 +220,8 @@ export default function AboutPage() {
         {/* ── SECTION 1 BODY — dark, all paragraphs ────────────────── */}
         <section
           className="relative overflow-hidden px-6"
-          style={{ background: "#0A0A12", paddingTop: "56px", paddingBottom: "96px" }}
+          style={{ background: "#0F1B2D", paddingTop: "56px", paddingBottom: "96px" }}
         >
-          <GrainOverlay />
           <div className="relative z-10 max-w-site mx-auto">
             <div className="flex flex-col gap-5" style={{ maxWidth: "720px" }}>
               {about.section1.paragraphs.map((p, i) => (
@@ -235,7 +232,7 @@ export default function AboutPage() {
         </section>
 
         {/* ── SECTION 2 — The Background ───────────────────────────── */}
-        <SectionWrapper bgAlt>
+        <SectionWrapper variant="navy2">
           <Eyebrow text={about.section2.eyebrow} />
           <div
             data-reveal
@@ -256,7 +253,7 @@ export default function AboutPage() {
         <SectionWrapper
           style={{
             background:
-              "radial-gradient(ellipse at 10% 60%, rgba(220,38,38,0.05) 0%, transparent 55%), #0A0A12",
+              "radial-gradient(ellipse at 10% 60%, rgba(220,38,38,0.05) 0%, transparent 55%), #0F1B2D",
           }}
         >
           <Eyebrow text={about.section3.eyebrow} />
@@ -276,7 +273,7 @@ export default function AboutPage() {
         </SectionWrapper>
 
         {/* ── SECTION 4 — What This Produces ───────────────────────── */}
-        <SectionWrapper bgAlt>
+        <SectionWrapper variant="navy2">
           <Eyebrow text={about.section4.eyebrow} />
           <div
             data-reveal
@@ -297,7 +294,7 @@ export default function AboutPage() {
         <SectionWrapper
           style={{
             background:
-              "radial-gradient(ellipse at 90% 80%, rgba(220,38,38,0.06) 0%, transparent 55%), #0A0A12",
+              "radial-gradient(ellipse at 90% 80%, rgba(220,38,38,0.06) 0%, transparent 55%), #0F1B2D",
           }}
         >
           <Eyebrow text={about.section5.eyebrow} />

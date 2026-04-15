@@ -19,16 +19,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = getArticleBySlug(params.slug);
   if (!article) return {};
   return {
-    title: `${article.title} — SkemaLS`,
+    title: `${article.title} — Pallume`,
     description: article.excerpt,
     alternates: {
-      canonical: `https://skemals.com/the-work/${article.slug}`,
+      canonical: `https://pallume.com/the-work/${article.slug}`,
     },
     openGraph: {
-      title: `${article.title} — SkemaLS`,
+      title: `${article.title} — Pallume`,
       description: article.excerpt,
-      url: `https://skemals.com/the-work/${article.slug}`,
-      siteName: "SkemaLS",
+      url: `https://pallume.com/the-work/${article.slug}`,
+      siteName: "Pallume",
       type: "article",
     },
   };
@@ -138,19 +138,19 @@ export default function ArticlePage({ params }: Props) {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://skemals.com/",
+        item: "https://pallume.com/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "The Work",
-        item: "https://skemals.com/the-work",
+        item: "https://pallume.com/the-work",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: article.title,
-        item: `https://skemals.com/the-work/${article.slug}`,
+        item: `https://pallume.com/the-work/${article.slug}`,
       },
     ],
   };
@@ -160,24 +160,24 @@ export default function ArticlePage({ params }: Props) {
     "@type": "BlogPosting",
     headline: article.title,
     description: article.excerpt,
-    url: `https://skemals.com/the-work/${article.slug}`,
+    url: `https://pallume.com/the-work/${article.slug}`,
     datePublished: article.date,
     dateModified: article.date,
     author: {
       "@type": "Person",
-      "@id": "https://skemals.com/#person",
+      "@id": "https://pallume.com/#person",
       name: "Camden Bennett",
-      url: "https://skemals.com/about",
+      url: "https://pallume.com/about",
     },
     publisher: {
       "@type": "Organization",
-      "@id": "https://skemals.com/#organization",
-      name: "SkemaLS",
-      url: "https://skemals.com",
+      "@id": "https://pallume.com/#organization",
+      name: "Pallume",
+      url: "https://pallume.com",
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://skemals.com/the-work/${article.slug}`,
+      "@id": `https://pallume.com/the-work/${article.slug}`,
     },
   };
 
@@ -197,7 +197,7 @@ export default function ArticlePage({ params }: Props) {
       <SectionWrapper
         style={{
           background:
-            "radial-gradient(ellipse at 60% 0%, rgba(220,38,38,0.07) 0%, transparent 55%), #0A0A12",
+            "radial-gradient(ellipse at 60% 0%, rgba(220,38,38,0.07) 0%, transparent 55%), #0F1B2D",
         }}
       >
         <div style={{ maxWidth: "720px" }}>
@@ -227,7 +227,7 @@ export default function ArticlePage({ params }: Props) {
       </SectionWrapper>
 
       {/* ── Article body ───────────────────────────────────────────── */}
-      <SectionWrapper bgAlt>
+      <SectionWrapper variant="light">
         <div style={{ maxWidth: "680px" }}>
           {article.sections.map((section, i) => renderSection(section, i))}
         </div>
@@ -237,7 +237,7 @@ export default function ArticlePage({ params }: Props) {
       <SectionWrapper
         style={{
           background:
-            "radial-gradient(ellipse at 40% 80%, rgba(37,99,235,0.07) 0%, transparent 55%), #0A0A12",
+            "radial-gradient(ellipse at 40% 80%, rgba(37,99,235,0.07) 0%, transparent 55%), #0F1B2D",
         }}
       >
         <div style={{ maxWidth: "560px" }}>

@@ -1,31 +1,36 @@
 import { type ReactNode } from "react";
-import GrainOverlay from "./GrainOverlay";
+
+type Variant = "dark" | "navy2" | "light" | "white";
 
 interface SectionWrapperProps {
   children: ReactNode;
   id?: string;
   className?: string;
-  bgAlt?: boolean;
+  variant?: Variant;
   style?: React.CSSProperties;
 }
+
+const bgMap: Record<Variant, string> = {
+  dark: "#0F1B2D",
+  navy2: "#1B2838",
+  light: "#F8F6F0",
+  white: "#FFFFFF",
+};
 
 export default function SectionWrapper({
   children,
   id,
   className = "",
-  bgAlt = false,
+  variant = "light",
   style,
 }: SectionWrapperProps) {
   return (
     <section
       id={id}
-      className={`relative overflow-hidden px-6 py-24 ${
-        bgAlt ? "bg-bg-alt" : "bg-bg"
-      } ${className}`}
-      style={style}
+      className={`px-6 py-24 ${className}`}
+      style={{ background: bgMap[variant], ...style }}
     >
-      <GrainOverlay />
-      <div className="relative z-10 max-w-site mx-auto">{children}</div>
+      <div className="max-w-site mx-auto">{children}</div>
     </section>
   );
 }

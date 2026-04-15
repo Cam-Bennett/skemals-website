@@ -4,18 +4,18 @@ import Footer from "@/components/sections/Footer";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — SkemaLS",
+  title: "Terms of Service — Pallume",
   description:
-    "Terms of service for SkemaLS AI execution system and coaching services.",
+    "Terms of service for Pallume AI execution system and coaching services.",
   alternates: {
-    canonical: "https://skemals.com/terms-of-service",
+    canonical: "https://pallume.com/terms-of-service",
   },
   openGraph: {
-    title: "Terms of Service — SkemaLS",
+    title: "Terms of Service — Pallume",
     description:
-      "Terms of service for SkemaLS AI execution system and coaching services.",
-    url: "https://skemals.com/terms-of-service",
-    siteName: "SkemaLS",
+      "Terms of service for Pallume AI execution system and coaching services.",
+    url: "https://pallume.com/terms-of-service",
+    siteName: "Pallume",
     type: "website",
   },
 };
@@ -32,15 +32,15 @@ const sections: Section[] = [
   {
     heading: "1. Services",
     paragraphs: [
-      "SkemaLS provides custom AI execution system design and ongoing coaching services to accepted clients. Services include intake analysis, system configuration, deployment support, weekly review, and periodic refinement — collectively referred to as the 'System' or 'MySkema.'",
+      "Pallume provides custom AI execution system design and ongoing coaching services to accepted clients. Services include intake analysis, system configuration, deployment support, weekly review, and periodic refinement — collectively referred to as the 'System' or 'Pallume Journal.'",
       "All services are delivered remotely. Scope, cadence, and deliverables are defined per engagement path (Path A, Path B, or Path C) and confirmed in writing prior to payment.",
     ],
   },
   {
     heading: "2. Eligibility and Acceptance",
     paragraphs: [
-      "SkemaLS is not an open enrollment service. Access requires completing an application, a discovery conversation with Camden Bennett, and mutual agreement to proceed. Submission of an application does not constitute acceptance. Camden Bennett reserves the right to decline any application without explanation.",
-      "By engaging SkemaLS services, you represent that you are at least 18 years old, have the legal authority to enter into this agreement, and are a business owner or operator with an active working context the system can address.",
+      "Pallume is not an open enrollment service. Access requires completing an application, a discovery conversation with Camden Bennett, and mutual agreement to proceed. Submission of an application does not constitute acceptance. Camden Bennett reserves the right to decline any application without explanation.",
+      "By engaging Pallume services, you represent that you are at least 18 years old, have the legal authority to enter into this agreement, and are a business owner or operator with an active working context the system can address.",
     ],
   },
   {
@@ -54,38 +54,38 @@ const sections: Section[] = [
   {
     heading: "4. Cancellation",
     paragraphs: [
-      "You may cancel a monthly engagement with 30 days written notice to camden@skemals.com. No partial refunds are issued for the current billing period. Cancellation takes effect at the end of the paid period.",
+      "You may cancel a monthly engagement with 30 days written notice to [EMAIL]. No partial refunds are issued for the current billing period. Cancellation takes effect at the end of the paid period.",
       "Path C project engagements are governed by the scope document agreed upon at project start. Cancellation of a project engagement mid-delivery does not entitle the client to a refund of amounts already paid.",
-      "SkemaLS reserves the right to terminate any engagement immediately if a client engages in abusive behavior, misrepresents material information during intake, or violates any part of these terms. In such cases, no refund will be issued for the current period.",
+      "Pallume reserves the right to terminate any engagement immediately if a client engages in abusive behavior, misrepresents material information during intake, or violates any part of these terms. In such cases, no refund will be issued for the current period.",
     ],
   },
   {
     heading: "5. Intellectual Property",
     paragraphs: [
       "You retain ownership of all content you provide — business data, goals, journal entries, and any other information submitted during the engagement.",
-      "The methodology, frameworks, system architecture, and coaching processes developed and used by SkemaLS are the intellectual property of Camden Bennett and SkemaLS. System configurations created for you during your engagement are yours to use. You may not resell, sublicense, or distribute them as a service to others.",
-      "SkemaLS retains the right to reference the existence of client engagements in aggregate or anonymized form for marketing purposes unless you request otherwise in writing.",
+      "The methodology, frameworks, system architecture, and coaching processes developed and used by Pallume are the intellectual property of Camden Bennett and Pallume. System configurations created for you during your engagement are yours to use. You may not resell, sublicense, or distribute them as a service to others.",
+      "Pallume retains the right to reference the existence of client engagements in aggregate or anonymized form for marketing purposes unless you request otherwise in writing.",
     ],
   },
   {
     heading: "6. No Guarantee of Results",
     paragraphs: [
-      "SkemaLS provides execution systems and coaching. We do not guarantee specific business outcomes, revenue figures, productivity improvements, or any other measurable result.",
-      "The effectiveness of any system depends on your participation, consistency, and follow-through. SkemaLS is a tool and a thinking partner — not a substitute for your own decision-making, judgment, or effort.",
+      "Pallume provides execution systems and coaching. We do not guarantee specific business outcomes, revenue figures, productivity improvements, or any other measurable result.",
+      "The effectiveness of any system depends on your participation, consistency, and follow-through. Pallume is a tool and a thinking partner — not a substitute for your own decision-making, judgment, or effort.",
     ],
   },
   {
     heading: "7. Confidentiality",
     paragraphs: [
-      "All information you share during intake, coaching sessions, and system use is treated as confidential. SkemaLS will not share your personal business information with third parties without your consent, except as required by law.",
-      "You agree to keep any proprietary frameworks, system prompts, or materials provided by SkemaLS confidential and not share them publicly or with competitors.",
+      "All information you share during intake, coaching sessions, and system use is treated as confidential. Pallume will not share your personal business information with third parties without your consent, except as required by law.",
+      "You agree to keep any proprietary frameworks, system prompts, or materials provided by Pallume confidential and not share them publicly or with competitors.",
     ],
   },
   {
     heading: "8. Limitation of Liability",
     paragraphs: [
-      "To the fullest extent permitted by law, SkemaLS and Camden Bennett are not liable for any indirect, incidental, consequential, or punitive damages arising from your use of the service.",
-      "Our total liability to you for any claim arising under these terms is limited to the total amount you paid to SkemaLS in the 90 days preceding the claim.",
+      "To the fullest extent permitted by law, Pallume and Camden Bennett are not liable for any indirect, incidental, consequential, or punitive damages arising from your use of the service.",
+      "Our total liability to you for any claim arising under these terms is limited to the total amount you paid to Pallume in the 90 days preceding the claim.",
     ],
   },
   {
@@ -97,7 +97,7 @@ const sections: Section[] = [
   {
     heading: "10. Changes to These Terms",
     paragraphs: [
-      "SkemaLS may update these terms from time to time. Material changes will be communicated by email at least 14 days before they take effect. Continued use of services after the effective date constitutes acceptance of the updated terms.",
+      "Pallume may update these terms from time to time. Material changes will be communicated by email at least 14 days before they take effect. Continued use of services after the effective date constitutes acceptance of the updated terms.",
     ],
   },
   {
@@ -106,9 +106,9 @@ const sections: Section[] = [
       "Questions about these terms can be directed to:",
     ],
     list: [
-      "Email: camden@skemals.com",
+      "Email: [EMAIL]",
       "Phone: 801-910-6528",
-      "Mailing address: SkemaLS, Pinedale, Wyoming 82941",
+      "Mailing address: Pallume, Pinedale, Wyoming 82941",
     ],
   },
 ];
@@ -121,13 +121,13 @@ const termsBreadcrumb = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://skemals.com/",
+      item: "https://pallume.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Terms of Service",
-      item: "https://skemals.com/terms-of-service",
+      item: "https://pallume.com/terms-of-service",
     },
   ],
 };
@@ -170,7 +170,7 @@ export default function TermsPage() {
       </SectionWrapper>
 
       {/* ── Body ─────────────────────────────────────────────────── */}
-      <SectionWrapper bgAlt style={{ paddingTop: "0" }}>
+      <SectionWrapper variant="light" style={{ paddingTop: "0" }}>
         <div
           style={{
             maxWidth: "720px",

@@ -32,7 +32,7 @@ export async function POST(req: NextRequest) {
 
     const html = `
       <div style="font-family: sans-serif; max-width: 600px; color: #111;">
-        <h2 style="margin-bottom: 4px;">New SkemaLS Application</h2>
+        <h2 style="margin-bottom: 4px;">New Pallume Application</h2>
         <p style="color: #666; margin-top: 0;">Submitted by ${name} &lt;${email}&gt;</p>
         <hr style="border: none; border-top: 1px solid #eee; margin: 24px 0;" />
 
@@ -68,13 +68,13 @@ export async function POST(req: NextRequest) {
         </table>
 
         <hr style="border: none; border-top: 1px solid #eee; margin: 24px 0;" />
-        <p style="color: #999; font-size: 13px;">Sent from skemals.com application form</p>
+        <p style="color: #999; font-size: 13px;">Sent from pallume.com application form</p>
       </div>
     `;
 
     await resend.emails.send({
-      from: "SkemaLS Applications <onboarding@resend.dev>",
-      to: "camden@skemals.com",
+      from: "Pallume Applications <onboarding@resend.dev>",
+      to: "[EMAIL]",
       replyTo: email,
       subject: `New application — ${name} (${pathLabel})`,
       html,

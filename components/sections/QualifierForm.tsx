@@ -5,7 +5,6 @@ import { qualifierForm } from "@/content/siteContent";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 import Btn from "@/components/ui/Btn";
 
-// A_both → routes to PATH A tag. All unique values for clean selection state.
 const PATH_TAG_MAP: Record<string, string> = {
   A: "PATH-A",
   B: "PATH-B",
@@ -48,16 +47,23 @@ function isStepComplete(stepIndex: number, state: FormState): boolean {
 }
 
 const inputStyle: React.CSSProperties = {
-  fontFamily: "var(--font-karla), sans-serif",
+  fontFamily: "var(--font-sans), sans-serif",
   fontSize: "15px",
-  color: "#F1F0EE",
-  background: "rgba(255,255,255,0.03)",
-  border: "1px solid rgba(255,255,255,0.06)",
-  borderRadius: "8px",
+  color: "#1A1A1A",
+  background: "#FFFFFF",
+  border: "1px solid #E5E1D8",
+  borderRadius: "6px",
   padding: "14px 18px",
   outline: "none",
   width: "100%",
   resize: "vertical" as const,
+  lineHeight: "1.6",
+};
+
+const inputFocusStyle: React.CSSProperties = {
+  ...inputStyle,
+  borderColor: "#C89B3C",
+  boxShadow: "0 0 0 2px rgba(200,155,60,0.15)",
 };
 
 export default function QualifierForm() {
@@ -66,6 +72,7 @@ export default function QualifierForm() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState("");
+  const [focusedField, setFocusedField] = useState<string | null>(null);
 
   const totalSteps = qualifierForm.steps.length;
   const currentStep = qualifierForm.steps[step];
@@ -103,36 +110,33 @@ export default function QualifierForm() {
       }
       setSubmitted(true);
     } catch {
-      setSubmitError("Something went wrong. Email camden@skemals.com directly.");
+      setSubmitError("Something went wrong. Email camden@livewyoming.net directly.");
     } finally {
       setSubmitting(false);
     }
   }
 
   return (
-    <SectionWrapper
-      id="qualifier"
-      style={{
-        background:
-          "radial-gradient(ellipse at 50% 50%, rgba(37,99,235,0.06) 0%, transparent 60%), #0A0A12",
-      }}
-    >
-      <p className="font-body font-semibold text-primary uppercase tracking-widest text-xs mb-4">
+    <SectionWrapper id="qualifier" variant="light">
+      <p
+        className="font-sans font-semibold uppercase tracking-widest text-xs mb-4"
+        style={{ fontSize: "11px", letterSpacing: "0.14em", color: "#C89B3C" }}
+      >
         {qualifierForm.label}
       </p>
       <h2
-        className="font-heading font-bold text-text-main mb-3"
+        className="font-serif font-semibold mb-3"
         style={{
-          fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)",
-          lineHeight: 1.1,
-          letterSpacing: "-0.02em",
+          fontSize: "clamp(28px, 3.5vw, 40px)",
+          lineHeight: 1.2,
+          color: "#1A1A1A",
         }}
       >
         {qualifierForm.headline}
       </h2>
       <p
-        className="font-body text-text-soft mb-10"
-        style={{ fontSize: "17px", lineHeight: 1.7 }}
+        className="font-sans mb-10"
+        style={{ fontSize: "17px", lineHeight: 1.7, color: "#6B7280" }}
       >
         {qualifierForm.subhead}
       </p>
@@ -140,7 +144,7 @@ export default function QualifierForm() {
       <div style={{ maxWidth: "560px" }}>
         {!submitted ? (
           <>
-            {/* Progress bar — 6 segments */}
+            {/* Progress bar */}
             <div className="flex gap-1.5 mb-10">
               {Array.from({ length: totalSteps }).map((_, i) => (
                 <div
@@ -149,22 +153,20 @@ export default function QualifierForm() {
                     flex: 1,
                     height: "3px",
                     borderRadius: "2px",
-                    background: i <= step ? "#DC2626" : "rgba(255,255,255,0.06)",
+                    background: i <= step ? "#C89B3C" : "#E5E1D8",
                     transition: "background-color 0.3s",
                   }}
                 />
               ))}
             </div>
 
-            {/* Question */}
             <p
-              className="font-heading font-semibold text-text-main mb-6"
-              style={{ fontSize: "18px", lineHeight: 1.4 }}
+              className="font-serif font-semibold mb-6"
+              style={{ fontSize: "20px", lineHeight: 1.35, color: "#1A1A1A" }}
             >
               {currentStep.question}
             </p>
 
-            {/* Textarea */}
             {currentStep.type === "textarea" &&
               textareaFields.includes(currentStep.id) && (
                 <textarea
@@ -174,11 +176,12 @@ export default function QualifierForm() {
                   onChange={(e) =>
                     setState({ ...state, [currentStep.id]: e.target.value })
                   }
-                  style={inputStyle}
+                  onFocus={() => setFocusedField(currentStep.id)}
+                  onBlur={() => setFocusedField(null)}
+                  style={focusedField === currentStep.id ? inputFocusStyle : inputStyle}
                 />
               )}
 
-            {/* Single-select — unique values, clean highlight */}
             {currentStep.type === "single-select" && "options" in currentStep && (
               <div className="flex flex-col gap-3">
                 {currentStep.options!.map((opt) => {
@@ -187,17 +190,16 @@ export default function QualifierForm() {
                     <button
                       key={opt.value}
                       onClick={() => setState({ ...state, path: opt.value })}
-                      className="text-left font-body rounded-lg transition-all duration-150"
+                      className="text-left font-sans rounded-lg transition-all duration-150"
                       style={{
                         padding: "14px 18px",
                         fontSize: "15px",
-                        background: selected
-                          ? "rgba(220,38,38,0.1)"
-                          : "rgba(255,255,255,0.03)",
+                        background: selected ? "rgba(200,155,60,0.08)" : "#FFFFFF",
                         border: selected
-                          ? "1px solid rgba(220,38,38,0.3)"
-                          : "1px solid rgba(255,255,255,0.06)",
-                        color: selected ? "#F1F0EE" : "#C4C3BF",
+                          ? "1px solid rgba(200,155,60,0.4)"
+                          : "1px solid #E5E1D8",
+                        color: selected ? "#1A1A1A" : "#6B7280",
+                        lineHeight: 1.5,
                       }}
                     >
                       {opt.label}
@@ -207,7 +209,6 @@ export default function QualifierForm() {
               </div>
             )}
 
-            {/* Contact fields */}
             {currentStep.type === "contact" && (
               <div className="flex flex-col gap-4">
                 <input
@@ -215,16 +216,19 @@ export default function QualifierForm() {
                   placeholder={"namePlaceholder" in currentStep ? currentStep.namePlaceholder : ""}
                   value={state.name}
                   onChange={(e) => setState({ ...state, name: e.target.value })}
-                  style={inputStyle}
+                  onFocus={() => setFocusedField("name")}
+                  onBlur={() => setFocusedField(null)}
+                  style={focusedField === "name" ? inputFocusStyle : inputStyle}
                 />
                 <input
                   type="email"
                   placeholder={"emailPlaceholder" in currentStep ? currentStep.emailPlaceholder : ""}
                   value={state.email}
                   onChange={(e) => setState({ ...state, email: e.target.value })}
-                  style={inputStyle}
+                  onFocus={() => setFocusedField("email")}
+                  onBlur={() => setFocusedField(null)}
+                  style={focusedField === "email" ? inputFocusStyle : inputStyle}
                 />
-                {/* Honeypot */}
                 <input
                   type="text"
                   name="_honeypot"
@@ -235,18 +239,18 @@ export default function QualifierForm() {
               </div>
             )}
 
-            {/* Navigation */}
-            <div className="flex gap-3 mt-8">
+            <div className="flex gap-4 mt-8 items-center">
               <button
                 onClick={handleBack}
                 disabled={step === 0}
-                className="font-body font-semibold text-sm text-muted transition-colors duration-150"
+                className="font-sans font-medium text-sm transition-colors duration-150"
                 style={{
                   opacity: step === 0 ? 0.3 : 1,
                   background: "none",
                   border: "none",
                   cursor: step === 0 ? "not-allowed" : "pointer",
-                  padding: "16px 0",
+                  color: "#6B7280",
+                  padding: "0",
                 }}
               >
                 {qualifierForm.backLabel}
@@ -256,10 +260,7 @@ export default function QualifierForm() {
                 <Btn
                   onClick={handleNext}
                   disabled={!canProceed}
-                  style={{
-                    opacity: !canProceed ? 0.4 : 1,
-                    cursor: !canProceed ? "not-allowed" : "pointer",
-                  }}
+                  style={{ opacity: !canProceed ? 0.4 : 1, cursor: !canProceed ? "not-allowed" : "pointer" }}
                 >
                   {qualifierForm.nextLabel}
                 </Btn>
@@ -267,10 +268,7 @@ export default function QualifierForm() {
                 <Btn
                   onClick={handleSubmit}
                   disabled={!canProceed || submitting}
-                  style={{
-                    opacity: !canProceed || submitting ? 0.4 : 1,
-                    cursor: !canProceed || submitting ? "not-allowed" : "pointer",
-                  }}
+                  style={{ opacity: !canProceed || submitting ? 0.4 : 1, cursor: !canProceed || submitting ? "not-allowed" : "pointer" }}
                 >
                   {submitting ? "Sending…" : qualifierForm.submitLabel}
                 </Btn>
@@ -278,27 +276,30 @@ export default function QualifierForm() {
             </div>
 
             {submitError && (
-              <p className="font-body text-primary mt-4" style={{ fontSize: "14px" }}>
+              <p className="font-sans mt-4" style={{ fontSize: "14px", color: "#C89B3C" }}>
                 {submitError}
               </p>
             )}
           </>
         ) : (
-          /* Confirmation screen */
           <div
             className="rounded-xl"
             style={{
-              background: "rgba(255,255,255,0.02)",
-              border: "1px solid rgba(255,255,255,0.06)",
+              background: "#FFFFFF",
+              border: "1px solid #E5E1D8",
+              borderLeft: "3px solid #C89B3C",
               padding: "36px 32px",
             }}
           >
-            <p className="font-heading font-bold text-primary uppercase tracking-widest text-xs mb-4">
+            <p
+              className="font-sans font-semibold uppercase tracking-widest mb-4"
+              style={{ fontSize: "11px", color: "#C89B3C", letterSpacing: "0.1em" }}
+            >
               Application received
             </p>
             <p
-              className="font-body text-text-soft"
-              style={{ fontSize: "16px", lineHeight: 1.8 }}
+              className="font-sans"
+              style={{ fontSize: "16px", lineHeight: 1.8, color: "#6B7280" }}
             >
               {qualifierForm.confirmationMessage}
             </p>

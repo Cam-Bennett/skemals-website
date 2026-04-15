@@ -5,8 +5,8 @@ import SectionWrapper from "@/components/ui/SectionWrapper";
 import { privacyPolicy } from "@/content/siteContent";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — SkemaLS",
-  description: "SkemaLS privacy policy. How we collect, use, and protect your information.",
+  title: "Privacy Policy — Pallume",
+  description: "Pallume privacy policy. How we collect, use, and protect your information.",
 };
 
 export default function PrivacyPage() {

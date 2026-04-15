@@ -1,127 +1,84 @@
 import { hero } from "@/content/siteContent";
 import Btn from "@/components/ui/Btn";
-import GrainOverlay from "@/components/ui/GrainOverlay";
+import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div style={{ paddingTop: "64px" }}>
-
-      {/* ── IMAGE STRIP — full-width, full color ───────────────────── */}
-      <section
-        className="relative overflow-hidden"
+    <section
+      style={{
+        background: "#0F1B2D",
+        minHeight: "100vh",
+        paddingTop: "64px",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      {/* Main content: 55/45 split */}
+      <div
+        className="flex-1 max-w-site mx-auto w-full"
         style={{
-          height: "62vh",
-          minHeight: "420px",
-          background: "#0A0A12",
+          display: "grid",
+          gridTemplateColumns: "55fr 45fr",
+          gap: "64px",
+          alignItems: "center",
+          padding: "80px 24px 60px",
         }}
       >
-        {/* Image at near-full opacity — no uniform overlay */}
-        <div
-          aria-hidden="true"
-          className="absolute inset-0"
-          style={{
-            backgroundImage: "url('/images/hero-abstract.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center 40%",
-            opacity: 0.90,
-          }}
-        />
-
-        {/* Bottom fade into dark section below */}
-        <div
-          aria-hidden="true"
-          className="absolute bottom-0 left-0 right-0"
-          style={{
-            height: "45%",
-            background: "linear-gradient(to bottom, transparent, #0A0A12)",
-          }}
-        />
-
-        {/* Left-side legibility guard — only darkens behind the text */}
-        <div
-          aria-hidden="true"
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to right, rgba(10,10,18,0.82) 0%, rgba(10,10,18,0.38) 38%, rgba(10,10,18,0.0) 62%)",
-          }}
-        />
-
-        <GrainOverlay />
-
-        {/* Eyebrow + headline anchored to bottom-left */}
-        <div
-          className="absolute bottom-0 left-0 right-0"
-          style={{ padding: "0 24px 40px" }}
-        >
-          <div className="max-w-site mx-auto">
-            <p
-              className="font-body font-semibold text-primary mb-4 tracking-widest uppercase"
-              style={{ fontSize: "11px", letterSpacing: "0.14em" }}
-            >
-              {hero.eyebrow}
-            </p>
-            <h1
-              className="font-heading font-bold text-text-main"
-              style={{
-                fontSize: "clamp(2.2rem, 4.8vw, 3.6rem)",
-                lineHeight: 1.08,
-                letterSpacing: "-0.03em",
-                maxWidth: "640px",
-              }}
-            >
-              {hero.headline}
-            </h1>
-          </div>
-        </div>
-      </section>
-
-      {/* ── DARK SECTION — subheadline, subtitle, CTAs, strip ─────── */}
-      <section
-        style={{
-          background: "#0A0A12",
-          padding: "40px 24px 80px",
-        }}
-      >
-        <div className="max-w-site mx-auto">
-          {/* Subheadline — only renders if populated */}
-          {hero.subheadline && (
-            <p
-              className="font-heading font-semibold text-text-soft mb-5"
-              style={{
-                fontSize: "clamp(1.1rem, 2vw, 1.4rem)",
-                letterSpacing: "-0.01em",
-                maxWidth: "520px",
-              }}
-            >
-              {hero.subheadline}
-            </p>
-          )}
-
-          {/* Subtitle */}
+        {/* Left: text */}
+        <div>
           <p
-            className="font-body text-text-soft mb-4"
+            className="font-sans font-semibold uppercase tracking-widest mb-6"
             style={{
-              fontSize: "clamp(17px, 1.8vw, 20px)",
+              fontSize: "11px",
+              letterSpacing: "0.14em",
+              color: "#C89B3C",
+            }}
+          >
+            {hero.eyebrow}
+          </p>
+
+          <h1
+            className="font-serif font-semibold"
+            style={{
+              fontSize: "clamp(32px, 4.5vw, 52px)",
+              lineHeight: 1.15,
+              color: "#F8F6F0",
+              marginBottom: "24px",
+            }}
+          >
+            {hero.headline}
+          </h1>
+
+          <p
+            className="font-sans"
+            style={{
+              fontSize: "clamp(16px, 1.6vw, 19px)",
               lineHeight: 1.75,
-              maxWidth: "560px",
+              color: "#B0B8C4",
+              marginBottom: "16px",
+              maxWidth: "520px",
             }}
           >
             {hero.subtitle}
           </p>
 
-          {/* Discovery line */}
           {hero.discoveryLine && (
             <p
-              className="font-body text-text-soft mb-8"
-              style={{ fontSize: "clamp(15px, 1.5vw, 17px)", lineHeight: 1.75, maxWidth: "520px", opacity: 0.75 }}
+              className="font-sans"
+              style={{
+                fontSize: "clamp(14px, 1.4vw, 16px)",
+                lineHeight: 1.75,
+                color: "#B0B8C4",
+                opacity: 0.75,
+                marginBottom: "40px",
+                maxWidth: "480px",
+              }}
             >
               {hero.discoveryLine}
             </p>
           )}
 
-          {/* CTAs */}
-          <div className="flex flex-wrap gap-4 mb-4">
+          <div className="flex flex-wrap gap-4 mb-6">
             <Btn as="a" href="#qualifier" size="lg">
               {hero.ctaPrimary}
             </Btn>
@@ -130,41 +87,67 @@ export default function Hero() {
             </Btn>
           </div>
 
-          {/* Muted anchors */}
-          <div className="flex flex-wrap gap-6 mb-10">
+          <div className="flex flex-wrap gap-6">
             <a
               href="/pricing"
-              className="font-body text-muted hover:text-text-soft transition-colors duration-150"
+              className="font-sans text-textMuted hover:text-textLightMuted transition-colors duration-150"
               style={{ fontSize: "13px", textDecoration: "none" }}
             >
               See pricing →
             </a>
             <a
-              href="/myskema-lite"
-              className="font-body text-muted hover:text-text-soft transition-colors duration-150"
+              href="/pallume-journal-lite"
+              className="font-sans text-textMuted hover:text-textLightMuted transition-colors duration-150"
               style={{ fontSize: "13px", textDecoration: "none" }}
             >
-              Try MySkema Lite free →
+              Try Pallume Journal Lite free →
             </a>
           </div>
-
-          {/* Feature strip */}
-          <div className="flex flex-wrap gap-x-6 gap-y-2">
-            {hero.featureStrip.map((feature, i) => (
-              <span
-                key={feature}
-                className="flex items-center gap-2 text-sm text-muted font-body"
-              >
-                {i > 0 && (
-                  <span aria-hidden="true" className="text-white/20">·</span>
-                )}
-                {feature}
-              </span>
-            ))}
-          </div>
         </div>
-      </section>
 
-    </div>
+        {/* Right: photo */}
+        <div
+          className="hidden lg:block relative rounded-xl overflow-hidden"
+          style={{
+            height: "520px",
+            border: "1px solid rgba(200,155,60,0.15)",
+          }}
+        >
+          <Image
+            src="/images/camden-headshot.jpg"
+            alt="Camden Bennett, founder of Pallume"
+            fill
+            className="object-cover object-top"
+            priority
+            sizes="(max-width: 1024px) 0px, 45vw"
+          />
+        </div>
+      </div>
+
+      {/* Stats bar */}
+      <div
+        style={{
+          borderTop: "1px solid rgba(200,155,60,0.15)",
+          padding: "24px",
+        }}
+      >
+        <div className="max-w-site mx-auto flex flex-wrap gap-8 justify-start md:justify-center">
+          {hero.featureStrip.map((feature, i) => (
+            <span
+              key={feature}
+              className="flex items-center gap-3 font-sans text-textMuted"
+              style={{ fontSize: "13px" }}
+            >
+              {i > 0 && (
+                <span aria-hidden="true" style={{ color: "rgba(200,155,60,0.3)" }}>
+                  ·
+                </span>
+              )}
+              {feature}
+            </span>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }

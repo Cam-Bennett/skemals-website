@@ -21,18 +21,18 @@ import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
 
 export const metadata: Metadata = {
-  title: "SkemaLS — Your Own AI Execution System",
+  title: "Pallume — Your Own AI Execution System",
   description:
     "Custom AI execution systems for business owners who can't close the gap between intention and result. Built by Camden Bennett. 10 minutes every morning. Configured for you, not a template.",
   alternates: {
-    canonical: "https://skemals.com/",
+    canonical: "https://pallume.com/",
   },
   openGraph: {
-    title: "SkemaLS — Your Own AI Execution System",
+    title: "Pallume — Your Own AI Execution System",
     description:
       "Custom-configured AI execution systems for business owners who can't close the gap between intention and result. Built by Camden Bennett.",
-    url: "https://skemals.com/",
-    siteName: "SkemaLS",
+    url: "https://pallume.com/",
+    siteName: "Pallume",
     locale: "en_US",
     type: "website",
   },

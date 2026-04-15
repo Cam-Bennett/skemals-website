@@ -5,18 +5,18 @@ import SectionWrapper from "@/components/ui/SectionWrapper";
 import { privacyPolicy } from "@/content/siteContent";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — SkemaLS",
+  title: "Privacy Policy — Pallume",
   description:
-    "SkemaLS privacy policy. How we collect, use, and protect your information. Your data is never sold.",
+    "Pallume privacy policy. How we collect, use, and protect your information. Your data is never sold.",
   alternates: {
-    canonical: "https://skemals.com/privacy-policy",
+    canonical: "https://pallume.com/privacy-policy",
   },
   openGraph: {
-    title: "Privacy Policy — SkemaLS",
+    title: "Privacy Policy — Pallume",
     description:
-      "SkemaLS privacy policy. How we collect, use, and protect your information. Your data is never sold.",
-    url: "https://skemals.com/privacy-policy",
-    siteName: "SkemaLS",
+      "Pallume privacy policy. How we collect, use, and protect your information. Your data is never sold.",
+    url: "https://pallume.com/privacy-policy",
+    siteName: "Pallume",
     type: "website",
   },
 };
@@ -29,13 +29,13 @@ const privacyBreadcrumb = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://skemals.com/",
+      item: "https://pallume.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Privacy Policy",
-      item: "https://skemals.com/privacy-policy",
+      item: "https://pallume.com/privacy-policy",
     },
   ],
 };
@@ -52,7 +52,7 @@ export default function PrivacyPolicyPage() {
       <SectionWrapper
         style={{
           background:
-            "radial-gradient(ellipse at 60% 0%, rgba(37,99,235,0.06) 0%, transparent 55%), #0A0A12",
+            "radial-gradient(ellipse at 60% 0%, rgba(37,99,235,0.06) 0%, transparent 55%), #0F1B2D",
         }}
       >
         {/* Header */}
