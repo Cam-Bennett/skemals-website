@@ -13,133 +13,117 @@ export default function Hero() {
         flexDirection: "column",
       }}
     >
-      {/* Main content: 55/45 split */}
-      <div
-        className="flex-1 max-w-site mx-auto w-full"
-        style={{
-          display: "grid",
-          gridTemplateColumns: "55fr 45fr",
-          gap: "64px",
-          alignItems: "center",
-          padding: "80px 24px 60px",
-        }}
-      >
-        {/* Left: text */}
-        <div>
-          <p
-            className="font-sans font-semibold uppercase tracking-widest mb-6"
-            style={{
-              fontSize: "11px",
-              letterSpacing: "0.14em",
-              color: "#C89B3C",
-            }}
-          >
-            {hero.eyebrow}
-          </p>
+      {/* Main content: 55/45 split — content anchored to bottom */}
+      <div className="flex-1" style={{ display: "flex", alignItems: "flex-end" }}>
+        <div
+          className="max-w-site mx-auto w-full"
+          style={{
+            display: "grid",
+            gridTemplateColumns: "55fr 45fr",
+            gap: "64px",
+            alignItems: "flex-end",
+            padding: "0 24px 56px",
+          }}
+        >
+          {/* Left: text */}
+          <div>
+            <p
+              className="font-sans font-semibold uppercase tracking-widest mb-6"
+              style={{
+                fontSize: "11px",
+                letterSpacing: "0.14em",
+                color: "#C89B3C",
+              }}
+            >
+              {hero.eyebrow}
+            </p>
 
-          <h1
-            className="font-serif font-semibold"
-            style={{
-              fontSize: "clamp(32px, 4.5vw, 52px)",
-              lineHeight: 1.15,
-              color: "#F8F6F0",
-              marginBottom: "24px",
-            }}
-          >
-            {hero.headline}
-          </h1>
+            <h1
+              className="font-serif font-semibold"
+              style={{
+                fontSize: "clamp(32px, 4.5vw, 56px)",
+                lineHeight: 1.1,
+                color: "#F8F6F0",
+                marginBottom: "24px",
+              }}
+            >
+              {hero.headline}
+            </h1>
 
-          <p
-            className="font-sans"
-            style={{
-              fontSize: "clamp(16px, 1.6vw, 19px)",
-              lineHeight: 1.75,
-              color: "#B0B8C4",
-              marginBottom: "16px",
-              maxWidth: "520px",
-            }}
-          >
-            {hero.subtitle}
-          </p>
-
-          {hero.discoveryLine && (
             <p
               className="font-sans"
               style={{
-                fontSize: "clamp(14px, 1.4vw, 16px)",
+                fontSize: "clamp(16px, 1.6vw, 18px)",
                 lineHeight: 1.75,
                 color: "#B0B8C4",
-                opacity: 0.75,
                 marginBottom: "40px",
-                maxWidth: "480px",
+                maxWidth: "520px",
               }}
             >
-              {hero.discoveryLine}
+              {hero.subtitle}
             </p>
-          )}
 
-          <div className="flex flex-wrap gap-4 mb-6">
             <Btn as="a" href="#qualifier" size="lg">
               {hero.ctaPrimary}
             </Btn>
-            <Btn as="a" href="#paths" variant="secondary" size="lg">
-              {hero.ctaSecondary}
-            </Btn>
           </div>
 
-          <div className="flex flex-wrap gap-6">
-            <a
-              href="/pricing"
-              className="font-sans text-textMuted hover:text-textLightMuted transition-colors duration-150"
-              style={{ fontSize: "13px", textDecoration: "none" }}
+          {/* Right: photo card */}
+          <div
+            className="hidden lg:flex flex-col rounded-xl overflow-hidden"
+            style={{
+              height: "480px",
+              background: "#1B2838",
+              border: "1px solid rgba(200,155,60,0.15)",
+              position: "relative",
+            }}
+          >
+            <Image
+              src="/images/camden-headshot.jpg"
+              alt="Camden Bennett, founder of Pallume"
+              fill
+              className="object-cover object-top"
+              priority
+              sizes="(max-width: 1024px) 0px, 45vw"
+            />
+            {/* Name caption overlay */}
+            <div
+              style={{
+                position: "absolute",
+                bottom: 0,
+                left: 0,
+                right: 0,
+                padding: "32px 24px 20px",
+                background: "linear-gradient(to top, rgba(15,27,45,0.85) 0%, transparent 100%)",
+              }}
             >
-              See pricing →
-            </a>
-            <a
-              href="/myskema-lite"
-              className="font-sans text-textMuted hover:text-textLightMuted transition-colors duration-150"
-              style={{ fontSize: "13px", textDecoration: "none" }}
-            >
-              Try Pallume Journal Lite free →
-            </a>
+              <p
+                className="font-sans font-semibold"
+                style={{ fontSize: "14px", color: "#F8F6F0", letterSpacing: "0.04em" }}
+              >
+                Camden Bennett
+              </p>
+            </div>
           </div>
-        </div>
-
-        {/* Right: photo */}
-        <div
-          className="hidden lg:block relative rounded-xl overflow-hidden"
-          style={{
-            height: "520px",
-            border: "1px solid rgba(200,155,60,0.15)",
-          }}
-        >
-          <Image
-            src="/images/camden-headshot.jpg"
-            alt="Camden Bennett, founder of Pallume"
-            fill
-            className="object-cover object-top"
-            priority
-            sizes="(max-width: 1024px) 0px, 45vw"
-          />
         </div>
       </div>
 
-      {/* Stats bar */}
+      {/* Feature strip */}
       <div
         style={{
           borderTop: "1px solid rgba(200,155,60,0.15)",
-          padding: "24px",
+          padding: "20px 24px",
         }}
       >
-        <div className="max-w-site mx-auto flex flex-wrap gap-8 justify-start md:justify-center">
+        <div className="max-w-site mx-auto flex flex-wrap gap-2">
           {hero.featureStrip.map((feature, i) => (
             <span
               key={feature}
-              className="flex items-center gap-3 font-sans text-textMuted"
+              className="flex items-center gap-2 font-sans text-textMuted"
               style={{ fontSize: "13px" }}
             >
               {i > 0 && (
-                <span aria-hidden="true" style={{ color: "rgba(200,155,60,0.3)" }}>
+                <span aria-hidden="true" style={{ color: "rgba(200,155,60,0.4)", margin: "0 4px" }}>
                   ·
                 </span>
               )}

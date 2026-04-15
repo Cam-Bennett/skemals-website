@@ -7,6 +7,17 @@
   --font-sans: "Inter", -apple-system, sans-serif;
 }
 
+/* Force font utility classes — Tailwind JIT doesn't always generate these from CSS vars */
+.font-serif,
+.font-heading {
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+.font-sans,
+.font-body {
+  font-family: var(--font-sans), -apple-system, sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }

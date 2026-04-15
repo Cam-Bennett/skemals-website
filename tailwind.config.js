@@ -1,10 +1,12 @@
-import type { Config } from "tailwindcss";
+const path = require("node:path");
 
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    path.join(__dirname, "pages/**/*.{js,ts,jsx,tsx,mdx}"),
+    path.join(__dirname, "components/**/*.{js,ts,jsx,tsx,mdx}"),
+    path.join(__dirname, "app/**/*.{js,ts,jsx,tsx,mdx}"),
+    path.join(__dirname, "content/**/*.{js,ts,jsx,tsx,mdx}"),
   ],
   theme: {
     extend: {
@@ -20,9 +22,9 @@ const config: Config = {
         textMuted: "#6B7280",
         textLightMuted: "#B0B8C4",
         border: "#E5E1D8",
-        // Keep legacy aliases for components that still use them
+        // Legacy aliases
         primary: "#C89B3C",
-        "bg": "#0F1B2D",
+        bg: "#0F1B2D",
         "bg-alt": "#1B2838",
         "bg-card": "#FFFFFF",
         "text-main": "#F8F6F0",
@@ -32,7 +34,6 @@ const config: Config = {
       fontFamily: {
         serif: ["var(--font-serif)", "Georgia", "serif"],
         sans: ["var(--font-sans)", "-apple-system", "sans-serif"],
-        // Legacy aliases
         heading: ["var(--font-serif)", "Georgia", "serif"],
         body: ["var(--font-sans)", "-apple-system", "sans-serif"],
       },
@@ -43,4 +44,3 @@ const config: Config = {
   },
   plugins: [],
 };
-export default config;

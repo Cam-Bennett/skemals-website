@@ -19,25 +19,20 @@ export const heroArchived = {
 };
 
 export const hero = {
-  eyebrow: "CUSTOM EXECUTION SYSTEMS",
+  eyebrow: "AI-POWERED EXECUTION COACHING",
   headline: "You start every week knowing exactly what matters. By Thursday it looks nothing like the plan.",
-  subheadline: "",
   subtitle:
-    "That's not a discipline problem. That's what happens when capable people have no system holding the structure in place.",
-  discoveryLine:
-    "If you've been reading the books, watching the videos, and still can't close the gap — this is what was missing.",
+    "That's not a discipline problem. That's a design problem. Pallume builds the execution architecture your ambition has been missing.",
   ctaPrimary: "See If You Qualify",
-  ctaSecondary: "See How It Works",
   featureStrip: [
-    "Pattern Recognition",
-    "Daily Execution",
-    "Priority Filtering",
-    "Progress Tracking",
+    "60-75 min intake interviews",
+    "Weekly coaching reviews",
+    "Systems running in 6+ industries",
   ],
 };
 
 export const empathy = {
-  headline: "The Cure for Your Chaos.",
+  headline: "Here's what your day is actually costing you.",
   paragraphs: [
     "Here's the moment most business owners recognize. It's 4pm. You've been working since 7. You're exhausted. And when you try to name what actually moved forward today — you struggle.",
     "Emails answered. Fires handled. Questions fielded. The reactive layer of the business got your full attention and your best hours.",
