@@ -96,7 +96,7 @@ export default function Hero() {
               See pricing →
             </a>
             <a
-              href="/pallume-journal-lite"
+              href="/myskema-lite"
               className="font-sans text-textMuted hover:text-textLightMuted transition-colors duration-150"
               style={{ fontSize: "13px", textDecoration: "none" }}
             >
