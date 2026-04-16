@@ -112,47 +112,12 @@ export default function AboutPage() {
       <main style={{ paddingTop: "64px" }}>
         <Nav />
 
-        {/* ── HERO — full-width image, no text ─────────────────────── */}
-        <section
-          style={{
-            position: "relative",
-            height: "clamp(420px, 60vw, 740px)",
-            overflow: "hidden",
-            background: "#0F1B2D",
-          }}
-        >
-          <Image
-            src="/images/abstract-3.png"
-            alt=""
-            fill
-            priority
-            sizes="100vw"
-            style={{
-              objectFit: "cover",
-              objectPosition: "center 20%",
-              opacity: 0.95,
-            }}
-          />
-          {/* Thin bottom fade only — image does the work */}
-          <div
-            aria-hidden="true"
-            style={{
-              position: "absolute",
-              bottom: 0, left: 0, right: 0,
-              height: "160px",
-              background: "linear-gradient(to bottom, transparent, #0F1B2D)",
-            }}
-          />
-        </section>
-
-        {/* ── HEADSHOT + EYEBROW + H1 — transparent, floats over hero  */}
+        {/* ── HEADSHOT + EYEBROW + H1 ────────────────────────────── */}
         <section
           className="px-6"
           style={{
-            background: "transparent",
-            marginTop: "clamp(-280px, -38vw, -460px)",
-            position: "relative",
-            zIndex: 10,
+            background: "#0F1B2D",
+            paddingTop: "72px",
           }}
         >
           <div className="max-w-site mx-auto">

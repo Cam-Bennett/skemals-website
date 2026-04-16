@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
 import Btn from "@/components/ui/Btn";
@@ -53,8 +52,6 @@ export default function ContactPage() {
       {/* ── Main section ─────────────────────────────────────────── */}
       <section
         style={{
-          position: "relative",
-          overflow: "hidden",
           background: "#0F1B2D",
           minHeight: "70vh",
           display: "flex",
@@ -62,29 +59,8 @@ export default function ContactPage() {
           padding: "96px 24px",
         }}
       >
-        {/* Full-width background image */}
-        <Image
-          src="/images/abstract-2.png"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          style={{ objectFit: "cover", opacity: 0.75, zIndex: 0 }}
-        />
-        {/* Gradient overlay — dark left (text), open right (colors) */}
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            background:
-              "linear-gradient(to right, rgba(15,27,45,0.92) 0%, rgba(15,27,45,0.58) 42%, rgba(15,27,45,0.06) 100%)",
-            zIndex: 1,
-          }}
-        />
-        {/* Content */}
         <div
           className="max-w-site mx-auto w-full"
-          style={{ position: "relative", zIndex: 2 }}
         >
         <div style={{ maxWidth: "640px" }}>
           {/* Eyebrow */}

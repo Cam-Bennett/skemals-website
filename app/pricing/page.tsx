@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
 import SectionWrapper from "@/components/ui/SectionWrapper";
@@ -263,8 +262,6 @@ export default function PricingPage() {
       {/* ── Hero ──────────────────────────────────────────────── */}
       <section
         style={{
-          position: "relative",
-          overflow: "hidden",
           background: "#0F1B2D",
           minHeight: "52vh",
           display: "flex",
@@ -272,25 +269,7 @@ export default function PricingPage() {
           padding: "0 24px 56px",
         }}
       >
-        <Image
-          src="/images/Abstract-4.png"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          style={{ objectFit: "cover", opacity: 0.95, zIndex: 0 }}
-        />
-        {/* Bottom fade for headline contrast */}
-        <div
-          style={{
-            position: "absolute",
-            bottom: 0, left: 0, right: 0,
-            height: "320px",
-            background: "linear-gradient(to bottom, transparent, rgba(15,27,45,0.7) 50%, #0F1B2D)",
-            zIndex: 1,
-          }}
-        />
-        <div className="max-w-site mx-auto w-full" style={{ position: "relative", zIndex: 2 }}>
+        <div className="max-w-site mx-auto w-full">
           <p
             className="font-body font-semibold text-primary uppercase tracking-widest mb-4"
             style={{ fontSize: "11px", letterSpacing: "0.14em" }}
