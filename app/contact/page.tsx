@@ -53,10 +53,7 @@ export default function ContactPage() {
       <section
         style={{
           background: "#0F1B2D",
-          minHeight: "70vh",
-          display: "flex",
-          alignItems: "center",
-          padding: "96px 24px",
+          padding: "80px 24px 96px",
         }}
       >
         <div

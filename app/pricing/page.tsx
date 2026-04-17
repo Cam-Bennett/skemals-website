@@ -263,10 +263,7 @@ export default function PricingPage() {
       <section
         style={{
           background: "#0F1B2D",
-          minHeight: "52vh",
-          display: "flex",
-          alignItems: "flex-end",
-          padding: "0 24px 56px",
+          padding: "80px 24px 64px",
         }}
       >
         <div className="max-w-site mx-auto w-full">
