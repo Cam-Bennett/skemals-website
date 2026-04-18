@@ -78,7 +78,7 @@ export const costOfInaction = {
       number: "$300K",
       label: "What a $1M operator's strategic time is worth annually",
       description:
-        "For a solo operator doing $1M, the operator's time is realistically worth $300K. That's the strategic capacity — the work only you can do.",
+        "For a solo operator doing $1M, the operator's time could realistically be worth $300K. That's the strategic capacity — the work only you can do.",
     },
     {
       number: "70%",
