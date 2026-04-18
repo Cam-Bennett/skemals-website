@@ -110,7 +110,7 @@ export default function QualifierForm() {
       }
       setSubmitted(true);
     } catch {
-      setSubmitError("Something went wrong. Email camden@livewyoming.net directly.");
+      setSubmitError("Something went wrong. Email camden@pallume.com directly.");
     } finally {
       setSubmitting(false);
     }
