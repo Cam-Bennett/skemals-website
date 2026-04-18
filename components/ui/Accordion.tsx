@@ -9,19 +9,27 @@ interface AccordionItem {
 
 interface AccordionProps {
   items: AccordionItem[];
+  variant?: "dark" | "light";
 }
 
-export default function Accordion({ items }: AccordionProps) {
+export default function Accordion({ items, variant = "dark" }: AccordionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i);
 
+  const isLight = variant === "light";
+  const borderColor = isLight ? "#E5E1D8" : "rgba(255,255,255,0.06)";
+  const questionColor = isLight ? "#1A1A1A" : "#F8F6F0";
+  const questionOpenColor = "#C89B3C";
+  const indicatorBorder = isLight ? "#E5E1D8" : "rgba(255,255,255,0.12)";
+  const indicatorBorderOpen = isLight ? "rgba(200,155,60,0.4)" : "rgba(220,38,38,0.4)";
+  const indicatorColor = isLight ? "#6B7280" : "#C4C3BF";
+  const indicatorOpenColor = "#C89B3C";
+
   return (
     <div
       role="list"
-      style={{
-        borderTop: "1px solid rgba(255,255,255,0.06)",
-      }}
+      style={{ borderTop: `1px solid ${borderColor}` }}
     >
       {items.map((item, i) => {
         const isOpen = openIndex === i;
@@ -29,19 +37,20 @@ export default function Accordion({ items }: AccordionProps) {
           <div
             key={i}
             role="listitem"
-            style={{ borderBottom: "1px solid rgba(255,255,255,0.06)" }}
+            style={{ borderBottom: `1px solid ${borderColor}` }}
           >
             <button
               aria-expanded={isOpen}
               onClick={() => toggle(i)}
-              className="w-full flex items-start justify-between gap-6 text-left py-6 group"
+              className="w-full flex items-start justify-between gap-6 text-left py-6"
               style={{ background: "none", border: "none", cursor: "pointer" }}
             >
               <span
-                className="font-heading font-semibold text-text-main group-hover:text-primary"
+                className="font-heading font-semibold"
                 style={{
                   fontSize: "clamp(1rem, 1.8vw, 1.15rem)",
                   lineHeight: 1.4,
+                  color: isOpen ? questionOpenColor : questionColor,
                   transition: "color 150ms ease",
                 }}
               >
@@ -55,12 +64,9 @@ export default function Accordion({ items }: AccordionProps) {
                   width: "28px",
                   height: "28px",
                   marginTop: "2px",
-                  border: "1px solid rgba(255,255,255,0.12)",
-                  color: isOpen ? "#DC2626" : "#C4C3BF",
+                  border: `1px solid ${isOpen ? indicatorBorderOpen : indicatorBorder}`,
+                  color: isOpen ? indicatorOpenColor : indicatorColor,
                   transition: "color 150ms ease, border-color 150ms ease",
-                  borderColor: isOpen
-                    ? "rgba(220,38,38,0.4)"
-                    : "rgba(255,255,255,0.12)",
                   fontSize: "18px",
                   lineHeight: 1,
                   userSelect: "none",

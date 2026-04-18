@@ -27,11 +27,60 @@ export default function Features() {
         {features.subhead}
       </p>
 
+      {/* Featured cards — first two, gold top accent */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        {features.cards.slice(0, 2).map((card) => (
+          <div
+            key={card.title}
+            className="rounded-xl"
+            style={{
+              background: "#FFFFFF",
+              border: "1px solid #E5E1D8",
+              borderTop: "3px solid #C89B3C",
+              padding: "28px 24px",
+            }}
+          >
+            <h3
+              className="font-serif font-semibold mb-3"
+              style={{ fontSize: "22px", color: "#1A1A1A" }}
+            >
+              {card.title}
+            </h3>
+            <p
+              className="font-sans"
+              style={{ fontSize: "15px", lineHeight: 1.75, color: "#6B7280" }}
+            >
+              {card.description}
+            </p>
+            {card.whichMeans && (
+              <p
+                className="font-sans"
+                style={{
+                  fontSize: "13px",
+                  lineHeight: 1.7,
+                  fontStyle: "italic",
+                  marginTop: "14px",
+                  paddingTop: "14px",
+                  borderTop: "1px solid #E5E1D8",
+                  color: "#6B7280",
+                }}
+              >
+                <span style={{ fontStyle: "normal", fontWeight: 600, color: "#1A1A1A" }}>
+                  Which means:{" "}
+                </span>
+                {card.whichMeans}
+              </p>
+            )}
+          </div>
+        ))}
+      </div>
+
+      {/* Standard cards — remaining four */}
       <div
         className="grid gap-6 mb-8"
-        style={{ gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))" }}
+        style={{ gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}
       >
-        {features.cards.map((card) => (
+        {features.cards.slice(2).map((card) => (
           <div
             key={card.title}
             className="rounded-xl"
@@ -76,20 +125,19 @@ export default function Features() {
         ))}
       </div>
 
-      {/* Progressive deployment callout */}
+      {/* Progressive deployment callout — navy card */}
       <div
         className="rounded-xl"
         style={{
-          background: "#F8F6F0",
-          border: "1px solid #E5E1D8",
-          borderLeft: "3px solid #C89B3C",
+          background: "#0F1B2D",
+          boxShadow: "0 2px 12px rgba(0,0,0,0.08)",
           padding: "40px",
           maxWidth: "780px",
         }}
       >
         <h3
           className="font-serif font-semibold mb-6"
-          style={{ fontSize: "clamp(1.2rem, 2.5vw, 1.5rem)", lineHeight: 1.2, color: "#1A1A1A" }}
+          style={{ fontSize: "clamp(1.2rem, 2.5vw, 1.5rem)", lineHeight: 1.2, color: "#F8F6F0" }}
         >
           {features.progressiveDeployment.headline}
         </h3>
@@ -98,7 +146,7 @@ export default function Features() {
           <p
             key={i}
             className="font-sans mb-4"
-            style={{ fontSize: "15px", lineHeight: 1.75, color: "#6B7280" }}
+            style={{ fontSize: "15px", lineHeight: 1.75, color: "#B0B8C4" }}
           >
             {para}
           </p>
@@ -108,16 +156,27 @@ export default function Features() {
           {features.progressiveDeployment.weeks.map((item, i) => (
             <li
               key={i}
-              className="font-sans"
-              style={{
-                fontSize: "15px",
-                lineHeight: 1.75,
-                paddingLeft: "16px",
-                borderLeft: "2px solid rgba(200,155,60,0.4)",
-                marginBottom: "10px",
-                color: "#6B7280",
-              }}
+              className="font-sans flex gap-3 items-baseline"
+              style={{ fontSize: "15px", lineHeight: 1.75, marginBottom: "10px", color: "#F8F6F0" }}
             >
+              <span
+                style={{
+                  flexShrink: 0,
+                  width: "20px",
+                  height: "20px",
+                  borderRadius: "50%",
+                  background: "#C89B3C",
+                  color: "#0F1B2D",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  fontSize: "10px",
+                  fontWeight: 700,
+                  marginTop: "3px",
+                }}
+              >
+                {i + 1}
+              </span>
               {item}
             </li>
           ))}
@@ -125,7 +184,7 @@ export default function Features() {
 
         <p
           className="font-sans"
-          style={{ fontSize: "15px", lineHeight: 1.75, fontStyle: "italic", color: "#6B7280" }}
+          style={{ fontSize: "15px", lineHeight: 1.75, fontStyle: "italic", color: "#B0B8C4" }}
         >
           {features.progressiveDeployment.closing}
         </p>

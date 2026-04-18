@@ -81,7 +81,7 @@ const article: Article = {
     },
     {
       type: "paragraph",
-      text: "The full story is in How I Built My Own AI Operating System — but the short version is this: I couldn't see that context switching was the actual problem until I started tracking it. My days felt full. My output said otherwise. That gap is invisible until something surfaces it.",
+      text: "The full story is in How I Built My Own AI Execution System — but the short version is this: I couldn't see that context switching was the actual problem until I started tracking it. My days felt full. My output said otherwise. That gap is invisible until something surfaces it.",
     },
     {
       type: "h2",

@@ -117,7 +117,7 @@ export default function AboutPage() {
           className="px-6"
           style={{
             background: "#0F1B2D",
-            paddingTop: "72px",
+            paddingTop: "40px",
           }}
         >
           <div className="max-w-site mx-auto">
@@ -294,11 +294,19 @@ export default function AboutPage() {
           </p>
 
           {/* CTA */}
+          <p
+            data-reveal
+            data-reveal-delay="320"
+            className="font-body reveal-hidden"
+            style={{ fontSize: "16px", color: "#B0B8C4", marginTop: "40px", maxWidth: "720px" }}
+          >
+            {about.cta.transitionLine}
+          </p>
           <div
             data-reveal
-            data-reveal-delay="360"
+            data-reveal-delay="400"
             className="reveal-hidden"
-            style={{ marginTop: "40px" }}
+            style={{ marginTop: "24px" }}
           >
             <Btn as="a" href={about.cta.buttonHref} size="lg">
               {about.cta.buttonLabel}

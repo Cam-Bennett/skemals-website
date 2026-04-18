@@ -7,14 +7,12 @@ export default function Hero() {
     <section
       style={{
         background: "#0F1B2D",
-        minHeight: "100vh",
-        paddingTop: "64px",
-        display: "flex",
-        flexDirection: "column",
+        paddingTop: "120px",
+        paddingBottom: "64px",
       }}
     >
-      {/* Main content: 55/45 split — content anchored to bottom */}
-      <div className="flex-1" style={{ display: "flex", alignItems: "flex-end" }}>
+      {/* Main content: 55/45 split */}
+      <div>
         <div
           className="max-w-site mx-auto w-full"
           style={{
@@ -22,7 +20,7 @@ export default function Hero() {
             gridTemplateColumns: "55fr 45fr",
             gap: "64px",
             alignItems: "flex-end",
-            padding: "0 24px 56px",
+            padding: "0 24px",
           }}
         >
           {/* Left: text */}
@@ -41,7 +39,7 @@ export default function Hero() {
             <h1
               className="font-serif font-semibold"
               style={{
-                fontSize: "clamp(32px, 4.5vw, 56px)",
+                fontSize: "clamp(28px, 3.7vw, 46px)",
                 lineHeight: 1.1,
                 color: "#F8F6F0",
                 marginBottom: "24px",
@@ -113,6 +111,7 @@ export default function Hero() {
         style={{
           borderTop: "1px solid rgba(200,155,60,0.15)",
           padding: "20px 24px",
+          marginTop: "64px",
         }}
       >
         <div className="max-w-site mx-auto flex flex-wrap gap-2">

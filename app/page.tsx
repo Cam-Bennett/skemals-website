@@ -5,7 +5,6 @@ import EmpathyHook from "@/components/sections/EmpathyHook";
 import PriorAttempts from "@/components/sections/PriorAttempts";
 import CostOfInaction from "@/components/sections/CostOfInaction";
 import ProofInsight from "@/components/sections/ProofInsight";
-import SchemaDefinition from "@/components/sections/SchemaDefinition";
 import PathSelector from "@/components/sections/PathSelector";
 import Mechanism from "@/components/sections/Mechanism";
 import IdentityFrame from "@/components/sections/IdentityFrame";
@@ -13,9 +12,9 @@ import HowItWorks from "@/components/sections/HowItWorks";
 import Features from "@/components/sections/Features";
 import PracticeRequirement from "@/components/sections/PracticeRequirement";
 import WhatItsNot from "@/components/sections/WhatItsNot";
-import PractitionerProof from "@/components/sections/PractitionerProof";
 import ClientProof from "@/components/sections/ClientProof";
 import Founder from "@/components/sections/Founder";
+import HomepageFAQ from "@/components/sections/HomepageFAQ";
 import QualifierForm from "@/components/sections/QualifierForm";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
@@ -47,7 +46,7 @@ export default function Home() {
       <PriorAttempts />
       <CostOfInaction />
       <ProofInsight />
-      <SchemaDefinition />
+      {/* Journal product section — name TBD */}
       <Mechanism />
       <PathSelector />
       <HowItWorks />
@@ -55,9 +54,9 @@ export default function Home() {
       <PracticeRequirement />
       <IdentityFrame />
       <WhatItsNot />
-      <PractitionerProof />
       <ClientProof />
       <Founder />
+      <HomepageFAQ />
       <QualifierForm />
       <CTA />
       <Footer />

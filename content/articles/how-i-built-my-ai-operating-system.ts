@@ -2,7 +2,7 @@ import type { Article } from "./types";
 
 const article: Article = {
   slug: "how-i-built-my-ai-operating-system",
-  title: "How I Built My Own AI Operating System — and Why I Coach Others to Do the Same",
+  title: "How I Built My Own AI Execution System — and Why I Coach Others to Do the Same",
   date: "2026-03-26",
   category: "FOUNDER",
   excerpt:

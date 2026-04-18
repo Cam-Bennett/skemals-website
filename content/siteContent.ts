@@ -72,11 +72,11 @@ export const priorAttempts = {
 export const costOfInaction = {
   eyebrow: "WHAT THE GAP COSTS",
   label: "WHAT THE GAP COSTS",
-  headline: "What this looks like in a $1M business",
+  headline: "The math on wasted execution",
   stats: [
     {
       number: "$300K",
-      label: "Strategic capacity",
+      label: "What a $1M operator's strategic time is worth annually",
       description:
         "For a solo operator doing $1M, the operator's time is realistically worth $300K. That's the strategic capacity — the work only you can do.",
     },
@@ -95,7 +95,7 @@ export const costOfInaction = {
   ],
   paragraphs: [
     "Most business owners underestimate the execution gap because they measure effort, not output.",
-    "Here's a different way to look at it. If your business is producing $300,000 a year and executing at 70% of its potential — the gap is $90,000. Not because the strategy is wrong. Because the execution layer underneath it is leaking.",
+    "Here's a different way to look at it. If your strategic capacity is worth $300,000 a year and you're deploying 70% of it — the gap is $90,000. Not because the strategy is wrong. Because the execution layer underneath it is leaking.",
     "That number lives somewhere specific. In the follow-up that didn't happen. The proposal that went out a week late. The initiative that never got two consecutive hours of focused work. The hire you haven't had time to think through properly.",
     "Every week the infrastructure problem stays unsolved, the gap compounds. Not dramatically — just steadily. The same way a slow leak drains a tank.",
     "At $1,000 a month for three months (recommended baseline), Pallume costs $3,000. If it closes 20% of a $90,000 execution gap, the return is $18,000. If it closes half — the math becomes obvious.",
@@ -108,18 +108,7 @@ export const proofInsight = {
     "Most of my clients come in describing the wrong problem. Design tools, marketing help, bookkeeping fixes — none of those are the actual issue. The intake process exists because people describe symptoms, not root causes. Finding the actual problem is the first move.",
 };
 
-export const schemaDefinition = {
-  term: "sche·ma",
-  pronunciation: "/ ˈskiːmə /",
-  partOfSpeech: "noun",
-  definition:
-    "A mental framework that organizes and interprets information. Your underlying set of instructions — the patterns, beliefs, and decision-making rules that drive how you operate daily.",
-  etymology: "Origin: Greek skhēma — form, figure, plan.",
-  brandHeadline: "Pallume — Skema Life System.",
-  brandDescription:
-    "Your goals. Your values. Your decision filters. Your patterns — built into an AI system you interact with every day.",
-  brandPunchline: "It's not advice. It's your operating system, externalized.",
-};
+// Journal product section content — TBD (name decision pending)
 
 export const pathSelector = {
   label: "The Diagnostic",
@@ -317,7 +306,7 @@ export const whatItsNot = {
     {
       left: "Not theoretical.",
       right:
-        "Every framework was built and tested in a real operating business before it was ever offered to a client.",
+        "Every framework was built and tested inside a real estate brokerage before it was ever offered to a client. The same system Camden runs daily.",
     },
   ],
 };
@@ -389,9 +378,11 @@ export const founder = {
   imageSrc: "/images/camden-headshot.jpg",
   imageAlt: "Camden Bennett, founder of Pallume",
   bio: [
-    "I didn't build Pallume because I had it figured out. I built it because I didn't. What changed wasn't a book or a framework — it was building a system from scratch around my specific goals and patterns, then running it every morning until the evidence showed up in my days.",
-    "I spent 15 years in the Navy — Diver, then Intelligence Officer. Later, real estate broker of local top-producing brokerage. Problem solving and data clarity were already important to me, but when I started running a real estate brokerage, I needed productivity that I didn't have. I now run the same system in my business that I build for every client. That's not a credential. That's a requirement.",
+    "I know what it looks like to end every day exhausted with nothing moved forward. I lived that pattern for years — available to everyone, responsive to everything, in control of nothing.",
+    "15 years in the Navy — first as a Diver, then as an Intelligence Officer. Both jobs run on the same requirement: accurate information, clearly interpreted, acted on without hesitation. I came back to Wyoming after 20 years away, built the #1 brokerage in Sublette County, and found myself right back in reactive mode.",
+    "What changed wasn't a book or a framework. It was building a system from scratch — around my specific goals, my actual patterns, and the ways I consistently got stuck — then running it every morning until the evidence showed up in my days. I deployed it on myself before I offered it to anyone else.",
   ],
+  pullQuote: "I won't coach someone through something I haven't lived.",
 };
 
 export const qualifierForm = {
@@ -458,7 +449,7 @@ export const cta = {
     "15 minutes. Free. We'll talk through what you're dealing with and whether a Pallume Journal system makes sense. No pitch. No pressure.",
   buttonLabel: "See If You Qualify",
   trustLine: "You own your account. You own your data. No lock-in. No black box.",
-  contact: "[EMAIL] · 801-910-6528",
+  contact: "camden@livewyoming.net · 801-910-6528",
 };
 
 export const footer = {
@@ -484,9 +475,9 @@ export const about = {
     eyebrow: "ABOUT CAMDEN",
     headline: "I built this because I needed it. Not because I'd figured it out.",
     paragraphs: [
-      "The work was there. I knew what would grow the brokerage — email outreach, strategic planning, the high-ROI activities that compound over time. I knew exactly what those were.",
-      "I just couldn't get to them.",
-      "Every day I showed up intending to move something forward. By the end of it, I'd handled interruptions, answered questions, responded to emails, and put out whatever fires had started that day. The reactive layer of the business consumed everything. The work that actually mattered — the kind that builds something instead of just maintaining it — kept getting pushed.",
+      "If you're reading this, you probably know exactly what needs to happen in your business this week. You've known for a while. The problem isn't clarity — it's that everything else keeps eating the hours you need to do it.",
+      "That was my life for years. I was the managing broker of the top-producing brokerage in Sublette County. I knew what would grow the business — email outreach, strategic planning, the high-ROI work that compounds over time. I knew exactly what those were. I just couldn't get to them.",
+      "Every day I showed up intending to move something forward. By the end of it, I'd handled interruptions, answered questions, responded to emails, and put out whatever fires had started. The reactive layer of the business consumed everything. The work that actually mattered kept getting pushed.",
       "The cost wasn't measurable in dollars. It was measured in the accumulation of things I knew I should be doing that I never got to. The stress of knowing the gap was widening. The exhaustion of working hard while feeling perpetually behind.",
       "I didn't recognize it as a systems problem for a long time. I thought I needed more discipline. I tried using headphones to shut out office activity, earlier start times, notebooks, multiple calendars running simultaneously, productivity books, task list apps, unstructured AI tools. Some of it helped briefly. None of it lasted.",
       "The shift came when I understood what was actually happening: context switching was destroying my capacity to do meaningful work, and I had no architecture protecting the time that mattered from everything competing for it.",
@@ -529,22 +520,22 @@ export const about = {
     paragraphs: [
       "Most clients don't have a knowledge problem. They know what they should be doing. They have a list. They understand strategy.",
       "What they don't have is a system that gets them to act on what they already know — consistently, at the right time, without requiring a fresh act of willpower every morning.",
-      "One client came in managing three organizations simultaneously. She already knew who to call. She already had the relationships. The system's only job was to get her to make the calls she'd been putting off. In four weeks, her sponsor commitments tripled. The leverage was already there. The system activated it.",
-      "That's the pattern I see consistently. The work that matters is usually not far away. What's missing is the architecture that makes doing it the default.",
+      "The pattern I see consistently: the work that matters is usually not far away. What's missing is the architecture that makes doing it the default. The journal surfaces it. The pattern recognition names it. The coaching response turns it into action.",
+      "The clients who take it seriously close the gap. Not because of motivation. Because the system holds when the motivation doesn't.",
     ],
   },
   section5: {
     eyebrow: "WHY THIS WORKS",
-    headline: "I'm doing what I coach people to do.",
+    headline: "The system gets sharper. So does the coach.",
     paragraphs: [
-      "I've been running this system longer than any of my clients. Every framework I offer has been tested on myself first. Every configuration decision I make is informed by what I've observed across client engagements.",
-      "My clients tell me the coaching goes deep and compounds over time. That the feedback gets more precise as the system accumulates data. That having something that knows their history changes how the accountability lands.",
-      "The clients who take it seriously and run with it close the gap. Not because of motivation. Because the system holds when the motivation doesn't.",
+      "Every client engagement teaches me something about how execution breaks down — and how to build systems that hold. The frameworks I use today are better than the ones I used six months ago because they've been pressure-tested across industries, business sizes, and personality types.",
+      "But the core hasn't changed: I run the same system I build for clients. Every morning. That's not a sales line. It's an operational requirement. A coach who doesn't use their own system is selling theory.",
     ],
     byline:
-      "Camden Bennett — Founder, Pallume. Managing Broker, Pinedale Properties. 15 years U.S. Navy.",
+      "Camden Bennett — Founder, Pallume. Broker, #1 brokerage in Sublette County. 15 years U.S. Navy.",
   },
   cta: {
+    transitionLine: "If this sounds like someone you'd work with, start with six questions.",
     buttonLabel: "See If You Qualify",
     buttonHref: "/#qualifier",
   },
@@ -552,7 +543,7 @@ export const about = {
 
 export const faq = {
   eyebrow: "COMMON QUESTIONS",
-  headline: "Everything you're probably wondering.",
+  headline: "Before you decide.",
   items: [
     {
       question: "What is Pallume?",
@@ -564,9 +555,8 @@ export const faq = {
     {
       question: "What is Pallume Journal?",
       answer: [
-        "Pallume Journal is your personal AI system — a custom Claude project configured around how you specifically work. Your goals, your values, your decision framework, your resistance patterns.",
-        "You use it every morning in a 10-minute check-in. It captures your thinking, tracks your priorities, and catches the contradictions between what you say you want and what you're actually spending your time on. Over weeks and months it accumulates enough data about your patterns to name the loops you're living inside — the ones you can't see from the inside.",
-        "You own the account. You own the data. If you stop working with Camden, the system keeps running.",
+        "A custom AI system — built from a deep-dive interview about how you specifically work — that runs inside your own Claude account. You use it every morning in a 10-minute check-in. It tracks your priorities, catches your patterns, and holds you accountable to what you said matters. Camden reviews your data weekly and adjusts the system as it learns you.",
+        "You own the account. You own the data. The system keeps running whether you continue coaching or not.",
       ],
     },
     {
@@ -575,7 +565,6 @@ export const faq = {
         "Traditional coaching produces insights. Valuable ones. But insights without daily structure fade within days.",
         "Pallume produces a system that operates between sessions — a daily check-in that captures what's actually happening in your work, surfaces the patterns your coach needs to see, and keeps the priorities Camden identified with you in front of you every morning.",
         "The system requires your engagement. That's not a caveat — it's the mechanism. What's different from a journal or a coaching call is what happens with your engagement: it gets read, analyzed, and responded to every week. The data accumulates. The coaching gets more precise over time because it's built on months of your actual behavioral data, not a 50-minute snapshot.",
-        "The only real point of failure is disengagement. If you show up, the system works. The 10-minute morning check-in may become the easiest part of your day to protect — because it's the part that makes everything else clearer.",
       ],
     },
     {
@@ -585,17 +574,14 @@ export const faq = {
         "Generic systems break at the first point they don't match how you actually work — your energy patterns, your interruption reality, your specific failure modes. Pallume starts with a 60–75 minute interview specifically to find those points before building anything. The system is configured around what that conversation reveals, not around a template.",
         "It also starts small. Week 1 is one habit: a 10-minute morning check-in. Nothing else is added until that's established. The system earns its complexity — it doesn't front-load it.",
         "If you've abandoned every other system you've tried, that's not evidence that you can't do this. It's evidence that none of them were built for you.",
-        "The start is simple.",
-        "The practice isn't optional.",
       ],
     },
     {
       question: "Isn't this just ChatGPT? I could do this myself.",
       answer: [
-        "You could open ChatGPT and ask it to hold you accountable. It will agree to do that. Next Tuesday it might not remember any of it.",
-        "The difference isn't the AI capability. It's the configuration, the context retention, and the human interpretation layer.",
-        "Pallume Journal is a custom Claude project built from a 60–75 minute interview about how you specifically work. It retains everything across your entire engagement. It knows your goals, your patterns, your avoidance loops, and what you said you'd do last week. A self-configured general-purpose tool doesn't have any of that — because nobody built it around you.",
-        "And then there's Camden. He reads your weekly summary every Friday. He identifies what the AI surfaced, what it missed, and what the system needs to handle better. That human layer is what no self-configured ChatGPT prompt replicates.",
+        "You could. It won't remember last Tuesday.",
+        "The difference isn't AI capability — it's configuration, context, and coaching. Pallume Journal is built from an hour-long interview about how you specifically work. It retains everything across your entire engagement. It knows your goals, your avoidance loops, and what you committed to last week.",
+        "Then there's the human layer. Camden reads your weekly data, identifies what the AI surfaced and what it missed, and adjusts the system. No self-configured prompt replicates that.",
       ],
     },
     {
@@ -618,7 +604,6 @@ export const faq = {
         "The first week starts the habit: a 10-minute morning check-in. Nothing more is added until that's established.",
         "Most clients feel the difference within the first few days — not because anything dramatic has changed, but because starting the day with a clear priority changes how the rest of it goes. Reactive mode doesn't disappear. It just loses its grip on your entire schedule.",
         "Week 2 might add a layer. Week 4 might add another. By month two, the configuration reflects weeks of your actual patterns — something a generic template can never do.",
-        "The slow start is the design. It's what helps the system hold where others don't.",
       ],
     },
     {
@@ -639,7 +624,7 @@ export const faq = {
       question: "What does the weekly review look like?",
       answer: [
         "Every Friday, you direct your system to generate a weekly summary. You send it to Camden by email.",
-        "He reads it against over a dozen research documents and real client data — patterns identified across months of engagements. Then he sends back a direct coaching response: what you're doing well, what the data shows you're consistently avoiding, and — when you're ready — the next addition to your system.",
+        "He reads it against accumulated pattern data from months of client engagements — what works, what stalls, and where the common avoidance loops hide. Then he sends back a direct coaching response: what you're doing well, what the data shows you're consistently avoiding, and — when you're ready — the next addition to your system.",
         "This happens via email. It's a written analysis of your actual behavioral data, delivered to your inbox. The coaching gets more precise over time because it's built on your history, not a 50-minute coaching call snapshot. The email check-in can be accompanied by a coaching call if desired.",
       ],
     },
@@ -658,7 +643,6 @@ export const faq = {
         "It depends entirely on what the gap is costing you.",
         "If your business is producing $300,000 a year and executing at 70% of its potential, the execution gap is $90,000. Pallume at $1,000/month for three months costs $3,000. If it closes 20% of that gap, the return is $18,000. If it closes half — the math becomes obvious.",
         "The question isn't whether $1,000/month is a lot in isolation. It's what it costs to leave the execution gap open for another year.",
-        "Most people who do that math don't need more convincing.",
       ],
     },
     {
@@ -940,7 +924,7 @@ export const theWork = {
     "Case studies, process writing, and field notes from inside the system. Written for business owners who've already tried the standard solutions.",
   cta: {
     eyebrow: "READY TO START?",
-    body: "The articles describe what Pallume does and why it works. The application is where it starts.",
+    body: "The articles explain the thinking. The application starts the build.",
     buttonLabel: "See If You Qualify",
     buttonHref: "/#qualifier",
   },

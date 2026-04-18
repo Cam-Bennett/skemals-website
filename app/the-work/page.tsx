@@ -74,7 +74,7 @@ export default function TheWorkPage() {
             maxWidth: "680px",
           }}
         >
-          Writing from inside the system.
+          How the system works — and why everything else didn&apos;t.
         </h1>
       </SectionWrapper>
 

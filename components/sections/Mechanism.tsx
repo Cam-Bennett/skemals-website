@@ -24,24 +24,24 @@ export default function Mechanism() {
           ))}
         </div>
 
-        {/* Product reveal callout */}
-        <div
-          style={{
-            borderLeft: "3px solid #C89B3C",
-            paddingLeft: "28px",
-            marginBottom: "64px",
-          }}
-        >
+        {/* Product reveal — section headline treatment */}
+        <div style={{ marginBottom: "64px" }}>
           <p
+            className="font-sans font-semibold uppercase tracking-widest mb-4"
+            style={{ fontSize: "11px", letterSpacing: "0.14em", color: "#C89B3C" }}
+          >
+            THE SOLUTION
+          </p>
+          <h2
             className="font-serif font-semibold"
             style={{
-              fontSize: "clamp(1.2rem, 2.5vw, 1.7rem)",
+              fontSize: "clamp(1.6rem, 3vw, 2.25rem)",
               lineHeight: 1.2,
               color: "#1A1A1A",
             }}
           >
             {mechanism.reveal}
-          </p>
+          </h2>
         </div>
 
         <div className="flex flex-col gap-5">

@@ -103,7 +103,7 @@ export default function FAQPage() {
         {/* ── Accordion section ───────────────────────────────────── */}
         <SectionWrapper variant="light" style={{ paddingTop: "16px" }}>
           <div style={{ maxWidth: "800px" }}>
-            <Accordion items={faq.items} />
+            <Accordion items={faq.items} variant="light" />
           </div>
         </SectionWrapper>
 
@@ -137,11 +137,11 @@ export default function FAQPage() {
             <p className="font-body text-muted mt-6" style={{ fontSize: "13px" }}>
               Not ready to apply?{" "}
               <a
-                href="/myskema-lite"
+                href="/the-work"
                 className="hover:text-text-soft transition-colors duration-150"
                 style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: "3px" }}
               >
-                Try Pallume Journal Lite free — 14 days, no commitment.
+                That&apos;s fine. Read how the system works →
               </a>
             </p>
           </div>
