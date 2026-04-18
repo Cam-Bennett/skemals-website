@@ -19,15 +19,15 @@ export default function Icon() {
       >
         <span
           style={{
-            fontFamily: "sans-serif",
+            fontFamily: "Georgia, serif",
             fontWeight: 700,
-            fontSize: 20,
-            color: "#DC2626",
-            letterSpacing: "-0.04em",
+            fontSize: 21,
+            color: "#C89B3C",
+            letterSpacing: "-0.03em",
             lineHeight: 1,
           }}
         >
-          S
+          P
         </span>
       </div>
     ),
