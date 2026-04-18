@@ -4,6 +4,7 @@ const article: Article = {
   slug: "why-time-blocking-fails-business-owners",
   title: "Why Time-Blocking Fails Business Owners (and What Actually Works)",
   date: "2026-03-27",
+  dateModified: "2026-04-18",
   category: "PRODUCTIVITY",
   excerpt:
     "Time-blocking is the most recommended productivity technique on the internet. It's also the technique business owners abandon fastest.",

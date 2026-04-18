@@ -449,7 +449,7 @@ export const cta = {
     "15 minutes. Free. We'll talk through what you're dealing with and whether a Pallume Journal system makes sense. No pitch. No pressure.",
   buttonLabel: "See If You Qualify",
   trustLine: "You own your account. You own your data. No lock-in. No black box.",
-  contact: "camden@livewyoming.net · 801-910-6528",
+  contact: "camden@pallume.com · 801-910-6528",
 };
 
 export const footer = {
@@ -681,7 +681,7 @@ export const contact = {
   buttonHref: "/#qualifier",
   directContact: {
     label: "Prefer to reach out directly?",
-    email: "[EMAIL]",
+    email: "camden@pallume.com",
     phone: "801-910-6528",
   },
 };
@@ -703,7 +703,7 @@ export const privacyPolicy = {
   title: "Privacy Policy",
   effectiveDate: "March 26, 2026",
   lastUpdated: "March 26, 2026",
-  contact: "[EMAIL] | 801-910-6528",
+  contact: "camden@pallume.com | 801-910-6528",
   location: "Pinedale, Wyoming",
   sections: [
     {
@@ -774,7 +774,7 @@ export const privacyPolicy = {
         { label: "Request deletion", text: "of your information (subject to any legal obligations we have to retain records)" },
         { label: "Withdraw consent", text: "for any communication at any time" },
       ],
-      footer: "To exercise any of these rights, email [EMAIL]. We will respond within 30 days.",
+      footer: "To exercise any of these rights, email camden@pallume.com. We will respond within 30 days.",
     },
     {
       heading: "Children's Privacy",
@@ -794,7 +794,7 @@ export const privacyPolicy = {
       contact: {
         name: "Camden Bennett",
         company: "Pallume",
-        email: "[EMAIL]",
+        email: "camden@pallume.com",
         location: "Pinedale, Wyoming",
       },
     },

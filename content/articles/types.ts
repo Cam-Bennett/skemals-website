@@ -2,6 +2,7 @@ export interface Article {
   slug: string;
   title: string;
   date: string;
+  dateModified?: string;
   category: string;
   excerpt: string;
   sections: ArticleSection[];

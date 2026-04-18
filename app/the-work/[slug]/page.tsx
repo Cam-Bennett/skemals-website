@@ -162,7 +162,13 @@ export default function ArticlePage({ params }: Props) {
     description: article.excerpt,
     url: `https://pallume.com/the-work/${article.slug}`,
     datePublished: article.date,
-    dateModified: article.date,
+    dateModified: article.dateModified ?? article.date,
+    image: {
+      "@type": "ImageObject",
+      url: "https://pallume.com/images/camden-headshot.jpg",
+      width: 1200,
+      height: 630,
+    },
     author: {
       "@type": "Person",
       "@id": "https://pallume.com/#person",

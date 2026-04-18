@@ -54,7 +54,7 @@ const sections: Section[] = [
   {
     heading: "4. Cancellation",
     paragraphs: [
-      "You may cancel a monthly engagement with 30 days written notice to [EMAIL]. No partial refunds are issued for the current billing period. Cancellation takes effect at the end of the paid period.",
+      "You may cancel a monthly engagement with 30 days written notice to camden@pallume.com. No partial refunds are issued for the current billing period. Cancellation takes effect at the end of the paid period.",
       "Path C project engagements are governed by the scope document agreed upon at project start. Cancellation of a project engagement mid-delivery does not entitle the client to a refund of amounts already paid.",
       "Pallume reserves the right to terminate any engagement immediately if a client engages in abusive behavior, misrepresents material information during intake, or violates any part of these terms. In such cases, no refund will be issued for the current period.",
     ],
@@ -106,7 +106,7 @@ const sections: Section[] = [
       "Questions about these terms can be directed to:",
     ],
     list: [
-      "Email: [EMAIL]",
+      "Email: camden@pallume.com",
       "Phone: 801-910-6528",
       "Mailing address: Pallume, Pinedale, Wyoming 82941",
     ],

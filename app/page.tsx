@@ -24,13 +24,13 @@ export const metadata: Metadata = {
   description:
     "Custom AI execution systems for business owners who can't close the gap between intention and result. Built by Camden Bennett. 10 minutes every morning. Configured for you, not a template.",
   alternates: {
-    canonical: "https://pallume.com/",
+    canonical: "https://pallume.com",
   },
   openGraph: {
     title: "Pallume — Your Own AI Execution System",
     description:
       "Custom-configured AI execution systems for business owners who can't close the gap between intention and result. Built by Camden Bennett.",
-    url: "https://pallume.com/",
+    url: "https://pallume.com",
     siteName: "Pallume",
     locale: "en_US",
     type: "website",

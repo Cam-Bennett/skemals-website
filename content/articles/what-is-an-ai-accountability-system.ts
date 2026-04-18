@@ -5,6 +5,7 @@ const article: Article = {
   title:
     "What Is an AI Execution System — and How Is It Different From Hiring a Coach?",
   date: "2026-03-28",
+  dateModified: "2026-04-18",
   category: "SYSTEMS",
   excerpt:
     "Most people know they need a better system. The question they can't answer is what form it should actually take — and why everything they've tried hasn't closed the gap.",

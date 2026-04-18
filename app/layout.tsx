@@ -49,6 +49,7 @@ const orgSchema = {
       url: "https://pallume.com",
       description:
         "Custom AI execution systems for business owners. Built by Camden Bennett.",
+      email: "camden@pallume.com",
       founder: { "@id": "https://pallume.com/#person" },
       address: {
         "@type": "PostalAddress",
@@ -60,6 +61,7 @@ const orgSchema = {
         "@type": "ContactPoint",
         telephone: "801-910-6528",
         contactType: "customer service",
+        email: "camden@pallume.com",
       },
     },
     {
@@ -80,6 +82,16 @@ const orgSchema = {
         "Former U.S. Navy Diver and Intelligence Officer. Real estate broker. Founder of Pallume AI execution coaching.",
       url: "https://pallume.com/about",
       image: "https://pallume.com/images/camden-headshot.jpg",
+      email: "camden@pallume.com",
+      worksFor: { "@id": "https://pallume.com/#organization" },
+      knowsAbout: [
+        "AI execution systems",
+        "Business accountability coaching",
+        "Productivity systems for business owners",
+      ],
+      sameAs: [
+        "https://www.youtube.com/@camdenbennett",
+      ],
     },
   ],
 };

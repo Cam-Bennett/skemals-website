@@ -4,6 +4,7 @@ const article: Article = {
   slug: "how-i-built-my-ai-operating-system",
   title: "How I Built My Own AI Execution System — and Why I Coach Others to Do the Same",
   date: "2026-03-26",
+  dateModified: "2026-04-18",
   category: "FOUNDER",
   excerpt:
     "I used AI for months without a system. The result was exactly what you'd expect: a very capable tool that reflected my disorganization back at me in complete sentences.",
