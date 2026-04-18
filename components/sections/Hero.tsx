@@ -39,7 +39,7 @@ export default function Hero() {
             <h1
               className="font-serif font-semibold"
               style={{
-                fontSize: "clamp(28px, 3.7vw, 46px)",
+                fontSize: "clamp(24px, 3vw, 38px)",
                 lineHeight: 1.1,
                 color: "#F8F6F0",
                 marginBottom: "24px",

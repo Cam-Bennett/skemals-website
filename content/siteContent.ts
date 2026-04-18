@@ -215,9 +215,9 @@ export const howItWorks = {
 
 export const features = {
   label: "What You Get",
-  headline: "Pallume Journal. Your personal operating system.",
+  headline: "Pallume Journal. Your personal execution system.",
   subhead:
-    "One place. 10 minutes every morning. A system that orders your day, tracks your goals, captures your ideas, and holds you accountable — then speaks back to you.",
+    "Six capabilities. All running from a single morning check-in.",
   cards: [
     {
       title: "Your Morning Log",
@@ -473,7 +473,7 @@ export const about = {
   },
   section1: {
     eyebrow: "ABOUT CAMDEN",
-    headline: "I built this because I needed it. Not because I'd figured it out.",
+    headline: "You already know what needs to happen. Something keeps getting in the way.",
     paragraphs: [
       "If you're reading this, you probably know exactly what needs to happen in your business this week. You've known for a while. The problem isn't clarity — it's that everything else keeps eating the hours you need to do it.",
       "That was my life for years. I was the managing broker of the top-producing brokerage in Sublette County. I knew what would grow the business — email outreach, strategic planning, the high-ROI work that compounds over time. I knew exactly what those were. I just couldn't get to them.",

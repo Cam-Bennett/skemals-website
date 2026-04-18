@@ -21,8 +21,6 @@ export default function PriorAttempts() {
                 fontSize: "17px",
                 lineHeight: 1.8,
                 color: i < priorAttempts.paragraphs.length - 2 ? "#6B7280" : "#1A1A1A",
-                fontStyle:
-                  i < priorAttempts.paragraphs.length - 2 ? "italic" : "normal",
               }}
             >
               {p}
