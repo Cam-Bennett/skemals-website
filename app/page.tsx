@@ -15,7 +15,7 @@ import WhatItsNot from "@/components/sections/WhatItsNot";
 import ClientProof from "@/components/sections/ClientProof";
 import Founder from "@/components/sections/Founder";
 import HomepageFAQ from "@/components/sections/HomepageFAQ";
-import QualifierForm from "@/components/sections/QualifierForm";
+import QualifierCTA from "@/components/sections/QualifierCTA";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
 
@@ -57,7 +57,7 @@ export default function Home() {
       <ClientProof />
       <Founder />
       <HomepageFAQ />
-      <QualifierForm />
+      <QualifierCTA />
       <CTA />
       <Footer />
     </main>
