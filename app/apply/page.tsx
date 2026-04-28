@@ -89,11 +89,11 @@ export default function ApplyPage() {
       <SectionWrapper variant="light">
         <div style={{ maxWidth: "720px" }}>
           <iframe
-            data-tally-src="https://tally.so/embed/rGxop2o?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            src="https://tally.so/embed/rGxop2o?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
             loading="lazy"
             width="100%"
-            height="1200"
-            style={{ border: 0 }}
+            height="800"
+            style={{ border: 0, minHeight: "800px" }}
             title="Pallume Client Application"
           />
         </div>
