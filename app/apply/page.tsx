@@ -89,7 +89,7 @@ export default function ApplyPage() {
       <SectionWrapper variant="light">
         <div style={{ maxWidth: "720px" }}>
           <iframe
-            src="https://tally.so/embed/rGxop2o?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            src="https://tally.so/embed/Gxop2o?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
             loading="lazy"
             width="100%"
             height="800"
