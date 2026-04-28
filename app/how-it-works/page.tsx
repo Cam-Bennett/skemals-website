@@ -45,13 +45,13 @@ const mutedBody: React.CSSProperties = {
 const darkBody: React.CSSProperties = {
   fontSize: "17px",
   lineHeight: 1.8,
-  color: "#6B7280",
+  color: "#1A1A1A",
 };
 
 const listItem: React.CSSProperties = {
   fontSize: "17px",
   lineHeight: 1.8,
-  color: "#6B7280",
+  color: "#1A1A1A",
   display: "flex",
   gap: "12px",
 };
@@ -222,7 +222,7 @@ export default function HowItWorksPage() {
           </h2>
           <p
             className="font-body mb-12"
-            style={{ fontSize: "15px", color: "#6B7280", lineHeight: 1.6 }}
+            style={{ fontSize: "16px", color: "#374151", lineHeight: 1.6 }}
           >
             Starting at $1,000/month. 2–7 months based on readiness, not the calendar.
           </p>
@@ -273,7 +273,7 @@ export default function HowItWorksPage() {
                 >
                   {card.label}
                 </h3>
-                <p className="font-body mb-6 flex-1" style={{ fontSize: "15px", lineHeight: 1.75, color: "#6B7280" }}>
+                <p className="font-body mb-6 flex-1" style={{ fontSize: "16px", lineHeight: 1.75, color: "#1A1A1A" }}>
                   {card.body}
                 </p>
                 <div
@@ -289,7 +289,7 @@ export default function HowItWorksPage() {
                   >
                     Readiness Signal
                   </p>
-                  <p className="font-body" style={{ fontSize: "14px", lineHeight: 1.7, color: "#9CA3AF" }}>
+                  <p className="font-body" style={{ fontSize: "15px", lineHeight: 1.7, color: "#374151" }}>
                     {card.signal}
                   </p>
                 </div>
@@ -320,7 +320,7 @@ export default function HowItWorksPage() {
           </h2>
           <p
             className="font-body mb-12"
-            style={{ fontSize: "15px", color: "#6B7280", lineHeight: 1.6 }}
+            style={{ fontSize: "16px", color: "#374151", lineHeight: 1.6 }}
           >
             Starting at $1,500/month. Scoped to the organizational challenge. Typically 3–9 months.
           </p>
