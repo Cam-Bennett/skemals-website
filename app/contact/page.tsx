@@ -19,6 +19,13 @@ export const metadata: Metadata = {
     siteName: "Pallume",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    site: "@camdenbennett",
+    title: "Contact — Pallume",
+    description:
+      "Start with the application form. Six questions, three minutes. Camden reviews every submission personally and responds within 24 hours.",
+  },
 };
 
 const contactBreadcrumb = {

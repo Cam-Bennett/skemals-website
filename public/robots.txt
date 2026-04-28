@@ -16,4 +16,7 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
 Sitemap: https://pallume.com/sitemap.xml

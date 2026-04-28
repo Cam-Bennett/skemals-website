@@ -8,7 +8,7 @@ export const nav = {
     { label: "FAQ", href: "/faq" },
   ],
   cta: "Apply Now",
-  ctaHref: "/contact",
+  ctaHref: "/apply",
 };
 
 // ARCHIVED: "Your own AI execution system." + "Built by a coach. Running every morning."
@@ -456,9 +456,10 @@ export const footer = {
   logo: "Pallume",
   links: [
     { label: "About", href: "/about" },
+    { label: "Pricing", href: "/pricing" },
     { label: "The Work", href: "/the-work" },
     { label: "FAQ", href: "/faq" },
-    { label: "Apply", href: "/contact" },
+    { label: "Apply", href: "/apply" },
     { label: "Privacy", href: "/privacy-policy" },
     { label: "Terms", href: "/terms-of-service" },
   ],
@@ -678,7 +679,7 @@ export const contact = {
   body: "The fastest path to working together is the application form. Six questions. Takes about three minutes. Camden reviews every submission personally and responds within 24 hours.",
   body2: "If it looks like a fit, you'll receive a link to schedule a 20-minute discovery conversation — not a sales call. A real conversation about whether Pallume is the right tool for your situation.",
   buttonLabel: "Apply Now",
-  buttonHref: "/#qualifier",
+  buttonHref: "/apply",
   directContact: {
     label: "Prefer to reach out directly?",
     email: "camden@pallume.com",

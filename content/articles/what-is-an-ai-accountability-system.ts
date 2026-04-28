@@ -1,7 +1,7 @@
 import type { Article } from "./types";
 
 const article: Article = {
-  slug: "what-is-an-ai-accountability-system",
+  slug: "what-is-an-ai-execution-system",
   title:
     "What Is an AI Execution System — and How Is It Different From Hiring a Coach?",
   date: "2026-03-28",

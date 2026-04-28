@@ -12,11 +12,36 @@ check-in. Weekly AI-generated progress summaries sent to Camden for coaching
 review. System is progressively refined over time. The client owns the
 account and all data.
 
+## Target Audience
+Business owners and solo operators with $100,000–$2,000,000 in annual revenue
+who have sound strategy but consistent execution failures. Typically 30–55 years
+old. Service-based businesses across industries including real estate, consulting,
+property management, professional services, and executive leadership. Not suitable
+for early-stage startups or those seeking outsourced work execution. Best fit:
+someone who already knows what needs to happen in their business but can't
+consistently act on it.
+
+## Key Concepts
+- Execution gap: The difference between a business owner's planned strategic
+  output and actual results — estimated at $60,000–$100,000 annually for a
+  $500K–$1M operator. Caused by reactive mode consuming the hours intended for
+  high-leverage work.
+- Pallume Journal: A custom Claude AI project built from a 60–75 minute
+  intake interview with Camden Bennett. Not a template. Configured per client
+  around their specific goals, decision framework, avoidance loops, and
+  behavioral patterns.
+- AI execution system: A structured daily practice using AI to capture
+  priorities, surface behavioral patterns, and hold the operator accountable
+  to their own stated goals — with weekly human coaching review by the founder.
+- Progressive deployment: The system starts with one habit (a 10-minute morning
+  check-in) and adds complexity only as the client demonstrates readiness.
+  Week 1 is check-in only. Full deployment by month three.
+
 ## Pallume Lite
 Pallume Lite is a free 14-day structured journaling experience — a self-guided
 diagnostic that surfaces the patterns, constraints, and mechanisms behind your
 execution problems. Five phases over 14 days. No coaching yet. Just clarity.
-Available at https://pallume.com/myskema-lite — no credit card required.
+Available at https://pallume.com/pallume-light — no credit card required.
 
 ## The Three Paths
 - PATH A (The Person): Individual execution system for solo operators,
@@ -35,9 +60,9 @@ Available at https://pallume.com/myskema-lite — no credit card required.
 - Pricing: https://pallume.com/pricing
 - FAQ: https://pallume.com/faq
 - Contact: https://pallume.com/contact
-- Pallume Lite (free trial): https://pallume.com/myskema-lite
+- Pallume Lite (free trial): https://pallume.com/pallume-light
 - The Work (articles): https://pallume.com/the-work
-- What Is an AI Execution System: https://pallume.com/the-work/what-is-an-ai-accountability-system
+- What Is an AI Execution System: https://pallume.com/the-work/what-is-an-ai-execution-system
 - Why Time Blocking Fails Business Owners: https://pallume.com/the-work/why-time-blocking-fails-business-owners
 - How I Built My AI Execution System: https://pallume.com/the-work/how-i-built-my-ai-operating-system
 

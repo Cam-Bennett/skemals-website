@@ -19,7 +19,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Pallume — Your Own AI Execution System",
   description:
-    "Custom AI execution systems for business owners who can't close the gap between intention and result. Built by Camden Bennett. 10 minutes every morning. Configured for you, not a template.",
+    "Custom AI execution systems for business owners who can't close the gap between intention and result. Built by Camden Bennett. 10 minutes every morning.",
   metadataBase: new URL("https://pallume.com"),
   openGraph: {
     title: "Pallume — Your Own AI Execution System",

@@ -11,6 +11,11 @@ const nextConfig = {
       destination: "/pricing",
       permanent: true,
     },
+    {
+      source: "/myskema-lite",
+      destination: "/pallume-light",
+      permanent: true,
+    },
   ],
   headers: async () => [
     {
@@ -31,6 +36,7 @@ const nextConfig = {
           key: "Content-Security-Policy",
           value: [
             "default-src 'self'",
+            "frame-src https://tally.so",
             "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
             "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
             "font-src 'self' https://fonts.gstatic.com",

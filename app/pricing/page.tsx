@@ -435,7 +435,7 @@ export default function PricingPage() {
           <p className="font-body text-muted mt-4" style={{ fontSize: "13px" }}>
             Not ready to commit?{" "}
             <a
-              href="/myskema-lite"
+              href="/pallume-light"
               className="hover:text-text-soft transition-colors duration-150"
               style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: "3px" }}
             >

@@ -36,7 +36,7 @@ export default function Nav() {
               </a>
             ))}
           </div>
-          <Btn as="a" href="/contact" size="sm">
+          <Btn as="a" href={nav.ctaHref} size="sm">
             {nav.cta}
           </Btn>
         </div>
