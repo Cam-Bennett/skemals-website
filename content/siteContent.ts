@@ -373,6 +373,27 @@ export const clientProof = {
   },
 };
 
+export const testimonials = {
+  label: "WHAT CLIENTS SAY",
+  items: [
+    {
+      paragraphs: [
+        "I have been utilizing AI tools Camden created to bring more efficiency to my work as Sublette County BOCES Director. One thing it has helped me do is distinguish between time spent on true executive-level work versus time I spend simply providing coverage for our services — a distinction that's easy to lose track of in a day that moves this fast.",
+        "The daily journal has helped me track work progression over time and provides meaningful reminders of where I need to focus. I often capture my day in a voice memo at the end of the day, and it organizes and summarizes everything — then gives me a starting point for the next morning. It also flags board-worthy items as they happen, so I'm not reconstructing a month from memory when it's time to write the board report.",
+        "The value has been significant. It keeps me focused on the work that actually requires me, while surfacing bigger organizational questions I might not have stopped to consider otherwise.",
+      ],
+      name: "Robin Schamber",
+      title: "Director, Sublette County BOCES",
+    },
+    {
+      // Christy Devlin — placeholder, drop in paragraphs/name/title when confirmed
+      paragraphs: [],
+      name: "",
+      title: "",
+    },
+  ],
+};
+
 export const founder = {
   label: "About Camden",
   headline: "Camden Bennett",

@@ -12,7 +12,7 @@ import HowItWorks from "@/components/sections/HowItWorks";
 import Features from "@/components/sections/Features";
 import PracticeRequirement from "@/components/sections/PracticeRequirement";
 import WhatItsNot from "@/components/sections/WhatItsNot";
-import ClientProof from "@/components/sections/ClientProof";
+import Testimonials from "@/components/sections/Testimonials";
 import Founder from "@/components/sections/Founder";
 import HomepageFAQ from "@/components/sections/HomepageFAQ";
 import QualifierCTA from "@/components/sections/QualifierCTA";
@@ -54,7 +54,7 @@ export default function Home() {
       <PracticeRequirement />
       <IdentityFrame />
       <WhatItsNot />
-      <ClientProof />
+      <Testimonials />
       <Founder />
       <HomepageFAQ />
       <QualifierCTA />
