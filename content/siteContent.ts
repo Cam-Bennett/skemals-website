@@ -468,7 +468,7 @@ export const qualifierForm = {
 export const cta = {
   headline: "Ready to stop carrying everything in your head?",
   description:
-    "Pallume works with a limited number of clients at a time. Six questions. Takes three minutes. Camden reviews every application personally and responds within 24 hours.",
+    "Pallume works with a limited number of clients at a time. Nine questions. Takes three minutes. Camden reviews every application personally and responds within 24 hours.",
   buttonLabel: "Apply Now",
   trustLine: "You own your account. You own your data. No lock-in. No black box.",
   contact: "camden@pallume.com",
