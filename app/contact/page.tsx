@@ -132,17 +132,6 @@ export default function ContactPage() {
               >
                 {contact.directContact.email}
               </a>
-              <a
-                href={`tel:${contact.directContact.phone.replace(/\./g, "")}`}
-                className="font-body text-text-soft hover:text-primary"
-                style={{
-                  fontSize: "16px",
-                  textDecoration: "none",
-                  transition: "color 150ms ease",
-                }}
-              >
-                {contact.directContact.phone}
-              </a>
             </div>
           </div>
         </div>

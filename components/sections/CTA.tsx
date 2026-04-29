@@ -23,7 +23,7 @@ export default function CTA() {
           {cta.description}
         </p>
         <div className="mb-8">
-          <Btn as="a" href="#qualifier" size="lg">
+          <Btn as="a" href="/apply" size="lg">
             {cta.buttonLabel}
           </Btn>
         </div>

@@ -15,7 +15,6 @@ import WhatItsNot from "@/components/sections/WhatItsNot";
 import Testimonials from "@/components/sections/Testimonials";
 import Founder from "@/components/sections/Founder";
 import HomepageFAQ from "@/components/sections/HomepageFAQ";
-import QualifierCTA from "@/components/sections/QualifierCTA";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
 
@@ -57,7 +56,6 @@ export default function Home() {
       <Testimonials />
       <Founder />
       <HomepageFAQ />
-      <QualifierCTA />
       <CTA />
       <Footer />
     </main>

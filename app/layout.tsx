@@ -59,7 +59,6 @@ const orgSchema = {
       },
       contactPoint: {
         "@type": "ContactPoint",
-        telephone: "801-910-6528",
         contactType: "customer service",
         email: "camden@pallume.com",
       },

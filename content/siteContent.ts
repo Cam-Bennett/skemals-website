@@ -468,10 +468,10 @@ export const qualifierForm = {
 export const cta = {
   headline: "Ready to stop carrying everything in your head?",
   description:
-    "15 minutes. Free. We'll talk through what you're dealing with and whether a Pallume Journal system makes sense. No pitch. No pressure.",
-  buttonLabel: "See If You Qualify",
+    "Pallume works with a limited number of clients at a time. Six questions. Takes three minutes. Camden reviews every application personally and responds within 24 hours.",
+  buttonLabel: "Apply Now",
   trustLine: "You own your account. You own your data. No lock-in. No black box.",
-  contact: "camden@pallume.com · 801-910-6528",
+  contact: "camden@pallume.com",
 };
 
 export const footer = {
@@ -705,7 +705,6 @@ export const contact = {
   directContact: {
     label: "Prefer to reach out directly?",
     email: "camden@pallume.com",
-    phone: "801-910-6528",
   },
 };
 
@@ -726,7 +725,7 @@ export const privacyPolicy = {
   title: "Privacy Policy",
   effectiveDate: "March 26, 2026",
   lastUpdated: "March 26, 2026",
-  contact: "camden@pallume.com | 801-910-6528",
+  contact: "camden@pallume.com",
   location: "Pinedale, Wyoming",
   sections: [
     {

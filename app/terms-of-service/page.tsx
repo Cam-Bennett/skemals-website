@@ -107,7 +107,6 @@ const sections: Section[] = [
     ],
     list: [
       "Email: camden@pallume.com",
-      "Phone: 801-910-6528",
       "Mailing address: Pallume, Pinedale, Wyoming 82941",
     ],
   },
